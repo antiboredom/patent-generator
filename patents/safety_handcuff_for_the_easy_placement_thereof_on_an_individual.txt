@@ -1,0 +1,263 @@
+Safety Handcuff For The Easy Placement Thereof On An Individual
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+2
+435
+651
+B1
+
+(12) FASCICULE DE BREVET EUROPEEN
+
+(45) Mention de la délivrance du brevet:
+17.07.2013
+Bulletin
+2013/29
+
+(21) Numéro de dépôt: 10707088.0
+
+(22) Date de dépôt:
+11.02.2010
+
+(51) Int. Cl.
+:
+E05B 75/00 (2006.01)
+E05B 15/00 (2006.01)
+
+(86) Numéro de dépôt:
+PCT/FR2010/000106
+
+(87) Numéro de publication internationale:
+WO
+2010/
+092252 (
+19.08.2010
+Gazette
+2010/
+33)
+
+(54)
+MENOTTE DE SÛRETÉ ADAPTÉE POUR FACILITER SA MISE EN PLACE SUR UN INDIVIDU
+
+SICHERHEITSHANDSCHELLEN FÜR IHR LEICHTES ANORDNEN AN EINER PERSON
+
+SAFETY HANDCUFF FOR THE EASY PLACEMENT THEREOF ON AN INDIVIDUAL
+
+(84) Etats contractants désignés:
+AT
+BE
+BG
+CH
+CY
+CZ
+DE
+DK
+EE
+ES
+FI
+FR
+GB
+GR
+HR
+HU
+IE
+IS
+IT
+LI
+LT
+LU
+LV
+MC
+MK
+MT
+NL
+NO
+PL
+PT
+RO
+SE
+SI
+SK
+SM
+TR
+
+(30) Priorité:  16.02.2009 FR 0900680
+
+(43) Date de publication de la demande:
+04.04.2012
+Bulletin
+2012/14
+
+(60) Numéro de dépôt de la demande initiale en application de l'article 76 CBE:
+13170929.7
+
+(73) Titulaire: Garibaldi, Jérôme
+06500 Menton (FR)
+
+(72) Inventeur:
+
+* Garibaldi, Jérôme
+06500 Menton (FR)
+
+(74) Mandataire: Maupilier, Didier
+Schmit-Chretien
+836, Rue du mas de Verchant
+34000 Montpellier
+34000 Montpellier (FR)
+
+(56) Documents cités:
+:
+FR-A- 829 746
+US-A- 2 516 878
+US-A- 5 555 751
+GB-A- 2 439 088
+US-A- 4 314 466
+US-A- 5 799 514
+
+Il est rappelé que: Dans un délai de neuf mois à compter de la date de publication de la mention de la délivrance de brevet européen, toute personne peut faire opposition au brevet européen délivré, auprès de l'Office européen des brevets. L'opposition doit être formée par écrit et motivée. Elle n'est réputée formée qu'après paiement de la taxe d'opposition. (Art. 99(1) Convention sur le brevet européen).
+
+Description
+
+Domaine technique
+
+[0001]
+La présente invention concerne le domaine technique des menottes sous forme d'un ou deux bracelets reliés entre eux, et destinés à être attachées à un poignet ou aux deux poignets d'un individu et concerne en particulier une menotte adaptée pour faciliter sa mise en place sur un individu.
+
+Etat de la technique
+
+[0002]
+Une menotte de sûreté connue de l'état de la technique comprend un premier demi-bracelet monté à pivotement sur un second demi-bracelet, le premier demi-bracelet étant muni à son extrémité libre d'une crémaillère destinée à coopérer avec un cliquet de verrouillage portant une denture correspondant à la denture de la crémaillère. Le cliquet est placé dans le corps de la menotte et est en général solidaire du second demi-bracelet. La forme et l'orientation des dentures empêchent le retour en arrière du premier demi-bracelet dès que la crémaillère de celui-ci est en prise avec le cliquet. La menotte est ainsi « fermée » autour du poignet d'un individu ou autour d'un objet de façon à être fixée à lui. La longueur de la denture de la crémaillère est conçue pour que la menotte puisse s'adapter et s'ajuster parfaitement à des poignets de différentes grosseurs et aussi à des chevilles. Le corps de la menotte comprend également des moyens de verrouillage et déverrouillage tels qu'une serrure pour bloquer la menotte une fois que celle-ci est ajustée et également pour pouvoir faire reculer le premier demi-bracelet et ouvrir la menotte.
+
+[0003]
+Ce type de menotte présente plusieurs inconvénients. D'une part l'utilisateur est obligé de se servir de ses deux mains pour mettre en place la menotte. Une main tient le corps de la menotte et le second demi-bracelet contre le membre à entraver tandis que la seconde main ajuste le premier demi-bracelet tout autour du membre en engageant plus ou moins la crémaillère dans le cliquet selon la grosseur du membre à entraver. Pendant cette manipulation, l'utilisateur n'est alors plus libre de ses mouvements et peut se trouver en position de faiblesse en cas de comportement agressif de la personne à entraver. Ce type de menotte ne peut être mis en place sur une personne qui n'est pas maîtrisée ou consentante. D'autre part, ce type de menotte nécessite que la personne à menotter ait le membre à entraver écarté du corps ou de toute surface. En effet, le premier demi-bracelet pivotant librement autour du second, le membre à entraver ne peut être menotté que s'il y a un espace entre le membre et le premier demi-bracelet.
+
+[0004]
+Le document US 2516878 décrit une menotte comportant un moyen de détection de présence de membre qui, sous la poussée du membre entravé, bloque le bracelet et empêche la menotte de s'ouvrir. Mais cette menotte ne comporte pas de moyen de verrouillage en position ouverte empêchant ainsi sa fermeture intempestive et permettant une préhension frontale du membre à entraver. Un autre inconvénient de ce type de menotte réside dans le fait que, lorsque l'utilisateur doit enlever la menotte, il doit tenir la menotte d'une main, l'ouvrir avec la clef et ensuite dégager le membre entravé de l'emprise circulaire de la menotte. Toutes ces manipulations rendent l'utilisation des menottes fastidieuse et pas toujours adaptée à une situation nécessitant parfois urgence et rapidité.
+
+[0005]
+On connaît les documents GB 2 439 088 et FR 829 746 qui décrivent des menottes ayant les mêmes inconvénients.
+
+Exposé de l'invention
+
+[0006]
+C'est pourquoi, le but de l'invention est de réaliser une menotte palliant les inconvénients cités et en particulier une menotte maintenue verrouillée en position ouverte empêchant ainsi sa fermeture intempestive et permettant une préhension frontale du membre à entraver à l'aide d'une seule main.
+
+[0007]
+L'objet de l'invention est donc une menotte composée d'un premier demi-bracelet et d'un second demi-bracelet pouvant être refermés en position verrouillée autour d'un objet, notamment un membre d'un individu, et ouverts grâce à un moyen d'ouverture pouvant être déverrouillé au moyen d'une clé, et au moins un corps de menotte comprenant des moyens de verrouillage de la menotte. Le premier demi-bracelet est monté pivotant autour d'un axe situé dans le corps de menotte et peut être mis en mouvement autour de son axe de façon à permettre la préhension du membre à entraver. Les moyens de verrouillage comprennent un moyen de verrouillage de la menotte en position de fermeture comportant un moyen de détection de présence de membre monté pivotant autour d'un axe qui, sous la poussée du membre entravé, bloque le moyen d'ouverture et empêche la menotte de s'ouvrir. La menotte est caractérisée en ce les moyens de verrouillage comprennent en outre un moyen de verrouillage de la menotte en position d'ouverture comportant un cran de blocage monté pivotant autour d'un axe fixé au corps de menotte et le premier demi-bracelet comporte une encoche dans laquelle pénètre le cran de blocage en s'opposant à un ressort de rappel, ce qui permet de verrouiller le premier demi-bracelet et de maintenir la menotte en position ouverte empêchant ainsi sa fermeture intempestive et permettant une préhension frontale du membre à entraver.
+
+Description brève des figures
+
+[0008]
+Les buts, objets et caractéristiques de l'invention apparaîtront plus clairement à la lecture de la description qui suit faite en référence aux dessins dans lesquels :
+la figure 1 représente une coupe schématique de la menotte selon un premier mode de réalisation en position ouverte,
+
+la figure 2 représente une coupe schématique de la menotte selon un premier mode de réalisation en position fermée,
+
+la figure 3 représente la menotte selon le premier mode de réalisation couplée à une autre menotte, et
+
+la figure 4 représente la menotte'selon un deuxième mode de réalisation en position fermée.
+
+Description détaillée de l'invention
+
+[0009]
+En référence à la figure 1, la menotte selon un premier mode de réalisation comporte une partie 1 constituant le corps de la menotte. Une des extrémités du corps de menotte se prolonge selon un second demi-bracelet 11. A noter que le second demi-bracelet peut être solidaire ou non du corps de menotte.
+
+[0010]
+De préférence, le corps de la menotte est composé de deux pièces quasiment identiques séparées l'une de l'autre mais entre lesquelles est logé le mécanisme de fermeture et de verrouillage-déverrouillage de la menotte. Une pièce mobile d'entrave 2 est située entre les deux pièces du corps de menotte 1. Cette pièce en forme de S est montée pivotante autour d'un axe 100 situé dans la zone centrale de la pièce et fixé au corps de menotte 1. L'intérieur incurvé de la partie inférieure 21 de la pièce mobile d'entrave forme le premier demi-bracelet 21 de la menotte.
+
+[0011]
+La partie supérieure de la pièce mobile d'entrave est montée coulissante dans un logement du corps de menotte ou gorge de maintien 8 et est maintenue à l'intérieur du corps de menotte grâce à un ressort de rappel 200. Dans sa partie supérieure, la pièce mobile d'entrave 2 est superposée à une pédale de débrayage 3 également montée pivotante autour de l'axe 100. La pédale de débrayage est placée de telle façon qu'elle se superpose en dépassant de l'extérieur incurvé de la partie supérieure de la pièce mobile d'entrave. La pièce mobile d'entrave comporte également une denture inclinée 22 autour d'une partie du centre de la pièce donc à proximité de l'axe 100. La denture 22 de la pièce mobile d'entrave coopère avec la denture 41 d'un levier d'ouverture 4 monté pivotant autour d'un axe 101 fixé à la carcasse. La denture du levier d'ouverture est maintenue contre la denture 22 de la pièce mobile d'entrave grâce à un ressort 201 de sorte que tant que les deux dentures sont en prise ensemble le premier demi-bracelet ne peut tourner autour de l'axe 100, que dans le sens qui le rapproche du premier demi-bracelet 11, donc dans le sens de fermeture de la menotte. Pour désengager les deux dentures 22 et 41 et ainsi permettre à la pièce mobile d'entrave de tourner autour de l'axe 100 dans le sens qui l'éloigne du premier demi-bracelet, donc dans le sens d'ouverture de la menotte, le levier d'ouverture 4, doit tourner en s'opposant au ressort de rappel 201.
+
+[0012]
+La pièce d'entraînement d'ouverture 5 est agencée et adaptée pour que, lorsqu'elle est poussée contre l'action d'un ressort de rappel 202 grâce à une commande manuelle 52, elle entraîne le levier 4 qui pivote autour de son axe 101. Cette action a pour effet de désengager les dentures inclinées en opposition de la pièce mobile d'entrave 2 et du levier d'ouverture 4. La pièce mobile d'entrave 2 n'étant plus bloquée par le levier d'ouverture 4, elle est contrainte, par le ressort 200 à un déplacement circulaire autour de l'axe 100 dans le sens d'ouverture de la menotte. La menotte est ainsi prête à être utilisée. La commande manuelle 52 est une partie de la pièce d'entraînement et se situe à l'extérieur du corps de menotte 1 de façon à être facilement manipulable par l'utilisateur.
+
+[0013]
+Lorsque la menotte est ouverte à son maximum, le cran de blocage 6 monté pivotant autour d'un axe 103 fixé au corps de menotte pénètre dans l'encoche 23 de la pièce mobile d'entrave 2 prévue à cet effet. Le cran de blocage 6 est maintenu dans cette position grâce un ressort de rappel 203. Cette interaction a pour effet d'empêcher toute fermeture intempestive de la menotte lorsqu'elle est en position ouverte, surtout quand on essaye de l'intercaler entre le membre et une surface.
+
+[0014]
+Une fois ouverte, la menotte est prête à être mise en place. Pour cela, l'utilisateur qui tient la menotte dans une main, la dirige vers le membre à entraver de façon à ce que le membre passe entre une roulette 12 et l'extrémité de la pièce mobile d'entrave 2. La roulette 12 peut tourner librement autour d'un axe 102 fixé à l'extrémité du second demi-bracelet 11. En roulant sur le membre à entraver pendant la mise en place de la menotte, la roulette 12 évite au second demi-bracelet de s'accrocher à la peau à un vêtement ou autre.
+
+[0015]
+A noter que la structure qui vient d'être décrite, en permettant à la menotte une préhension frontale du membre à entraver, est une caractéristique essentielle de l'invention.
+
+[0016]
+La poussée exercée par l'utilisateur contre le membre à entraver déplace la pédale de débrayage 3 qui vient en appui contre l'ergot 61 du cran de blocage 6. Cet appui fait tourner le cran de blocage 6 autour de son axe 103 dans le sens des aiguilles d'une montre en s'opposant au ressort de rappel 203 et libère la pièce mobile d'entrave 2. Tant que l'utilisateur continue d'exercer sa pression sur le membre à entraver, la pièce mobile d'entrave 2 se met à tourner également en s'opposant au ressort 200 de sorte que le premier demi-bracelet 21 se referme sur le membre à entraver. Toute tentative de réouverture de la menotte est alors empêchée par la denture 22 de la pièce mobile d'entrave 2 en prise avec la denture inversée du levier d'ouverture 4. La poussée de l'utilisateur ferme petit à petit la menotte sur le membre à entraver jusqu'à ce que le premier demi-bracelet soit ajusté correctement autour du membre, serré mais sans le blesser. Le membre entravé vient alors pousser sur le palpeur de présence de membre 7. Sous l'effet de cette poussée, celui-ci tourne autour de l'axe 104 fixé au corps de menotte 1 en s'opposant au ressort de rappel 204 jusqu'à ce que l'ergot 71 de blocage du palpeur de présence de membre soit en prise avec l'ergot de blocage 51 de la pièce d'entraînement d'ouverture 5. Ce système constitue les moyens de verrouillage de la menotte autour du membre entravé.
+
+[0017]
+En position fermée, le premier demi-bracelet se superpose au second demi-bracelet de façon à ce que leurs extrémités se croisent. De préférence, l'extrémité du second demi-bracelet étant composée de 2 pièces séparées, en position fermée, le premier demi-bracelet se loge dans l'espace entre les 2 pièces.
+
+[0018]
+La figure 2 donne une représentation schématique des pièces de la menotte dans sa position fermée autour d'un membre à entraver. Le membre à entraver n'est pas représenté sur la figure. Dans cette position fermée autour d'un membre, la menotte ne peut pas être ouverte grâce à l'action de poussée sur la commande 52 de la pièce d'entraînement 5 comme dans le cas d'ouverture de la menotte à vide. Pour ouvrir la menotte, l'utilisateur doit alors utiliser une clef, l'introduire dans la serrure 9 prévue à cet effet et tourner la clef d'un quart de tour dans le sens des aiguilles d'une montre. En tournant, la clef exerce une pression sur le levier d'ouverture 4 en s'opposant au ressort de rappel 201. Cette action a pour effet de désengager les dentures inclinées en opposition de la pièce mobile d'entrave 2 et du levier d'ouverture 4. La pièce mobile d'entrave 2 n'étant plus bloquée par le levier d'ouverture 4, elle est contrainte par le ressort 200, à un déplacement circulaire autour de l'axe 100 dans le sens d'ouverture de la menotte. Le membre est ainsi libéré.
+
+[0019]
+La menotte selon l'invention peut être réalisée selon un deuxième mode de réalisation qui ne comprend pas de pédale de débrayage 3 ni de ressort de rappel 200. Selon cette variante, une commande de fermeture actionnée par l'index de l'utilisateur comme représenté sur la figure 3 est nécessaire pour empêcher la fermeture intempestive de la menotte. A noter que, selon une variante de ce mode de réalisation, la menotte ne comporte que le levier d'ouverture 4 avec sa denture 41 et son ressort 201, ainsi que la serrure 9.
+
+[0020]
+Selon un autre mode de réalisation, le corps de menotte peut être prolongé à son autre extrémité par une poignée 13 représentée sur la figure 4. Les caractéristiques principales de cette menotte sont identiques à celles de la menotte selon le mode de réalisation préféré décrit ci avant. Sur la figure, la menotte est dans sa position fermée et inutilisée. Les deux demi-bracelets 11 et 21 croisés forme le bracelet de la menotte et on distingue par l'ouverture entre les deux la pédale de débrayage 3 escamotée dans le corps de la menotte et le palpeur de présence de membre 7 qui lui n'est pas dans sa position escamotée étant donné qu'il n'y a pas de membre enserré dans la menotte. La poignée 13 peut être déportée à la façon d'un manche afin d'entraver à distance un membre d'individu ou même une patte d'un animal, par exemple par mesure de sécurité.
+
+[0021]
+Le corps de menotte 1 peut également être prolongé par une autre menotte de façon à pouvoir entraver deux membres d'une personne ou bien pour accrocher la menotte à un objet fixe. Les deux menottes peuvent être couplées ensemble par des moyens de liaison rigides ou articulés tels qu'une liaison pivotante autour d'un axe, une chaînette, etc. La figure 3 représente un exemple de réalisation de menottes reliées ensemble de façon rigide. La seconde menotte couplée à la première peut être identique ou bien peut être une menotte d'un autre type telle qu'une menotte selon l'état de la technique.
+
+[0022]
+La menotte selon l'invention est réalisée en alliage de métaux ou d'aluminium ou bien en matière plastique ou synthétique.
+
+[0023]
+La menotte selon l'invention a l'avantage de pouvoir être utilisée même si le membre à entraver est situé contre une surface ou n'est pas écarté du corps. De plus, sa mise en place n'oblige pas l'utilisateur à se servir de sa seconde main pour fermer le premier demi-bracelet autour du membre à entraver.
+
+Revendications
+
+1. Menotte composée d'un premier demi-bracelet (21) et d'un second demi-bracelet (11) pouvant être refermés en position verrouillée autour d'un objet, notamment un membre d'un individu, et ouverts grâce à un moyen d'ouverture (5) pouvant être déverrouillé au moyen d'une clé, et au moins un corps de menotte (1) comprenant des moyens de verrouillage de la menotte, ledit premier demi-bracelet étant monté pivotant autour d'un axe (100) situé dans le corps de menotte et pouvant être mis en mouvement autour de son axe de façon à permettre la préhension du membre à entraver, lesdits moyens de verrouillage comprenant un moyen de verrouillage de la menotte en position de fermeture comportant un moyen de détection de présence de membre (7) monté pivotant autour d'un axe (104) qui, sous la poussée du membre entravé, bloque ledit moyen d'ouverture (5) et empêche la menotte de s'ouvrir ; ladite menotte étant caractérisée en ce qu'elle comprend des moyens de commande (3, 6, 200, 24) permettant de mettre ledit premier demi-bracelet en mouvement autour de son axe de façon à permettre une préhension frontale du membre à entraver, lesdits moyens de verrouillage comprenant, en outre, un moyen de verrouillage de la menotte en position d'ouverture comportant un cran de blocage (6) monté pivotant autour d'un axe (103) fixé au corps de menotte et ledit premier demi-bracelet comporte une encoche (23) dans laquelle pénètre ledit cran de blocage en s'opposant à un ressort de rappel (203), ce qui permet de verrouiller ledit premier demi-bracelet et de maintenir la menotte en position ouverte empêchant ainsi sa fermeture intempestive et permettant une préhension frontale du membre à entraver.
+2. Menotte selon la revendication 1, comportant un moyen de déverrouillage constitué d'une pédale de débrayage (3) pivotant autour du même axe (100) que ledit premier demi-bracelet, celui-ci comportant une encoche (23) dans laquelle a pénétré un ergot (61) dudit cran de blocage (6) sous l'action dudit ressort de rappel (203) de façon à maintenir la menotte verrouillée en position d'ouverture, de telle sorte qu'une poussée exercée contre le membre à entraver déplace ladite pédale de débrayage et fait tourner ledit cran de blocage autour de son axe de manière à désengager ledit ergot de ladite encoche et libérer la pièce mobile d'entrave.
+3. Menotte selon la revendication 2, dans laquelle ledit premier demi-bracelet (21) comporte un levier d'ouverture (4) pivotant autour d'un axe (101) et muni d'une denture (41), ledit levier d'ouverture étant bloqué par ledit moyen d'ouverture (5) lorsque la menotte est verrouillée en position de fermeture, ledit premier demi-bracelet comportant une denture (22) destinée à coopérer avec la denture dudit levier d'ouverture, les deux dentures étant maintenues l'une contre l'autre grâce à un ressort de rappel (201).
+4. Menotte selon la revendication 3, dans laquelle ledit levier d'ouverture (4) peut libérer la denture (41) dudit premier demi-bracelet (21) en pivotant autour d'un axe (101) à l'encontre de l'action d'un ressort (201), au moyen d'une clé qui, en tournant dans une serrure (9), fait pivoter ledit levier d'ouverture autour de son axe.
+5. Menotte selon l'une des revendications précédentes, comprenant une roulette (12) à l'extrémité dudit second demi-bracelet (11) destinée à rouler sur le membre à entraver pendant la mise en place de la menotte sur celui-ci de manière à éviter ainsi audit second demi-bracelet de s'accrocher à des vêtements ou la peau.
+6. Menotte selon l'une des revendications 1 à 5, couplée à une autre menotte par des moyens de liaison rigides ou articulés.
+7. Menotte selon l'une des revendications 1 à 5, couplée à son autre extrémité par une poignée (13).
+8. Menotte selon l'une des revendications 1 à 7, comportant en outre une commande manuelle de verrouillage (24) de la menotte en position de fermeture en forme de gâchette destinée à être maintenue par un doigt de l'utilisateur et à empêcher manuellement toute fermeture intempestive.
+
+Ansprüche
+
+1. Handschelle bestehend aus einem ersten Halbreif (21) und aus einem zweiten Halbreif (11), die in verriegelter Stellung um einen Gegenstand, vor allem um eine Gliedmaße einer Person, geschlossen, und dank einer Öffnungsvorrichtung (5), die mittels eines Schlüssels entriegelt werden kann, geöffnet werden können, und aus zumindest einem Handschellengehäuse (1), das Verriegelungsvorrichtungen der Handschelle umfasst, wobei der besagte erste Halbreif um eine Achse (100) drehend montiert wird, die sich im Handschellengehäuse befindet, und er um seine Achse bewegt werden kann, sodass die Gliedmaße, die es zu fesseln gilt, gegriffen werden kann, und die besagten Verriegelungsvorrichtungen eine Verriegelungsvorrichtung der Handschelle in der Schließstellung mit einer Vorrichtung zum Erfassen einer vorhandenen Gliedmaße (7) umfassen, die um eine Achse (104) drehend montiert ist, und die die besagte Öffnungsvorrichtung (5) unter der Schubwirkung der gefesselten Gliedmaße blockiert, und verhindert, dass sich die Handschelle öffnet;
+wobei die besagte Handschelle dadurch gekennzeichnet ist, dass sie Steuervorrichtungen (3, 6, 200, 24) umfasst, mit denen der besagte erste Halbreif so um seine Achse bewegt werden kann, dass ein frontales Greifen der zu fesselnden Gliedmaße ermöglicht wird, und die besagten Verriegelungsvorrichtungen darüber hinaus eine Verriegelungsvorrichtung der Handschelle in der Öffnungsstellung mit einer Blockierraste (6) umfassen, die um eine Achse (103) drehend montiert ist, die am Handschellengehäuse befestigt ist, und der besagte erste Halbreif eine Einkerbung (23) umfasst, in die die besagte Blockierraste eingreift und sich gegen eine Rückholfeder (203) stemmt, wodurch der besagte erste Halbreif verriegelt werden kann, und die Handschelle in der offenen Stellung gehalten werden kann, um so ein ungewolltes Schließen selbiger zu verhindern, und ein frontales Greifen der zu fesselnden Gliedmaße zu ermöglichen.
+2. Handschelle nach Anspruch 1, umfassend eine Entriegelungsvorrichtung bestehend aus einem Spannungslösepedal (3), das sich um dieselbe Achse (100) dreht, wie der besagte erste Halbreif, und dieser eine Einkerbung (23) umfasst, in die ein Zapfen (61) der besagten Blockierraste (6) unter der Einwirkung der besagten Rückholfeder (203) eingegriffen hat, sodass die verriegelte Handschelle in der Öffnungsstellung gehalten wird, sodass ein Schub, der gegen die zu fesselnde Gliedmaße ausgeübt wird, das besagte Spannungslösepedal verschiebt, und die besagte Blockierraste um ihre eigene Achse verdreht, sodass der besagte Zapfen aus der besagten Einkerbung austritt und das bewegliche Fesselteil freigibt.
+3. Handschelle nach Anspruch 2, bei der der besagte erste Halbreif (21) einen Öffnungshebel (4) umfasst, der sich um eine Achse (101) dreht, und mit einer Verzahnung (41) ausgestattet ist, und der besagte Öffnungshebel durch die besagte Öffnungsvorrichtung (5) blockiert wird, wenn die Handschelle in der Schließstellung verriegelt wird, und der besagte erste Halbreif eine Verzahnung (22) umfasst, die dazu bestimmt ist, mit der Verzahnung des besagten Öfifnungshebels zusammenzuwirken, und die beiden Verzahnungen dank einer Rückholfeder (201) aufeinander gehalten werden.
+4. Handschelle nach Anspruch 3, bei der der besagte Öffnungshebel (4) die Verzahnung (41) des besagten ersten Halbreifs (21) durch die Drehung um eine Achse (101) gegen die Wirkung einer Feder (201) und mittels eines Schlüssels freigeben kann, der den besagten Öffnungshebel, wenn er in einem Schloss (9) verdreht wird, um seine Achse verdreht.
+5. Handschelle nach einem der vorherigen Ansprüche, die am Ende des besagten zweiten Halbreifs (11) ein Rädchen (12) umfasst, das dazu bestimmt ist, beim Anbringen der Handschelle auf der zu fesselnden Gliedmaße auf selbiger zu rollen, sodass verhindert wird, dass sich der besagte zweite Halbreif an Kleidungsstücken oder in der Haut verhakt.
+6. Handschelle nach einem der Ansprüche 1 bis 5, die über steife oder gelenkige Vorrichtungen mit einer anderen Handschelle verbunden ist.
+7. Handschelle nach einem der Ansprüche 1 bis 5, die durch einen Griff (3) mit ihrem anderen Ende verbunden ist.
+8. Handschelle nach einem der Ansprüche 1 bis 7, die darüber hinaus eine manuelle Steuerung zum Verriegeln (24) der Handschelle in der Schließstellung in Form eines Auslösers umfasst, der dazu bestimmt ist, durch einen Finger des Benutzers gehalten zu werden, und um ein ungewolltes Schließen manuell zu verhindern.
+
+Claims
+
+1. Handcuff consisting of a first half-cuff (21) and a second half-cuff (11) that can be closed in the locked position around an object, in particular a person's limb, and opened thanks to a means of opening (5) that can be unlocked by means of a key, and at least one handcuff body (1) comprising means of locking the handcuff, said first half-cuff being mounted such that it can pivot about an axis (100) located in the handcuff body and able to be set in movement about its axis so as to allow grasping the limb to be restrained, said means of locking comprising a means of locking the handcuff in the closed position comprising a means of detecting the presence of a limb (7) mounted such that it can pivot about an axis (104), which under the pressure of the restrained limb, blocks said means of opening (5) and prevents the handcuff from opening;
+said handcuff being characterized in that it comprises control means (3, 6, 200, 24) making it possible to set said first half-cuff in motion about its axis to allow a frontal grasp of the limb to be restrained, said means of locking comprising in addition a means of locking the handcuff in the open position comprising a blocking notch (6) mounted such that it can pivot about an axis (103) fastened to the handcuff body and said first half-cuff comprises a slot (23) wherein said blocking notch enters against the force of a return spring (203), which makes it possible to lock said first half-cuff and to keep the handcuff in the open position thus preventing its unintentional closure and allowing a frontal grasp of the limb to be restrained.
+2. Handcuff according to claim 1, comprising a means of unlocking consisting of a clutch pedal (3) pivoting about the same axis (100) as said first half-cuff, the latter comprising a notch (23) wherein a plot (61) of said blocking notch (6) has entered under the effect of said return spring (203) so as to keep the locked handcuff in the open position, such that exerting pressure against the limb to be restrained moves said clutch pedal and causes said locking notch to turn about its axis so as to disengage said plot from said notch and free the movable restraining part.
+3. Handcuff according to claim 2, wherein said first half-cuff (21) comprises an opening lever (4) pivoting about an axis (101) and fitted with a set of teeth (41), said opening lever being blocked by said means of opening (5) when the handcuff is locked in the closed position, said first half-cuff comprising a set of teeth (22) designed to cooperate with said opening lever's set of teeth, the two sets of teeth being maintained against each other thanks to a return spring (201).
+4. Handcuff according to claim 3, wherein said opening lever (4) can free the set of teeth (41) of said first half-cuff (21) by pivoting about an axis (101) against the action of a spring (201), by means of a key, which, by turning in a lock (9), causes said opening lever to pivot about its axis.
+5. Handcuff according to one of the preceding claims, comprising a caster wheel (12) at the extremity of said second half-cuff (11) designed to roll over the limb to be restrained while the handcuff is being fitted thereon so as to thus prevent said second half-cuff from catching on clothing or skin.
+6. Handcuff according to one of claims 1 to 5, coupled to another handcuff by rigid or articulated linking means.
+7. Handcuff according to one of claims 1 to 5, coupled at its other extremity by a handle (13).
+8. Handcuff according to one of claims 1 to 7, comprising in addition a manual locking control (24) of the handcuff in the closed position in the shape of a trigger designed to be maintained by a user's finger and to manually prevent any unintentional closing.
+
+Dessins
+
+[IMAGE]
+
+[IMAGE]
+
+[IMAGE]
+
+[IMAGE]
+
+RÉFÉRENCES CITÉES DANS LA DESCRIPTION
+
+Cette liste de références citées par le demandeur vise uniquement à aider le lecteur et ne fait pas partie du document de brevet européen. Même si le plus grand soin a été accordé à sa conception, des erreurs ou des omissions ne peuvent être exclues et l'OEB décline toute responsabilité à cet égard.
+
+Documents brevets cités dans la description
+
+* US2516878A [0004]
+* GB2439088A [0005]
+* FR829746 [0005]

@@ -1,0 +1,253 @@
+Surveillance Device
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+0
+940
+791
+B1
+
+(12) EUROPÄISCHE PATENTSCHRIFT
+
+(45) Mention of the grant of the patent:
+28.05.2003
+Bulletin
+2003/22
+
+(21) Application number: 98123416.4
+
+(22) Date of filing:
+09.12.1998
+
+(51) Int. Cl.7: G08B 27/0, G08B 15/0, G08B 25/14, G08B 25/1
+
+(54)
+Surveillance device
+
+Überwachungseinrichtung
+
+Dispositif de surveillance
+
+(84) Designated Contracting States:
+AT
+BE
+CH
+DE
+DK
+ES
+FR
+GB
+IT
+LI
+NL
+SE
+
+(30) Priority:  05.03.1998 DE 29803844 U
+05.03.1998 DE 29803843 U
+
+(43) Date of publication of application:
+08.09.1999
+Bulletin
+1999/36
+
+(73) Proprietor: Gebrüder Merten GmbH & Co. KG
+D-51674 Wiehl (DE)
+
+(72) Inventor:
+
+* Kind, Guntram Dipl.-Ing.
+51647 Gummersbach (DE)
+
+(74) Representative: Selting, Günther, Dipl.-Ing.
+et al
+Patentanwälte von Kreisler, Selting, Werner Postfach 10 22 41
+50462 Köln
+50462 Köln (DE)
+
+(56) References cited:
+:
+DE-A- 19 546 831
+DE-U- 9 406 175
+US-A- 4 652 859
+DE-A- 19 633 863
+US-A- 3 808 591
+US-A- 4 731 810
+
+Note: Within nine months from the publication of the mention of the grant of the European patent, any person may give notice to the European Patent Office of opposition to the European patent granted. Notice of opposition shall be filed in a written reasoned statement. It shall not be deemed to have been filed until the opposition fee has been paid. (Art. 99(1) European Patent Convention).
+
+Description
+
+[0001]
+Die Erfindung bezieht sich auf eine Überwachungseinrichtung zum überwachen von Räumen und/oder Objekten und zum Auslösen einer Störmeldung im Falle eines Einbruchs oder einer sonstigen Unregelmäßigkeit.
+
+[0002]
+Durch das DE-GM 88 08 212 ist eine Schaltungsanordnung für einen Störungsmelder bekannt. Bei dieser Anordnung dient die Meldelinie des Störungsmelders zugleich als Netzspannungsleitung für einen Störmeldekontakt. Der Störmeldekontakt ist in die Netzspannungszuleitung eingeschleift.
+
+[0003]
+Für den bekannten Störungsmelder ist ein Sprachausgabegerät vorgesehen, mit dem in einem digitalen Sprachspeicher zuvor abgelegte Sprache im Störfall abrufbar ist. Somit kann über den üblichen akustischen und optischen Meldern hinaus bei einer Störung ein höherer Informationsinhalt der Störung mitgeteilt werden. Ferner kann in Kombination mit einem Passiv-Infrarot-Bewegungsmelder eine Einbruchssicherung realisiert werden, mit der zur Abschreckung Hundegebell ausgegeben wird. Im übrigen kann der Sprachspeicher mit jedem beliebigen akustischen Zeichen geladen werden. Die Sprachausgabe erfolgt über einen Lautsprecher.
+
+[0004]
+Die Aufgabe der Erfindung besteht darin, eine Überwachungseinrichtung der eingangs beschriebenen Art zu schaffen, mit der Meldungen in mehreren Sicherheitsbereichen ausgetauscht werden können.
+
+[0005]
+Die Aufgabe der Erfindung wird durch die im Patentanspruch 1 aufgeführten Maßnahmen gelöst. Weiterbildungen der Erfindung sind in den Unteransprüchen beschrieben.
+
+[0006]
+Die Erfindung geht von der Überlegung aus, daß innerhalb eines Wohn- oder Gebäudekomplexes mit separaten Überwachungseinrichtungen im Rahmen einer "Nachbarschaftshilfe" sicherheitsrelevante Informationen untereinander ausgetauscht werden können, um beispielsweise bei Abwesenheit der Bewohner eines Gebäudes dem Nachbarn eine akustische Meldung zukommen zu lassen, wenn Einbrecher im Haus sind oder die Heizungsanlage ausgefallen ist, bzw. ein Wassereinbruch erfolgt. Dieser Austausch von Informationen soll auf Gegenseitigkeit beruhen, so daß im Eventualfall viele Menschen mit der Unterstützung der Nachbarn rechnen können.
+
+[0007]
+In zwei benachbarten Sicherheitsbereichen, bei denen es sich um Wohnungen, Gebäude oder Grundstücke handeln kann, ist jeweils eine Einrichtung zum Überwachen und Auslösen einer Störmeldung vorhanden. Diese Einrichtung hat Sensoren zum Erfassen eines Überwachungsbereiches und zum Aufnehmen eines im Überwachungsbereich stattfindenden Ereignisses, etwa das unbefugte Eindringen einer Person in den Überwachungsbereich.
+
+[0008]
+Zur Übertragung von Sensorinformationen ist in jedem Sicherheitsbereich ein Datenbus, beispielsweise ein EIB-Bus (Europäischer Installations Bus) vorgesehen, an dem eine Sprachquelle angeschlossen ist, der im eigenen Sicherheitsbereich eine aufgezeichnete akustische Meldung über einen Lautsprecher abgeben kann. Unter Sprachspeicher im Sinne der Erfindung ist ein Speicher zu verstehen, der nicht nur Sprache, sondern jedwede Art von akustischen Signalen speichern und ausgeben kann.
+
+[0009]
+Ein Vorteil der Erfindung besteht darin, daß vor einer gefährlichen Situation, etwa einem Einbruch, nicht nur im eigenen Sicherheitsbereich gewarnt werden kann, z.B. durch Ausgeben einer Warnung an den Einbrecher, die wie folgt lauten kann: "Sie sind ein Einbrecher, verlassen Sie das Haus," sondern auch gleichzeitig der Nachbar alarmiert werden kann mit einer Meldung, die wie folgt lauten kann: "Bei Meiers wird eingebrochen." Der so alarmierte Nachbar kann schnell zu Hilfe kommen oder die Polizei rufen.
+
+[0010]
+Besonders vorteilhaft ist die Erfindung dann, wenn die Bewohner nicht zu Hause sind. Die Wohnung oder das Haus ist dann dennoch gesichert. Diese vorteilhafte Einrichtung funktioniert in beide Richtungen; eine Störmeldung kann aus einem Sicherheitsbereich in einen zweiten abgegeben werden und umgekehrt kann eine Störmeldung aus dem zweiten Sicherheitsbereich in den ersten abgegeben werden. Selbstverständlich können nicht nur zwei Sicherheitsbereiche miteinander vernetzt werden, sondern mehrere, so daß die Sicherheit "in den eigenen vier Wänden" auf einfache Weise verbessert wird.
+
+[0011]
+Die Vernetzung von mehreren Sicherheitsbereichen kann mit einen Datenbus, beispielsweise EIB-Bus oder einem anderen Feldbus wie BATIBUS erfolgen. Sofern in einzelnen Sicherheitsbereichen bereits Datenbusse der gleichen Art existieren, kann die Vernetzung durch eine Verbindung oder über eine Schnittstelle oder mehrere Schnittstellen erfolgen.
+
+[0012]
+Die Verbindung "von Nachbar zu Nachbar" kann über eine Leitung, beispielsweise Busleitung erfolgen, die ggf. über eine Schnittstelle "angepaßt" ist, mit der eine Vernetzung aller Sicherheitsbereiche erfolgt und mit der Datentelegramme ausgetauscht werden. Die Verbindung kann auch per Funk oder Infrarot hergestellt werden. Sind verschiedene Bussysteme wie EIB-Bus, INTERBUS S, PROFIBUS, LONBUS oder BATIBUS miteinander zu vernetzen, kann dies mit Hilfe von Gateways erfolgen.
+
+[0013]
+Bei der Übertragung von Meldungen zum Nachbarn kann unterschieden werden zwischen "wichtigen und "weniger wichtigen" Meldungen, so daß nur "wichtige" Meldungen zum Nachbarn gelangen wie nachfolgend noch näher erläutert wird.
+
+[0014]
+Die Sprachquellen sind an den Datenbus anschließbar und besitzen einen Ausgang, beispielsweise Nf-Ausgang zum Anschluß an eine Sprachübertragungsleitung. Die akustischen Meldungen sind über den Datenbus abrufbar und werden mit an die Sprachübertragungsleitung anschließbaren Lautsprechern ausgegeben.
+
+[0015]
+Ein in dem zu sichernden Bereich stattfindendes Ereignis, beispielsweise das unbefugte Eindringen einer Person in den Sicherheitsbereich, kann direkt zu einer Störmeldung in der Nachbarwohnung oder dem Nachbargebäude führen.
+
+[0016]
+Die Betriebsweise der Sprachquellen kann so gewählt werden, daß bei einer scharf geschalteten Überwachungseinrichtung alle Sprachquellen aktiviert sind. Ein stattfindendes Ereignis in dem zu sichernden Bereich kann also durch Ausgeben einer Meldung gleichzeitig im Sicherheitsbereich und außerhalb angezeigt werden. Dabei kann ein durch einen Sensor erfaßtes Ereignis in dem zu sichernden Bereich mit der dort installierten Sprachquelle eine andere Meldung ausgegeben werden als mit der im Nachbarschaftsbereich installierten Sprachquelle wie bereits erwähnt.
+
+[0017]
+Es ist auch ein Betriebsmodus wählbar, mit dem nur die eigene Sprachquelle aktiviert ist, also die Nachbarn dann nicht mit in die Überwachung einbezogen zu werden brauchen. Es kann auch ein Betriebsmodus gewählt werden, mit dem die im eigenen Sicherheitsbereich befindliche Sprachquelle deaktiviert und die Nachbarschafts-Sprachquelle aktiviert ist, dies für den Fall, daß eine "stille" Überwachung durchgeführt werden soll, beispielsweise, wenn eine Überwachung technischer Einrichtungen erfolgt. Mit der Nachbarschafts-Sprachquelle kann eine Meldung ausgegeben werden, die wie folgt lauten kann: "Feuer beiMeiers" oder "Wassereinbruch bei Kaisers".
+
+[0018]
+Die Überwachungseinrichtung kann also den schlafenden Bewohner vor einem Einbrecher warnen und kann auch die Nachbarn wecken oder den Sicherheitsdienst informieren. Die Eltern oder Nachbarn können alarmiert werden, wenn Rauchentwicklung auftritt: oder Feuer ausbricht. Es wird gemeldet, wenn die Heizung auf "Störung" geht. Es kann akustisch mitgeteilt werden: "Die Kühltruhe taut auf" oder "Es muß Heizöl nachgetankt werden".
+
+[0019]
+Die Überwachungseinrichtung besteht aus Funktionseinheiten (Modulen) und kann komplett in einem Gehäuse oder Schaltschrank eingebaut werden oder es können einzelne Module separat an beliebigen Stellen je nach Bedarf und Wunsch plaziert werden.
+
+[0020]
+Durch eine busfähige Ausbildung der Funktionseinheiten (Module) können auf einfache Weise mehrere Überwachungseinrichtungen miteinander kommunizieren und Alarm- und Störmeldungen weitergeben. Dort, wo eine Verlegung einer Busleitung nicht möglich oder nicht sinnvoll ist, kann selbstverständlich die Verbindung auch per Funk oder Infrarot erfolgen.
+
+[0021]
+Die einzelnen Funktionseinheiten (Sensoren, Aktoren) sind vorprogrammiert. Die Einstiegsversion jeder Überwachungseinrichtung kann zunächst aus einer Spannungsversorgung, einem Schaltaktor und einem Bewegungsmelder sowie einer Sprachquelle bestehen. Durch Hinzufügen weiterer Funktionseinheiten, wie einer weiteren Sprachquelle, weitere Bewegungsmelder, Fenster- und Türmelder, Rauchmelder, Niveauschalter, Stillstandsmelder, kann die Überwachungseinrichtung jederzeit ohne Programmieraufwand erweitert werden. Die Überwachungseinrichtung kann durch den Einbau einer Steuereinheit und einer Scharfschaltvorrichtung zu einer kompletten Alarmanlage ausgebaut werden.
+
+[0022]
+Die Funktionseinheiten sind vorteilhaft zertifizierte Geräte aus der Hausleittechnik oder der industriellen Bustechnik so daß die Überwachungseinrichtung sich auch in Anlagen der Hausleittechnik und/oder der industriellen Steuerungstechnik integrieren lassen.
+
+[0023]
+Ein derartiges System für die Hausleittechnik umfaßt korrespondierende Geräte zum Schalten, Steuern, Regeln, Messen und Überwachen. Diese Funktionseinheiten sind mit dem Informationsverbundnetz (Datenbus) miteinander verbunden und besitzen an den Endstellen jeweils einen Busankoppler zum Anschluß eines Sensors oder Aktors. Mit den Busankopplern ist ein Signaltelegrammverkehr über den Datenbus führbar, und Sensortelegramme sind zum Auslösen einer Störmeldung der Sprachquelle auswertbar. Dadurch entsteht ein dezentrales System, mit dem Signaltelegramme in beiden Richtungen ausgetauscht, empfangene Befehle ausgewertet und verarbeitet werden können. Durch Wahl von Gruppenadressen der Busankoppler kann die Überwachungseinrichtung des "Nachbarn" mit der eigenen verknüpft werden.
+
+[0024]
+Eine Sprachausgabeeinrichtung umfaßt eine Sprachquelle und mindestens einen Lautsprecher. Die Sprachquelle ist vorteilhaft als Reiheneinbaugerät mit einem Gehäuse ausgebildet und auf eine Profilschiene aufschnappbar. Die Sprachquelle besitzt einen Busankoppler und kann mit den an den Datenbus angeschlossenen Sensoren kommunizieren, so daß die in der Sprachquelle zuvor aufgezeichneten Meldungen abgerufen werden können. Lautsprecher können dezentral in Unterputzdosen installiert werden.
+
+[0025] Übliche Bussysteme der Hausleittechnik besitzen eine vieradrige Leitung, von denen zwei Adern zur Telegrammübertragung dienen. Das zweite Adernpaar wird für den Bus nicht benötigt. Die Verdrahtung zu den Lautsprechern kann über das zweite Adernpaar der Leitung erfolgen. Die Nutzung des freien Adernpaares für die Sprachübertragung kann somit auf einfache Weise durch den Anschluß der Sprachquelle an das Adernpaar der Busleitung und den Anschluß an das freie Adernpaar erfolgen. Selbstverständlich kann für die Sprachübertragung auch eine separate Leitung verwendet werden.
+
+[0026]
+Der Betrieb der Überwachungseinrichtung kann, wie bereits beschrieben, dezentral erfolgen, wobei durch eine Adressierung der Busankoppler ein Datenverkehr direkt zwischen den einzelnen Funktionseinheiten erfolgt. Vorteilhaft kann eine Steuereinheit verwendet werden, über die der gesamte Datenverkehr läuft. Diese Anzeigeeinheit besitzt optische Mittel mit denen auf einem Blick der Zustand der Sensorkanäle erfaßt werden kann. Eine grüne Anzeige kann bedeuten, daß ein Melder nicht angesprochen hat, bzw. ein Fenster geschlossen ist. Eine rote Anzeige kann bedeuten, daß der Melder angesprochen hat, das Fenster offen ist. Eine blinkende Anzeige kann bedeuten, daß die Leitung zu einem Melder unterbrochen ist.
+
+[0027]
+Bei einer indirekten Informationsübertragung kann durch eine Programmierung der Steuereinheit, beispielsweise über Befehlstasten, festgelegt werden, welcher Sensor mit der Einrichtung im Nachbarbereich kommuniziert und wann eine Meldung zum Nachbarbereich weitergeleitet wird.
+
+[0028]
+Die Überwachungseinrichtung kann eine Scharfschaltvorrichtung umfassen, bei der es sich im einfachsten Fall um einen Schlüsselschalter handeln, mit dem die Einrichtung aktivierbar und deaktivierbar ist. Durch den Einbau eines Busankopplers kann der Schlüsselschalter an den Datenbus angeschlossen werden.
+
+[0029]
+Eine alternative Möglichkeit der Realisierung der Erfindung ist im Anspruch 8 angegebenen. Hierbei führt die Busleitung in einen außerhalb des Überwachungsbereichs liegenden entfernten Bereich, wo sie mit einer weiteren Sprachquelle verbunden ist, welche Signale für eine eigene Tonsignalleitung des entfernten Bereichs erzeugt. Der entfernte Überwachungsbereich ist dabei nicht notwendigerweise mit einer eigenen Sensorik versehen. Es handelt sich vielmehr gewissermaßen um einen Außenposten, der nicht selbständig gesichert uit und zu dem die Busleitung des Überwachungsbereichs verlängert ist, damit eine Störung vom Außenposten registriert werden kann.
+
+[0030]
+Nachfolgend ist an Hand der Zeichnungen ein Ausführungsbeispiel der Erfindung näher beschrieben.
+
+[0031]
+Es zeigen:Fig. 1eine schematische Darstellung von zwei vernetzten Überwachungseinrichtungen,Fig. 2ein schematisches Schaltbild einer Sprachquelle.
+
+[0032]
+Die Figur 1 der Zeichnung zeigt eine schematische Darstellung von zwei vernetzten Überwachungseinrichtungen für Sicherheitsbereiche 1 und 1a. Die Sicherheitsbereiche 1, 1a sind hier durch gestrichelt dargestellte Quadrate dargestellt. Diese Quadrate können beispielsweise Grundstücke mit darauf befindlichen Gebäuden umfassen. Jede Überwachungseinrichtung ist von gleicher Art, sie können jedoch in der Ausführung verschieden sein.
+
+[0033]
+Grundstück und Gebäude sind mit Sensoren bestückt, die jeweils einen bestimmten Überwachungsbereich B, B1 von den Sicherheitsbereichen 1, 1a erfassen. Beispielsweise sind hier als Sensoren Bewegungsmelder 2, 2a dargestellt. Von diesem Bewegungsmeldern, bei denen es sich um Passiv-Infrarot-Bewegungsmelder handeln kann, können mehrere Einheiten zur Absicherung eines Gebäudes im Innen- und Außenbereich angebracht werden, so daß damit Bewegungen von Lebewesen erfaßt werden, die in den Überwachungsbereich eindringen. Ferner sind hier noch beispielhaft Fenstersensoren 3, 3a dargestellt, die melden, ob ein Fenster offen oder geschlossen ist. Ebenso können an den Türen Türsensoren angebracht sein. Selbstverständlich können an allen Fenstern und Türen des Gebäudes Fenster- und Türsensoren angebracht werden. Schließlich sind hier noch beispielhaft Sensoreinrichtungen 4, 4a für technische Alarmmeldungen vorgesehen, mit denen erfaßt wird, ob eine Heizung ein oder ausgeschaltet ist, oder wieviel Heizöl noch in der Tankanlage 5, 5a vorhanden ist.
+
+[0034]
+Es ist in jedem Sicherheitsbereich 1, 1a mindestens ein Aktor mit Schaltfunktion vorgesehen, mit dem das von den Sensoren 2, 3, 4; 2a, 3a, 4a aufgenommene Ereignis angezeigt wird. Diese Aktoren können Steuereinheiten 6, 6a sein, mit denen über eine Scharfschaltvorrichtung 18, 18a die Überwachungseinrichtungen ein- und ausgeschaltet werden. Mit den Steuereinheiten 6, 6a wird eine Störmeldung ausgelöst, was durch Betätigen einer Hupe, einer Blinkleuchte oder durch Aktivieren einer Sprachquelle 9, 9a erfolgt, mit denen wenigstens ein Lautsprecher 7, 7a im Gebäude eingeschaltet und eine in der Sprachquelle 9, 9a aufgezeichnete Meldung ausgegeben wird. In den Sprachquellen 9, 9a sind mehrere Meldungen abgespeichert.
+
+[0035]
+Die Meldungen sind in einem digitalen Speicherbaustein 19, 19a der Sprachquelle 9, 9a aufgezeichnet und auf das durch die Sensoren 2, 3, 4; 2a, 3a, 4a aufgenommene Ereignis oder deren Betriebszustand abgestimmt.
+
+[0036]
+Die Sprachquelle 9, 9a kann in der Steuereinheit 6, 6a enthalten sein oder als separater Aktor wie Reiheneinbaugerät ausgeführt sein, das auf einer Hutschiene 10, 10a aufgeschnappt werden kann. Die Sprachquelle 9, 9a ist in der Lage mehrere Meldungen zu verwalten wie bereits erwähnt. Für jede Meldung ist eine Eingabetaste 11, 11a und eine Leuchtanzeige 12, 12a vorgesehen. Zum Aufzeichnen einer Meldung wird die entsprechende Taste 11, 11a gedrückt und die Meldung mit einem in dem Gerät eingebauten Mikrofon 13, 13a aufgegeben. Durch Loslassen der Taste wird die Aufnahme beendet. Mit den Leuchtanzeigen kann eine Meldung optisch angezeigt werden.
+
+[0037]
+Für die Übertragung von Informationen ist in jedem Sicherheitsbereich 1, 1a eine vieradrige Informationsleitung 14, 14a vorgesehen. Von der Informationsleitung 14, 14a gehört ein Aderpaar 15, 16; 15a, 16a zu einem Datenbus (Busleitung) über den Sensor- und Aktorinformationen in Form von Telegrammen übertragen werden. Hierfür sind die Geräte der Überwachungseinrichtung als modulare Funktionseinheiten für die Hausleittechnik ausgeführt und enthalten je einen an den Datenbus (Busleitung 15, 16; 15a, 16a) anschließbaren Busankoppler 17, 17a mit einem Mikroprozessor. Mit den Busankopplern 17, 17a kann zwischen den Funktionseinheiten untereinander ein Telegrammverkehr in beide Richtungen geführt werden, d.h. es handelt sich hier um ein dezentrales System, das ohne eine Zentrale auskommt. Somit kann die Ansteuerung der Sprachquelle 9, 9a direkt durch die Sensoren 2, 3, 4,; 2a, 3a, 4a erfolgen oder indirekt über die Steuereinheit 6, 6a, wenn die Sprachquelle 9, 9a als separate Funktionseinheit, beispielsweise als Reiheneinbaugerät, ausgeführt ist. Mit der Steuereinheit 6, 6a werden Informationen über den Betriebszustand der Sprachquelle 9, 9a optisch wiedergegeben. Eine grün leuchtende Anzeige kann bedeuten, daß die Sprachquelle 9, 9a nicht aktiviert ist. Eine rot leuchtende Anzeige kann bedeuten, daß der Sprachspeicher 9, 9a aktiviert ist. Dadurch kann auch bei einem weit weg von der Steuereinheit 6, 6a installierten Lautsprecher festgestellt werden, ob eine Meldung ausgegeben wird oder wurde. Selbstverständlich können wie bereits eingangs erwähnt, alle Betriebszustände der Sensoren und Aktoren mit der Steuereinheit optisch angezeigt werden. Ferner läßt sich die Steuereinheit 6, 6a über die Busleitung 15, 16; 15a, 16a von der Scharfschaltvorrichtung 18, 18a aktivieren oder deaktivieren. Bei der Scharfschaltvorrichtung 18, 18a handelt es sich im einfachsten Fall um einen Schlüsselschalter mit Leuchtanzeige.
+
+[0038]
+Der digitale Speicherbaustein 19, 19a der Sprachquelle 9, 9a enthält dynamisch nutzbare Speicherplätze, so daß für kurze Meldungen der eingesparte Speicherplatz für längere Meldungen zur Verfügung steht.
+
+[0039]
+Die Sprachquelle 9, 9a enthält einem Digital-Analogwandler 20, 20a der mit einem Nf-Verstärker 21, 21a verbunden ist. Der Ausgang des Nf-Verstärkers ist an das zweite Aderpaar der Informationsleitung angeschlossen, das als Sprachübertragungsleitung 22, 23; 22a, 23a benutzt wird. Beide Aderpaare sind in einer gemeinsamen Leitung enthalten.
+
+[0040]
+An der Sprachübertragungsleitung 22, 23; 22a, 23a ist die Sprachquelle 9, 9a und wenigstens ein Lautsprecher 7, 7a zur Abgabe einer akustischen Meldung anschließbar. Mit der Sprachquelle 9, 9a werden die aufgezeichneten Meldungen in Abhängigkeit von den empfangenen Sensorinformationen in Form von Nf-Signalen mit der Sprachübertragungsleitung 22, 23; 22a, 23a übertragen und über den angeschlossenen Lautsprecher 7, 7a ausgegeben. Es können mehrere parallel geschaltete Lautsprecher 7, 7a dezentral in den Gebäuden aber auch in Nachbarwohnungen verteilt und in Unterputzdosen eingebaut werden, so daß bei einer entsprechenden Lautsprecherausgangsleistung und angepaßter Impedanz beispielsweise je ein Lautsprecher mit 2 Watt oder je 20 Lautsprecher mit je 100 mWatt Leistung anschließbar sind. Bei dieser Variante wird eine Meldung über alle Lautsprecher 7, 7a ausgegeben.
+
+[0041]
+Eine andere Variante sieht vor, daß jeder Lautsprecher 7, 7a einen an die Busleitung 15, 16; 15a, 16a anschließbaren Busankoppler 17, 17a aufweist. Dadurch kann eine Meldung gezielt an einen entsprechend adressierten Lautsprecher 7, 7a ausgegeben werden.
+
+[0042]
+Wie Figur 1 zeigt, sind die Sicherheitsbereiche 1, 1a über die Verbindungsleitung 15b, 16b mit den Datenbusleitungen 15, 16; 15a, 16a vernetzt. Jede Sprachquelle 9, 9a kann aus dem benachbarten Sicherheitsbereich 1, 1a Meldungen empfangen und mit dem Lautsprecher 7, 7a ausgeben.
+
+[0043]
+Eine Sprachquelle 9, 9a kann beispielsweise folgende Meldungen enthalten, die sich auf Gefahrensituationen im eigenen Sicherheitsbereich beziehen:"Sie sind ein Einbrecher, verlassen Sie das Haus""Tödliches Gas in der Garage""Rauch im Kinderzimmer""Die Heizung ist aus""Die Kellertür ist offen""Nur noch 10001 Heizöl im Tank""In der EDV-Abteilung ist ein Wassereinbruch"Hilfe, Bitte rufen Sie die Polizei".
+
+[0044]
+Für den benachbarten Sicherheitsbereich können diese Meldungen noch durch die Adresse oder den Namen des Nachbarn ergänzt sein, also:"Bei Meiers wird eingebrochen""Achtung, in Meiers Garage gefährliche Abgaskonzentration""Bei Meiers ist Rauch im Kinderzimmer""Die Kellertür bei Meiers ist offen".
+
+[0045]
+Damit läßt sich ein mit den Sensoren 2, 3, 4; 2a, 3a, 4a aufgenommenes Ereignis mit einer bestimmte Meldung verknüpfen, die für jeden Sicherheitsbereich eine aussagekräftige Information enthält. Wenn eine entsprechende ausgegebene Meldung im Sicherheitsbereich 1 lautet: "Tödliches Gas in der Garage," dann kann eine entsprechende Meldung beim Nachbarn ausgegeben werden, die lautet: "Gefährliches Gas in Fischers Garage".
+
+Ansprüche
+
+1. Überwachungseinrichtung mit einem ersten und einem zweiten Überwachungsbereich (1;1a), die jeweils mindestens einen Sensor (2,3,4;2a,3a,4a) zum Erzeugen von Detektionssignalen bei Erkennen eines Ereignisses, eine Sprachquelle (9;9a) und eine den mindestens einen Sensor mit der Sprachquelle verbindende Informationsleitung (15,16,22,23;15a,16a,22a,23a) enthalten, wobei die Informationsleitung eine Busleitung (15,16;15a,16a) und eine an mindestens einen Lautsprecher (17) angeschlossene Tonsignalleitung (22,23) enthält, und wobei eine die Busleitung (15,16;15a,16a) des ersten und des zweiten Überwachungsbereichs (1;1a) verbindende Kopplungseinrichtung vorgesehen ist und Ereignisse, die in dem einen Überwachungsbereich auftreten, von der Sprachquelle (9;9a) des jeweils anderen Überwachungsbereichs gemeldet werden.
+2. Überwachungseinrichtung nach Anspruch 1, dadurch gekennzeichnet, daß die Sprachquelle (9;9a) mehrere verschiedene abgespeicherte Meldungen enthält, die auf das detektierte Ereignis oder den Betriebszustand des Sensors (2,3,4;2a,3a,4a) abgestimmt sind.
+3. Überwachungseinrichtung nach Anspruch 1 oder 2, dadurch gekennzeichnet, daß der Sensor (2,3,4;2a,3a,4a) als Anschlußeinheit für eine Hausleittechnik ausgebildet ist und einen an die Busleitung (15,16;15a,16a) anschließbaren Busankoppler (17;17a) mit einem Mikroprozessor enthält.
+4. Überwachungseinrichtung nach einem der Ansprüche 1-3,dadurch gekennzeichnet, daß die Sprachquelle (9;9a) als Anschlußeinheit für eine Hausleittechnik ausgebildet ist und einen an den Datenbus anschließbaren Busankoppler (17;17a) mit einem Mikroprozessor enthält.
+5. Überwachungseinrichtung nach einem der Ansprüche 1-4,dadurch gekennzeichnet, daß jeder Lautsprecher (17;17a) einen Busankoppler (17;17a) aufweist, welcher den Lautsprecher aktiviert, wenn dieser durch ein Signaltelegramm adressiert wurde.
+6. Überwachungseinrichtung nach einem der Ansprüche 1-5,dadurch gekennzeichnet, daß in jedem Überwachungsbereich (1;1a) eine Steuereinheit (6;6a) vorgesehen ist, die ein Ereignis des anderen Überwachungsbereichs anzeigt und diesen Überwachungsbereich identifiziert.
+7. Überwachungseinrichtung nach einem der Ansprüche 1-6,dadurch gekennzeichnet, daß die Kopplungseinrichtung aus einer Durchverbindung der Busleitungen (15,16;15a,16a) der beiden Überwachungsbereiche besteht.
+8. Überwachungseinrichtung nach einem der Ansprüche 1-6,dadurch gekennzeichnet, daß die Kopplungseinrichtung eine Schnittstelle oder ein Gateway enthält.
+9. Überwachungseinrichtung nach einem der Ansprüche 1-8, dadurch gekennzeichnet, daß die Busleitung in einen außerhalb des Überwachungsbereichs liegenden entfernten Bereich führt und dort mit einer weiteren Sprachquelle verbunden ist, welche Signale für eine eigene Tonsignalleitung erzeugt.
+
+Claims
+
+1. Surveillance device having a first and a second surveillance area (1;1a each area containing at least one sensor (2,3,4;2a,3a,4a) for generating detection signals upon detection of an event, a voice source(9;9a) and an information line (15,16,22,23;15a,16a,22a,23a) connecting the at least one sensor with the voice source, wherein the information line comprises a bus line (15,16;15a,16a) and a sound signal line (22,23) connected to at least one loudspeaker (17), and wherein a coupling means connecting the bus line (15,16;15a,16a) of the first and the second surveillance area (1;1a) is provided, and events occurring in one surveillance area are communicated by the voice source (9;9a) of the respective other surveillance area.
+2. Surveillance device according to claim 1, characterized in that the voice source (9;9a) contains a plurality of different stored messages adjusted to the detected event or the operating state of the sensor (2,3,4;2a,3a, 4a).
+3. Surveillance device according to claim 1 or 2, characterized in that the sensor (2,3,4;2a,3a,4a) is configured as a connecting unit for an in-house information distribution network and contains a bus coupling means (17;17a) having a microprocessor and adapted to be connected to the bus line (15,16;15a,16a).
+4. Surveillance device according to one of claims 1-3, characterized in that the voice source (9;9a) is configured as a connecting unit for an in-house information distribution network and contains a bus coupling means (17;17a) having a microprocessor and adapted to be connected to the data bus.
+5. Surveillance device according to one of claims 1-4, characterized in that each loudspeaker (17;17a) comprises a bus coupling means (17;17a) which activates the loudspeaker when the latter has been addressed by a signal telegram.
+6. Surveillance device according to one of claims 1-5, characterized in that in each surveillance area (1;1a) a control unit (6;6a) is provided which indicates an event occurring in the other surveillance area and identifies said surveillance area.
+7. Surveillance device according to one of claims 1-6, characterized in that the coupling means comprises a through-connection of the bus lines (15, 16;15a;16a) of the two surveillance areas.
+8. Surveillance device according to one of claims 1-6, characterized in that the coupling means comprises an interface or a gateway.
+9. Surveillance device according to one of claims 1-8, characterized in that the bus line extends into an area outside the surveillance area and is connected there with another voice source which generates signals for its own sound signal line.
+
+Revendications
+
+1. Dispositif de surveillance avec une première et une deuxième zone de surveillance (1 ; 1a), qui contiennent respectivement au moins un capteur (2, 3, 4 ; 2a, 3a, 4a) pour produire des signaux de détection lors de la reconnaissance d'un événement, une source vocale (9 ; 9a) et une ligne d'informations (15, 16, 22, 23 ; 15a, 16a, 22a, 23a) reliant ledit au moins un capteur à la source vocale, la ligne d'informations contenant une ligne de bus (15, 16 ; 15a, 16a) et une ligne de signal audio (22, 23) connectée à au moins un haut-parleur (17), un dispositif de couplage reliant la ligne de bus (15, 16 ; 15a, 16a) de la première et de la deuxième zone de surveillance (1 ; 1a) étant prévu, et des événements qui se produisent dans une des zones de surveillance, étant à chaque fois signalés par la source vocale (9 ; 9a) de l'autre zone de surveillance.
+2. Dispositif de surveillance selon la revendication 1, caractérisé en ce que la source vocale (9 ; 9a) contient plusieurs messages mémorisés différents qui sont sélectionnés en fonction de l'événement détecté ou de l'état de fonctionnement du capteur (2, 3, 4 ; 2a, 3a, 4a).
+3. Dispositif de surveillance selon la revendication 1 ou 2, caractérisé en ce que le capteur (2, 3, 4 ; 2a, 3a, 4a) est configuré comme une unité de connexion pour une technique de ligne privée et contient un coupleur de bus (17 ; 17a), avec microprocesseur, pouvant se connecter à la ligne de bus (15, 16 ; 15a, 16a).
+4. Dispositif de surveillance selon l'une quelconque des revendications 1-3, caractérisé en ce que la source vocale (9 ; 9a) est configurée comme une unité de connexion pour une technique de ligne privée et contient un coupleur de bus (17 ; 17a), avec microprocesseur, pouvant se connecter au bus de données.
+5. Dispositif de surveillance selon l'une quelconque des revendications 1-4, caractérisé en ce que chaque haut-parleur (17; 17a) présente un coupleur de bus (17 ; 17a), qui active le haut-parleur lorsque celui-ci est adressé par un télégramme de signaux.
+6. Dispositif de surveillance selon l'une quelconque des revendications 1-5, caractérisé en ce que dans chaque zone de surveillance (1 ; 1a) est prévue une unité de commande (6 ; 6a) qui indique un événement de l'autre zone de surveillance et qui identifie cette zone de surveillance.
+7. Dispositif de surveillance selon l'une quelconque des revendications 1-6, caractérisé en ce que le dispositif de couplage est constitué d'une connexion transversale des lignes de bus (15, 16 ; 15a, 16a) des deux zones de surveillance.
+8. Dispositif de surveillance selon l'une quelconque des revendications 1-6, caractérisé en ce que le dispositif de couplage contient une interface ou une passerelle.
+9. Dispositif de surveillance selon l'une quelconque des revendications 1-8, caractérisé en ce que la ligne de bus conduit à une zone éloignée située à l'extérieur de la zone de surveillance et y est reliée à une autre source vocale qui produit des signaux pour une ligne distincte de signaux audio.
+
+Drawing

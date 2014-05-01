@@ -1,0 +1,4 @@
+.DS_STORE
+env
+node_modules
+patents_bak

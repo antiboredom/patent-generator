@@ -1,0 +1,823 @@
+Apparatus And Method For Environmental Monitoring
+
+*US08299449B2*
+US008299449B2
+
+(12) United States Patent (10) Patent No.:  US 8,299,449 B2
+Febo (45) Date of Patent: Oct. 30, 2012
+
+(54) Apparatus and method for environmental monitoring
+
+(75) Inventor:  Antonio Febo, Rome (IT)
+(73) Assignee: FAI Instruments S.R.L., Rome (IT), Type: Foreign Company
+(*) Notice:  Subject to any disclaimer, the term of this patent is extended or adjusted under 35 U.S.C. 154(b) by 721 days.
+(21) Appl. No.:  12/438,059
+(22) PCT Filed: Aug. 20, 2007
+(86) PCT No.:  PCT/IB2007/053316
+§ 371 (c)(1), (2), (4) Date:  Sep. 9, 2009
+(87) PCT Pub. No.: WO20/08/023325
+PCT Pub. Date: Feb. 28, 2008
+
+(65) Prior Publication Data
+US 2010/0163761 A1 Jul. 1, 2010
+
+(30) Foreign Application Priority Data
+Aug. 21, 2006   (IT)    RM2006A0454
+
+(51) Int. Cl.   G01N 015/06 (20060101); G01N 023/06 (20060101)
+
+(52) U.S. Cl.   250/573;
+250/307;
+250/308;
+250/393;
+250/575;
+250/576;
+73/28.04
+
+(58) Field of Search    250/288, 306, 307, 308, 364, 393, 573, 575, 576; 73/28.01-28.06, 865.5; 356/335-343
+
+(56) References Cited
+
+U.S. PATENT DOCUMENTS
+3,711,707  A * 1/1973  Lilienfeld et al.   250/356.1
+3,901,798  A * 8/1975  Peterson   209/143
+3,954,428  A * 5/1976  Marple et al.   96/417
+4,301,002  A * 11/1981  Loo   209/143
+4,618,774  A * 10/1986  Hascal et al.   250/364
+5,349,844  A * 9/1994  Lilienfeld   73/28.01
+5,571,945  A * 11/1996  Koutrakis et al.   73/28.03
+5,970,781  A * 10/1999  Hiss et al.   73/28.01
+6,016,688  A * 1/2000  Hiss et al.   73/28.01
+6,055,052  A * 4/2000  Lilienfeld   356/338
+6,151,953  A * 11/2000  Patashnick et al.   73/28.01
+6,401,520  B1 * 6/2002  Volkwein et al.   73/28.03
+6,829,919  B2 * 12/2004  Sioutas et al.   73/28.04
+6,887,710  B2 * 5/2005  Call et al.   436/53
+6,964,190  B2 * 11/2005  Shinohara et al.   73/28.04
+7,111,496  B1 * 9/2006  Lilienfeld et al.   73/28.01
+7,159,446  B2 * 1/2007  Shinohara et al.   73/28.04
+7,947,503  B2 * 5/2011  Tuchman   436/28
+2002//0122177  A1 * 9/2002  Sioutas et al.   356/336
+2002//0124664  A1 * 9/2002  Call et al.   73/863.22
+2004//0055362  A1 * 3/2004  Shinohara et al.   73/28.04
+2005//0188746  A1 * 9/2005  Shinohara et al.   73/28.04
+2006//0257287  A1 * 11/2006  Call et al.   422/83
+2007//0092976  A1 * 4/2007  Watson et al.   436/181
+2009//0081804  A1 * 3/2009  Tuchman   436/158
+2010//0163761  A1 * 7/2010  Febo   250/573
+
+FOREIGN PATENT DOCUMENTS
+
+DE   2356575           5/1975
+DE   3305867           8/1984
+GB   1216561           12/1970
+GB   2251068           6/1992
+JP   62055547           3/1987
+JP   62055548           3/1987
+WO   9628718           9/1996
+
+OTHER PUBLICATIONS
+
+PCT International Search Report for PCT/IB2007/053316 filed on Aug. 20, 2007 in the name of FAI Instruments S.R.L. et al.
+PCT International Preliminary Report on Patentability for PCT/IB2007/053316 filed on Aug. 20, 2007 in the name of FAI Instruments S.R.L. et al.
+
+* cited by examiner
+
+Primary Examiner —John Lee
+Art Unit — 2878
+Exemplary claim number — 1
+
+(74) Attorney, Agent, or Firm — Steinfl & Bruno LLP
+
+(57)
+Abstract
+
+Apparatus (1) for environmental monitoring, allowing to determine the mass concentration of air-dispersed particulate matter by operating or spy filters (F1-F6), comprising a beta radiation emitter (16) and detector (18) for detecting the mass of particulate matter settled on the operating or spy filters (F1-F6), wherein it is further provided the same beta measurement on spy filters (S 12-S1 6) exposed to the same environmental conditions of the operating filters (F1-F6) and the determination of in-air particulate matter concentration by compensation of the two measurements.
+
+24 Claims, 23 Drawing Sheets,
+
+and
+52
+Figures
+
+CROSS REFERENCE TO RELATED APPLICATIONS
+
+[0001] The present application is the US national stage of International Application PCT/IB2007/053316 filed on Aug. 20, 2007 which, in turn, claims priority to Italian Application RM2006A000454, filed on Aug. 21, 2006.
+
+FIELD
+
+[0002] The present invention refers to an apparatus for environmental monitoring and a related method; in particular, it refers to an apparatus for determination, of mass concentration of air-suspended particulate matter.
+
+BACKGROUND
+
+[0003] Determination of mass concentration of air-dispersed particulate matter having definite granulometric characteristics, i.e., of the so-called PMx (“Particulate Matter x”, denoting atmosphere-suspended—aerosol—particulate matter having an <x μm aerodynamic diameter), represents a fundamental need to the ends of an objective evaluation of air quality conditions. Moreover, such a determination is mandated by regulations in force at international level.
+
+[0004] The reference methodology related, e.g., to the determination of mass concentration of the particulate matter PM10 is based on the drawing of representative particulate matter samples, their collection on a filter means and the subsequent determination of their mass by a differential gravimetric technique referred to as “double weighing” (determination of the mass of a filter means before and after sampling).
+
+[0005] However, when extensively applied to the ends of air quality control such a reference methodology entails two fundamental limitations, i.e.:
+
+[0006] the operating complexity, requiring employ of skilled personnel over relatively long times and use of high-cost logistics and specific equipment, like, e.g., air-conditioned rooms,
+[0007] the delay in informing the public about air quality conditions (a primary need stressed in international regulations)
+
+[0008] Given the limitations associated to gravimetric reference methodology, on networks in charge of air quality control automatic instrumentations are used, capable of providing, practically in real time, an estimate of the average mass concentration of particulate matter in the time period taken into account (typically, average concentrations every 24 h). However, performances of most automatic instrumentations are deemed unsatisfactory in the state of the art, as affording bias-affected mass concentration data, i.e., data affected by errors, often quantitatively, relevant ones.
+
+[0009] Among automatic instrumentations, particularly relevant are those that for determining the mass concentration of particulate matter samples accumulated on filter means use the so-called β attenuation technique, based on the measurement of the attenuation of a flow of beta radiations (emitted, e.g., by a 14C source) traversing a homogeneous matter film.
+
+[0010] Analytical components of the sampling and measurement process for the particulate matter are schematically depicted in the diagram of FIG. 1. Therefrom, it is highlighted that the overall sampling and measurement process is based on several subsequent phases. In general, for a strict analysis it is necessary to single out the causes of deviation from expected values in each phase and quantitatively estimate such deviations:
+[see pdf for image] Y [see pdf for image] = [see pdf for image] XPM [see pdf for image] +δT+δLa+δLc+δM+ε,
+wherein:
+
+[0011] [see pdf for image] Y [see pdf for image] denotes the expected value of the measurement,
+[0012] [see pdf for image] XPM [see pdf for image] represents the expected PMx value,
+[0013] δT represents the deviation from theoretical granulometric cut efficiency,
+[0014] δLa represents the presence of artifacts in the particulate matter accumulation phase,
+[0015] δLc represents the presence of biases in the sample conditioning phase before measurement,
+[0016] δM represents the mass measurement accuracy, and
+[0017] ε represents the residual random error.
+
+[0018] As it is known, in mass, measurement techniques based on the β attenuation principle there are three basic error sources reducing measurement accuracy and reproducibility, i.e.:
+
+[0019] intrinsic biases of the method (intrinsic accuracy);
+[0020] systematic biases due to the implementation of the measurement technique (measurement reproducibility); and
+[0021] random biases (random uncertainty), associated to the overall contribution of random-type deviations, among which those intrinsically linked to Poisson statistical distribution governing beta emission, those linked to the variations in the geometric repositioning of the filter matrix with respect to source and detector, etc.
+
+[0022] Concerning the intrinsic accuracy of the beta measurement technique (intrinsic biases of the method) there has to be mentioned that it is based on the laws governing beta radiation interaction with the charges constituting the traversed matter. Accordingly, determination of the mass of a definite film interposed between source and detector requires a careful evaluation of the functional dependence of the energy spectrum of incident beta electrons with respect to mass thickness of the film of material traversed, in proportion to the atomic number and the mass number of the film of measured material, the maximum value of the energy of incident electrons, as well as the geometry of the source-detector system, the lack of homogeneity of the filter substrate, the lack of homogeneity in particulate matter settling and the calibration procedures and techniques (adequate selection of the material of which the calibration foils are made, accurate calibration procedure), etc.
+
+[0023] Among the most relevant sources of systematic biases undermining the reproducibility level of the measurement, the following need mentioning:
+
+[0024] the counting efficiency of the real detector (e.g., Geiger-Muller) which depends on a set of parameters, among which the incident electron energy, the value of the power supply voltage, the response dead time, the efficiency of the signal processing and control chain, etc.;
+[0025] the variations in density of the air present between source and detector, which may vary depending on environmental conditions (pressure, temperature, relative humidity, etc.);
+[0026] the variations in the mass of hygroscopic filter media, and therefore of the mass thickness xf associated thereto, owing to exchanges of water vapor molecules with air present in the measurement chamber or with external air drawn during the sampling phase;
+[0027] the mechanical repositioning of the filter medium (sample foil) between source and detector;
+[0028] the presence of radionuclides in the particulate matter accumulated on the filter medium.
+
+SUMMARY
+
+[0029] The technical problem set and solved by the present invention is to provide an apparatus and a method for determination of the mass concentration of air-dispersed particulate matter based on the beta attenuation technique, allowing to optimize the intrinsic accuracy of the measurement and quantitatively remove the systematic biases due to implementation of the measurement technique.
+
+[0030] Such a problem is solved by an apparatus for environmental monitoring, suitable for determination of mass concentration of air-dispersed particulate matter by means for collecting said particulate matter during a sampling period of an enrichment phase, based on operating filters and spy filters, the spy filters not being exposed to the particulate matter, comprising: a pair of independent drawing lines, each comprising a respective sampling head adapted to inlet air, and therefore particulate matter, into the apparatus; adjusting means for adjusting flow rate of said drawing lines; a sampling and measuring unit, comprising a filter housing and measuring means for measuring the mass of particulate matter settled upon said operating filters, wherein the measuring means comprise a radiation emitter and a related detector, wherein the radiation emitted by said emitter is adapted to traverse the operating filters or spy filters and then be detected by said detector, the measuring means being based on a β radiation attenuation technique; a rotary disc for moving said filter housing, adapted to bring said filters into a plurality of subsequent positions required for their loading, enriching, measuring and unloading; a movable arm for positioning said measuring means with respect to said rotary disc to perform the measurements; a control unit configured to: (a) perform a blank measurement upon said operating filters, wherein β radiation flow through said operating filters is measured before said enrichment phase; (b) perform, contextually to the measurement in (a), the same measurement of the β radiation flow through said spy filters; (c) perform a measurement of the mass of particulate, settled on said operating filters exposed to said particulate matter during said sampling period, also said measurement being performed through said β radiation attenuation technique; (d) perform, contextually to the measurement in (c), the same measurement on said spy filters; and (e) determine said mass concentration of particulate matter by correcting the mass measurement obtained with blank and particulate measurements performed upon the operating filters, with the measurements performed upon the spy filters.
+
+[0031] The present disclosure also relates to a method for determination of mass concentration of air-dispersed particulate matter by both operating filters exposed to said particulate matter during a sampling period of an enrichment phase, and spy filters, the spy filters not being exposed to said particulate matter, the method being based upon measurements performed through a β radiation attenuation technique, the method comprising: (a) performing a blank measurement upon said operating filters means, wherein β radiation flow through said operating filters is measured before said enrichment phase; (b) performing, contextually to the measurement in (a), the same measurement of the β flow through said spy filters; (c) performing a measurement of the mass of particulate, settled on said operating filters, also said measurement being performed through said β radiation attenuation technique; (d) performing, contextually to the measurement in (c), the same measurement on said spy filters; and (e) determining said mass concentration of particulate matter by correcting the measurements performed in (a) and (c) with those performed in (b) and (d).
+
+[0032] Preferred features of the present invention are set forth in the dependent claims thereof.
+
+[0033] In particular, according to some embodiments, the apparatus comprises a plurality of sampling heads that can be adapted to perform different granulometric cuts. In some embodiments, the apparatus comprises a common external air inlet, a calm chamber arranged downstream of said inlet and a plurality of air inlet lines on the operating filters or spy filters arranged downstream of said calm chamber. The apparatus can also comprise means for controlling the dimensions of the particulate impacting said operating filters spy filters, arranged downstream of the external air inlet.
+
+[0034] In some embodiments, the apparatus comprises also abatement means adapted to substantially prevent the settling of particulate matter on one or more of the operating filters or spy filters. The apparatus can also comprise means for adjusting the flow rate of inlet air. The apparatus can further comprise means for controlling the volumetric flow rate of air concerning said operating filter means. The apparatus can further comprise means for drawing external air, operating at a constant granulometric cut or at a constant volumetric flow rate. The means for controlling the volumetric flow rate can be adapted to send a constant volumetric flow rate of air on said operating filter means.
+
+[0035] According to some embodiments, the apparatus comprises also a main drawing line and an ancillary drawing line associated to common air drawing means operating at a constant granulometric cut, wherein the ancillary drawing line is adapted to draw a variable balancing volumetric flow rate such that the volumetric flow rate passing through said main drawing line is constant. The apparatus can comprise means for controlling the temperature of the air passing through said operating or spy filter means. The apparatus further can further comprise monitoring means selected from a group comprising means for monitoring temperature, pressure, relative humidity and flow rate. The apparatus can also comprise means for monitoring the temperature of external air and/or of that of said operating filter means or spy filter means. Further, the apparatus can comprise means for monitoring a pressure drop in correspondence of said operating or spy filter means. The apparatus can further comprise means for switching from a sampling configuration to one or more test configurations.
+
+[0036] According to a further embodiment, the method of the disclosure comprises performing a measurement of the natural radioactivity of the particulate matter settled on said operating filter means. The method can also provide for a phase of testing the ground radioactivity of the radiation detector. In addition, the method can provide for particulate matter abatement adapted to substantially prevent the settling of particulate matter on said operating filters or spy filters. The method can provide for control of the dimensions of the particulate settled thereon said operating filters or spy filters, performed downstream of the drawing of external air. The method can also provide for an adjustment of the flow rate of inlet air.
+
+[0037] According to some other embodiments, the method provides for a control of the volumetric flow rate of air passing through said operating filter means. The method can also provide for a drawing of external air at a constant granulometric cut or at a constant volumetric flow rate. The method can further provide for an air inlet on said operating filter means with a constant volumetric flow rate. The method can also include use of an ancillary line with a variable balancing flow rate to ensure said constant volumetric flow rate on said operating filters. The method can also include control of the temperature of the air passing through said operating filter means.
+
+[0038] According to some other embodiments, the method provides for monitoring of variables selected from a group comprising temperature, pressure, relative humidity and flow rate. The method can also provide for a monitoring of the temperature of external air and/or of that of said operating filters. The method can further provide for monitoring of the pressure drop in correspondence of said operating filters. The method can also provide for a sampling in parallel of particulate matter of different dimensions. Further, the method can provide, for each measurement cycle, the alternative performing of a measurement on an operating filter and the measurement on a spy filter. The method can further provide for a tightness control on the filters.
+
+[0039] The present invention provides several relevant advantages. The main advantage lies in the fact that the technique for the measurement of the mass of in-air particulate matter, and in particular that based on beta radiation attenuation, becomes metrologically traceable. In fact, under any operating condition or environmental situation the invention allows the evaluation and the quantitative removal of the biases intrinsically associated to the implementation of such a technique (measurement reproducibility). Thus, the limitations existing in the current state of the art within the context of this methodology are overcome, and therefore there are achieved performance limits so high as to allow this technique to be proposed as standard reference for automatic instrumentations for the measurement of PMx mass concentrations. In other words, the results attainable by the invention achieve strict equivalence with those attainable by using the reference gravimetric technique.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+[0040] Other advantages, features and operation steps of the present invention will be made apparent in the following detailed description of some embodiments thereof, given by way of example and not for limitative purposes. Reference will be made to the figures of the annexed drawings, wherein:
+
+[0041] FIG. 1, already introduced above, shows a general diagram of the operation principle of PMx mass concentration measurement and sampling;
+
+[0042] FIGS. 2 and 3 show experimental data related to the time pattern of a sequence of measures on a filter, by gravimetric technique and beta technique, and the respective regression analysis;
+
+[0043] FIG. 4 shows a schematic depiction of the different contributions to the measurement error;
+
+[0044] FIGS. 5 and 6 show each experimental data related to the time pattern of a sequence of measurements on a respective filter;
+
+[0045] FIGS. 7 and 8 show each a respective regression analysis related to experimental data that will be introduced hereinafter;
+
+[0046] FIG. 9 shows a diagrammatic depiction of different contributions to the mass measurement at the basis of the invention;
+
+[0047] FIG. 10 shows a schematic depiction of the measurement principle for natural radioactivity present on filter means;
+
+[0048] FIG. 11 shows a schematic depiction of a first embodiment of the apparatus according to the invention;
+
+[0049] FIGS. 12, 13 and 14 respectively show a schematic side view, a plan view of the useful filtration surfaces and a perspective view of the filter system of the apparatus of FIG. 11;
+
+[0050] FIGS. 15, 16, 17 and 18 respectively show a perspective view, two schematic plan views and a side view of part of a measurement unit of the apparatus of FIG. 11;
+
+[0051] FIGS. 19 and 20 show a flow chart and a time chart related to the operation of the apparatus of FIG. 11;
+
+[0052] FIGS. 21A-21H show each a plan view of part of the unit of FIG. 16 in a respective operating position in a preliminary mass measurement phase;
+
+[0053] FIGS. 22A-22M show each a plan view of part of the unit of FIG. 16 in a respective operating position during mass measurement;
+
+[0054] FIG. 23 shows a schematic chart of the operating procedure for mass measurement calculation;
+
+[0055] FIGS. 24A-24C show each a plan view of part of the unit of FIG. 16 in a respective operating position in a calibration control phase;
+
+[0056] FIGS. 25 to 28 show each the schematic depiction of a respective operation mode of the apparatus according to the invention; and
+
+[0057] FIGS. 29 to 33 show each the schematic depiction of a respective variant embodiment of the apparatus according to the invention.
+
+DETAILED DESCRIPTION
+
+[0058] Before proceeding with a detailed description of the preferred embodiments of the apparatus and method of the invention, the analytical bases thereof, developed by the Inventors within the context of the position of the technical problem set and solved by the present invention, are given hereinafter.
+
+[0059] Estimation of the mass thickness xp of a film of particulate matter settled on a filter medium having mass thickness xf by beta attenuation technique is based on the correct quantification of the relative variation undergone by a β-electron flow reaching a suitable detector, in the presence and in the absence of said film. In purely formal terms, this can be expressed by the following functional scheme:
+ln Φi−ln Φj→βij[xfi,xfj+xp]  (1),
+where by βij it is denoted the operator describing the complex of physico-mathematical relationships underlying the beta attenuation technique, and by Φi and Φj the beta flows measured in the respective i-th and j-th measurement sessions. The need to quantify the relative-variations of the electron flows leads to the selection of the adimensional variables
+
+[0060]
+[see pdf for image]
+where Φ0 is the β-electron flow when the mass thickness xf interposed between source and detector is nil.
+
+[0061] Correct implementation of the technique at issue requires study of the invertibility conditions of relationship (1), i.e. the possibility of estimating the mass thickness of the material settled on a filter membrane through the knowledge of variables zi(xf) and zj(xf+xp), so as to write:
+xp→βij−1[zi,zj]  (3).
+
+[0062] In the ideal case, i.e. if xfi=xfj, if the thermodynamic conditions in the measurement chamber do not vary between the two measurement sessions, if the detector efficiency is constant, if the mass thickness xp is quantitatively negligible with respect to xf, etc., the operator βij may be approximated by a function of the sole variable z. In order to determine its shape, it is useful to begin from the mathematical description of the beta attenuation process expressed by the differential relationship:
+dz=μ(x)dx  (4),
+which, when integrated, assumes the form of:
+z=β(x)  (5),
+where μ(x) represents the mass absorption coefficient, which is a function of the value of the mass thickness x of the foil interposed between source and receiver. The main features of the μ(x) function are that it is positive (μ(x)>0 ∀x) and monotonically increasing for x. These features are a direct consequence of the physical regulations governing the interaction of beta rays with matter; in fact, suffice it to mention that
+
+[0063]
+[see pdf for image]
+and that at the increasing of the mass thickness x the maximum energy Emax of the electrons tends to decrease. Therefore, (4) is invertible, and it is possible to write:
+
+[0064]
+[see pdf for image]
+
+[0065] It follows that it is possible to trace any one finite variation Δx of mass thickness through relationship
+
+[0066]
+[see pdf for image]
+
+[0067] By comparing relationships (3) and (7) it is inferred that, in an ideal design, function βij−1 therefore corresponds to g(z):
+βij−1→g(z)  (8).
+
+[0068] What expressed above indicates the best approach to the experimental determination of function g(z) and therefore to the calibration of mass measurement systems based on the beta technique. In fact, upon selecting n values of mass thicknesses xi in the operating range of the beta measurement system, the corresponding values of zi can, in principle, be determined with a very high precision. Hence, through the maximum likelihood technique, it is possible to attain the best fitting of the experimental data. Performed studies show that a homogeneous polynomial relationship of 3rd degree in z is an optimum approximation of the experimental data. When g(z) is known, by a mere derivation it is possible to obtain the function
+
+[0069]
+[see pdf for image]
+and the corresponding values of the absorption coefficient μ(x). This approach minimizes uncertainty in the determination of the coefficients of the calibration function g(z).
+
+[0070] Let us note that with the apparatus subject-matter of the invention there is instead no need whatsoever to resort to periodic recalibrations, and control on response stability in terms of accuracy levels is carried out by means of functionality tests. In fact, the function k(z) in the entire operating mass thickness range is obtained through an accurate calibration procedure performed at the machine testing phase, so as to make quantitatively negligible in its evaluation the contribution of uncertainties linked to measurement reproducibility. In any case, the apparatus proceeds automatically or on operator's request to perform tests on calibration long-term stability, using as transfer standard two aluminum foils having suitable mass thicknesses.
+
+[0071] In addition, let us note that the correct implementation of the beta technique, with the entailed minimizing of all potential biases that can undermine the intrinsic accuracy thereof, such as, e.g., lack of homogeneity of the filter medium, lack of homogeneity in particulate matter settling, inadequate selection of the material of which the gauging foils are made, inaccurate gauging procedure, etc. is a necessary condition for the validity of the functional form expressed by (7). To give an example of the quality achievable in terms of intrinsic accuracy of a correctly implemented instrumental response, in FIGS. 2 and 3 the are reported the results of a comparison between the mass thickness data of particulate matter (consisting of polydispersed NaCl aerosol) determined by utilizing the gravimetric reference technique and the corresponding, data obtained with the beta technique implemented by the apparatus subject-matter of the invention. Function k(z) was determined empirically by a multi-point calibration, using aluminum foils having different mass thickness values. It is essential to stress that the achievement of optimal intrinsic accuracy conditions is absolutely not a condition sufficient to ensure an adequate qualitative level in the instrument response. In fact, to this end a determinant role is played by the reproducibility level of the measurement. The observations made hereto can be extended to the real case, where it is necessary to generalize relationship (5), taking into account that in a real system air having a density ρ is interposed between source and detector, and that detector efficiency depends on other variables, like, e.g., the power supply voltage and the lifetime, the energy of incident electrons (dependence on x) and that it changes over time (time drift of response). For this reason, (5), in the range of values of mass thickness x for which the energy of the electrons reaching the detector is a still relevant fraction of the energy of incident electrons, has to be rewritten in the form:
+z=β(x;ρ;E(x,t);G)  (9),
+where by G we denote beta operator dependence on system geometry. Therefore, the relative variation of variable z between two measurement sessions i and j, when there is an increase δx of the mass thickness x of the film interposed between source and detector, will be expressed by:
+
+[0072]
+[see pdf for image]
+
+[0073] The variation of mass thickness δx may be written as sum of the variation in mass thickness of the filter means, δxf, and of the contribution of the film of particulate matter settled thereon, xp:
+δx=δxf+xp  (11).
+
+[0074] It follows that (10) may be rewritten as:
+
+[0075]
+[see pdf for image]
+
+[0076] Relationship (12) explicitly highlights all terms contributing to determine the relative variation in beta flow values (variable z). Specifically, term
+
+[0077]
+[see pdf for image]
+expresses the functional contribution associated to the presence of the film of particulate matter settled on the filter means, whereas term
+
+[0078]
+[see pdf for image]
+expresses the set of contributions determining the systematic fluctuations in measured beta flows, fluctuations not ascribable to the presence of a mass of particulate matter settled on the filter (systematic biases). This contributions are due, in the following order, to:
+
+[0079] variation in mass thickness of the filter means;
+[0080] air density fluctuations;
+[0081] fluctuations in detector response efficiency;
+[0082] Fluctuations in relative geometric repositioning between source and detector.
+
+[0083] From the analysis of relationship (12) it is inferred that an accurate mass measurement by beta technique may be performed if and only if the term
+
+[0084]
+[see pdf for image]
+is quantitatively negligible, or in case this term is quantified and then removed in the evaluation of δz.
+
+[0085] At this point, having understood in its outlines the problem of measurement reproducibility faced and solved by the instrumentation subject-matter of the present patent application, it is necessary to investigate and develop all analytical implications thereof.
+
+[0086] Returning to relationship (3), in the ideal case, the operator βij−1 may be approximated by a function k(z) of the sole variable z, therefore it could be written:
+[see pdf for image] xp [see pdf for image] ≅k(z) [see pdf for image] zj−z [see pdf for image]
+or, by denoting with variable Zij the difference (zj−zi),
+[see pdf for image] xp [see pdf for image] ≅k(z) [see pdf for image] Zij [see pdf for image]   (13),
+where the operator [see pdf for image] [see pdf for image] denotes the expected value of the variable to which it is applied.
+
+[0087] Let us rewrite the term Zij, representing the difference between the beta flow measures in the two sessions i and j, in the following form:
+
+[0088]
+[see pdf for image]
+where we have subtracted and added to Zij the term zj(xf), representing the value assumed by a virtual variable z(xf) in the j-th session, or the measurable value for z(xf) if in the j-th session no film of particulate matter were present on the filter means subjected to measurement.
+
+[0089] Let us now regroup the terms to second member as follows:
+
+[0090]
+[see pdf for image]
+
+[0091] In this form the physical meaning of the two terms is evident:
+
+[0092] the first term of (14) represents the fraction of Zij determined on the filter means merely by particulate matter accumulation; therefore, hereinafter it will be denoted by Zij(xp) (variation of variable z functionally linked to the presence of a sample of particulate matter on the filter means);
+[0093] whereas the second term represents the contribution to Zij determined by all potential fluctuations in beta flow measurements related to the sole filter means. The presence in the real case of systematic fluctuations in the measurements is to be attributed to a set of potential causes, like, e.g., variations in air density, relative humidity, detector efficiency, as well as variations in the mass of the filter means associated to water vapor exchanges with the surrounding environment, etc., and for these reasons it will hereinafter be denoted by Zsystematicij(xf). This contribution is intrinsically associated to the fact that between the measurement sessions there elapses a time sufficiently high to justify the above-described fluctuations.
+
+[0094] In FIG. 4 it is graphically highlighted the contribution of the individual terms of (14). In particular, the continuous curves represent the expected distributions of zi(xf) and zj(xf+xp) for the measurement at issue in, the i-th and j-th sessions, whereas the dotted-line curve represents the virtual distribution of the data zi(xf) associated to the beta flow measurable in the j-th session, with regard to the operating filter means considered without film of particulate matter.
+
+[0095] If we apply (13) to experimental data in order to trace the estimate xp,mis of xp, as is currently done in the application of the beta technique (use of an ideal model into a real case) and recalling (14), we will have:
+xp,mis=k(z)Zij=k(z)Zij(xp)+k(z)Zsystematicij(xf)
+or
+xp,mis=k(z)Zij= [see pdf for image] xp [see pdf for image] +k(z)Zsystematicij(xf)+ε  (15)
+where ε represents the overall contribution of random-type deviations, among which those deriving from Poisson statistical distribution, governing beta emission (intrinsically linked to the finite duration of the measurement), those due to variations in the geometric repositioning of the filter matrix with respect to source and detector, etc.
+
+[0096] From (15) it is inferred that the measurement xmis obtained with the current approach is markedly conditioned by the presence of systematic biases expressed by the second term.
+
+[0097] In other words, the quality of beta technique response in terms of reproducibility and repeatability is essentially linked to the possibility of minimizing the second and the third term of (15). The contribution by the third term, related to random deviations of the measurement, can be minimized by acting on the one hand on the length of the measurement sessions (as it is known from Poisson statistics, standard deviation of measured beta flow is inversely proportional to square root of observation time) and adequately selecting the intensity of the emissive source, and on the other hand through a designing and a mechanical manufacturing that minimize deviations associated to the reproducibility of the relative positioning among sample, source and detector.
+
+[0098] The second term instead plays an essential role in determining the data reproducibility level. In fact, this term would be absolutely irrelevant only in the assumption that between the instant of the initial measurement—referred to as “blank”—(absence of the film of particulate matter) and that of the final measurement—referred to as “collect” (presence of the film of particulate matter) all conditions siding the measurement would be absolutely unchanged (detector efficiency, density of air interposed between source and detector, source-detector system geometry, etc.).
+
+[0099] If this assumption, which should always be mandatorily checked by experimental tests, is plausible in application fields where the initial and the final measurement are performed within a very fast time sequence (e.g., in testing the mass thickness of metal sheet in industrial production), it is however absolutely unsuitable in the specific field of use of the mass measurement of a PMx sample. This is due to the fact that a very high time interval elapses between the “blank” measurement and the collect measurement (in fact, the minimum interval is equal to the PMx sample drawing time, typically of 24 hours), during which there may vary the values of the quantities underlying measurement stability and reproducibility, e.g., the air density value, the detector response efficiency, etc. Moreover, adding that the mass thickness of the filter means, when hygroscopic, may vary between the “blank” measurement session and the “collect” one in proportion to the different microclimatic conditions in the measurement chamber or in proportion to variations in the relative humidity of external air during the sampling phase, there may be concluded that the measurement technique should be quite sophisticated to achieve high qualitative standards.
+
+[0100] The described error sources, substantially affecting measurement reproducibility by determining the entity of term Zsystematicij (xf) of (15), are neither easily nor directly controllable, and anyhow the contribution associated to each of these sources is hardly quantifiable. In state-of-the-art beta technique implementations, on the one hand active controls on basic variables associated to the implementation of the technique itself (consider, e.g., active control of high voltage in the case of Geiger-Muller detectors), and on the other hand empirical corrective measures have been resorted to, the latter aimed to at least partially estimate the contribution due to some specific sources of systematic error (e.g., with the estimate of air density by pressure and temperature measurements in the measurement chamber, or with the known “dual beam” technique). These approaches generally yield unsatisfactory, and anyhow untraceable and incomplete results.
+
+[0101] As it will be better appreciated hereinafter the invention overcomes such limitations, as it allows the singling out, the quantitative evaluation and the consequent correction of all above-discussed biases, through direct measurements determining the operating traceability thereof. In formal terms, the invention allows to:
+
+[0102] single out the main components of Zsystematicij(xf), second term of relationship (15);
+[0103] give a quantitative evaluation of said term and provide the uncertainty associated thereto.
+
+[0104] Once known the estimate {tilde over (Z)}ij≅ [see pdf for image] Zsystematicij(xf) [see pdf for image] of the systematic biases, we can subtract the term k(z){tilde over (Z)}ij to both members of relationship (15), obtaining:
+k(z)[Zij−{tilde over (Z)}ij]= [see pdf for image] xp [see pdf for image] +k(z)[Zsystematicij(xf)−{tilde over (Z)}ij]+ε  (16).
+
+[0105] By recalling now that {tilde over (Z)}ij≅ [see pdf for image] Zsystematicij(xf) [see pdf for image] in relationship (1.6a) (15) it follows that
+k(z)[Zsystematicij(xf)−{tilde over (Z)}ij]→0
+therefore obtaining:
+k(z)[Zij−{tilde over (Z)}ij]= [see pdf for image] xp [see pdf for image] +δxp
+or
+k(z)Zij*= [see pdf for image] xp [see pdf for image] +δxp  (17)
+where by Zij* we have denoted the difference Zij−{tilde over (Z)}ij and with δxp a random variable with normal distribution, at nil expected value, whose variance takes into account the residues of the correction, of the deviations associated to reproducibility in the relative positioning between sample, source and detector, as well as fluctuations intrinsically connected to beta emission statistics.
+
+[0106] Hence, the methodology advanced uses relationship (17) to obtain an estimate xp, meas as accurate as possible of the mass thickness xp of the particulate matter:
+xp,mis=k(z)·Zij*  (18),
+xp,mis= [see pdf for image] xp [see pdf for image] ±δxp  (19).
+and it brings back, also in formal terms, the operating measurement to the ideal one, with the obvious yet substantial quantitative difference on the value of the random variable δxp (gaussian with nil average value), which incorporates all of the above-described contributions, including that related to the residue introduced by the correction itself.
+
+[0107] From an operating standpoint, evidently the use of beta flow measurements related to the sole filter means subjected does not allow to directly evaluate the contribution Zsystematicj(xf), as there is no way to estimate zj(xf) (dotted curve in FIG. 4) by the sole blank and collect measurement identified by terms zi(xf) and zj(xf+xp) (continuous curves in FIG. 4).
+
+[0108] The invention solves this problem in direct and metrologically traceable terms. In fact, variable Zij is estimated through ancillary measures of beta flows related to filter means absolutely equivalent to the operating ones by typology, form, population, mass values, temporal evolution, etc. Both the operating measures and the ancillary ones are obtained contextually and through an unique and integral “source+detector” system, so that the measures performed be substantially covariant.
+
+[0109] In fact, in the actual implementation of the beta technique, a procedure based on the use of so-called “spy filters” (“twins” of the operating filters) is implemented which allows quantification of the systematic biases and their quantitative removal. This is obtained thanks to beta flow measures on the spy filters, denoted by Fs (as mentioned above, of a typology “identical” to that of the operating filters, denoted by Fr) performed exactly during the phases of beta flow measurement on the operating filters. Taking again (12) and rewriting it for a spy filter, we obtain:
+
+[0110]
+[see pdf for image]
+
+[0111] Evidently, when the spy filter and the operating filters have comparable mass thicknesses (xFr≅xFs), the second term of (12) is quantitatively equivalent to δzFs. By comparing (12) and (13) it is deduced that:
+
+[0112]
+[see pdf for image]
+
+[0113] Recalling that:
+
+[0114]
+[see pdf for image]
+we will obtain
+xp=k(z)·[(δz)Fr−(δz)Fs]  (23)
+representing the differential form of the relationship describing the mass measurement implemented in the SWAM Dual Channel.
+
+[0115] In support to what has been expressed, there will presently be provided experimental data related to the variable ln(Φri) of a filter membrane Fr with mass thickness xf, in a sequence of measurement sessions consecutive over time (FIG. 5). In light of the foregoing, observed fluctuations are to be attributed in this case (absence of film of particulate matter settled between a session and the other one) to systematic deviations and stochastic residue.
+
+[0116] In FIG. 6, the data related to variable ln(Φri) are compared with those of another variable ln(Φsj) associated to a filter Fs equivalent to Fr. Measures related to Fr and Fs are obtained through an alternate sequence of consecutive measurements.
+
+[0117] In FIG. 7 it is instead reported the linear regression analysis between the two variables. It may be observed how fluctuations are essentially due to covariant terms, and this in substantial agreement with the facts that the two filters belong to the same population, that fluctuations are due to the same error sources (oneness of the source-detector system) and that measurements are performed contextually in the same sequence of consecutive sessions.
+
+[0118] Turning now to variables Zrij and Zsij related to filters Fr and Fs, we obtain, as expected, an analogous covariant behavior. In fact, in FIG. 8 it is reported the regression analysis related to variables Zrij and Zsij in case the time interval elapsed between the i and j sessions has been selected equal to 24 hours. The numeric data of the regression analysis, characterized by r2 and angular coefficient values tending to one and by an intercept value tending to zero, demonstrate that under these conditions the expected values [see pdf for image] Zij [see pdf for image] for any pair (r, s) of filter media belonging to the same population are quantitatively equivalent
+[see pdf for image] Zrij [see pdf for image] ≅ [see pdf for image] Zsij [see pdf for image] ∀(r,s)  (24).
+
+[0119] Hence, with ancillary measures of beta attenuation related to one or more filters belonging to the same population of an operating filter Fr and performed contextually thereto in the same i and j sessions, the expected value [see pdf for image] Zr,sistij(xf) [see pdf for image] associated to the operating filter may be estimated with very high reliability:
+{tilde over (Z)}rij= [see pdf for image] Zsij [see pdf for image] ≅ [see pdf for image] Zr,systij(xf) [see pdf for image] = [see pdf for image] zrj(xf) [see pdf for image] − [see pdf for image] zsi(xf) [see pdf for image] ∀(r,s)  (25).
+
+[0120] Therefore, in FIG. 9 it is depicted the conceptual realization of the invention.
+
+[0121] More in detail, preferably the implementation of the invention requires:
+
+[0122] the use of a geometrically unvarying single and integral “source +detector” system, through which to obtain the beta flow data Φ(xr) and Φ(xs) associated both to the operating filters and to the spy ones;
+[0123] that, for each i-th blank or collect measurement session, there be performed a sequence of n cycles of beta flow measurements Φi(x) each of which alternatively performed on the operating filter means of the two channels 1 and 2, Fr1 and Fr2 and, in the case at issue, on the single spy filter Fs, with the following structure:
+
+[0124]
+[see pdf for image]
+
+[0125] that the beta measurement times Tm related to the individual phases be respectively of 10 min for the operating filters Fr and of 5 min for the spy filters Fs;
+[0126] that the number of measurement cycles n be equal to 4 for 8-hour sampling cycles and to 6 for ≧12-hour sampling cycles;
+[0127] that all measured beta flow values be corrected in proportion to the dead time τ, of the Geiger-Muller detector, experimentally determined by a suitable procedure implemented in the instrumentation.
+
+[0128] Note that, with this precise sequence, to each beta flow measurement on the operating filters it is associated a pair of measures related to the spy filter (preceding and subsequent to those of the operating filters). Thus, it is possible to consider the average values of the flow measures related to each operating filter as temporally contextual to those related to adjacent populations of measures on the spy filter.
+
+[0129] It has to be noted that the measurement cycles are supplemented with the estimate of the ground noise, Φdark, and the beta flow measurement when between source and, detector no filter means is interposed, Φ0, i.e. in-air beta flow. These ancillary measures have a relevant quality control function: estimate of dark (Φdark), performed in the blank phase, allows to quantify and remove ground noise, whereas measurement of in-air beta flow (Φ0) allows to evaluate stability of the Geiger-Muller detector over time. Moreover, the Φ0 value determined in the blank session allows to estimate the values of the adimensional variables z(xFr) and z(xFs) and of the respective uncertainties, for the blank measures and for the collect ones.
+
+[0130] Moreover, during the collect phase it should be taken into account that the measured values of the flows associated to the operating filters include the beta flow Φnat due to presence of natural radionuclides in the sample (natural radioactivity associated to Radon decay products). This contribution would be cause of negative artifacts in sample mass estimate; therefore, it is necessary to proceed to its quantitative analysis and removal by using data related to ancillary measures preceding and concluding the collect measurement cycle. These measures are carried out thanks to the presence of a movable shield that, interposed between source and filter means Fr, allows to detect exclusively the beta flow coming from the sample accumulated thereon (FIG. 10).
+
+[0131] In short, concerning the data of flows measured in the blank phase, they are corrected taking into account the (dark) ground noise in the following way:
+Φcorrb(x)=Φ(x)−Φdark  (27)
+
+[0132] Whereas, in case of collect measures, the corrected values of beta flow are determined by removing from measured values the contribution of natural radioactivity, in the following way:
+Φcorrc(x)=Φ(x)−Φnat  (28)
+
+[0133] The availability of a population of n data Φi(x) associated to the i-th measurement session on operating or spy filter means (Fr, Fs), allows to estimate for each session i and for each pair (r, s) the expected values [see pdf for image] Φi(xr [see pdf for image] and [see pdf for image] Φi(xs) [see pdf for image] through the arithmetic mean of the corresponding populations with the related uncertainties σi[Φ(xr)] and σi[Φ(xs)]. By determining at the beginning of the i-th session the expected in-air flow Φ0, it is possible to obtain the expected values and the uncertainties for the respective variables z, i.e. to determine [see pdf for image] zi(xr [see pdf for image] and [see pdf for image] zi(xs) [see pdf for image] with the related uncertainties σ[zi(xr)] and σ[zi(xs)]. The same in-air flow value Φ0 utilized, as mentioned hereto, to allow use of the adimensional variables z, is utilized for the measures performed in the j-th session.
+
+[0134] The expected values of variables z for operating filters Fr are experimentally estimated through the arithmetic means of the populations of n data, and are given, e.g. for the i-th session, by:
+
+[0135]
+[see pdf for image]
+
+[0136] The corresponding expected values of variables z for spy filters Fs are estimated through the arithmetic means calculated on a population consisting of 2n members (adjacent populations) and are therefore expressed, for the i-th session, by:
+
+[0137]
+[see pdf for image]
+respectively associated to the average values of variables z related to the operating filters Fr1 and Fr2.
+
+[0138] Operatively, by considering the i-th session as the blank one of the operating filters and the j-th session as the collect one, in which particulate matter has settled on the operating filters, the estimate of mass thickness xp is obtained as described below.
+
+[0139] From data zsi,12 and zsj,12 associated to the spy filter and related, e.g., to the operating filter Fr1, the value of the variable is calculated
+
+[0140]
+[see pdf for image]
+
+[0141] Said value, as expressed in the foregoing, represents the best estimate of the systematic fluctuations of variable z associated to the operating filter Fr1 between the blank and collect sessions:
+Zsij≈{tilde over (Z)}r1ij≅Zsystij(xf)  (32)
+
+[0142] Then, we can obtain the estimated value for Zr1*:
+
+[0143]
+[see pdf for image]
+
+[0144] Therefore, the mass thickness estimate will be:
+
+[0145]
+[see pdf for image]
+where k(z) represents the geometric mean of values k(zr1i(xf)) and k(zr1j(xf+xp)) determined in the blank and collect (i and j) sessions related to the operating filter Fr1 exploiting function k(z), first derivative of the calibration function g(z) of the mass measurement system.
+
+[0146] Note that, by following this approach, it is possible to calculate both the variance on xp, knowing the variance of variables Φri, Φrj, etc. obtained from the populations of measures performed in the blank and collect sessions, and the variance of k(z) estimated in the instrument calibration phase.
+
+[0147] Finally, the mass value of the particulate matter sample accumulated on the filter means Fr1 between blank and collect sessions can be obtained, knowing the value of the area S related to the useful filtration surface on which the film of particulate matter is homogeneously settled, by the following relationship:
+
+[0148]
+[see pdf for image]
+
+[0149] Relationship (35) is used in case mass thicknesses of the operating filter means and of the spy filters satisfy condition xFr≅xFs. If said condition is not verified, an optimum estimate of mp can anyhow be obtained by using the following relationship:
+
+[0150]
+[see pdf for image]
+
+[0151] A further technical problem faced and solved by the invention is to reconcile two opposite operating demands, i.e., on the one hand to work with a constant, granulometric cut in order to obtain a strict granulometric representativeness of the acquired sample, and on the other hand to work with a constant volumetric flow rate, both to comply with the regulations in force and to allow a reliable estimate of the average concentration of the sample.
+
+[0152] This problem is analytically detailed hereinafter.
+
+[0153] To obtain a strict granulometric representativeness of a PMx sample, it is necessary to work so as to obtain a constant granulometric cut. In the state of the art, European regulations mandate the volumetric flow rate at the sampling line inlet to be kept constant. This operating condition does not strictly allow a granulometric cut not varying over time; in fact, the value of the cut is defined by relationship:
+
+[0154]
+[see pdf for image]
+where d50 [m] denotes the cut diameter with a 50% impact efficiency, Cc denotes the Cunningham correction factor, du [m] the nozzle diameter, ρp [kg m−3] the particle density, Q [m3 s−1] the flow rate value, Stk50 the Stokes number corresponding to a 50% impact efficiency, and η[kg s−1 m−1] the air density value. This relationship highlights that in order to obtain a constant d50 value it is necessary that the ratio: between volumetric flow rate at the inlet of the sampling line Qvol and the ambient value of air viscosity η does not vary over time:
+
+[0155]
+[see pdf for image]
+
+[0156] Actually, systems working under constant inlet volumetric flow rate exhibit a granulometric cut value which is function of the value of air viscosity and therefore of temperature, as is evident from the relationship between temperature and air viscosity defined by Sutherland equation:
+
+[0157]
+[see pdf for image]
+
+[0158] Moreover, in methods based on accumulation of particulate matter on filter membranes, the size that has to be measured is the average concentration C of the sampled particulate mass with respect to the observation time T:
+
+[0159]
+[see pdf for image]
+
+[0160] This methods use as estimate of average concentration the value C* given by
+
+[0161]
+[see pdf for image]
+
+[0162] The mass M of sampled particulate matter is given by:
+
+[0163]
+[see pdf for image]
+where Q(t) is the volumetric flow rate as a function of time and V is the sampled volume given by:
+
+[0164]
+[see pdf for image]
+from which:
+
+[0165]
+[see pdf for image]
+
+[0166] Considering that the observable to be measured is C, whereas the concentration measured with the accumulation methods is given by C*, it is indispensable to define the operating conditions so as to have the values of the two quantities coincide. Relationships (40) and (44) coincide if and only if the volumetric flow rate of sampling is constant; in that case obtaining:
+
+[0167]
+[see pdf for image]
+
+[0168] Therefore, to determine the daily average concentration by using this method, sample should be accumulated at constant, inlet volumetric flow rate.
+
+[0169] A further technical problem set and solved by the invention is associated to the volatile fraction of the particulate matter. In fact, accumulation sampling methods intrinsically produce biases associated to evaporation of volatile compounds. The PMx sample fraction drawn between time t and time t+Δt on the filter means tends to lose, in the subsequent sampling phases, part of the volatile fraction in proportion to the length of the residual sampling, the thermodynamic conditions and the partial pressure of gaseous-phase compounds.
+
+[0170] The total mass collected on the filter at time t may be construed as made up of two contributions, the first one formed by the stable fraction and the second one formed by the volatile fraction. From a mathematical standpoint, the mass balance of the volatile fraction may be described with the following relationship:
+
+[0171]
+[see pdf for image]
+wherein Mv denotes the volatile mass of the sample accumulated at time t, M0v the volatile mass of the sample accumulated at time t0, η(t) the volatile compound loss rate, depending on temperature, relative humidity, partial pressure, etc., Cv the volumetric concentration and Qvol the volumetric flow rate. By varying air temperature in the accumulation zone it is possible to quantitatively modify the evaporation process. In principle, this allows to drastically reduce the effects of said process, bringing the temperature of air traversing the filter medium to values near to zero, i.e. causing η(t)→0.
+
+[0172] Hereinafter, the apparatus and the method of the invention will be described with reference to a preferred embodiment thereof.
+
+[0173] Referring initially to FIG. 11, an apparatus for determination of mass concentration of air-dispersed particulate matter is generally indicated by 1.
+
+[0174] In a nutshell, the apparatus 1 represents a system for automatic and sequential sampling of particulate matter on filter membranes, with associated mass measurement carried out through β attenuation methodology. As it will be detailed hereinafter, such a system works on two independent drawing lines, and mass measurement is performed on both filter membranes by using an unique “detector+β source” measurement module.
+
+[0175] More particularly, the apparatus 1 mainly comprises:
+
+[0176] a pair of independent drawing lines, 4 and 5 respectively, each comprising a respective sampling head 2, 3 apt to inlet air and therefore particulate matter into the apparatus 1;
+[0177] a sampling and measurement unit, generally denoted by 6, housing the filter membranes which will be introduced hereinafter and the means for measuring the mass of particulate matter settled thereon;
+[0178] a control unit 7, in the present example it also housed in the sampling and measurement unit 6;
+[0179] means 8 for adjusting the flow rate of the lines 4 and 5, it also mainly housed, always in the present example, in the sampling and measurement unit 6 and comprising a pair of pump units, respectively 9 and 10, each related to a respective drawing line 4, 5.
+
+[0180] Each of the hereto-introduced components will presently be described in greater detail.
+
+[0181] The sampling heads 2 and 3 are each of conventional type and apt to sample the air-suspended particulate matter. Each of them is fitted with a particle size (granulometric) fractionator inletting into the apparatus 1 only particles whose aerodynamic diameter is lower than the desired one (e.g., in the most usual applications, 10, 2.5 or 1.0 μm).
+
+[0182] The drawing lines 4 and 5 transfer inlet air, and therefore generally the particulate matter thereof, on respective collecting means; typically such as filter media housed in the sampling and measurement unit 6, one of said media being depicted in greater detail in FIGS. 12, 13 and 14 and generally denoted by F. Such a filter medium F, which hereinafter will more simply be referred to as filter, is made up of a filter membrane or filter membrane 12 inserted in a filter holder 13. The filter holder consists of two portions, in particular a top portion 131 and a bottom portion 132, which by tightly mating hold the filter membrane 12 thereinside. FIG. 13 illustrates the making of filter holders having different area to allow for beta flow measurements over suitable useful filtration surfaces S (β equivalent spot area). Selection of the most suitable β equivalent spot area is linked to the optimization of performances in mass concentration measurement, in proportion to the concentration levels expected at the sampling site, the season considered, the impedance and the loading capacity of the filter means used.
+
+[0183] FIG. 14 schematically illustrates the phase of so-called “enrichment” or of sampling of the filter membrane 12, i.e. the process by which inlet air traverses the membrane itself and any particulate matter is captured by the latter.
+
+[0184] As mentioned above, in the present embodiment it is provided the use of a plurality of filters. More specifically, and as it will be made evident hereinafter, in the present embodiment it is provided the use of a plurality of operating filters, i.e. of filters that are subjected to enrichment for the settling of particulate matter thereon, denoted by Fr, and of a plurality of spy filters, i.e. of filters subjected to the same environmental conditions (and therefore variations) of the operating filters, but substantially not concerned by the particulate matter, denoted by Fs.
+
+[0185] The filters, both operating and spy ones, are housed into suitable means for moving the same filters within the sampling and measurement unit 6, and loaded into and unloaded from said housings by means 14 for loading blank filters and means 15 for unloading used filters, respectively, as illustrated in greater detail in FIG. 15.
+
+[0186] Referring to the latter Figure, said moving means comprises a rotary disc 16, rotating about its own orthogonal axis of symmetry Z. The disc 16 has housings for six filter means, respectively denoted by references F1 to F6 in FIG. 15. In the present embodiment such housings for the filter means are evenly distributed in correspondence of an intermediate circular crown of the disc 16 itself. As will be detailed hereinafter, rotation of disc 16 brings filters F1-F6 into a plurality of subsequent positions required by the loading, enrichment, measurement and unloading cycle. E.g., in FIG. 15 the filters F5 and F6 are in enrichment phase on the respective lines 4 and 5, the filters F3 and F4 have ended enrichment phase and are in measurement phase, the filter F1 is in loading phase on the disc 16 and the filter F2 is in unloading phase from the disc 16 itself.
+
+[0187] In the present embodiment, the disc 16 provides also the option of housing three further filters-so-called “spy filters”, denoted, depending on their position on said crown, by number references S12, S34 and S56, respectively; each respectively interposed between two adjacent collecting filters F1-F2, F3-F4 and F5-F6. Moreover, as schematically depicted in FIG. 16, the disc 16 provides 3 further positions, defined as A, R1 and R2, where position A allows in-air beta flow determination (i.e., in the absence of filters interposed between source and detector), whereas positions R1 and R2, in which two reference aluminum foils of known thickness are placed, allow to determine the beta flows associated thereto, through which automatic testing of the beta calibration condition is possible.
+
+[0188] The disc 16 is set in rotation by conventional means, e.g. a stepping motor controlled by the electronics managing the control unit 7.
+
+[0189] Moreover, it is provided means for moving the filters F1-F6 with respect to the disc 16, in particular in a direction substantially orthogonal to the latter, apt to allow the loading and the unloading thereof from the disc 16 itself and the tight positioning of the filter membranes 12 on the sampling lines 4 and 5. In the present embodiment such means is based on pneumatically operated pistons, schematically depicted in FIG. 15 and denoted by 17. They exhibit the peculiar feature of having a single degree of freedom, therefore allowing no rotation of the filter means during all moving phases. Thus, it is removed a potential cause undermining measurement reproducibility, the one linked to the geometric repositioning between the blank measurement and the collect measurement. Said pistons in the present example are four, as they are associated to the sampling lines 4 and 5 and to the loading and unloading means 14 and 15, respectively.
+
+[0190] To the disc 16, always within the context of the sampling and measurement unit 6, it is associated means for measuring the mass of particulate matter collected on the operating filters, shown in greater detail in FIGS. 17 and 18. Said measuring means is based on a radiation technique, and in particular on a β-ray emitter or source 18 and on a related detector 19 arranged on opposite sides with respect to the filter under measurement, so that rays emitted by the source 18 traverse the filter and are attenuated by particulate matter collected thereon before being detected by the detector 19.
+
+[0191] As already mentioned in the introduction, the measurement technique based on β rays is per se known, therefore a further description thereof will be omitted.
+
+[0192] The source-detector block 18-19 is housed on a movable arm 20, just keeping source and detector mechanically constrained and integral therebetween. The arm 20 rotates about axis Z of the disc 16 and, as it will be detailed hereinafter, is apt to position source 18 and detector 19 in three different positions with respect to the disc 16 itself to perform envisaged measurements. The arm 20 is set in rotation by conventional means, e.g. a DC motor managed by the control unit 7.
+
+[0193] On the arm 20 it is also applied a movable shield 21 that, when required by the measurement sequence, interposes between source 18 and detector 19, shielding the former with respect to the latter and preventing source-emitted rays from traversing any filter interposed between the source itself and the detector.
+
+[0194] Turning now to FIG. 11, always within the context of the sampling and measurement unit 6, it is provided the above-mentioned means, generally denoted by 8, for adjusting the flow rate. Said means comprises the above-mentioned pair of pumps 9 and 10, one for each drawing line 4, 5, allowing to reach an operating flow rate preferably settable within the range of about 0.5÷2.8 m3/h. Flow rate adjustment in real time occurs via a pair of adjustment valves, respectively 22 for the drawing line 4 and 23 for the sampling line 4 and 23 for the drawing line 5, associated e.g. to a stepping motor.
+
+[0195] Moreover, the adjustment means 8 comprises, for each line 4 and 5, a pair of electrovalves, respectively 24, 25 and 26, 27. A first electrovalve 24, 26 of the pair is arranged in correspondence of an air inlet branch that originates in a air inlet 30, 31 and provides a critical orifice 28, 29, whereas a second electrovalve 25, 27 is arranged on the drawing line 4, 5, immediately upstream of the connection with said branch.
+
+[0196] Each pair of valves 24, 25 and 26, 27 allows to switch the pneumatic circuit between different configurations, and in particular between an operating sampling configuration, in which two of said operating filters F1-F6 are in enrichment phase, and one or more test configurations, in which performances of the apparatus 1 are tested.
+
+[0197] More specifically, also a so-called “Span test” configuration is provided, i.e. of testing the percent deviation of the measured value of flow rate with respect to the value of the flow generated in the critical orifice 28, 29 of each line 4, 5. This configuration is relevant since the measurement of sampling flow rate is based on the laws governing the transit of an air flow through a critical orifice. Knowing the pressure values upstream and downstream of the orifice, it is possible to trace the value of standard flow rate, where by “standard flow rate” it is meant the flow rate referred to certain conditions of pressure (Pstd) and temperature (Tstd), e.g., Tstd=273.1 K and Pstd≈103.3 kPa.
+
+[0198] Moreover, a so-called “Leak test” configuration is provided; i.e. of testing the tightness of the pneumatic circuit downstream of the filter, membrane. In the operating sampling configuration the second valves 25, 27 of the pair are opened, whereas the first valves 24, 26 are closed. In the Span test configuration the second valves 25, 27 of the pair are closed and the first valves 24, 26 are opened. Finally, in the Leak test configuration all valves 24-27 are closed.
+
+[0199] To the various components of the system described hereto there are preferably associated suitable temperature, pressure, relative humidity and flow rate sensors, whose location and function will be made evident also in light of the functional description of the apparatus 1 reported hereinafter.
+
+[0200] As to the control unit 7, it is apt to manage all components introduced hereto and, of course, it comprises a microprocessor and generally all management and control electronics required by the system, one or more user interfaces 72, e.g. display, keyboard(s), state-indicating LED, etc., related communication ports 73, e.g. a RS232 serial port, a modem, etc., and cards 74 for said temperature, pressure, flow rate and relative humidity sensors, as well as the necessary modules and power supply connections 75. As such a control unit is implementable by conventional hardware and/or software means, a further description thereof will be omitted.
+
+[0201] Hereinafter, the operation modes of the apparatus I will be described, illustrated in general terms and for each pair of operating filters in the diagram of FIG. 19 and in detail as time flow in the chart of FIG. 20.
+
+[0202] Prior to operating session start, the spy filters S12-S34-S56 besides two reference aluminum foils R1 and R2 used for calibration testing, are inserted on the rotary disc 16. Then, machine programming can occur (setting of: operating parameters, length of sampling cycles Tc, start date and hour of first operating cycle). After start of machine operation there are loaded the three pairs of filters F1-F2, F3-F4, F5-F6.
+
+[0203] Initially, the instrumentation automatically performs a beta span test, alternatively measuring the in-air β flow and the β flow traversing the reference aluminum membranes. The values of mass thickness of the two membranes calculated in the testing phase are compared to the nominal ones associated thereto. The configuration of the rotary disc 16 at the end of this phase is described in FIG. 16. Then, there sequentially start the blank measurement sessions respectively associated to the pairs of operating filters F1-F2 and F3-F4. Thus, it is possible to build the matrices M12b and M34b (availability of variables z1b and z2b, see relationship (29)). The blank measurement sequence will presently be detailed with reference, to FIGS. 21A to 21H.
+
+[0204] Preliminarily, an in-air, measurement is performed, i.e., in the absence of filters interposed between source and detector, preferably of, a length of about 2′30″ (to calculate flow Φ0, see relationship (2) and quality tests). To perform said measurement, the disc 16 is rotated 60° counterclockwise with respect to the position illustrated in FIG. 16, as shown in FIG. 21A.
+
+[0205] Thereafter, the disc is repositioned as in FIG. 16 and the blank measurement sequence is performed, during which no motion of disc 16 occurs. The number n of measurement groups forming the rows of matrices M12b and M34b is equal to 4 or 6 in proportion to length of the sampling cycle Tc, respectively of 8 h or at least of 12 hours.
+
+[0206] As shown in FIG. 21B, it is performed a first testing of the ground noise intrinsic to the detector 19, by interposing the movable shield 21 between the source 18 and the detector itself. Such a measurement is referred to as “dark”, and preferably lasts about 1′. Dark value is subtracted from beta flow values related to the operating and spy filters, so as to have availability of beta flow values that are then used to calculate the mass of particulate matter (see relationship (27)).
+
+[0207] In the present example, and with reference to the measurements performed with the pair of operating filters F1 and F2, four groups of measurements are performed, each consisting of
+
+[0208] three measurements of the beta flow across the spy filter S12;
+[0209] one measurement of the beta flow across the operating filter F1; and
+[0210] one measurement of the beta flow across the operating filter F2.
+
+[0211] In particular, as shown in FIG. 21C, the movable shield 21 is opened and it is performed the first actual measurement related to the spy filter S12, preferably of a length equal to about 5′.
+
+[0212] Then, the first term of the blank M12b measurement matrix is inserted:
+
+[0213]
+[see pdf for image]
+
+[0214] Then, as shown in FIG. 21D, a measurement on the filter F1 (position “A” of the movable arm 20) is performed, of a length preferably equal to about 10′, and the corresponding tennis inserted in the matrix:
+
+[0215]
+[see pdf for image]
+
+[0216] The detector 19 returns again into position ‘0’ and performs the second measurement on the “spy” filter S12 (preferred length: about 5′), as shown in FIG. 21E, and it is obtained the corresponding term in the matrix:
+
+[0217]
+[see pdf for image]
+
+[0218] As shown in FIG. 21F, the detector 19 moves to position ‘B’ and proceeds to the first actual measurement on filter F2 (preferred length: about 10′), thereby obtaining the corresponding term in the matrix:
+
+[0219]
+[see pdf for image]
+
+[0220] As, shown in FIG. 21G, the detector 19 returns again into position ‘0’ and performs the third actual measurement on S12 (preferred length: about 5′), thereby obtaining the corresponding term in the matrix.
+
+[0221]
+[see pdf for image]
+
+[0222] Then, the hereto-illustrated measurement cycle related to the construction of the blank matrix is repeated four times, until complete filling of matrix M12b:
+
+[0223]
+[see pdf for image]
+
+[0224] Finally, at the end of the blank measurement phase disclosed hereto, it is performed a second testing of the ground noise of the detector 18, closing the movable shield 21 and repeating the dark counts, as shown in FIG. 21H.
+
+[0225] The disc 16 rotates 120°, counterclockwise so as to have the pair of filters F3, F4 in the beta measurement session, and blank measurement is performed for this pair. (construction of matrix M34b).
+
+[0226] Upon ending the blank measurement phase with regard to the pairs F1, F2 and F3, F4, the disc 16 rotates 120° counterclockwise so as to have the pair of filters F1, F2 in a position suitable for the operating phase of the first sampling cycle (F1 on line A and F2 online B). In such a configuration the filters F5, F6 are already in a position suitable for blank measurement.
+
+[0227] The system now awaits for the instant programmed for the start of the sampling cycles.
+
+[0228] Upon starting the first sampling cycle (phase of enrichment of the particulate matter on filters F1-F2), blank measurements are performed on the pair F5-F6 (repetition of the procedure described for pairs F1-F2 and F3-F4; construction of matrix M56b). At the end of this sampling cycle the disc 16 rotates 120° counterclockwise and reaches the position suitable for the start of the second sampling cycle related to filters F3-F4. In this configuration the filters. F1-F2; enriched with the film of sampled particulate matter, lie in a position suitable for having collect measurement performed thereon. The measurement phase is delayed for a wait time sufficient to allow for thermodynamic balancing of the filter membranes. The sequence of collect measures on filters F1-F2 is in all analogous to the preceding blank sequences and will be illustrated with reference to FIGS. 22A-22M.
+
+[0229] First of all, as shown in FIG. 22A, a testing of the ground noise of the detector 19 is performed, analogously to what described above for the blank phase. Then, upon shielding the source 18, a “natural” measurement (measurement of flow due to the presence of radionuclides on the particulate matter collected on filter membranes), in the present example first on filter F1 (position A, shown in FIG. 22B) and then on filter F2 (position B, shown in FIG. 22C).
+
+[0230] Then, construction of the matrix collect M12c begins, with measurement cycles analogous to those illustrated with reference to the blank matrix.
+
+[0231] In particular, the arm 20 moves again in position 0 and the movable shield opens to begin the measurement phase on the first pair of filters sampled. As shown in FIG. 22D, it is carried out the first measurement on the spy filter S12 (preferred length of measurement: about 5′), then the first collect measurement on filter F1 shown in FIG. 22E (preferred length of measurement: about 10′), then the second measurement on S12 shown in FIG. 22F (preferred length: about 5′), then the first collect measurement on filter F2 (preferred length of measurement: about 10′) shown in FIG. 22G, and then the third measurement on the spy filter S12 (preferred length: about 5′) shown in FIG. 22H. This cycle is repeated four times, until obtaining all terms of the “collect” matrix:
+
+[0232]
+[see pdf for image]
+
+[0233] Thereafter, on filters F1 and F2 a second battery of “natural” counts is performed (source 18 shielded), as shown in FIGS. 22I and 22L, respectively. The two natural measurements (preferred length of individual measurement: about 5′) allow to correct the values of the flows measured for the sampled operating filters, removing therefrom the contribution due to the presence of natural radioactivity (see relationship (28)).
+
+[0234] Then, a second testing of the ground noise of the detector 19 is carried out, repeating the “dark” measurement, as shown in FIG. 22M.
+
+[0235] Then, once collect measurement phase has ended, the pair of filters F1, F2 is unloaded from disc 16 by the means 15 and a new pair of filters F7-F8 is loaded on the disc, stopping for a strictly necessary time the sampling phase on the pair F3, F4. Moreover, during this short stop an in-air measurement is performed (for flow Φ0, calculation and quality checks, see relationship (2)).
+
+[0236] Then, data related to the above-reported matrices Mb and Mc are processed to get to the estimate of PMx concentration as indicated in equations (26) to (34) and described in the chart of FIG. 23.
+
+[0237] Therefore, the operating cycle resumes its natural course (sampling on F3-F4). Freshly loaded filters, F7-F8 will lie in the beta measurement zone and, accordingly, the blank measurement sequence could be performed thereon. Upon ending the blank beta measurement on filters F7-F8, the sampling cycle continues on filters F3-F4.
+
+[0238] The operating sequence described for the second cycle will thus be reiterated for the subsequent pairs of filters in the related sampling and measurement sequences. It will be appreciated that the provision of a plurality of pairs of filters that can simultaneously be housed in the unit 6 and be allocated in different effective positions allows a continuous sampling and measurement, as while a filter pair is in measurement phase another pair may be in sampling phase, and so on.
+
+[0239] As mentioned above, preferably the apparatus 1 and the method implemented thereby provide some quality checks for the sampling system and the measurement system, performed by the abovementioned, sensors and the control unit 7.
+
+[0240] Concerning the sampling system, there are provided the checks reported hereinafter.
+
+[0241] Measurement of ambient temperature and of the temperature on each filter—Since volatile material losses, depend on the difference between ambient temperature and the temperature on the accumulation means, the apparatus monitors air temperature (Ta) and on-filter temperature (Tf), storing the related information.
+[0242] measurement of on-filter pressure drop—From the value of on-filter pressure drop there may be obtained precious information on the correct progress of the sampling process. For this reason, data related to initial, end and maximum pressure drop on the filter means are stored.
+[0243] calculation of flow rate RSD (Relative Standard Deviation) on sampling lines 4 and 5—To check operation of the sampling head and of the related granulometric cut size fractionator, it is necessary to know the actual value of the inlet volumetric flow rate. This is attained by reading the value both of atmospheric pressure and of external air temperature. In order to give statistically representative information on the operating flow rate, it is provided, for each sampling cycle, the calculation of the standard deviation relative to the variable Qi-Qi, operating, where Qi is the expected flow rate and Qi, operating is the measured flow rate.
+[0244] “Span Test” check—By exploiting the approach making use of orifices with known geometry and working under critical pressure conditions, the instrument generates a flow rate with known value:
+
+[0245]
+[see pdf for image]
+where P and T are the pressure and the temperature upstream of the orifice. This value is compared with the value measured by the instrument, allowing to evaluate the deviation of the measured value from the expected value.
+
+[0246] “Leak Test” check—At the beginning of each sampling cycle the instrument performs a pneumatic auto leak test procedure allowing to test tightness of the pneumatic circuit downstream of the filter membrane.
+[0247] Pressure sensor check—The apparatus automatically performs a check on the response of the pressure sensors.
+
+[0248] Concerning the beta measurement system, there are provided the tests reported hereinafter, related both to the “blank” and to the “collect” measurement phase.
+
+[0249] “Dark” ground noise check—ground radioactivity counts are detected at the beginning, of each cycle and, in case they are not comprised in a predefined range, the instrumentation signals it with the related messages (Warning and Alarm).
+[0250] Detector short-term stability check—During measurement of the β radiation flow traversing the filter, congruence between count rate and Poisson statistics (radioactive decay) is tested. If the result of such a comparison is not in keeping with statistics describing the decay, the instrumentation signals it with the related messages (Warning and Alarm).
+[0251] Detector long-term stability check—In order to monitor potential slow drifts in the instrumental response of the detector (though irrelevant on mass measurement quality) air counts (the intensity of β radiation through the air mass present between source and detector) between successive measurement cycles are compared. If the percent difference between the measured air count value and the reference one is greater than the set limit value, the instrumentation signals it with the related messages (Warning and Alarm).
+[0252] Geiger counter detector power supply voltage check—The quality of the instrumental response of the Geiger detector is strictly linked to stability of high power supply voltage thereof. In the instrumentation, the implemented power supply is capable of providing a voltage stabilized within ±1% of the average value. In case standard deviation is greater than 2%, the instrumentation signals it with the related messages (Warning and Alarm).
+
+[0253] Finally, at the beginning of each operating cycle an automatic “calibration test” procedure is started, by using in-air beta flow measurements (Φ0) and through two reference aluminum foils (R1, R2 in FIG. 24) of known mass thickness. When the result of the test does not fall within the set limits, the instrumentation signals it with an alarm signal.
+
+[0254] The apparatus provides 2 operating use modes selectable by the operator, respectively called “Monitor Mode” and “Reference Mode”.
+
+[0255] The first mode utilizes two independent lines to allow sampling and mass measurement on a pair of filter means, or a single line of choice to allow sampling and mass measurement on a single filter means.
+
+[0256] The second mode utilizes one line for particulate matter accumulation, whereas the other line is utilized as ancillary line to allow determination of the concentration value of air-dispersed particulate matter with a very high quality Standard, or to achieve specific metrological aims:
+
+[0257] In both modes, there are used spy filters S12/S34/S56 in FIG. 16 and filters F1-F6 which may assume, in proportion to the various configurations, either all the role of operating filters or the role of operating filters (F1/F3/F5) With associated additional spy filters (F2s/F4s/F6s), which are useful in case the instrumentation is utilized to achieve the highest quality standard and for specific metrological studies. Then, in the first case to each flow measurement related to the operating filter F a single flow measurement of the related spy filter S is associated; in lie second case, to each flow measurement related to the operating filter F two flow values, related to the respective spy filters S ad F3, are associated.
+
+[0258] The “Monitor” mode (FIG. 25) provides 3 possible configurations:
+
+[0259] A & B line: allows particulate matter sampling and mass measurement on two independent membranes (e.g. PM10 and PM2.5) respectively sampled by lines A and B, both active;
+[0260] A line: allows particulate matter sampling and mass measurement on the sole A line, B line remains inactive;
+[0261] B line: allows particulate matter sampling and mass measurement on the sole B line, A line remains inactive;
+
+[0262] The “Reference” mode provides 2 possible configurations:
+
+[0263] Normal: the drawing lines work at the same constant volumetric flow rate, FIG. 26.
+[0264] Split: the drawing lines can work at a constant flow rate; FIG. 27, or at a constant Stokes number, FIG. 28. To perform drawing at a constant Stokes number it is necessary to set the value of the volumetric flow rate of the (constant) accumulation line, whereas the flow rate value of the other line will be automatically adjusted by the instrument.
+
+[0265] In the “Reference” mode, one sampling line (A or B) is used for sample drawing and accumulation on the filter membrane and the other one (B or A) for the “spy filter”. The operator could choose which line to use for sample accumulation, and, therefore on which line to insert the abatement system:
+
+[0266] A Line: the sample of particulate matter is accumulated on A line filter membrane; B line membrane (with abatement system) will function as “spy filter”.
+[0267] B line: the sample of particulate matter is accumulated on B line filter membrane; line membrane (with abatement system) will function as “spy filter”.
+
+[0268] According to the “Monitor” mode in the “A & B Line” configuration, the β measurement normalization method is based on the use of the Spy filters S12/S34/S56 that are positioned on the dish at cycle start, on an intermediate position between the respective pairs of operating filters.
+
+[0269] According to the “Monitor” mode in the “A line” or “B line” configuration, only A or B sampling line is used. Hence, on the dish 3 seats are made available to hold 3 further spy filters (F2s/F4s/F6s or F1s/F3s/F5s) that add to S12/S34/S56. Thus, in each β measurement session, to each flow related to the operating filter there are associated two flow values related to spy filters. This allow a further reduction of uncertainty in the quantitative estimate of systematic biases.
+
+[0270] According to the “Reference Normal” mode, sampling occurs with both of the above-described operating drawing lines 4 and 5, but with particulate matter accumulation only on one of the two lines, e.g. line 4. The other line, in the aforementioned example line 5, is used as ancillary line for achieving specific metrological aims. Therefore, in this mode it is provided, on the ancillary line, an abatement system for preventing particulate matter transit. This mode preferably provides equal flow rate on the two lines. In said mode, the filter means present on line 5 functions as “dynamic” spy filter (as traversed by the air flow, yet with no particulate matter accumulation) and therefore as tracer of operating sampling conditions.
+
+[0271] According to the “Reference Split” mode, the apparatus provides a single sampling head 21, with reference to FIG. 27, working at constant granulometric cut or at constant volumetric flow rate. Downstream thereto there are provided a calm chamber 22 and then two sampling lines, respectively 23 and 24.
+
+[0272] In case of “constant volumetric flow rate” configuration, both lines 23 and 24 work at constant volumetric flow rate. In addition, on the second line an abatement system 25 is provided, apt to prevent particulate matter transit. Hence, the sampling takes place with both lines 23 and 24 active, but with particulate matter accumulation only on line 23 and with the other line 24 utilized as flow rate balancing line, thereby ensuring constant volumetric flow rate on the sampling head of the system. The measurement modes are analogous to those already illustrated with reference to FIG. 16.
+
+[0273] As disclosed above, a strict sampling technique must meet two apparently contradictory demands: on, the one hand, it is necessary to work at constant Stokes number to ensure invariance of the value of granulometric cut with respect to environmental conditions, on the other hand it is necessary to work at constant volumetric flow rate to ensure that daily average concentration be provided in a metrologically correct manner. In the case of “constant Stokes number” configuration the first line 23 works at constant volumetric flow rate thanks to the fact that the second line 24 draws or provides a variable balancing flow rate. In addition, on the second line an abatement system 25 is provided, apt to prevent particulate matter transit. Hence, sampling occurs with both lines 23 and 24 active, but with particulate matter accumulation only on line 23 and with the other line 24 utilized as flow rate balancing line, so as to ensure invariance over time of the granulometric cut on the sampling head of the system. The measurement modes are analogous to those already illustrated with reference to FIG. 16.
+
+[0274] The apparatus 1 also provides variant sampling configurations. These variants will be described merely with reference to the aspects differentiating them from the first embodiment described hereto, and components analogous or equivalent to the above-introduced ones will be denoted by the same reference number.
+
+[0275] In particular, the apparatus 1 provides a first sampling variant, always described with reference to FIG. 25, in which the two sampling heads 11, and 12, as well as the related inlet flow rates, are alike. If different filters are used on the two drawing lines 13 and 14, it is possible to test the behavior of filters of different type. If instead filters are alike, it is possible to test the equivalence of the two (alike or different) heads, or improve uncertainty estimates on mass concentration and/or chemical compound concentration values.
+
+[0276] According to another variant schematically shown in FIG. 29, the apparatus may comprise two sampling heads, respectively 31 and 32, of different standard but analogous granulometric cut, associated on independent filter membranes on the two drawing lines 33 and 34. Said apparatus allows sampling in parallel, e.g. PME) or PM2.5, for an equivalence testing of the two heads. E.g., the head 31 may be contrived for EU standard PM10 with a flow rate equal to about 2.3 m3/h, and the head 32 for U.S.EPA standard PM10 with a flow rate equal to about 1 m3/h.
+
+[0277] According to a further variant, schematically illustrated in FIG. 30, the apparatus further comprises two sampling heads, respectively 41 and 42, having different granulometric cut, associated to independent filter membranes for concomitant sampling, e.g. PM10 and PM2.5. In the present example the inlet flow rate of each head is equal to about 2.3 m3/h.
+
+[0278] According to a variant embodiment schematically shown in FIG. 31, the apparatus of the invention provides the sampling with a single sampling head 51 associated to two sampling lines 53 and 54 with two independent filter membranes. In this case, the apparatus comprises also a calm chamber 52 arranged downstream of the head 51. According to this variant, the apparatus of the invention may be employed for sampling on different filters, by chemical speciation. E.g., teflon filter F1 may be used for ions, metals, etc., and quartz filter F2 for organic materials, PAH, Carbon, etc. Moreover, the apparatus may be employed for sampling in parallel, to improve uncertainty estimates on mass concentration and/or chemical compound concentration values. In that case, the filters and the flow rates on the two lines may be alike.
+
+[0279] According to another variant, schematically illustrated in FIG. 32, the apparatus may allow the sampling of two different particle sizes, e.g. PM10 and PM2.5, with a single sampling head 61 having a greater particle size, e.g. PM10, and an impactor 62 having a lower particle size, e.g. PM2.5, in series. Therefore, to the head 61 two sampling lines are associated, respectively 63 and 64, on one of which the impactor 62 is arranged. The flow rate of the first line is equal, e.g., to about 1.3 m3/h, and the other line, downstream of the impactor, has a flow rate equal to about 1 m3/h.
+
+[0280] According to another variant, schematically illustrated in FIG. 33, the apparatus may allow the minimizing of biases associated to evaporative processes, and concomitantly the assessment of said losses. This variant provides the control of the temperature on the enrichment line 73, so that the air temperature on the related operating filter be never higher than about 1-2° C., whereas the presence of a heater is provided on the enrichment line 74 temperature control is performed by suitable sensors and associated temperature control means 75 and 76, e.g. coils. Moreover, suitable condensate collectors 77 and 78 are provided. By varying the air temperature in the accumulation zone of lines 73 and 74 the evaporation process may be quantitatively modified. In fact, by bringing the temperature of air transiting the filter medium corresponding to line 73 to values near zero, the effects of such a phenomenon may be drastically reduced. Therefore, a comparison with the symmetrical drying processenacted on the filter means corresponding to line 74 may demonstrate with high accuracy the effects of evaporative processes on mass measurement.
+
+[0281] It will be understood that the invention also refers to a method for determination of the mass concentration of air-dispersed particulate matter: by operating filter means, mainly comprising the phases of:
+
+[0282] (a) performing a measurement of the mass of particulate matter settled on the operating filter means in a determined sampling period;
+[0283] (b) performing the same measurement on spy filter means exposed to the same environmental conditions of said operating filter means in said sampling period, concerned or not concerned by the particulate matter;
+[0284] (c) determining the mass concentration of particulate matter by compensating for the measurement performed in phase (a) with that performed in phase (b).
+
+[0285] The preferred features of the method at issue have already been described with reference to the operation steps of the different configurations and variant embodiments of the apparatus of the invention illustrated above, and therefore will not be repeated.
+
+[0286] The present invention has been hereto described with reference to preferred embodiments thereof. It is understood that other embodiments may exist, all falling within the concept of the same invention, and all comprised within the protective scope of the claims hereinafter.
+
+(57)
+Claims
+
+1. An apparatus for environmental monitoring, suitable for determination of mass concentration of air-dispersed particulate matter by means for collecting said particulate matter during a sampling period of an enrichment phase, based, on operating filters and spy filters, the spy filters not being exposed to the particulate matter, comprising:
+a pair of independent drawing lines each comprising a respective sampling head adapted to inlet air, and therefore particulate matter, into the apparatus;
+
+adjusting means for adjusting flow rate of said drawing lines;
+
+a sampling and measuring unit, comprising a filter housing and measuring arrangement for measuring the mass of particulate matter settled upon said operating filters,
+wherein the measuring arrangement means comprises a radiation emitter and a related detector, wherein the radiation emitted by said emitter is adapted to traverse the operating filters or spy filters and then be detected by said detector, the radiation emitter and the related detector implementing a β radiation attenuation technique;
+
+a rotary disc for moving said filter housing, adapted to bring said filters into a plurality of subsequent positions required for their loading, enriching, measuring and unloading;
+
+a movable arm for positioning said measuring arrangement with respect to said rotary disc to perform the measurements;
+
+a control unit configured to:
+(a) perform a blank measurement upon said operating filters, wherein β radiation flow through said operating filters is measured before said enrichment phase;
+
+(b) perform, contextually to the measurement in (a), the same measurement of the β radiation flow through said spy filters;
+
+(c) perform a measurement of the mass of particulate, settled on said operating filters exposed to said sampling period, also said measurement being performed through said β radiation attenuation technique;
+
+(d) perform, contextually to the measurement in (c), the same measurement on said spy filters; and
+
+(e) determine said mass concentration of particulate matter by correcting the mass measurement obtained with blank and particulate measurements performed upon the operating filters, with the measurements performed upon the spy filters.
+
+2. The apparatus according to claim 1, wherein said measuring arrangement further comprises means for performing a measurement of the natural radioactivity of the particulate matter settled on said operating filters.
+
+3. The apparatus according to claim 1, wherein said measuring arrangement comprises a movable shield adapted to shield said emitter with respect to said detector.
+
+4. The apparatus according to claim 1, further comprising housings for a plurality of said operating filters.
+
+5. The apparatus according to claim 4, wherein the housings are six housings, for a respective number of operating filters.
+
+6. The apparatus according to claim 1, further comprising housings for a plurality of said spy filters.
+
+7. The apparatus according to claim 6, wherein the housings are six housings, for a respective number of spy filters.
+
+8. The apparatus according to claim 1, wherein said operating filters and/or said spy filters comprise one or more filter membranes.
+
+9. The apparatus according to claim 1, further comprising a movable disc for said operating filters and/or said spy filters, the disc adapted to selectively arrange one or more of said filters in a plurality of positions selected from a group comprising one or more loading positions, one or more sampling positions, one or more measuring positions and one or more unloading positions.
+
+10. The apparatus according to claim 9, wherein said movable disc is a rotary disc.
+
+11. The apparatus according to claim 10, wherein said movable disc is a disc rotating about its own axis.
+
+12. The apparatus according to claim 1, further comprising a movable arm adapted to selectively position said measuring arrangement in correspondence of one of said operating filters or spy filters.
+
+13. The apparatus according to claim 1, further comprising loading means and/or unloading means for said operating filters or spy filters.
+
+14. The apparatus according to claim 1, further comprising a plurality of independent drawing lines adapted to work simultaneously for inletting of external air in correspondence of said operating filters or spy filters.
+
+15. A method for determination of mass concentration of air-dispersed particulate matter by i) operating filters exposed to said particulate matter during a sampling period of an enrichment phase, and ii) spy filters, the spy filters not being exposed to said particulate matter, the method being based upon measurements performed through a β radiation attenuation technique, the method comprising:
+a) performing a blank measurement upon said operating filters, wherein β radiation flow through said operating filters measured before said enrichment phase;
+
+b) performing, contextually to the measurement in (a), the same measurement of the β flow through said spy filters;
+
+c) performing a measurement of the mass of particulate, settled on said operating filters, also said measurement being performed through said β radiation attenuation technique;
+
+d) performing, contextually to the measurement in (c), the same measurement on said spy filters; and
+
+e) determining said mass concentration of particulate matter by correcting the measurements performed in (a) and (c) with those performed in (b) and (d).
+
+16. The method according to claim 15, comprising performing a measurement with a shielded or deactivated radiation emitter.
+
+17. The method according to claim 15, comprising sequentially performing a plurality of measurements on said operating filters or spy filters.
+
+18. The method according to claim 15, wherein the operating filters are three pairs of operating filters and the spy filters are three pairs of spy filters.
+
+19. The method according to claim 15, wherein said operating filters and/or spy filters comprise one or more filter membranes.
+
+20. The method according to claim 15, further comprising selective shifting of said operating filters and/or said spy filters-in a plurality of positions selected from a group comprising one or more enrichment positions, one or more measurement positions and one or more loading and/or unloading positions.
+
+21. The method according to claim 15, further comprising a selective positioning of said operating filters or spy filters.
+
+22. The method according to claim 15, further comprising a selective positioning of measuring arrangement in correspondence of said operating filters or spy filters.
+
+23. The method according to claim 15, further comprising sampling of external air by a plurality of independent drawing lines adapted to operate simultaneously for inletting of air in correspondence of said operating filters or spy filters.
+
+24. The method according to claim 15, further comprising sampling of external air in correspondence of a common inlet, a calm phase downstream of said inlet and, downstream of said calm phase, inletting of air in said operating filters or spy filters by a plurality of inlet lines.
+
+* * * * *

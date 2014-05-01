@@ -1,0 +1,247 @@
+Disposable Handcuffs
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+2
+236
+710
+B1
+
+(12) EUROPEAN PATENT SPECIFICATION
+
+(45) Mention of the grant of the patent:
+21.11.2012
+Bulletin
+2012/47
+
+(21) Application number: 10155321.2
+
+(22) Date of filing:
+03.03.2010
+
+(51) Int. Cl.
+:
+E05B 75/00 (2006.01)
+
+(54)
+Disposable handcuffs
+
+Einweg Fesseln
+
+Menottes jetable
+
+(84) Designated Contracting States:
+AT
+BE
+BG
+CH
+CY
+CZ
+DE
+DK
+EE
+ES
+FI
+FR
+GB
+GR
+HR
+HU
+IE
+IS
+IT
+LI
+LT
+LU
+LV
+MC
+MK
+MT
+NL
+NO
+PL
+PT
+RO
+SE
+SI
+SK
+SM
+TR
+
+(30) Priority:  11.03.2009 CZ 20090154
+
+(43) Date of publication of application:
+06.10.2010
+Bulletin
+2010/40
+
+(73) Proprietors:
+
+* Kostal, Bretislav
+10600 Praha 10 (CZ)
+* Kupa, Vladimir
+150 00 Praha 5 (CZ)
+
+(72) Inventors:
+
+* Kostal, Bretislav
+10600 Praha 10 (CZ)
+* Kupa, Vladimir
+150 00 Praha 5 (CZ)
+
+(74) Representative: Rezac, Petr
+Jihozápadní-III 1145/4
+141 00 Praha 4
+141 00 Praha 4 (CZ)
+
+(56) References cited:
+:
+EP-A1- 0 498 100
+US-A- 5 802 675
+US-A- 4 964 419
+
+Note: Within nine months from the publication of the mention of the grant of the European patent, any person may give notice to the European Patent Office of opposition to the European patent granted. Notice of opposition shall be filed in a written reasoned statement. It shall not be deemed to have been filed until the opposition fee has been paid. (Art. 99(1) European Patent Convention).
+
+Description
+
+Technical Field
+
+[0001]
+The invention relates to disposable handcuffs comprising a flat strap of flexible material including two outer sections, a central section and two loop sections between said outer sections and said central section, a box having a first side and a second side and a pair of passages between them for receiving the flat strap for longitudinal motion thereof within the passages and means for locking the flat strap in the passages, the ends of the outer sections extending from the first side of the box and the loop sections extending from the second side of the box and means for fixing the central section in the box.
+
+Background Art
+
+[0002]
+Disposable handcuffs or keyless handcuffs consisting mostly of a cord or a plastic straps and a locking mechanism are used as an inexpensive substitute for conventional metal restraints with a lock and key. Their use is advantageous in situations where greater number of persons shall be restrained and arrested within relatively short period of time and where the use of conventional handcuffs would be time consuming and expensive. With this type of handcuffs the persons are mostly released by destruction - cutting through the plastic strap or cord by the authorized officer. The most important part of the disposable handcuffs is the locking mechanism, which shall withstand the efforts of the detainee to release himself from the wrist surrounding loops by tempering with the device and using thin objects to damage or eliminate the self locking parts of the mechanism to free the loops.
+
+[0003] US pat. No. 4,964,419 discloses a crimping mechanism of reusable handcuffs with a two-way passage for receiving and crimping a cord forming the loops together with their free end sections. The cord crimping member or jaws are biased to the crimping position by a spring and the crimping member or jaws may be released by pushing down a plunger acting against the force of the spring. Nevertheless, the crimping force exerted on several cord layers may appear to be insufficient and therefore it is recommended to make a knot on the free end cord sections. Moreover, the release plunger, although not directly accessible by the hand of the detainee, involves potential danger in that the detainee may find an instrument for pressing the plunger down and thus to release himself from the handcuffs.
+
+[0004]
+A disposable restraining device is described in US pat. No. 5,669,110. The device comprises an interlocking cover for joining together two locking boxes each designed to anchor one end of a separate strap. The loops are formed by threading the other ends of the straps through the respective openings in the cover and the locking box. Each strap is secured within the locking box by interaction of a saw tooth ribbed surface of the strap with opposite oriented resilient detents of the locking box. The disclosed locking mechanism requires unconventional specific design of straps in combination with locking boxes what makes the handcuffs expensive and less universal.
+
+[0005]
+The Czech application for invention PV 2007-690 discloses a locking mechanism for each loop consisting of an axially movable wedge shaped body located in a narrowing passage for the loop forming strap. The body is provided with saw teeth on the side adjacent to the strap surface so that when the strap moves again the saw teeth, for example in the effort of a detainee to release the loop, the body moves deeply into the narrowed part of the chamber and the body teeth are pressed down into the strap so that their locking effect is increased. Nevertheless, the locking effect of the saw teeth may be insufficient with straps made of non standard hard materials.
+
+Summary of Invention
+
+[0006]
+The object of the invention is to provide disposable handcuffs with a single strap and simple and reliable locking mechanism applicable to all conventional types of straps whether made of solid material or knitted fabrics.
+
+[0007]
+According to the invention the disposable handcuffs comprise a flat strap of flexible material including two outer sections, a central section and two loop sections between said outer sections and said central section, a box for locking the flat strap therein having a first side and a second side and a pair of passages between said sides for receiving the flat strap for longitudinal motion within the passages, the ends of the outer sections extending from the first side of the box and the loop sections extending from the second side of the box and means for fixing the central section in the box. The object of the invention is achieved in that each of the pair of passages have a strap supporting wall and an opposite partially offset wall forming a cavity between said walls open to the first side of the box, a rotational body located within each of the cavities for contact of the rotational surface thereof with the offset wall on one side and the flat strap on the other side, a boss having a sharp end extending s from the rotational body to engage the outer section of the flat strap adjacent to the first side of the box and a cover fixed on the first side of the box and overlapping the cavities.
+
+[0008]
+In order to ensure an immediate locking effect of the rotational body a holding down member is disposed between the rotational body and the cover to keep the sharp end of the boss in contact with the flat strap. Preferably, the holding down member is a roller made of elastic material.
+To further enhance the locking effect, the cavity is narrowing from the first side of the box by inclining the offset wall at an angle of 2 to 5 degrees.
+
+[0009]
+According to another aspect of the invention, the box has two central passages in the central part between the pair of passages for fixing the central section of the flat strap in the box.
+
+[0010]
+According to still another feature of the invention the box has a recess in the central part of the first side for fixedly mounting the cover in the box to fix the central section of the flat strap on the box.
+
+[0011]
+To improve the fixing effect of the cover the cover has a central edge and two lateral ledges and the first side of the box has complementary surfaces to crimp the flat strap between the central edge and the lateral ledges of the cover and the first side of the box.
+
+[0012]
+Advantageously, the flat strap is made of a textile material.
+
+[0013]
+The essential feature of the invention resides in the use of a locking rotational body with a boss extending from its rotational surface and provided with a sharp end or tip for engaging the flat strap. In another advantageous embodiment, the rotational body is combined with a holding down member avoiding the lost of contact of the sharp end with the flat strap. In the effort to release the loop surrounding the detainee's wrist by pulling on the strap loops, the sharp edge or tip on the rotational body starts to rotate and to protruding deeper into the flat strap material. Accordingly, a progressive locking effect takes place thereby hindering any other motion of the flat strap which could cause a release of the loop. The use of a tip end increases the pressure exerted on the strap by order of magnitude when compared with wedge or saw teeth and provides the highest security of the device. The box cover provided with central edge and lateral ledges for locking the flat strap obstructs any access to the strap from the other side and further increases the safety of the fixation of the flat strap in the box. A resistant textile material made for example from synthetic knitted fibers used for the flat strap is capable to withstand lateral forces exerted by the sharp edge on the textile material and reduces the handcuffs weight and consequently the danger of using the handcuffs as a striking instrument.
+
+Brief Description of Drawings
+
+[0014]
+Further objects of the present invention together with additional features contributing thereto will be apparent from preferred embodiments of the invention as illustrated in the accompanying drawings wherein:
+Fig. 1 is an overall sectional view of handcuffs including loops and a locking box;
+
+Fig. 2a is a detailed sectional view of a locking mechanism in the process of forming the loops;
+
+Fig. 2b is a detailed sectional view of the locking mechanism in the locking position of a locking boss;
+
+Fig. 3 is a plan sectional view of the box;
+
+Fig. 4 is an enlarged perspective view of the rotational body;
+
+Fig. 5 is a perspective view of a box cover.
+
+Description of Embodiments
+
+[0015]
+Disposable handcuffs shown in an overall configuration in Fig. 1 comprise a flat strap 1 of flexible material, for example of textile made of knitted synthetic fibers, including nylon webbings etc. consisting of a central section 14, loops 11,12 and outer sections 15,16. The central section 14 is embedded in a box 2 for locking the flat strap by treading each of outer sections 15, 16 through central passages 27, 28 in the box 2 and then through the outer passage 21, 22 in the box 2. The outer sections 15, 16 are tied up together under the lower - first side of the body 2. As shown in Fig. 3, all the passages have approximately rectangular, oblong cross-section for receiving the flat strap 1. The passages 21, 22 have a flat strap support wall on one side and an opposite, partially offset wall 23, 24 on the other side forming thereby a cavity closed by shoulders 25, 26 next to the upper - second side of the box 2 and opened on the first side of the box 2. The lower part of the box 2 has a recess for receiving a cover 5 to close up the cavity.
+
+[0016]
+A rotational body 4 is inserted in each cavity of the passages 21, 22. As shown in detail in Fig 4, the rotational body 4 is shaped as a roller and is provided with a boss extending from the rotational surface of the rotational body 4 and ending by a sharp end which may have a form of a tip 41. The rotational body 4 is positioned within the cavity so that the tip 41 is directed towards the outer sections 15, 16 of the flat strap. This position of the rotational body 4 enables the outer sections 15, 16 of the flat strap to slide on the tip 41 surface when moving out of the first side of the box 2 (see Fig. 2a) but prevents the outer sections 15, 16 to move in the opposite directions out of the second side of the box 2 and thereby to expand the loops 11, 12 (see Fig. 2b).
+
+[0017]
+A holding down member 3 is located in the cavity between the cover 5 and the rotational body 4. The holding down member 3 may have a form of a roller or otherwise shaped body, such as a spring etc. Further, the holding down member 3 may be substituted with a projection formed on the respective portions of the cover 5 overlapping the cavities and extending into the cavity. The purpose of the holding down member 3 is to keep the tip 41 in contact with the flat strap 1 to reduce to minimum the path of the tip from its released position into a position where the tip 41 engages firmly the flat strap 1 and protrudes into the surface of the flat strap 1. In the utmost position the tip 41 leans against the strap support wall to obstruct any further motion of the flat strap 1 out of the box 2 and thereby to expand the respective loops 11, 12. In order to increase the force of the rotational body 4 exerted on the flat strap 1 when the rotational body 4 is carried by the flat strap 1 to the shoulder 25, 26, the offset walls of the passages 21, 22 are inclined at an angle of 2 to 5 degrees thereby narrowing the cross section of the cavity towards the shoulders 25, 26.
+
+[0018]
+As shown in Fig. 5, the cover 5 is in its medium portion provided with a central ledge 51 of triangular cross section and two lateral ledges 52, 53 of trapezoidal cross section, while the box 2 is on the first side provided with complementary recesses situated along the central passages 27, 28.
+The central section 14 of the flat strap 1 is firmly and unreleasably held in its crimpled position between the ledges 51, 52, 53 and the complementary recesses in the box 2 by pressing down the cover 5 into the box 2. The correct position of the cover 5 with respect to the box 2 is further secured by four lateral guides 54 and corresponding recess in the box 2.
+
+[0019]
+It is obvious that the passages 21, 22 may have a cross section other than a rectangular one and the rotational body 4 may take a shape matching the cross section of the passages 21, 22, for example a barrel shape, etc.
+
+[0020]
+In use, the officer first sets the required size of the loops for surrounding tightly the wrists of a detainee by pulling down the outer sections 15, 16 of the flat strap 1 in the direction of the arrow shown in Fig. 2a. Then, by pulling the loops 11, 12 out of the box 2 in the direction of arrow in Fig. 2b, the officer ensures that the flat stripe 1 is locked within the box 2. Simultaneously, the flat strap 1 moving inside the box carries and rotates the rotational body so that its tip 41 protrudes deeply inside the flat strap 1. Any other effort of the detainee to release the loops by pulling the strap outside the box 2 causes that the tip 41 protrudes deeply into the flat strap 1 till it leans against the supporting wall of the passage 21, 22 whereby the flat strap 1 stands locked in this position. On the other hand, by pulling on the outer sections 15, 16 the loops 11, 12 are further contracted around the detainee's wrists.
+
+Industrial applicability
+
+[0021]
+The disposable handcuffs according to the present invention are in particular applicable in situations where adverse acts of a number of detainees shall be restrained in a prompt and effective manner by fixing together their hands without the necessity to use other more complicated and time consuming means such as key locking handcuffs, etc.
+
+Claims
+
+1. Disposable handcuffs comprising a flat strap (1) of flexible material including a central section (14), two outer sections (15, 16) and two loop sections (11, 12) between said outer sections (15, 16) and said central section (14), a box (2) for locking the flat strap therein having a first side, a second side and a pair of passages (21, 22) between them for receiving the flat strap (1) for longitudinal motion within the passages (21, 22), the ends of the outer sections (15, 16) extending from the passages (21, 22) on the first side of the box (2) and the loop sections (11, 12) extending from the passages (21, 22) on second side of the box (2), means for fixing the central section (14) on the box (2) characterized in that each of the passages (21, 22) has a strap supporting wall and an opposite partially offset wall (23, 24) forming a cavity between said walls open to the first side of the box (2) a rotational body (4) is located within each of the cavities for contact of the rotational surface thereof with the offset wall (23, 24) on one side and the flat strap (1) on the other side, a boss (4) including a sharp end extending from the rotational surface to engage the flat strap (1) in the area adjacent to the first side of the box (2), a cover (5) fixed on the first side of the box (2) and overlapping the cavities .
+2. The disposable handcuffs of claim 1, wherein a holding down member (3) is disposed between the rotational body (4) and the cover (5) to keep the sharp end of the boss in contact with the flat strap (1).
+3. The disposable handcuffs of claim 2, wherein the holding down member (3) is a roller made of elastic material.
+4. The disposable handcuffs of claim 1, wherein the sharp end has a form of a tip (41).
+5. The disposable handcuffs of any of claims 1 to 4, wherein the cavity is narrowing from the first side of the box (2) so that the offset wall (23, 24) is inclined at an angle of 2 to 5 degrees.
+6. The disposable handcuffs of any of claim 1 to 5, wherein the box (2) has two central passages (27, 28) in its central part between the passages (21, 22) for fixing the central section (14) of the flat strap (1) in the box (2).
+7. The disposable handcuffs of claim 6, wherein the box (2) has a recess in the central part of the first side for fixedly mounting the cover (5) on the box to secure the central section (14) of the flat strap (1) to the box (2).
+8. The disposable handcuffs of claim 6 , wherein the cover has a central edge (51) and two lateral ledges (52, 53) and the first side of the box 2) has complementary surfaces to crimp the flat strap (1) between the central edge (51) and the lateral ledges (52, 53) of the cover and the first side of the box (2).
+9. The disposable handcuffs of any claims 1 to 8, wherein the flat strap is made of a textile material.
+
+Ansprüche
+
+1. Einweg Handfesseln enthaltende einen flachen Gurt (1) aus flexiblem Material mit einem zentralen Abschnitt (14), zwei äußeren Abschnitten (15, 16) und zwei zwischen den äußeren Abschnitten (15, 16) und dem zentralen Abschnitt (14) angeordnete Schlaufenabschnitte (11, 12), eine Buchse (2) mit erster Seite, zweiter Seite und einem Paar von Durchgängen (21, 22) zwischen ihnen zum Aufnahme des flachen Gurts (1) längsbeweglich in den Durchgängen (21, 22), wobei die Enden der äußeren Abschnitten (15, 16) an der ersten Seite der Buchse (2) und die Schlaufenabschnitte (11, 12) an der zweiten Seite der Buchse (2) aus den Durchgängen (21, 22) hinausgehen, und Mittel zum Befestigen des zentralen Abschnittes (14) in der Buchse (2), dadurch gekennzeichnet, dass jeder der Durchgänge (21, 22) eine Stützwand für den Gurt und eine gegenüberliegende, teilweise versetzte Wand (23, 24) aufweist, um einen auf der ersten Seite der Buchse (2) mündenden Hohlraum zwischen den Wänden zu bilden, wobei innerhalb jeder der Hohlräume ein Drehkörper (4) für den Kontakt seiner Drehfläche mit der versetzten Wand (23, 24) auf einer Seite und mit dem flachen Gurt (1) auf anderer Seite vorgesehen ist, der einen aus der Drehfläche hinausragenden Vorsatz (4) mit einem scharfen Ende für den Kontakt mit dem flachen Gurt (1) in einem der ersten Seite der Buchse (2) anliegenden Bereich ausweist, und dass auf der ersten Seite der Buchse (2) eine die Hohlräume überlappende Abdeckung (5) befestigt ist.
+2. Die Einweg Handfesseln nach Anspruch 1 dadurch gekennzeichnet, dass zwischen dem Drehkörper (4) und der Abdeckung (5) ein das scharfe Ende des Vorsatzes in Kontakt mit dem flachen Gurt zu haltender Niederhalter (3) angeordnet ist.
+3. Die Einweg Handfesseln nach Anspruch 2 dadurch gekennzeichnet, dass der Niederhalter (3) eine aus elastischen Material gefertigte Rolle ist.
+4. Die Einweg Handfesseln nach Anspruch 1 dadurch gekennzeichnet, dass das scharfe Ende die Form einer Spitze (41) hat.
+5. Die Einweg Handfesseln nach einem der Ansprüche 1 bis 4 dadurch gekennzeichnet, dass der Hohlraum sich von der ersten Seite der Buchse (2) verengt, sodass die versetzte Wand (22, 23) in einem Winkel von 2 bis 5 Grad geneigt ist.
+6. Die Einweg Handfesseln nach einem der Ansprüche 1 bis 5 dadurch gekennzeichnet, dass die Buchse (2) in ihrem mittleren Teil zwei zentrale Durchgänge (27, 28) zwischen den Durchgängen (21, 22) zum Befestigen des zentralen Abschnittes (14) des flachen Gurts (1) in der Buchse (2) aufweist.
+7. Die Einweg Handfesseln nach Anspruch 6 dadurch gekennzeichnet, dass die Buchse (2) im mittleren Bereich ihrer ersten Seite eine Ausnehmung für das feste Anbringen der Abdeckung (5) zum Befestigen des zentralen Abschnittes (14) des Gurtes (14) an der Buchse (2) ausweist.
+8. Die Einweg Handfesseln nach Anspruch 6 dadurch gekennzeichnet, dass die Abdeckung (5) mit einer zentrale Kante (51) und zwei seitlichen Leisten (52, 53) versehen ist und die erste Seite der Buchse (2) komplementäre Oberflächen aufweist um den flachen Gurt (1) zwischen der zentralen Kante (52) und den seitlichen Leisten (52, 53) der Abdeckung zu klemmen.
+9. Die Einweg Handfesseln nach einem der Ansprüche 1 bis 8 dadurch gekennzeichnet, dass der flache Gurt (1) aus einem textilen Material hergestellt ist.
+
+Revendications
+
+1. Menottes jetables comprenant un feuillard plat (1) à matériau souple renfermant une partie centrale (14), deux parties marginales (15, 16) et deux parties à boucle (11, 12) situées entre les parties marginales (15, 16) et la partie centrale (14), un boitier (2) destiné pour y insérer le feuillard plat et ayant une première face, une seconde face et un couple de passages (21, 22) entre lesdites faces destinés pour y insérer le feuillard plat (1) avec possibilité du mouvement longitudinal dudit feuillard plat à travers des passages (21, 22), les extrémités des parties marginales (15, 16) sortant à partir des passages (21, 22) sur la première face du boitier (2) et les parties à boucle sortant à partir des passages (21, 22) sur la seconde face du boitier (2), et des moyens destinés pour fixer la partie centrale (14) dans le boitier (2), caractérisées en ce que chaqun des passages (21, 22) possède une paroi d'appui pour le feuillard (1) et une paroi opposée partiellement reculée (23, 24) formant un évidement entre lesdites parois débouchant sur la première face du boitier (2), chaqun des évidements renfermant un corps rotatif (4) destiné pour contacter, par sa surface rotatoire, la paroi reculée (23, 24), à un coté, et le feuillard plat (1), à l'autre coté, et le corps rotatif (4) ayant une bosse à bout pointu faisant saillie à partir de la surface rotatoire pour contacter le feuillard plat (1) à la place contigue à la première face du boitier (2), et un couvercle (5) chevauchant lesdits évidements est monté sur la première face du boitier (2).
+2. Menottes jetables selon la revendication 1, caractérisées en ce qu'un membre de pression (3) pour maintenir en contact le bout pointu de la bosse du corps rotatif (4) avec le feuillard plat (1) est situé entre le corps rotatif (4) et le couvercle (5).
+3. Menottes jetables selon la revendication 2, caractérisées en ce que le membre de pression (3) est un rouleau à matériau élastique.
+4. Menottes jetables selon la revendication 1, caractérisées en ce que le bout pointu a la forme d'un aiguillon (41).
+5. Menottes jetables selon l'une quelconque des revendications 1 à 4, caractérisées en ce que ledit évidement s'étrangle dans la direction à partir de la première face du boitier (2) de telle manière que la paroi reculée (23, 24) est déviée d'un angle compris de 2 à 5 degrés.
+6. Menottes jetables selon l'une quelconque der revendications 1 à 5, caractérisées en ce que le boitier (2) possède deux passages centrals (21, 22) destinés pour fixer la partie centrale (14) du feuillard plat (1) dans ledit boitier.
+7. Menottes jetables selon la revendication 5, caractérisées en ce que le boitier (2) possède, dans la partie centrale de la première face, un creux destiné pour fixex le couvercle (5) sur le boitier pour ancrer la partie centrale (14) du feuillard plat (1) dans le boitier (2).
+8. Menottes jetables selon la revendication 6, caractérisées en ce que ledit couvercle possède un tranchant central (51) et deux tranchants marginals (52, 53) tandis que la première face du boitier (2) possède des surfaces complémentaires pour serrer le feuillard plat (1) entre le tranchant central (51) et les tranchants marginals (52, 53) du couvercle et la première face du boitier (2).
+9. Menottes jetables selon l'une quelconque des revendications 1 à 8, caractérisées en ce que le feuillard plat (1) est produit d'une matière textile.
+
+Drawing
+
+[IMAGE]
+
+[IMAGE]
+
+REFERENCES CITED IN THE DESCRIPTION
+
+This list of references cited by the applicant is for the reader's convenience only. It does not form part of the European patent document. Even though great care has been taken in compiling the references, errors or omissions cannot be excluded and the EPO disclaims all liability in this regard.
+
+Patent documents cited in the description
+
+* US4964419A [0003]
+* US5669110A [0004]
+* CZPV2007690 [0005]

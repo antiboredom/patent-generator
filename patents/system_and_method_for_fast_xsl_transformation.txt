@@ -1,0 +1,265 @@
+System And Method For Fast Xsl Transformation
+
+*20030159111A1*
+US 20030159111A1
+
+(19) United States
+(12) Patent Application Publication  (10) Pub No:  US 2003/0159111 A1
+Fry (43) Pub Date: Aug. 21, 2003
+
+(54) System and method for fast XSL transformation
+(76)  INVENTOR:
+Chris Fry,
+Berkeley CA
+(US)
+
+Correspondence Name and Address:
+Sheldon R. Meyer
+FLIESLER DUBB MEYER & LOVEJOY LLP
+Fourth Floor
+Four Embarcadero Center
+San Francisco,
+CA 94111-4156,
+US
+
+(21) Appl. No.:  10/304,233
+(22) Filed:  Nov. 26, 2002
+
+Publication Classification
+(51) Int. Cl.7 G06F017/21
+(52) U.S. Cl.: 715/513000;
+715/523000;
+715/517000
+
+(57)
+Abstract
+
+Improved XML transformation is obtained through the combined use of caching and pooling. A transformer caching pool can cache transformers to server client transformation requests. A transformer resource manager can select any appropriate transformer from the transformer caching pool. Once an appropriate transformer is selected, the resource manager can mark the transformer as busy and return it to the client. If a transformer is not available, the transformer resource manager can contact a transformer creator to create a new transformer and can then place the new transformer in the transformer caching pool. The new transformer can then be marked as busy and returned to the client to serve the transformation request.
+
+Drawings
+
+Representative Figure: 2
+[D00000]
+
+[IMAGE]
+
+System and method for fast XSL transformation
+
+CLAIM OF PRIORITY
+
+[0001]
+
+This application claims priority to U.S. Provisional Patent Application No. 60/358,421, filed Feb. 21, 2002, entitled “SYSTEM AND METHOD FOR FAST XSL TRANSFORMATION”, which is hereby incorporated herein by reference.
+
+CROSS-REFERENCED CASES
+
+[0002]
+
+The following applications are cross-referenced and incorporated herein by reference:
+
+[0003]
+
+U.S. patent application Ser. No. ______ entitled “SYSTEM AND METHOD FOR XML DATA BINDING” by Chris Fry and Scott Ziegler, filed ______.
+
+[0004]
+
+U.S. patent application Ser. No. ______ entitled “SYSTEM AND METHOD FOR XML PARSING” by Chris Fry, filed
+
+[0005]
+
+U.S. patent application Ser. No. ______ entitled “STREAMING PARSER API” by Chris Fry and Sam Pullara, filed ______.
+
+FIELD OF THE INVENTION
+
+[0006]
+
+The present invention relates to the transformation of XML documents.
+
+BACKGROUND
+
+[0007]
+
+The growing use of web services and XML as a main source of web content has brought about the need for high levels of XSLT performance in concurrent environments. Certain syntax and semantics define templates that can be used with the Extensible Stylesheet Language (XSL), a stylesheet language for XML. These XSL templates, known collectively as XSLT, comprise a language for transforming XML documents between XML formats. In addition to XSLT, XSL includes a vocabulary for specifying XML formats. XSL can specify the style of an XML document by using XSLT. XSLT can describe how one XML document is transformed into another that uses the formatting vocabulary. XSLT can also be used independent of XSL. XSLT is not intended as a general-purpose XML transformation language, but is designed for transformations that are needed when XSLT is used as part of XSL.
+
+[0008]
+
+A transformation in the XSLT language is expressed as a well-formed, conforming XML document. This can include both elements that are defined by XSLT and elements that are not defined by XSLT. XSLT-defined elements belong to a specific XML namespace, which can be referred to as an XSLT namespace.
+
+[0009]
+
+A transformation expressed in XSLT can describe rules for transforming a source tree into a result tree. This transformation can be achieved by associating patterns with templates. A pattern can then be matched against elements in the source tree. A template is instantiated to create part of the result tree. The structure of the result tree can be different than that of the source tree. In constructing the result tree, elements from the source tree can be filtered and reordered into an arbitrary structure. A transformation expressed in XSLT is called a stylesheet, as the transformation functions as a stylesheet when XSLT is transforming into the XSL formatting vocabulary.
+
+[0010]
+
+A stylesheet contains a set of template rules, with each template rule having two parts. One part is a pattern that is matched against nodes in the source tree, and the other part is a template that can be instantiated to form part of the result tree. This two-part approach allows a stylesheet to be applicable to a wide class of documents that have similar source tree structures.
+
+[0011]
+
+A template is instantiated for a particular source element to create part of the result tree. The template can contain elements that specify literal result element structure, and can contain elements from the XSLT namespace. These elements can comprise instructions for creating result tree fragments. When a template is instantiated, each instruction is executed and replaced by the result tree fragment that it creates. Instructions can select and process descendant source elements. Processing a descendant element can create a result tree fragment by finding the applicable template rule and instantiating its template. Elements are only processed when they are selected by the execution of an instruction. The result tree is constructed by finding the template rule for the root node and instantiating its template. In the process of finding the applicable template rule, more than one template rule can have a pattern that matches a given element. However, only one template rule can be applied.
+
+[0012]
+
+A single template can create structures of arbitrary complexity. A template can pull string values from arbitrary locations in the source tree. The template can generate structures that are repeated according to the occurrence of elements in the source tree. For simple transformations where the structure of the result tree does not depend on the structure of the source tree, a stylesheet can consist of a single template, which functions as a template for the complete result tree. Transformations on XML documents that represent data are often of this kind. XSLT allows a simplified syntax for such stylesheets.
+
+[0013]
+
+A template is instantiated with respect to a current node and a current node list. Many XSLT operations are relative to the current node. During the instantiation of one of these instructions, the current node list can change to a new list of nodes and each member of this new list can sequentially become the current node. After the instantiation is complete, the current node and current node list revert to their pre-instantiated state.
+
+[0014]
+
+Transformations for legacy systems can include XML data to be transformed, an XSL stylesheet, and an XSL transformer. Input data and a stylesheet are read into memory, parsed, and transformed into output XML data. While input XML data is highly volatile, XSL stylesheets can be stable in the production environment. This makes processing of XSL stylesheets a subject for optimization. Certain approaches can be used to improve the performance of a legacy XSLT. One approach is to read and keep an XSL stylesheet in memory for subsequent reuse. This approach reduces the input/output time necessary to get a stylesheet from the source. The source can be a file or a generic stream.
+
+[0015]
+
+Preliminary parsing of a stylesheet can be placed into a tree for subsequent reuse. This saves time by avoiding the repetition of parsing by a transformer. For compiled stylesheets, a stylesheet can be compiled to Java bytecode which then performs a transformation. This can be a fast means of transportation. Modern XSL transformers, including Apache XALAN, offer ways to implement these optimization techniques. This optimization approach works fine for single user environments, but heavy-loaded server side applications and servers themselves add requirements for concurrent processing but do not wish to compromise throughput.
+
+BRIEF SUMMARY
+
+[0016]
+
+It is therefore desirable to improve the quality of both development and deployment of applications which user XSLT.
+
+[0017]
+
+It is further desirable to improve the performance of XSLT through concurrent XSLT processing.
+
+[0018]
+
+It is further desirable to improve manageability through runtime access of XSLT performance metrics and XSLT monitoring.
+
+[0019]
+
+It is further desirable to provide a level of abstraction enough to isolate details of the implementation so that different optimization algorithms can be switched interchangeably.
+
+[0020]
+
+It is further desirable to take into account possible requirements for run-time algorithm switching or pluggability.
+
+[0021]
+
+It is further desirable to utilize JAXP 1.1 in one embodiment.
+
+[0022]
+
+A system and method for improved XML transformation utilizes a transformer caching pool for caching transformers. A transformer resource manager can select any transformer from a transformer caching pool that is appropriate to serve a transformation request from a client. Once an appropriate transformer is selected, the resource manager can mark the transformer as busy and return it to the client. A transformer resource manager can determine whether a transformer is available in the transformer caching pool. If none is available, the transformer resource manager can contact a transformer creator, which can be stored in a transformer creator pool, to create a new transformer and can then place the new transformer in the transformer caching pool. The new transformer can then be marked as busy and returned to the client to serve the transformation request.
+
+[0023]
+
+Other features, aspects, and objects of the invention can be obtained from a review of the specification, the figures, and the claims.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+[0024]
+
+FIG. 1 is a diagram of a system in accordance with one embodiment of the present invention.
+
+[0025]
+
+FIG. 2 is a flowchart showing the steps of a method that can be used with the system of FIG. 1.
+
+DETAILED DESCRIPTION
+
+[0026]
+
+The requirement for fast server-side XSLT processing can be satisfied by applying a combination of caching techniques with a pool of reusable XSLT objects. One such system and method in accordance with an embodiment of the present invention can have four primary components or classes. These components can include an XML source, an XSL source, a transformer, and an XML result.
+
+[0027]
+
+An XML source, or XML Source class, can contain XML data that has not yet been transformed. An XSL source, or XSLSource class, can contain XML data that describes the transformation to be used on the data in the XML source. A transformation processor, or transformer, can be responsible for the transformation itself. An XML result, or XMLResult class, can contain XML data that results from the transformation. The transformation processor can transform the XML source into an XML result using a stylesheet.
+
+[0028]
+
+A transformation processor can avoid the repeated preliminary processing of stylesheets. When a transformation processor receives a request for transformation from a client, the transformation processor can check cache to see if a prepared stylesheet already exists. If a prepared stylesheet exists, the transformation processor can use this stylesheet for the transformation. If a prepared stylesheet does not exist, the transformation processor can prepare a new stylesheet, use the stylesheet for the transformation, then place it into the cache for possible reuse.
+
+[0029]
+
+A prepared stylesheet can store information that allows for repeated use by a transformation processor without repeated preparation. A prepared stylesheet cache can serve as storage for prepared stylesheets, allowing for fast retrieval of a prepared stylesheet upon request of the transformation processor. A transformation processor can request a prepared stylesheet cache for a prepared stylesheet. The transformation processor can put new prepared stylesheets into a prepared stylesheet cache that can hold the prepared stylesheets.
+
+[0030]
+
+High concurrency and throughput can be obtained by shifting processing responsibility to the requestor side. A client can make a request for a transformer, such as an object that can make transformations for a concrete stylesheet. A transformation resource manager can attempt to find an available object in a cache of transformers. If the transformation resource manager finds an associated object, the manager can return the object to the client and can mark the object as ‘busy’ or ‘unavailable’. If the transformation resource manager cannot find an appropriate transformer or all transformers are busy, the transformation resource manager can create another transformer, place it into the pool, mark it as busy, and return it to the client.
+
+[0031]
+
+A pool of pre-existing or previously-created transformer creators can be utilized. A member of this pool can use these transformer creators to create a transformer. A client can then use this transformer and return the transformer to the pool for another request. This schema is combination of pooling and caching.
+
+[0032]
+
+FIG. 1 shows an overview of a system that can be used in accordance with one embodiment of the present invention. A client 100 makes a request for a transformer 102, that is received by a transformation resource manager 112. A transformer is an object that can perform transformations, such as are associated with a concrete stylesheet. The transformation resource manager 112, which can be used to control any available transformation resources, can attempt to find an available transformer 102 in a caching pool 108, which can serve as storage for any transformation objects and their respective states. If an appropriate transformer 102 does not exist, or is not available, the resource manager 112 can check a transformer creator pool 110 to determine whether a transformer creator 104 is available. If a transformer creator 104 is available, the resource manager 112 can use the creator 104 to create a transformer 102, which can be placed into the caching pool 108, marked as busy, and returned to the client 100. An XML service 106 can be used to initialize the transformer creator pool 110 if necessary, such as at during server startup.
+
+[0033]
+
+A system can also configure and monitor an XSL transformation service. Such a system can support at least a minimum configuration parameter set. Monitoring can provide runtime information about performance and state metrics. This functionality can be arrived at through the use of configuration and runtime MBeans.
+
+[0034]
+
+FIG. 2 shows a method that can be used in accordance with the system of FIG. 1. When a client request is received for a transformer, such as to a transformer processor or transformer resource manager, the system checks to see if an appropriate transformer is available in the transformer caching pool 200. If no transformer is available, the system checks for a transformer creator in the transformer creator pool, and uses this transformer creator to create a new transformer for use in the transformation 202. The transformer to be used for the transformation is marked as busy and returned to the client 204. After the transformation is complete, the busy mark is removed from the transformer, or the transformer is marked as available, and the transformer is returned to the transformer caching pool for subsequent use 206.
+
+[0035]
+
+The foregoing description of the preferred embodiments of the present invention has been provided for the purposes of illustration and description. It is not intended to be exhaustive or to limit the invention to the precise forms disclosed. Many modifications and variations will be apparent to the practitioner skilled in the art. Embodiments were chosen and described in order to best describe the principles of the invention and its practical application, thereby enabling others skilled in the art to understand the invention, the various embodiments and with various modifications that are suited to the particular use contemplated. It is intended that the scope of the invention be defined by the following claims and their equivalents.
+
+What is claimed is:
+
+1. A system for improved XML transformation, comprising:
+a transformer caching pool for caching a transformer; and
+
+a transformer resource manager capable of selecting an available transformer from the transformer caching pool to serve a request for transformation.
+
+2. A system according to claim 1, further comprising at least one transformer creator for creating transformers to be cached in said transformer caching pool.
+
+3. A system according to claim 2, further comprising a transformer creator pool for caching said at least one transformer creator.
+
+4. A system according to claim 3, wherein said transformer resource manager is further capable of determining whether a transformer is available in said transformer caching pool.
+
+5. A system according to claim 3, wherein said transformer resource manager capable of contacting a transformer creator to create a transformer and place the transformer in the transformer caching pool if a transformer is not available.
+
+6. A system according to claim 1, further comprising a transformation processor capable of carrying out the XML transformation using a transformer selected by said transformer resource manager.
+
+7. A system according to claim 1, further comprising a stylesheet to be used by a transformer selected by said transformer resource manager for the XML transformation.
+
+8. A system according to claim 7, further comprising a stylesheet cache for storing said stylesheet.
+
+9. A system according to claim 3 further comprising an XML Service to initialize said transformer creator pool.
+
+10. A method for improved XML transformation, comprising:
+selecting an available transformer from a transformer caching pool in response to a request for transformation from a client;
+
+marking the available transformer as busy; and
+
+returning the available transformer to the client making the request.
+
+11. A method according to claim 10, further comprising:
+requesting a transformer from a transformation resource manager.
+
+12. A method according to claim 10, further comprising:
+utilizing an existing stylesheet for the transformation.
+
+13. A method according to claim 12, further comprising:
+checking a stylesheet cache to determine whether a stylesheet already exists.
+
+14. A method according to claim 13, further comprising:
+creating a new stylesheet for the transformation and placing the new stylesheet in the stylesheet cache.
+
+15. A method according to claim 10, further comprising:
+creating a new transformer using a transformer creator if there is no available transformer in the transformer caching pool.
+
+16. A method according to claim 15, further comprising:
+placing the new transformer in the transformer caching pool.
+
+17. A method according to claim 15, further comprising:
+selecting a transformer creator from a transformer creator pool.
+
+18. A method according to claim 17, further comprising:
+using an XML service to initialize the transformer creator pool at startup.
+
+19. A system for improved XML transformation, comprising:
+a transformer caching pool for caching a transformer;
+
+at least one transformer creator for creating transformers to be cached in said transformer caching pool; and
+
+a transformer resource manager capable of selecting an available transformer from the transformer caching pool to serve a request for transformation, said transformer resource manager further capable of determining whether a transformer is available in said transformer caching pool and creating a new transformer using a transformer creator if a transformer is not available in said transformer caching pool.
+
+20. A system according to claim 19, wherein said transformer resource manager is further capable placing the new transformer in the transformer caching pool.
+
+* * * * *

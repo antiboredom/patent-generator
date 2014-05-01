@@ -1,0 +1,322 @@
+Surveillance Camera System
+
+*US20100321473A1*
+US20100321473A1
+(19) United States
+
+(12) Patent Application Publication (10) Pub. No.:  US 2010/0321473 A1
+An (43) Pub. Date: Dec. 23, 2010
+
+(54) Surveillance camera system
+
+(75) Inventor:  Myung-seok An, Seongnam-si (KR)
+
+Correspondence Address:
+DRINKER BIDDLE & REATH LLP
+ATTN: PATENT DOCKET DEPT.
+191 N. WACKER DRIVE, SUITE 3700
+CHICAGO, IL 60606 (US)
+
+(73) Assignee: Samsung Techwin Co., Ltd., Changwon-city (KR), Type: Foreign Company
+(21) Appl. No.:  12/080,582
+(22) Filed:  Apr. 4, 2008
+
+(30) Foreign Application Priority Data
+Oct. 4, 2007 (KR) 10-2007-0099884
+
+Publication Classification
+
+(51) Int. Cl.   H04N 007/18 (20060101); H04N 013/02 (20060101)
+
+(52) U.S. Cl.   348/47;
+348/143;
+348/159;
+348/E07.085
+
+(57)
+Abstract
+
+Provided is a surveillance camera system for controlling cameras by calculating a movement amount of the cameras based on position information and orientation information of the cameras and position information of an object being surveilled. The surveillance camera system includes: a camera receiving an image from a surveillance area; a driving device combined with the camera, wherein the driving device moves the camera; and a camera controller controlling the driving device by using initial coordinates defined with a position and an azimuth at which the camera is installed and a current direction of the camera, so that the camera faces a target position.
+
+Claim(s), Drawing Sheet(s), and Figure(s)
+
+CROSS-REFERENCE TO RELATED PATENT APPLICATION
+
+[0001] This application claims the benefit of Korean Patent Application No. 10-2007-0099884, filed on Oct. 4, 2007, in the Korean Intellectual Property Office, the disclosure of which is incorporated herein in its entirety by reference.
+
+BACKGROUND OF THE INVENTION
+
+[0002] 1. Field of the Invention
+
+[0003] The present invention relates to a surveillance camera system, and more particularly, to a surveillance camera system in which a plurality of cameras are installed in an area in order to surveil the area.
+
+[0004] 2. Description of the Related Art
+
+[0005] A surveillance camera system surveils an area by recognizing an object by processing an image which is input through a camera that is installed at a predetermined position or that is installed in a mobile manner. The surveillance camera system may be used in a security system using images, such as an intelligent surveillance and monitoring robot, scientific systems for a general outpost (GOP), or a social safety robot system.
+
+[0006] The surveillance camera system can detect and track an attacker through a long/short and day/night remote control by using a surveillance camera. The surveillance camera system having the aforementioned function may be used in a system for surveilling and tracking a dangerous area or used in a traffic administration system to monitor illegal parking and stops.
+
+[0007] In the surveillance camera system, a plurality of cameras are operated by being linked with one another. That is, an object surveilled by a single camera may be also surveilled by other cameras installed near the object.
+
+[0008] In addition, in order to surveil a wide area using the surveillance camera system, the surveillance camera system may have panning, tilting, and zooming functions.
+
+SUMMARY OF THE INVENTION
+
+[0009] In a surveillance camera system, when a first camera detects an object, a second camera, which is linked with the first camera, near the object can also surveil the object from another angle.
+
+[0010] Location of the object received from the first camera is input into the second camera. It is possible for the second camera to surveil the object from another direction by controlling panning, tilting, and zooming of the second camera based on the information.
+
+[0011] The present invention provides a surveillance camera system for controlling cameras by calculating movement amounts of the cameras by using position and orientation of the cameras and position information of a detected object.
+
+[0012] In the surveillance camera system according to an embodiment of the present invention, it is possible to effectively and intensively surveil an object and/or surveil an object in a linked manner by linking a plurality of cameras with one another.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+[0013] The above and other features and advantages of the present invention will become more apparent by describing in detail exemplary embodiments thereof with reference to the attached drawings in which:
+
+[0014] FIG. 1 is a block diagram schematically illustrating a surveillance camera system according to an exemplary embodiment of the present invention;
+
+[0015] FIG. 2 is a block diagram schematically illustrating a camera controller of the surveillance camera system illustrated in FIG. 1;
+
+[0016] FIG. 3 is a block diagram schematically illustrating a surveillance camera system including a plurality of surveillance units according to an exemplary embodiment of the present invention;
+
+[0017] FIG. 4 is a block diagram schematically illustrating an input unit and a controller in the surveillance camera system illustrated in FIG. 3;
+
+[0018] FIG. 5 schematically illustrates a position of an object to be surveilled with respect to surveillance units in the surveillance camera system illustrated in FIGS. 1 and 3;
+
+[0019] FIG. 6 schematically illustrates an intensive surveillance technique by using the surveillance camera system illustrated in FIG. 3 according to an embodiment of the present invention;
+
+[0020] FIG. 7 is a block diagram schematically illustrating a surveillance camera system including a plurality of surveillance units according to another exemplary embodiment of the present invention;
+
+[0021] FIG. 8 is a block diagram schematically illustrating a surveillance unit in the surveillance camera system illustrated in FIG. 7 according to an embodiment of the present invention; and
+
+[0022] FIG. 9 is a block diagram schematically illustrating a surveillance unit in the surveillance camera system illustrated in FIG. 7 according to another embodiment of the present invention.
+
+DETAILED DESCRIPTION OF THE INVENTION
+
+[0023] The present invention will now be described more fully with reference to the accompanying drawings, in which exemplary embodiments of the invention are shown. The invention may, however, be embodied in many different forms and should not be construed as being limited to the embodiments set forth herein; rather, these embodiments are provided so that this disclosure will be thorough and complete, and will fully convey the concept of the invention to those of ordinary skill in the art.
+
+[0024] FIG. 1 is a block diagram schematically illustrating a surveillance camera system 100 according to an exemplary embodiment of the present invention. FIG. 2 is a block diagram schematically illustrating a camera controller 130 of the surveillance camera system 100 illustrated in FIG. 1.
+
+[0025] Referring to FIGS. 1 and 2, the surveillance camera system 100 may include a camera 110, a driving device 120, a camera controller 130, and an interface 140. The surveillance camera system 100 may include at least one surveillance unit. Each surveillance unit may include the camera 110, the driving device 120, the camera controller 130, and the interface 140.
+
+[0026] The surveillance camera system 100 is installed in a predetermined area. The surveillance camera system 100 watches at least one part of the predetermined area as a surveillance area and surveils an object in the surveillance area.
+
+[0027] The camera 110 can receive an image from the surveillance area. The driving device 120 is combined with the camera 110 to move the camera 110. The camera controller 130 receives the current direction that the camera 100 faces from the driving device 120 and externally receives a target direction for the camera 100 to face. Then, the camera controller 130 can control the driving device so that the camera 110 may face the target position.
+
+[0028] The surveillance camera system 100 can externally receive initial coordinates and/or a target position through the interface 140.
+
+[0029] The camera may include a zoom lens so as to zoom in or zoom out on an input image. In addition, the driving device 120 serves to pan and/or tilt the camera 110. That is, the camera 110 can receive various images by being moved, panned, and/or tilted by the driving device 120 or by zooming in or zooming out the zoom lens to control the zoom magnification power.
+
+[0030] The camera controller 130 may include a driving controller 200 and a storage unit 131. The driving controller 200 can control the driving device 120. The initial coordinates defined with a position and an azimuth at which the camera 110 is installed may be stored in the storage unit 131.
+
+[0031] The driving controller 200 enables the camera to be linked with another camera in the system. The driving controller 200 externally receives the target position of the camera 110 and controls the driving device 120, so that the camera 110 may face the target position.
+
+[0032] As shown in FIG. 3, the surveillance camera system may include a plurality of surveillance units each including the camera, the driving device, and the camera controller. The driving controller 200 may receive the target position from another surveillance unit.
+
+[0033] The driving controller 200 can calculate a rotation angle for panning and/or tilting the camera and can generate a driving signal for driving the driving device 120, so that the camera may be rotated according to the rotation angle. The driving controller 200 may include a rotation angle calculator 210 and a driving signal generator 220.
+
+[0034] The rotation angle calculator 210 can calculate the rotation angle, according to which the camera is rotated, from the current direction and the initial coordinates of the camera, so that the camera may face the target position. The driving signal generator 220 can generate a driving signal for driving the driving device, so that the camera may be rotated according to the rotation angle.
+
+[0035] When the camera is initially installed, the initial coordinates may indicate a position and an azimuth in an arbitrary reference coordinate system in which the camera is installed. In addition, the current direction indicates the direction currently faced by the camera. The current direction is calculated by reading the panning and/or tilting rotation amount of the camera, the result of which is received from the driving device.
+
+[0036] The interface 140 may connect each surveillance unit to the outside of the surveillance camera system 100. At this time, the interface 140 may be a separate input unit. On the other hand, the surveillance camera system 100 is constructed with a plurality of surveillance units which are directly connected to one another or connected to one another through a separate controller. In this case, the interface 140 may be a unit for connecting the surveillance units to one another or connecting the surveillance units to the separate controller.
+
+[0037] As shown in FIG. 5, initial coordinates I1 and I2, target position T1, and current directions P1 and P2 may be defined. The initial coordinates I1 and I2 may be defined with positions and azimuths in which the cameras are installed. The current directions P1 and P2 indicate the directions that the cameras face. The target position indicates a position at which an object to be surveilled is located. The cameras are moved or rotated, so that the cameras may face the target position.
+
+[0038] The initial coordinates, the target position, and the current directions may be defined in the same reference coordinate system. The reference coordinate system may be a coordinate system defined by a global positioning system (GPS) for the entire earth. In another embodiment, as shown in FIG. 5, the reference coordinate system (50 of FIG. 5) may be a map or a coordinate system that is set with respect to a position in a predetermined area.
+
+[0039] The initial coordinates I1 and I2 are obtained by measuring the positions and the azimuths in the reference coordinate system, when the cameras are installed. The initial coordinates I1 and I2 are received through the interface 140 and stored in the storage unit 131.
+
+[0040] In the embodiment shown in FIGS. 3 and 4, the target position T1 may be input through the interface 140 as a coordinate value that is set on the map. In another embodiment shown in FIGS. 7 to 9, the target position T1 may be a coordinate value that is input through another camera.
+
+[0041] The current directions P1 and P2 may be obtained by determining a difference between a status obtained by panning and/or tilting the camera and the initial status of the camera, by reading a panning and/or tilting amount of the driving device 120. Accordingly, a rotation angle θ of the camera, needed for allowing the camera to face the target position is calculated by using Equation 1.
+
+[0042] That is the rotation angle θ calculated by using Equation 1 which uses an angle calculated by the rotation angle calculator 210 referred a displacement amount θ1 of the current direction with respect to the azimuth of the initial coordinates and a displacement amount of the target position (Tx, Ty) with respect to the initial coordinates (lx, ly).
+
+[see pdf for image]
+
+[0043] In the surveillance camera system 100 according to the embodiment of the present invention, the direction that the camera 110 should face to surveil the object, which is located at the target position input through the interface, is calculated by using the position and the azimuth of the camera 110. In addition, the camera may be panned and/or tilted according to the rotation angle so as to face the target position in the current direction by driving the driving device 120.
+
+[0044] Accordingly, in the surveillance camera system 100 according to an embodiment of the present invention, it is possible to easily and simply control the camera 110 so that the camera 110 may face the object surveilled with the initial coordinates of the camera 110 without preset.
+
+[0045] On the other hand, it is possible to detect a moving object while surveilling each surveillance area in a preset method by dividing a predetermined area into a plurality of presets. At this time, in the preset method, each surveillance area is surveilled, while the camera is being panned or tilted based on the presets defined previously.
+
+[0046] That is, in order to watch the surveillance areas, presets for cameras have to be previously set. When the cameras are initially installed, presets have to be set while users are controlling panning, tilting, and zooming values of all the cameras. This requires a lot of time and costs. Moreover the cameras can not observe areas in which the presets are not defined.
+
+[0047] However, in the surveillance camera system 100 according to the embodiment of the present invention, it is possible to surveil an area intelligently and actively by processing an input of a user or an occurrence of an event without setting a preset.
+
+[0048] FIG. 3 is a block diagram schematically illustrating a surveillance camera system 10 including a plurality of surveillance units 100a to 100n. FIG. 4 is a block diagram schematically illustrating a controller 150 and an input unit 160 in the surveillance camera system 10.
+
+[0049] Referring to FIGS. 3 and 4, in the surveillance camera system 10, a target position of an object to be surveilled is input using a map, and the object to be surveilled is intensively surveilled by the plurality of surveillance units 100a to 100n. Accordingly, the surveillance camera system 10 may include the plurality of surveillance units 100a to 100n, the controller 150, and the input unit 160. At this time, the surveillance units 100a to 100n may construct the surveillance camera system 100 shown in FIGS. 1 and 2.
+
+[0050] Each of the surveillance units 100a to 100n may include the camera 100, the driving device 120, and the camera controller 200 which are shown in FIGS. 1 and 2. Each of the surveillance units will be described with reference to FIGS. 1 and 2.
+
+[0051] The input unit 160 receives a position of the object to be surveilled on the map. The controller 150 selects at least one designated surveillance unit to surveil the object from among the surveillance units 100a to 100n and transmits the target coordinates of the object to be surveilled to the selected designated surveillance units.
+
+[0052] The position of the object to be surveilled may be received through the input unit 160. The input unit 160 may include a map display unit 161 and a position setting unit 162.
+
+[0053] The map in which positions of the cameras are marked may be displayed on the map display unit 161. The position setting unit 162 may receive the position of the object to be surveilled which is designated on the map.
+
+[0054] The map display unit 161 may be a general display device connected to a user input device. The input device may be a touch screen attached to a panel of a display device.
+
+[0055] That is, in the map display unit 161, the map may be displayed on the display device, and the user selects one position on the map through the input device. The selected position may be the target position of the object to be surveilled. In addition, in the map display unit 161, positions of the cameras may be displayed on the map.
+
+[0056] The position setting unit 162 may receive the target position that is the selected position as a position of the object to be surveilled.
+
+[0057] The input unit 160 may be another surveillance unit or a separate controller. That is, the target coordinates of the object to be surveilled may be input through the surveillance unit or separate controller.
+
+[0058] The controller 150 may include a coordinate transformer 151, a camera selector 152, and a coordinate transmitter 153.
+
+[0059] The coordinate transformer 151 transforms the position of the object to be surveilled into the target position in the reference coordinate system. The camera selector 152 selects designated surveillance units. The coordinate transmitter 153 transmits the target position of the object to be surveilled to the designated surveillance units.
+
+[0060] The coordinate transformer 151 transforms the position of the object to be surveilled into the target position in the reference coordinate system and selects the designated surveillance units from among the surveillance units based on the initial coordinates of the surveillance units.
+
+[0061] The camera selector 152 can select surveillance units located within a predetermined range from the target position as the designated surveillance units. As shown in FIG. 6, the user sets a predetermined area on the map as a set area by using the map display unit 161. The camera selector 152 can select all the surveillance units installed within the set area as the designated surveillance units.
+
+[0062] A map 60 of a predetermined area is displayed on the map display unit 161. An object T6 to be surveilled and a set area 61 may be set by the user. At this time, for easy searching of the designated surveillance units, the set area 61 may be set so as to include the object T6 to be surveilled.
+
+[0063] In the embodiment shown in FIG. 6, three surveillance units X1 to X3 are included in the set area 61. The surveillance units X1 to X3 included in the set area 61 may be the designated surveillance units.
+
+[0064] On the other hand, the reference coordinate system may be a three-dimensional (3D) coordinate system including altitude information. At this time, the camera selector 152 can select the surveillance units capable of watching the object to be surveilled as the designated surveillance units by using information on the 3D map.
+
+[0065] That is, the camera selector 152 can select designated surveillance units capable of watching the object by utilizing information on sizes and altitudes of a building or obstacles located in a predetermined area on the map, information on a position at which the camera is installed, and information on surrounding environments through the information on the 3D map.
+
+[0066] It is possible to transmit the target position of the object to be surveilled to the selected designated surveillance units by using the coordinate transmitter 153.
+
+[0067] On the other hand, the controller 150 may directly control the surveillance units. Initial coordinates are stored in the surveillance units. The controller 150 receives the initial coordinates of the surveillance units by communication with the surveillance units and selects the designated surveillance units capable of surveilling the object located at the target coordinates. The controller 150 transmits the target coordinates to only the selected designated surveillance units and allows the designated surveillance units to intensively watch the object.
+
+[0068] At this time, the controller 150 requests the surveillance units to provide the initial coordinates thereof. The controller 150 receives the initial coordinates from the surveillance units and selects the designated surveillance units. In another embodiment, the controller 150 may further include a storage unit for storing initial coordinates of all the connected surveillance units.
+
+[0069] The controller 150 and the input unit 160 may be a computer such as a PC including a display device.
+
+[0070] On the other hand, FIG. 5 illustrates a position T1 of the object to be surveilled with respect to the surveillance units 100a and 100b.
+
+[0071] The initial coordinates I1 and I2 including positions and azimuths of the surveillance units 100a and 100b may be defined in the reference coordinate system 50. In addition, the current directions P1 and P2 of the surveillance units 100a and 100b may be defined in the reference coordinate system. In addition, the target position T1 of the object to be surveilled may be defined in the reference coordinate system.
+
+[0072] Accordingly, in order to allow the surveillance units 100a and 100b to face the object to be surveilled, rotation angles of the surveillance units may be calculated by using Equation 1.
+
+[0073] In the current embodiment, the plurality of surveillance units 100a to 100n are connected to one another through the controller 150. Alternatively, the surveillance units 100a to 100n may be connected to one another through a network without the controller 150. At this time, a surveillance unit designates a predetermined object to be surveilled. The surveillance unit selects designated surveillance units capable of watching the object to be surveilled from among the surveillance units. The target coordinates are transmitted to the designated surveillance units. Accordingly, the designated surveillance units can intensively watch the object to be surveilled.
+
+[0074] FIG. 7 illustrates a surveillance camera system 70 including a plurality of surveillance units 700a to 700n. FIG. 8 illustrates a surveillance unit 800 in the surveillance camera system 70 according to an embodiment of the present invention. FIG. 9 illustrates a surveillance unit 900 in the surveillance camera system 70 according to another embodiment of the present invention.
+
+[0075] Referring to FIGS. 7 to 9, in the surveillance camera system 70, one surveillance unit detects a moving object. Surveillance units, which are linked with the surveillance unit and are capable of surveilling the moving object that is the object to be surveilled, are selected. It is possible to surveil and/or track the object being surveilled by using a plurality of surveillance units which are linked with one another. The surveillance camera system 70 may include the first and second surveillance units 700a and 700b and a controller 750. At this time, surveillance units 700a to 700n may construct the surveillance camera system 100 shown in FIGS. 1 and 2.
+
+[0076] The first surveillance unit 700a detects the moving object in a surveillance area, recognizes the position of the moving object, and generates the target position. The second surveillance unit 700b receives the target position and tracks the moving object while being linked with the first surveillance unit 700a. At this time, the second surveillance unit 700b can track the moving object as it moves.
+
+[0077] The controller 750 receives the target position from the first surveillance unit 700a, selects one or more second surveillance units 700b from among the surveillance units 700a to 700n, and transmits the target coordinates of the moving object to the second surveillance units 700b.
+
+[0078] Alternatively, in another embodiment, the surveillance units may be directly connected to one another without passing through the controller 750. That is, the first surveillance unit 700a generates the target position and selects the second surveillance units 700b from among the surveillance units 700a to 700n. In addition, the first surveillance unit 700a can directly transmit the target coordinates of the moving object to the second surveillance units 700b.
+
+[0079] On the other hand, in order to track the moving object by using two or more cameras linked with each other, a camera has to recognize an approximate distance between the moving object and the other camera that tracks the moving object. A range finder (950 of FIG. 9), which is capable of calculating a distance between the camera and the moving object, may be used. Alternatively, an image analyzer (832 of FIG. 8), which analyzes an image by using an algorithm, can estimate the distance.
+
+[0080] Surveillance units 800 and 900 may further include image analyzers 832 and 932 which are capable of sensing the moving object or measuring the distance between the surveillance units and the moving object by analyzing the image received from the camera. At this time, as shown in FIGS. 8 and 9, the image analyzers 832 and 932 may be included in camera controllers 830 and 930, respectively.
+
+[0081] The image analyzers 832 and 932 can detect the moving object by analyzing the image received from the camera. In addition, it is possible to estimate the distance between the camera and the moving object by using an algorithm relating to camera geometry.
+
+[0082] In another embodiment, as shown in FIG. 9, the surveillance unit 900 may further include a range finder 950 for measuring the distance between the camera and the moving object. Various range finders such as a laser range finder (LRF) may be used as the range finder 950.
+
+[0083] The surveillance camera system according to an embodiment of the present invention may be applied to a surveillance camera system using cameras with panning, tilting, and zooming functions. When a predetermined position is designated by monitoring software or when a single camera recognizes an event at a predetermined position, the designated or recognized position is transmitted to the cameras adjacent to the position. Accordingly, it is possible, by using the monitoring software, to construct a system capable of viewing an image at the position by rotating the cameras installed near the moving object based on the transmitted position.
+
+[0084] When a single camera tracks an object and when the object completely deviates from the visible range of the camera, it is also possible to construct a system in which another camera capable of viewing the moving object may be allowed to subsequently track the object.
+
+[0085] When a monitoring user recognizes a position at which an event occurs from an input of the position at which the event occurs, it is possible to calculate the position at which the event occurs with respect to another camera. Accordingly, it is possible to obtain an image by controlling a zoom magnification power.
+
+[0086] It is impossible to use a camera equipped with a GPS and a direction sensor indoors. However, in the case of a camera according to an embodiment of the present invention, it is possible to set the position of the camera by using absolute or relative coordinates in the building. In this case, the camera may be used outdoors.
+
+[0087] Accordingly, it is possible to intelligently surveil and/or track an area to be surveilled by using a plurality of cameras linked with one another by actively processing an input of a user or an occurrence of an event without setting presets.
+
+[0088] While the present invention has been particularly shown and described with reference to exemplary embodiments thereof, it will be understood by those of ordinary skill in the art that various changes in form and details may be made therein without departing from the spirit and scope of the present invention as defined by the appended claims.
+
+(57)
+Claim
+
+1. A surveillance camera system comprising:
+a camera receiving an image from a surveillance area;
+
+a driving device combined with the camera, the driving device moving the camera; and
+
+a camera controller controlling the driving device by using initial coordinates defined by a position and an azimuth at which the camera is installed and a current direction of the camera, so that the camera faces a target position.
+
+2. The surveillance camera system of claim 1, wherein the camera controller comprises:
+a driving controller controlling the driving device; and
+
+a storage unit storing the initial coordinates.
+
+3. The surveillance camera system of claim 2, wherein the driving controller receives the current direction from the driving device.
+
+4. The surveillance camera system of claim 2, wherein a driving controller receives the target position and controls the driving device, so that the camera faces the target position.
+
+5. The surveillance camera system of claim 1, wherein the initial coordinates and the target position are defined in a reference coordinate system.
+
+6. The surveillance camera system of claim 5, wherein the driving controller comprises:
+a rotation angle calculator calculating a rotation angle, according to which the camera is rotated, from the current direction and the initial coordinates, so that the camera faces the target position; and
+
+a driving signal generator generating a driving signal for driving the driving device, so that the camera is rotated according to the rotation angle.
+
+7. The surveillance camera system of claim 6, wherein the rotation angle calculator calculates the rotation angle by using a displacement amount of the current direction with respect to the azimuth of the initial coordinates and a displacement amount of the target position with respect to the initial coordinates.
+
+8. The surveillance camera system of claim 5, further comprising an interface receiving the initial coordinates and/or the target position.
+
+9. The surveillance camera system of claim 1, wherein the camera comprises a zoom lens for zooming in or out the image.
+
+10. The surveillance camera system of claim 1, wherein the driving device is capable of panning and/or tilting the camera.
+
+11. The surveillance camera system of claim 1, further comprising:
+a plurality of surveillance units each including the camera, the driving device, and the camera controller;
+
+an input unit receiving a position of an object to be surveilled on a map; and
+
+a controller selecting at least one designated surveillance unit for surveilling the object to be surveilled from among the plurality of surveillance units and transmitting the target coordinates of the object to be surveilled to the selected designated surveillance units.
+
+12. The surveillance camera system of claim 11, wherein the input unit comprises:
+a map display unit displaying a map on which positions of the cameras are displayed; and
+
+a position setting unit receiving the position of the object to be surveilled which is designated on the map.
+
+13. The surveillance camera system of claim 12, wherein the controller comprises:
+a coordinate transformer transforming the position of the object to be surveilled into the target position in the reference coordinate system;
+
+a camera selector selecting designated surveillance units for surveilling the object to be surveilled from among the plurality of surveillance units; and
+
+a coordinate transmitter transmitting the target position of the object to be surveilled to the selected designated surveillance units.
+
+14. The surveillance camera system of claim 13, wherein surveillance units installed within a predetermined range from the target position are selected as the designated surveillance units.
+
+15. The surveillance camera system of claim 13, wherein all the surveillance units installed within a set area that is set on the map are selected as the designated surveillance units.
+
+16. The surveillance camera system of claim 13,
+wherein the reference coordinate system is a three-dimensional (3D) coordinate system including altitude information, and
+
+wherein the camera selector selects surveillance units, which are capable of surveilling the object to be surveilled by using information on a 3D map, as the designated surveillance units.
+
+17. The surveillance camera system of claim 11, wherein the controller selects the designated surveillance units with reference to the initial coordinates that are defined by the position and the azimuth at which the camera is installed and that are transmitted from the surveillance units.
+
+18. The surveillance camera system of claim 1, comprising a plurality of surveillance units each including the camera, the driving device, and the camera controller, wherein each of the surveillance units comprises:
+a first surveillance unit sensing a moving object in the surveillance area, recognizing the position of the moving object, and generating the target position; and
+
+a second surveillance unit receiving the target position and surveilling the moving object while being linked with the first surveillance unit.
+
+19. The surveillance camera system of claim 18, further comprising a controller receiving the target position from the first surveillance unit, selecting one or more second surveillance units from among the surveillance units, and transmitting the target coordinates of the moving object to the one or more second surveillance units.
+
+20. The surveillance camera system of claim 19, wherein the one or more second surveillance units track the moving object, as the moving object moves.
+
+21. The surveillance camera system of claim 18, wherein each of the surveillance units includes an image analyzer sensing the moving object or measuring a distance from the moving object by analyzing an image received from the camera.
+
+22. The surveillance camera system of claim 18, wherein each of the surveillance units includes a range finder measuring a distance from the moving object.
+
+23. A method of surveilling an area, the method comprising:
+receiving a target position from a first camera;
+
+calculating a rotation angle, from a current position and initial coordinates, so that a second camera will face the target position; and
+
+generating a signal, based on the calculating step, to rotate the second camera from the current position to face the target position.
+
+24. A surveillance system comprising:
+a plurality of surveillance units, each surveillance unit comprising a camera, a driving device for moving the camera and a camera controller;
+
+a display unit comprising a user input device and a display; and
+
+a system controller connected to the display unit and connected to each surveillance unit, wherein the system controller receives target coordinates from the display unit, the target coordinates based on input by a user into the user input device, selects a first surveillance unit of the plurality of surveillance units and transmits to the first surveillance unit data such that a first camera of the first surveillance unit rotates to face the target coordinates based on the data received from the system controller.
+
+* * * * *

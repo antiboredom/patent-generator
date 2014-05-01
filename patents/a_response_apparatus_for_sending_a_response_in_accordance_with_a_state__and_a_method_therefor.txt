@@ -1,0 +1,1410 @@
+A Response Apparatus For Sending A Response In Accordance With A State, And A Method Therefor
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+0
+848
+322
+B1
+
+(12) EUROPEAN PATENT SPECIFICATION
+
+(45) Mention of the grant of the patent:
+09.06.2004
+Bulletin
+2004/24
+
+(21) Application number: 97310020.9
+
+(22) Date of filing:
+11.12.1997
+
+(51) Int. Cl.7: G06F 3/12
+
+(54)
+A response apparatus for sending a response in accordance with a state, and a method therefor
+
+Antwortgerät und Verfahren, um eine Antwort einem Zustand entsprechend zu senden
+
+Dispositif et procédé de réponse pour envoyer une réponse en accord avec un état
+
+(84) Designated Contracting States:
+DE
+FR
+GB
+IT
+NL
+
+(30) Priority:  12.12.1996 JP 33209696
+12.12.1996 JP 33209796
+12.12.1996 JP 33210296
+12.12.1996 JP 33210396
+12.12.1996 JP 33210496
+
+(43) Date of publication of application:
+17.06.1998
+Bulletin
+1998/25
+
+(73) Proprietor: CANON KABUSHIKI KAISHA
+Tokyo (JP)
+
+(72) Inventors:
+
+* Wakai, Masanori
+Ohta-ku, Tokyo (JP)
+* Jeyachandran, Suresh
+Ohta-ku, Tokyo (JP)
+* Takayama, Masayuki
+Ohta-ku, Tokyo (JP)
+* Suda, Aruna Rohra
+Ohta-ku, Tokyo (JP)
+
+(74) Representative: Beresford, Keith Denis Lewis
+et al
+BERESFORD & Co. 16 High Holborn
+London WC1V 6BX
+London WC1V 6BX (GB)
+
+(56) References cited:
+:
+EP-A- 0 657 846
+US-A- 5 555 426
+
+Note: Within nine months from the publication of the mention of the grant of the European patent, any person may give notice to the European Patent Office of opposition to the European patent granted. Notice of opposition shall be filed in a written reasoned statement. It shall not be deemed to have been filed until the opposition fee has been paid. (Art. 99(1) European Patent Convention).
+
+Description
+
+[0001]
+The present invention relates to a response apparatus that notifies a user or a manager of a change in the state of the apparatus and of the occurrence of an event, and a method therefor.
+
+[0002]
+Fig. 1 is a diagram illustrating an example of a conventional functional arrangement.
+
+[0003]
+In Fig. 1, the statuses of system external machines, such as a printer and a facsimile machine, and the status of an apparatus itself are acquired by a status acquisition unit 11. The acquired status information is referred to by a response content selection unit 12, and a response content is selected. Then, the selected response content is output by a response content output unit 13.
+
+[0004]
+As a conventional example, a response apparatus for displaying the status of a printer for a user, and a method therefor will now be described.
+
+[0005]
+Fig. 2 is a flowchart showing all the processing performed by the prior art.
+
+[0006]
+Fig. 3 is a diagram showing example response content definition information that is referred to in the prior art to define the meaning of each state of a printer, and an output character string transmitted as a response.
+
+[0007]
+Fig. 4 is a diagram showing an example response output for the prior art.
+
+[0008]
+When a system employing the conventional technique is activated, first at step S20 response content definition information is initialized to a value shown in Fig. 3. At step S21, the status acquisition unit 11 acquires a printer status indicating the status of the printer, and stores it as status information. At step S22, the response content selection unit 12 acquires an output character string associated with the stored status information by referring to the response content definition information in Fig. 3, and stores the output character string as response content information. The response content output unit 13 then displays the obtained response content information in a window in Fig. 4. Thereafter, program control returns to step S21 and the above process is repeated.
+
+[0009]
+Next, a response apparatus for notifying a user of the receipt of electronic mail and a method therefor will be described as another conventional example.
+
+[0010]
+Fig. 5 is a diagram showing the meanings associated with electronic mail status data, which are referred to in the prior art, and example response content definitions for state changes signaled by the production or non-production of a Beep.
+
+[0011]
+The response content selection unit 12 acquires response content data that specify whether the Beep ON or the Beep OFF state corresponds to the status obtained by the status acquisition unit 11, and the response content output unit 13 actually sets the Beep ON or OFF (no processing) state.
+
+[0012]
+However, in the case of an apparatus that displays printer statuses for a user, the user must actually look at a computer terminal to ascertain which status is being displayed.
+
+[0013]
+Furthermore, since the momentary status of a printer is regularly displayed in a window, a user must pay the same attention to all responses, regardless of whether they are important, and may miss a very important response.
+
+[0014]
+In addition, since even for a very important status notification the content of a response does not differ from that for a normal status, the importance of a response may not be readily grasped by a user. Also, since all statuses are displayed only by using a window, a user can not intuitively sense the importance of a status announcement.
+
+[0015]
+On the other hand, although a special status announcement, such as "printer buffer abnormality", is difficult for a user other than a printer maintenance man, etc., to understand, such special status notifications are displayed for all users. As a result, while the import of such a status notification may not be readily grasped by an ordinary user, a printer maintenance man may discount the importance of the announcement since it is also displayed for other, ordinary users, and may neglect to perform required maintenance.
+
+[0016]
+A sensor may erroneously detect "toner running low" because of the surface attitude of the toner, even though plenty of toner remains. That is, since in actuality the remaining toner is not insufficient, the toner may thereafter be gradually reduced, or the surface attitude of toner may be corrected in some way. However, conventionally, even when no correction is required, a response is output upon the detection of the abnormality, so that a user must correct the abnormality while watching the toner as it is reduced.
+
+[0017]
+In addition, a window display can be annoying to a user because as all statuses are shown, statuses that are not of interest to the user are also displayed. For example, in the definitions given under "Output character strings", the column in the printer status table in Fig. 3, there is no big difference in the status expressions. The output character strings are so defined because for almost all users the importance of the statuses is not very different. For a user in charge of toner replacement, however, since to that user the statuses concerning toner are more important than any other status, the exaggeration of the responses for toner abnormalities is desirable. For a user other than a user in charge of toner replacement, statuses concerning toner need not be displayed, and no response is required.
+
+[0018]
+In the case of the above apparatus for notifying a user of the receipt of electronic mail, a user does not have to watch a computer terminal, but must remain in an area within hearing range of a beeping sound generated by the computer terminal. Further, the only provided status constitutes a notification that electronic mail has been received, and when, as with printer statuses, there are a plurality of situations, such as what type of electronic mail has been received, it is difficult to describe the type of electronic mail that has been received using only a beeping sound.
+
+[0019]
+As a result, a beeping sound is generated even for less important electronic mail, and the volume and the tone of the beeping sound does not differ, regardless of the importance of the electronic mail. A user must pay the same amount of attention to the receipt of all electronic mail messages, regardless of whether or not they are important, and may not realize that important electronic mail has been received.
+
+[0020]
+Some systems not only notify users that electronic mail has been received, but also display in a window the subject of the correspondence. However, since the display format is the same regardless of the comparative importance of the electronic mail message, a user can not intuitively identify the important messages that are received.
+
+[0021]
+Furthermore, as only an addressee is notified of the receipt of electronic mail, a person, such as a secretary, who is an agent of an addressee will not be aware that electronic mail has been received. And since a user is notified of the receipt of mail that an agent, such as a secretary, can handle, an extra load is imposed on a user.
+
+[0022]
+As is described above in the prior art, since a response process suitable for the occasion is not selected, a response is output for every occasion. And since the content of responses does not change, a user may not be aware that a response is important. Furthermore, as in every case the same media is employed, a user may not be aware that a response is important, or a user who can not use the media will not receive the response. In addition, as in each case responses are provided for the same addressees, there will be users who receive unnecessary responses and users who do not receive necessary responses. Also, since for every event a response is output at the same time as the event is detected, there are more opportunities for users to receive unnecessary responses, and thus an extra load is imposed on the users.
+
+[0023]
+Moreover, since the response to an obtained status is determined in advance for a system, the difference in the importance of the status to individual users can not be shown, so that a user may not be aware of an important response, and the inconvenience caused by the receipt of an unnecessary response can not be avoided.
+
+[0024]
+In the case of the above apparatus for displaying the status of a printer for a user, the status of the printer is merely displayed for the user, and whether or not the user is aware of the import of the display, or whether or not the malfunction indicated by the displayed status is resolved is not taken into account. Therefore, the malfunction indicated by the status may not be resolved.
+
+[0025]
+When, for example, paper runs out while reference material is being printed for use in a meeting, according to the prior art only the response "there is no paper" is displayed (Fig. 4). Since whether or not paper has actually been fed is not confirmed, in the worst case, immediately before the meeting a user may become aware that the reference material has not yet been copied.
+
+[0026]
+In the case of the apparatus for notifying a user of the receipt of electronic mail, a user is merely notified that electronic mail has been received, and there is no provision for determining whether or not the user reads the electronic mail message. Thus, although the electronic mail is received, a user may not be aware that urgent mail has been received.
+
+[0027]
+As is described above, in the prior art, since no consideration is given to whether or not a problem indicated by a response has been resolved, or whether or not a user confirms the response, no countermeasures can be taken when a user is not aware that an important response has been displayed.
+
+[0028]
+In the prior art, since responses are issued even when users are not prepared to recognize or handle them, transmission of unwanted responses will occur and the taking of effective countermeasure will be delayed.
+
+[0029]
+Patent EP-A-0657846 describes a system in which a host computer obtains the status of a plurality of networked printers and displays the status on-screen in the form of icons. A system for restricting the receipt of broadcast electronic messages to a subset of users to whom the content may be of interest is disclosed in Patent US-A-5555426.
+
+[0030]
+According to one aspect, the present invention provides a response apparatus comprising:
+response procedure determination means for determining a response procedure, including response addressee determination means for determining a response addressee;
+
+response information preparation means for preparing response information; and
+
+response information output means for outputting the prepared response information to the determined response addressee in accordance with the determined response procedure, characterised in that
+
+said apparatus further comprises status acquisition means for acquiring a status of a machine to be checked,
+
+said response procedure determination means is arranged to determine the response procedure in accordance with the acquired status of the machine,
+
+said response addressee determination means is arranged to determine the response addressee depending upon the acquired status of the machine, and
+
+said response information preparation means for preparing response information being arranged to indicate the acquired status of the machine in accordance with the determined response procedure.
+
+[0031]
+According to another aspect, the present invention provides a response method comprising the steps of:
+acquiring a status of a machine to be checked;
+
+determining the response procedure in accordance with the acquired status of the machine;
+
+determining the response addressee depending upon the acquired status of the machine;
+
+preparing response information indicating the acquired status of the machine in accordance with the determined response procedure; and
+
+outputting the prepared response information to the determined response addressee in accordance with the determined response procedure.
+
+[0032]
+Embodiments of the present invention will now be described with reference to the accompanying drawings, in which:
+Fig. 1 is a diagram illustrating an example functional arrangement in the prior art;
+
+Fig. 2 is a flowchart showing an example of the overall processing performed by the prior art;
+
+Fig. 3 is a diagram illustrating example response content definition information referred to in the prior art;
+
+Fig. 4 is a diagram illustrating an example response output in the prior art;
+
+Fig. 5 is a diagram illustrating meanings of individual statuses of electronic mail and example beep definitions as responses;
+
+Fig. 6 is a block diagram illustrating an example hardware arrangement for an information processing system according to a first embodiment of the present invention;
+
+Fig. 7 is a diagram illustrating an example processing structure according to the first embodiment;
+
+Fig. 8 is a flowchart showing an example of the overall processing according to the first embodiment;
+
+Fig. 9 is a diagram illustrating example response content definition information, including the meanings of the individual statuses for a printer and definitions of output character strings as responses;
+
+Fig. 10 is a flowchart showing the entire processing performed by a status acquisition unit according to the first embodiment;
+
+Fig. 11 is a diagram showing example status information;
+
+Fig. 12 is a flowchart of the overall processing performed by a response content selection unit according to the first embodiment;
+
+Fig. 13 is a diagram showing response method limitation information;
+
+Fig. 14 is a flowchart of the overall processing performed by a response information preparation unit according to the first embodiment;
+
+Fig. 15 is a diagram showing information for response content information preparation;
+
+Fig. 16 is a diagram illustrating example response content information when an output character string relative to an acquired status is defined;
+
+Fig. 17 is a diagram illustrating example response content information when an output character string relative to an acquired status is not defined;
+
+Fig. 18 is a flowchart of the overall processing performed by a response information output unit according to the first embodiment;
+
+Fig. 19 is a diagram showing example information for preparation of mail response output information;
+
+Fig. 20 is a diagram showing example response output information;
+
+Fig. 21 is a block diagram illustrating an example hardware arrangement for an information processing system according to a second embodiment of the present invention;
+
+Fig. 22 is a diagram of an example processing structure according to the second embodiment;
+
+Fig. 23 is a flowchart of an example of the overall processing performed by the second embodiment;
+
+Fig. 24 is a diagram showing example response method definition information representing definitions of response methods;
+
+Fig. 25 is a flowchart of the overall processing performed by a response method selection unit according to the second embodiment;
+
+Fig. 26 is a diagram showing example response method selection information that is output as the result of the processing performed by the response method selection unit according to the second embodiment;
+
+Fig. 27 is a flowchart of the overall processing performed by a response information preparation unit according to the second embodiment;
+
+Fig. 28 is a diagram showing information for response content information preparation;
+
+Fig. 29 is a diagram illustrating example response content information when a user is designated as a responder relative to a status;
+
+Fig. 30 is a diagram illustrating example response content information when an assistant is designated as a responder relative to a status;
+
+Fig. 31 is a flowchart of the overall processing performed by a response information output unit according to the first embodiment;
+
+Fig. 32 is a diagram showing example information for preparation of response output information;
+
+Fig. 33 is a diagram illustrating example response output information;
+
+Fig. 34 is a block diagram illustrating an example hardware arrangement for an information processing system according to a third embodiment of the present invention;
+
+Fig. 35 is a diagram illustrating an example processing structure according to the third embodiment;
+
+Fig. 36 is a flowchart of an example of the overall processing performed by the third embodiment;
+
+Fig. 37 is a flowchart of the overall processing performed by a response method designation unit according to the third embodiment;
+
+Figs. 38A, 38B and 38C are diagrams illustrating example windows displayed by the response method designation unit according to the third embodiment;
+
+Fig. 39 is a diagram showing example response method definition information that is changed;
+
+Fig. 40 is a block diagram illustrating an example hardware arrangement for an information processing system according to a fourth embodiment of the present invention;
+
+Fig. 41 is a diagram illustrating an example processing structure according to the fourth embodiment;
+
+Fig. 42 is a flowchart of an example of the overall processing performed according to the fourth embodiment;
+
+Fig. 43 is a flowchart of the overall processing performed by a response method selection unit according to the fourth embodiment;
+
+Fig. 44 is a flowchart of the overall processing performed by a response result evaluation unit according to the fourth embodiment;
+
+Fig. 45 is a diagram showing example information for response result evaluations consisting of definitions for status information during the normal operation related to the acquired status information;
+
+Fig. 46 is a flowchart showing a response method selection process according to the fourth embodiment;
+
+Fig. 47 is a diagram showing example definitions for re-response method definition information in the initial states that is to be referred to or updated in the response method selection process according to the fourth embodiment;
+
+Fig. 48 is a diagram showing the updated re-response method definition information that is to be referred to or updated in the response method selection process according to the fourth embodiment;
+
+Fig. 49 is a block diagram illustrating an example hardware arrangement for an information processing system according to a fifth embodiment of the present invention;
+
+Fig. 50 is a diagram illustrating an example processing structure according to the fifth embodiment;
+
+Fig. 51 is a flowchart of the overall processing performed by a response addressee status acquisition unit according to the fifth embodiment; and
+
+Fig. 52 is a diagram illustrating an example of received mail that is to be evaluated by the response addressee status acquisition unit in the fifth embodiment.
+
+[First Embodiment]
+
+[0033]
+Operating features of a first embodiment are the acquisition of the status of a printer, the preparation of response content information having a form suitable for electronic mail, and the transmission of the printer status by electronic mail. Another operating feature is the employment of data for the preparation of response content information when preparing response content information that consists of an opening sentence, text and a closing sentence. An additional operating feature is the employment of data for the output of response content to output response information consisting of a mail header, mail text and a mail footer.
+
+<Example arrangement of system>
+
+[0034]
+Fig. 6 is a block diagram illustrating an example hardware arrangement for an information processing system according to the first embodiment.
+
+[0035]
+The information processing system comprises a central processing unit (hereinafter referred to as a CPU) 1 and units connected to the central processing unit 1. The CPU 1 controls the individual units and executes various programs. An output device 2 outputs processing results obtained by the information processing system, and is, for example, a display or a printer. The output device 2 has a status 2a that represents its individual status. This status is acquired and referred to by the information processing system.
+
+[0036]
+An input device 3 is used to input an operating instruction, and is, for example, a keyboard or a pointing device. A memory unit 4 is constituted by a ROM or a RAM in which are stored data for the processing steps in this embodiment (control procedures for the CPU 1). The data stored in the memory unit 4 are read and processed by the CPU 1.
+
+[0037]
+The memory unit 4 includes a response content definition information memory area 4a, in which are stored definitions of response contents relative to statuses; a status information memory area 4b, in which is stored such status information as the status 2a that is acquired for the output device 2; a response content selection information memory area 4c, in which is stored a selected response content; a response content information memory area 4d, in which is stored response content information that has been prepared; a response output information memory area 4e, in which is stored response output information that is to be output; and a program load area 4f, into which a program from an external memory unit 5 is loaded.
+
+[0038]
+The external memory unit 5 can be a hard disk on which is stored a large quantity of information, such as a dictionary; or a portable memory medium, such as a floppy disk. The external memory unit 5 includes a response content definition information memory area 5a, in which are stored definitions of response contents related to the statuses; and a status acquisition module 5b, a response content selection module 5c, a response information preparation module 5d and a response information output module 5e that respectively implement the functions of a status acquisition unit 71, a response content selection unit 72, a response information preparation unit 73 and a response information output unit 74, all of which will be described later.
+
+<Processing configuration>
+
+[0039]
+Fig. 7 is a diagram illustrating an example processing configuration in the first embodiment.
+
+[0040]
+The status acquisition unit 71 acquires the status of an external machine, such as a printer or a facsimile machine, and the status of the system. The response content selection unit 72 refers to the acquired status information and selects the response contents. Then, in consonance with the selected response contents, the response content preparation unit 73 prepares response information using an appropriate expression method. The response information output unit 74 outputs the prepared response information to an addressee.
+
+[0041]
+The individual units in Fig. 7 will now be described in detail.
+
+[0042]
+Fig. 8 is a flowchart for the overall processing performed in the first embodiment.
+
+[0043]
+Fig. 9 is a diagram showing response content definition information that represents the meanings of the individual statuses of a printer and the definitions of character strings output as responses.
+
+[0044]
+When the system in the first embodiment is activated, at step S80 the response content definition information is initialized to values shown in Fig. 9. Then, at step S81 the status acquisition unit 71 acquires the printer status indicating the status of a printer, and stores it in the status information memory area 4b. At step S82 the response content selection unit 72 refers to the response method definition information in Fig. 9 and selects an output character string related to the status stored in the status information memory area 4b, and stores the output character string in the response content selection information memory area 4c. At step S83, in consonance with the response content selection information, the response information preparation unit 73 prepares response content information using an expression method that is suitable for electronic mail, and stores the response content information in the response content information memory area 4d. The response content output unit 74 outputs the obtained response content information by electronic mail. Program control returns to step S81 and the above process is repeated.
+
+<Status acquisition unit 71>
+
+[0045]
+Fig. 10 is a flowchart for the processing performed by the status acquisition unit 71 in the first embodiment.
+
+[0046]
+Fig. 11 is a diagram showing example status information that is output as the result of the processing by the status acquisition unit 71 in the first embodiment.
+
+[0047]
+When the status acquisition unit 71 is activated, at step S101 status 2a of the output device 2 is stored in a variable "state." At step S102 a check is performed to determine whether or not the variable "state" is a valid status defined in Fig. 9. When the variable "state" is a valid status, the variable "state" is returned as status information, and the processing is thereafter terminated. If the variable "state" is not a valid status, program control moves to step S103, whereat the status "other errors" is stored in the variable "state." The variable "state" is returned as status information and the processing is thereafter terminated.
+
+[0048]
+If the status 2a at the output device 2 is the status "upper cartridge copy paper out" = 11, this is a valid status defined in Fig. 9. Therefore, status = 11 is returned as status information, and the processing is terminated. When the status 2a is "invalidity" = 99, program control goes to step S103, whereat the status "other errors" = 9 is stored. Then, status = 9 is returned as status information, and the processing is terminated.
+
+<Response content selection unit 72>
+
+[0049]
+Fig. 12 is a flowchart for the processing performed by the response content selection unit 72 in the first embodiment.
+
+[0050]
+Fig. 13 is a diagram showing example response method limitation information that is output as the result of processing by the response content selection unit 72 in the first embodiment.
+
+[0051]
+When the response content selection unit 72 is activated, at step S121 an output character string, which corresponds to the variable "state" for status information acquired by the status acquisition unit 71, is stored in the variable "sentence", by referring to the response method definition information 4a in Fig. 9. At step S122, a check is performed to determine whether or not the character string stored in the variable "sentence" is valid. If the character string is valid, program control moves to step S123, whereat the content in the variable "state" is rewritten, and the variable "sentence" is returned as response content selection information. The processing is thereafter terminated.
+
+[0052]
+When, for example, the variable "state" for status information acquired by the status acquisition unit 71 is status "upper cartridge copy paper out" = 11, this status is a valid output character string defined in Fig. 9. Thus, the corresponding output character string "copy paper out" is stored in the variable "state" as the response content selection information (16b in Fig. 16, which will be described later). However, when the variable "state" for status information is status "printer buffer abnormality" = 3, an output character string is invalid. Thus, "state" in character string "error No. = state" is replaced by the actual variable "state", and character string "error No. = 3" is stored in the variable "sentence" as response method limitation information (17b in Fig. 17, which will be described later).
+
+<Response information preparation unit 73>
+
+[0053]
+Fig. 14 is a flowchart for the processing performed by the response information preparation unit 73 in the first embodiment.
+
+[0054]
+Fig. 15 is a diagram showing information for the preparation of response content information that is referred to by the response information preparation unit 73 in the first embodiment. As information for the preparation of response content information, character strings corresponding to an "opening sentence" and a "closing sentence" are defined.
+
+[0055]
+Figs. 16 and 17 are diagrams illustrating example response content information that is prepared by the response information preparation unit 73 in the first embodiment. In Fig. 16 is an example obtained when an output character string corresponding to an acquired status is defined, and in Fig. 17 is an example obtained when an output character string corresponding to an acquired status is not defined.
+
+[0056]
+When the response information preparation unit 73 is activated, at step S141 response content information is initialized as a blank output character string. At step S142 a character string (16a in Fig. 16 or 17a in Fig. 17) corresponding to an "opening sentence" is added to the response content information by referring to the information for the preparation of response content information in Fig. 15.
+
+[0057]
+Following this, at step S143 information (16b in Fig. 16 or 17b in Fig. 17) in a variable "sentence" for response content selection information, which is stored by the response content selection unit 72, is added to the response content information.
+
+[0058]
+Finally, at step S144 a character string (16c in Fig. 16 or 17c in Fig. 17) corresponding to a "closing sentence" is added to the response content information by referring to the information for preparation of response content information in Fig. 15. The resultant response content information is returned and the processing is thereafter terminated.
+
+<Response information output unit 74>
+
+[0059]
+Fig. 18 is a flowchart for the processing performed by the response information output unit 74 in the first embodiment.
+
+[0060]
+Fig. 19 is a diagram showing information for the preparation of mail response output information that is referred to by the response information output unit 74 in the first embodiment. As information for the preparation of response output information, character strings corresponding to a "Mail header" and a "Mail footer" are defined.
+
+[0061]
+Fig. 20 is a diagram illustrating example response output information that is prepared and output by the response information output unit 74 in the first embodiment.
+
+[0062]
+When the response information output unit 74 is activated, at step S181 response output information is initialized as a blank character string. At step S182 a character string (20a in Fig. 20) corresponding to "Mail header" is added to the response output information by referring to the information for the preparation of response output information in Fig. 19.
+
+[0063]
+Then, at step S183 response content information (20b in Fig. 20), which is returned from the response content preparation unit 73, is added to the response output information. At step S184 a character string (20c in Fig. 20) corresponding to "Mail footer" is added to the response output information by referring to the information for the preparation of response output information in Fig. 19.
+
+[0064]
+At step S185 the response output information prepared by employing the above procedures is transmitted by electronic mail to an addressee.
+
+[Modification of First Embodiment]
+
+[0065]
+Although a response related to a single status is explained in the first embodiment, a plurality of error statuses that occur at the same time may be acquired, and response information may be prepared and output.
+
+[0066]
+When, for example, a plurality of errors, such as the lack of toner and paper, occur, or when errors occur simultaneously at a plurality of devices, such as the printers A and B in Fig. 7, for output, the types of errors may be included in a single item of response information.
+
+[0067]
+To prepare response information, a response content preparation rule may be employed. As a result, expressive response information can be prepared.
+
+[0068]
+The electronic mail employed in the first embodiment can be replaced by a telephone as the medium employed for responding, and response information may be prepared in a form suitable for transmission over the telephone and then may be output by telephone. To do this, information included in response information in the first embodiment need only be prepared as voice information. The mail header in the first embodiment may be replaced by a phase, such as "Hello", which is an appropriate telephone response.
+
+[0069]
+In this case, since an addressee is a telephone, when an error occurs, a response can be transmitted immediately. Further, response information can be transmitted without requiring an addressee to aggressively perform an operation. In addition, when a portable telephone is used as the telephone for an addressee, a correct response can immediately be transmitted to an addressee.
+
+[0070]
+In the first embodiment, a management system can be regarded as a response addressee, and response information can be prepared in a form suitable for the management system and transmitted thereafter to the management system. A database system or a file management system can be employed as such a management system.
+
+[0071]
+In addition, in the first embodiment, an addressee may be a home page, and response information may be prepared in a form suitable for the home page and be posted on the home page. Thus, an unspecified majority of people can obtain information concerning the status, such as the occurrence of an error.
+
+[0072]
+Furthermore, in the first embodiment, response information may be prepared in a form suitable for sound, and may be output by sound. To do this, each item of information included in the response information in the first embodiment may be prepared as voice information, or voice synthesization may be performed for response information that is prepared as a character string.
+
+[0073]
+Further, in the first embodiment, a pocket bell (pager) may be regarded as an addressee, and response information may be prepared in a form suitable for the pager, and thereafter may be transmitted to the pager. To do this, response information need only be prepared by using character types and a character count to enable transmission to the pager. Additional response information may be acquired by making a call after response information has been received by the pager.
+
+[0074]
+Moreover, in the first embodiment, a facsimile machine may be determined as an addressee, and response information may be prepared in a form suitable for a facsimile machine and be transmitted by facsimile. In this case, it is best that a facsimile invoice to be added before the response information.
+
+[0075]
+According to the above described embodiment, even when a user does not watch a computer monitor or is not nearby, the user can expeditiously receive a response.
+
+[Second Embodiment]
+
+[0076]
+Operating features of a second embodiment are referring to status-response method corresponding data, the determination in consonance with an acquired printer status as to whether a response should be output, the selection of response contents, the selection of a response medium, the selection of a response addressee, and the selection of a response timing.
+
+<Example arrangement of system>
+
+[0077]
+Fig. 21 is a block diagram illustrating example hardware arrangement for an information processing system according to the second embodiment. The structure in Fig. 21 is substantially the same as that in Fig. 6, except that a part of the contents differ that are stored in the external unit 4 and an external memory unit 5. Thus, only portions that are not shown in Fig. 6 will be explained.
+
+[0078]
+In the memory unit 4, a response method definition information memory area 4g is used to store definitions for response methods related to statuses, and a response method selection information memory area 4h is used to store a selected response method. A response content information memory area 4i is used to store response content information that has been prepared, and a previous status information memory area 4j is used to store status information that was previously acquired.
+
+[0079]
+In the external memory unit 5, a response method definition information memory area 5f is used to store definitions for response methods related to statuses, and a response method selection module 5g includes a program for implementing the function of a response method selection unit 75, which will be described later.
+
+<Processing configuration>
+
+[0080]
+Fig. 22 is a diagram of an example processing configuration according to the second embodiment. Essentially, only that portion that differs from the example in Fig. 7 will be described.
+
+[0081]
+When the status of an external machine, such as a printer or a facsimile machine, or the status of the system is acquired by a status acquisition unit 71, a response method selection unit 72 refers to the acquired status information and selects a response method. Then, in consonance with the selected response method, a response information preparation unit 73 prepares response information using a satisfactory expression method. A response information output unit 74 outputs prepared response information to an addressee using the selected response method.
+
+[0082]
+The individual units in Fig. 22 will now be described in detail.
+
+[0083]
+Fig. 23 is a flowchart of the overall processing for the second embodiment.
+
+[0084]
+Fig. 24 is a diagram showing example response method definition information including meanings of the statuses of a printer and definitions of response methods, such as the presence of a response, the contents of a response, a response medium, a response addressee, a response timing and a character string to be output.
+
+[0085]
+When the system in this embodiment is activated, at step S231 the response method definition information is initialized to the values shown in Fig. 24, and at step S232 the variable "BeforeState" is initialized as a value (e.g., -1) that it is impossible for the status acquisition unit 71 to acquire.
+
+[0086]
+At step S233, the status acquisition unit 71 acquires a printer status indicating the status of a printer, and stores it in a status information memory area 4b. At step S234 the variable "state" for the status information is compared with the variable "BeforeState". When the two variables differ, program control moves to step S235. The variable "state" is stored in the variable "BeforeState", and the current time is stored in the variable "BeforeTime". Program control then moves to step S236. When the two variables match, program control goes from step S234 directly to step S236.
+
+[0087]
+At step S236 the response method selection unit 75 acquires a response method corresponding to the status stored in the status information memory area 4b by referring to the response method definition information in Fig. 24, and stores the acquired response method in the response method selection information memory area 4h. At step S237 a check is performed to determine whether or not a reply to the response method selection information is specified. When a reply is not specified, no further processing is performed and program control returns to step S233. At step S238, a response timing for the response method selection information is examined. When a designated response timing is not instant timing, program control goes to step S239. If a period of time that has elapsed up to the present following the time stored in the variable "BeforeTime" is not greater than the response time that is designated, no further processing is performed and program control returns to step S233. When, at step S238, the designated time is instant timing and when, at step S239, the elapsed time is greater than the designated response time, program control advances to step S240.
+
+[0088]
+At step 240, in consonance with the response method selection information, the response information preparation unit 73 prepares response information using an expression method suitable for the selected medium, and stores the response information in the response content information memory area 4d. At step S241 the response information output unit 74 outputs the prepared response information to the selected media. Program control then returns to step S233, and the processing is repeated.
+
+[0089]
+An explanation will be given for when, at step S233, status "upper cartridge copy paper out" = 11 is acquired. As was previously described, various data used in this embodiment are initialized when the system is activated.
+
+[0090]
+Since the currently obtained status and a value stored in the variable "BeforeState" always differ, at step S234 it is ascertained that state ≠ BeforeState, program control moves to step S235, whereat status "upper cartridge copy paper out" status = 11 is stored in the variable "BeforeState", and the current time (e.g., 9:30) is stored in BeforeTime. Then, at step S236 a response method corresponding to status = 11 in Fig. 9 is acquired. Since a reply to the response method is specified and the response timing is designated "instant", program control moves to step S240. At step S240, Window & Beep is designated as a response medium, and Window & Beep response information is prepared. At step S241 Window & Beep response information is output, and program control thereafter returns to step S233.
+
+[0091]
+An explanation will now be given for when, at step S233, status "upper cartridge OUT" = 10 is acquired. Assuming that status = 11 is stored in the variable "BeforeState", at step S234 it is ascertained that state ≠ BeforeState, and program control moves to step S235. At step S235, status "upper cartridge OUT" = 10 is stored in the variable "BeforeState", and the current time (e.g., 9:45) is stored in BeforeTime. When, at step S236, a response method corresponding to status = 10 in Fig. 9 is acquired, a reply to the response method is not designated, no further processing is performed and program control returns to step S233.
+
+[0092]
+An explanation will be given when, at step S233, status "toner remaining 10%" = 33 is acquired. Assuming that status = 10 is stored in the variable "BeforeState", at step S234 it is ascertained that state ≠ BeforeState, and program control moves to step S235. At step S235 status "tone remaining 10%" = 33 is stored in BeforeState, and the current time (e.g., 10:00) is stored in BeforeTime.
+
+[0093]
+Following this, when, at step S236, a response method corresponding to status = 33 in Fig. 24 is acquired, a reply is designated and a response timing is designated as "five minutes later". Program therefore moves to step S239. At step S239 the time stored in the variable "BeforeTime" is subtracted from the current time to acquire the period of time that has elapsed since status "toner remaining 10%" = 33. The elapsed time is compared with the designated response timing. Since at this time the elapsed time is shorter than the designated time, no further processing is performed and program control returns to step S233.
+
+[0094]
+An explanation will now be given for when, ten minutes after the above case, status "toner remaining 10%" = 33 is acquired at step S233. Since status = 33 is stored in the variable "BeforeState", at step 5234 it is ascertained that state = BeforeState, and program control moves to step S236. When, at step S236, a response method corresponding to status = 33 in Fig. 24 is acquired, a reply to the response method is designated and a response timing is designated as "five minutes later". Program control thereafter goes to step S239. At step S239 the current time (10:10) is compared with the time (10:00) stored in the variable "BeforeTime". Since the current time exceeds the designated response timing "five minutes later", program control advances to step S240. In addition, since mail is designated as a response medium, mail response information is prepared and is output at step S241. Program control thereafter returns to step S233.
+
+<Status acquisition unit 71>
+
+[0095]
+Fig. 10 is a flowchart for processing performed by the status acquisition unit 71 in the second embodiment. The processing is the same as that in the first embodiment, except that the response method definition information in Fig. 24 is referred to, instead of the response content definition information in Fig. 9, and as a result of the processing, the status information in Fig. 11 is output as in the first embodiment. Therefore, no detailed explanation for them will be given.
+
+<Response method selection unit 75>
+
+[0096]
+Fig. 25 is a flowchart for the processing performed by the response method selection unit in the second,embodiment.
+
+[0097]
+Fig. 26 is a diagram showing example response method selection information that is output as the result of the processing by the response method selection unit 75 in the second embodiment.
+
+[0098]
+When the response method selection unit 75 is activated, at step S251 an output character string, which corresponds to the variable "state" for status information acquired by the status acquisition unit 71, is stored in the variable "sentence" by referring to the response method definition information in Fig. 24. At step S252 a check is performed to determine whether or not the character string stored in the variable "sentence" is valid. When the character string is invalid, program control moves to step S253, and the contents of the variable "sentence" are rewritten.
+
+[0099]
+At step S254 whether or not to reply to variable "state" for the status information acquired by the status acquisition unit 71 is designated, and the results are stored in the variable "exec" by referring to the response method definition information in Fig. 24. Following this, at step S255 a check is performed to determine whether a reply is designated in the variable "exec". When a reply is not designated, a value indicating "no reply" is returned, and processing is thereafter terminated.
+
+[0100]
+At step S256 a designated response timing, a designated response content, a designated response media and an addressee, which are acquired by the status acquisition unit 71 and correspond to the variable "state", are stored in the variables "timing", "contents", "media" and "direct" by referring to the response method definition information in Fig. 24. A value for "reply" is returned and the processing is thereafter terminated.
+
+[0101]
+When status "upper cartridge copy paper out" = 11 is stored in the variable "state" for status information acquired by the status acquisition unit 71, a corresponding output character string defined in Fig. 24 is valid. Thus, the output character string "copy paper out" is stored in the variable "sentence" for the response method selection information (16e in Fig. 29). When status "printer buffer abnormality" = 3 is stored in the status information variable "state", an output character string is invalid. Thus, the portion "state" in the character string "error No. = state" is replaced by the actual value held in the variable "state", and character string "error No. = 3" is stored in the variable "sentence" for response method selection information (17e in Fig. 30).
+
+[0102]
+When status "upper cartridge copy paper out" = 11 is stored in the variable "state" for status information acquired by the status acquisition unit 71, a reply is designated. Thus, other designated response methods are acquired, and the value "reply" is returned. Processing is thereafter terminated. When status "upper cartridge OUT" = 10 is stored in the status information variable "state", no reply is designated, and a value for "no replay" is returned. Processing is thereafter terminated.
+
+<Response information preparation unit 73>
+
+[0103]
+Fig. 27 is a flowchart for the processing performed by the response information preparation unit 73 in the second embodiment.
+
+[0104]
+Fig. 28 is a diagram showing information for the preparation of mail response content information that is referred to by the response information preparation unit 73 in the second embodiment. For information concerning the preparation of mail response content information, corresponding character strings are defined that consist of response contents.
+
+[0105]
+Fig. 29 is a diagram illustrating example response content information that is prepared by the response information preparation unit in the second embodiment, and is used when a user is designated as a responder relative to the status of the response method definition information in Fig. 24.
+
+[0106]
+Fig. 30 is a diagram illustrating response content information that is prepared by the response information preparation unit 73 in the second embodiment, and is used when an assistant is designated as a responder relative to the status of the response method definition information in Fig. 24.
+
+[0107]
+When the response information preparation unit 73 is activated, at step S271 response content information is initialized as blank character strings, and at step S272 a character string corresponding to an "opening sentence" is added to the response content information by referring to the response content preparation information in Fig. 15 (16a in Fig. 16 or 17a in Fig. 17).
+
+[0108]
+At step S273 program control branches by referring to designations for the response contents that are stored in the variable "contents" for the response method selection information that is selected by the response method selection unit 72. When the response content is designated to be important, program control moves to step S274 whereat a character string corresponding to "important expression sentence" is added to the response content information. When the response content is designated urgent, program control goes to step S275 whereat a character string corresponding to "urgent expression sentence" is added to the response content information. When the response content is designated as normal, no particular process is performed and program control advances to step S276.
+
+[0109]
+At step S276 program control branches by referring to designations for an addressee that is stored in the variable "direct" for response method selection information that is selected by the response method selection unit 72. When an assistant is designated as an addressee, program control moves to step S277, whereat a character string corresponding to "assistant response sentence" is added to the response content information. When a manager is designated as an addressee, program control goes to step S278, whereat a character string corresponding to "manager response sentence" is added to the response content information (17c in Fig. 30). When a user is designated as an addressee, no particular process is performed and program control advances to step S279.
+
+[0110]
+At step S279, a character string corresponding to "notice sentence" is added to the response content information by referring to the response content preparation information in Fig. 28 (16d in Fig. 29 or 17d in Fig. 30).
+
+[0111]
+At step S280 information in the variable "sentence" for the response method selection information stored in the response method selection unit 72 is added to the response content information (16e in Fig. 29 and 17e in Fig. 30).
+
+[0112]
+At step S281 a character string corresponding to "closing sentence" is added to the response content information by referring to the response content preparation information in Fig. 28 (16f in Fig. 29 and 17f in Fig. 30), and the resultant response content information is returned. Processing is thereafter terminated.
+
+[0113]
+An explanation will now be given for an example where the status returned from the status acquisition unit 71 is status "upper cartridge copy paper remaining 10%" = 13. The response content designated in the variable "contents" for the response method selection information, which is selected by the response method selection unit 72, is "ordinary", and an address designated in the variable "direct" is a "user". Therefore, at either step S273 or S276, no character string is added to the response content information. Then, the information "copy paper running low" in the variable "sentence" is added to the response content information (16e in Fig. 29). As a result of the processing, the response content information shown in Fig. 29 is prepared.
+
+[0114]
+Now, an explanation will be given for another example where the status returned from the status acquisition unit 71 is status "toner remaining 10%" = 33. The response content designated in the variable "contents" for the response method selection information that is selected by the response method selection unit 72 is "ordinary", and an address designated in the variable "direct" is an "assistant". Thus, at step S273 no character string is added to the response content information, but at step S276 the character string "in printer located near entrance", which corresponds to an assistant response sentence, is added to the response content information (17c in Fig. 30). Following this, the information "toner running low" in the variable "sentence" is added to the response content information (17e in Fig. 30). As a result of the processing, the response content information shown in Fig. 30 is prepared.
+
+<Response information output unit 74>
+
+[0115]
+Fig. 31 is a flowchart showing the processing performed by the response information output unit 74 in the second embodiment.
+
+[0116]
+Fig. 32 is a diagram showing information for the preparation of response output information that is referred to by the response information output unit 74 in the second embodiment. In the table for the preparation of response output information are defined corresponding character strings consisting of mail that is to be output.
+
+[0117]
+Fig. 33 is a diagram illustrating example response output information that is prepared and output by the response information output unit 74 in the second embodiment.
+
+[0118]
+When the response information output unit 74 is activated, at step S311 response output information is initialized as a blank character string. At step S312 a character string corresponding to a "Mail header" is added to the response output information by referring to the information for the preparation of response output information in Fig. 32 (20a in Fig. 33).
+
+[0119]
+At step S313 program control branches by referring to a designated addressee stored in the variable "direct" for the response method selection information that is selected by the response method selection unit 72. When an assistant is designated as an addressee, program control moves to step S314 whereat a character string corresponding to "Mail assistant sentence" is added to the response content information. When a manager is designated as an addressee, program control moves to step S315 whereat a character string corresponding to "Mail manager sentence" is added to the response content information. When a user is designated as an addressee, program control moves to step S316 whereat a character string corresponding to "Mail user sentence" is added to the response content information (20b in Fig. 33).
+
+[0120]
+At step S317 the response content information returned from the response information preparation unit 73 is added to the response output information (20c in Fig. 33). At step S318 a character string corresponding to a "Mail footer" is added to the response output information by referring to the information for preparation of response output information in Fig. 32 (20d in Fig. 33).
+
+[0121]
+Finally, at step S319 the response output information thus prepared is transmitted as electronic mail.
+
+[0122]
+An explanation will now be given for an example where a status returned from the status acquisition unit 71 is status "toner remaining 10%" = 33. An "assistant" is an addressee designated in the variable "direct" for the response method selection information that is selected by the response method selection unit 72. Thus, at step S313 character string "To Taro Joshu <joshu@xxx.yyy.co.jp>", which corresponds to a "Mail assistant sentence", is added to the response content information (20b in Fig. 20). At step S317 the response content information prepared by the response content preparation unit 73 is also added to the response content information (20c in Fig. 33). In addition, at step S318 a "Mail footer" is added to the response content information. Therefore, the response content information shown in Fig. 33 is prepared, and at step S319 is transmitted as electronic mail. The processing is thereafter terminated.
+
+[Modification of Second Embodiment]
+
+[0123]
+The status defined as response method definition information in which the status and a response method correspond to each other may also include a combination of a plurality of statuses. Further, the response methods for the individual statuses are employed to construct a rule for a response method for a combination of a plurality of statuses.
+
+[0124]
+In addition, a status defined in the response method definition information in which the status and the response method correspond to each other may include a change in the status as time elapses. A plurality of statuses that occur at the same time may be included.
+
+[0125]
+In a case where a plurality of errors, such as lack of toner and paper, occur at the same time, these errors may be regarded as critical errors, even though each of the errors is regarded as merely an ordinary error, or a response timing may be changed.
+
+[0126]
+Different types of languages may be defined in the response method definition information, and may be selected in consonance with an acquired printer status while referring to the response method definition information. For example, the native languages of users may be registered and the native language of an addressee user may be selected.
+
+[0127]
+In addition, a detailed explanation may be selected in consonance with an acquired printer status, while referring to the response method definition information. Explanations that are given may differ, for example, for common users and for a manager and an assistant.
+
+[0128]
+Furthermore, a re-response method may be selected in consonance with an acquired printer status, while referring to the response method definition information, or to the number of re-responses may be selected.
+
+[0129]
+As is described in the first embodiment, a telephone, a management system, a home page, a voice, a pocket bell or a facsimile machine may be used as a response medium.
+
+[0130]
+According to the above described embodiment, since a response method that is appropriate for a status is selected, the focus of a user's attention is increased for an important response, and since a response is transmitted only to an appropriate user, the transmission of an unwanted response can be avoided.
+
+[Third Embodiment]
+
+[0131]
+Operating features of a third embodiment are that, in consonance with each printer status, a user designates in advance, as a status-response method corresponding data (response method definition information), a need for a reply, a response content, a response medium, a response addressee and a response timing, and that, in consonance with an acquired printer status, the status-response method corresponding data are referred to in order to determine the need for a reply, a response content, a response medium, a response addressee and a response timing. The status-response method corresponding data is used to indicate individual statuses. Another feature is the employment of electronic mail as an available response media.
+
+<Example arrangement of system>
+
+[0132]
+Fig. 34 is a block diagram illustrating an example hardware arrangement for an information processing system according to a third embodiment. Since the arrangement in Fig. 34 is substantially the same as that in Fig. 6 or 21 and only one part of the contents stored in an external memory unit 5 differs, an explanation is given for only the portion not shown in Figs. 6 and 21.
+
+[0133]
+In the external memory unit 5, a response method designation module 5h is a program for implementing a function of a response information designation unit 76, which will be described later.
+
+<Processing configuration>
+
+[0134]
+Fig. 35 is a diagram showing the processing configuration according to a third embodiment. One difference from that in Fig. 22 is that the response method definition information, which is referred to by a response method selection unit 72, can be re-defined by the response method designation unit 76.
+
+[0135]
+Fig. 36 is a flowchart of the overall processing performed for the third embodiment. In the third embodiment as well as in the second embodiment, the response method definition information shown in Fig. 24 is referred to.
+
+[0136]
+The processing in Fig. 36 is provided by adding steps S363 and S364 to the processing in Fig. 36. Therefore, only these steps will be described.
+
+[0137]
+At step S363 an operation performed by a user is examined. When an operation for "response method designation" is initiated, at step S364 a response method designation process is performed.
+
+[0138]
+Among the individual units in Fig. 35, only the response method designation unit 76 will be explained in detail. Since the other units are the same as those in the second embodiment, no explanation for them will be given.
+
+<Response method designation unit 76>
+
+[0139]
+Fig. 37 is a flowchart showing the processing performed by the response method designation unit 76 in the third embodiment.
+
+[0140]
+Figs. 38A, 38B and 38C are diagrams illustrating windows displayed by the response method designation unit 76 in the third embodiment. In Fig. 38A is shown an example window that is first displayed after the response method designation unit 76 is activated. In Fig. 38B is shown an example window that is displayed when the status "toner remaining 10%" is designated from among the printer statuses and a response designation button is selected. In Fig 38C is shown an example window after the columns in the window are changed using a keyboard or a mouse.
+
+[0141]
+Fig. 39 is a diagram showing response method definition information that represents the meanings of the statuses of a printer, which were altered by the response method designation unit 76 in the third embodiment, and the definitions for response methods, such as the need for a response, response contents, a response medium, a response addressee, a response timing and an output character string. An article 9g indicated by hatching defines a portion that is altered in consonance with the designation in Fig. 38C.
+
+[0142]
+When the response method designation unit 76 is activated, at step S371 the response method definition information 4g in Fig. 34, i.e., information indicated in the printer status-response method corresponding table in Fig. 24, is stored in the local memory area "Defwork".
+
+[0143]
+At step S372, information defined in the Defwork is displayed in a printer status-response method corresponding definition window in Fig. 38A. At step S373 entry from a user is accepted, and at step S374 the input operation type is determined, program control branching to a process that corresponds to the detected input operation. In the printer status-response method corresponding definition window are included an operation portion, for selecting a status for designating the definition of a response method; a button "response setup" for displaying a window for designating a definition relative to a selected status; a button "OK" for establishing a designated definition and for ending the process; and a button "cancel" for canceling a designated definition and ending.
+
+[0144]
+When an operator depresses the button "response setup", program control goes to step S378, whereat a response method corresponding to a designated status is defined. When an operator depresses the button "OK", program control goes to step S375. At step S375 information in the memory area "Defwork" is stored in the response method definition information, and at step S376 a window is erased and the processing is thereafter terminated. When an operator performs the other process, program control goes to step S377, whereat a process corresponding to the other entry is performed, and program control then returns to step S372 to again display a window. When, for example, status "toner remaining 10%" in the operating portion is selected using a mouse to designate the status, the display is inverted so that the operator understands that the portion has been selected.
+
+[0145]
+At step S378 the definition of the response method for the status that is designated during the processing is displayed using the response method corresponding definition designation window in Fig. 38B. At step S379 an entry from an operator is accepted. At step S380 the type of operation is determined, and program control branches to a process corresponding to the input operation. In the response method corresponding definition designation window is displayed a definition that is designated for an article of a response method that can be defined relative to a designated status.
+
+[0146]
+The setups for the response method that is currently defined are provided with black circles, and the other setups that can be re-defined are provided with white circles. The value of a designated time is indicated as the article "Timing" in the response method. This window further includes a button "OK" for establishing a designated definition and returning to the original printer status-response method corresponding definition window, and a button "cancel" for canceling a designated definition and returning to the original window.
+
+[0147]
+When an operator depresses button "OK", program control moves to step S381. At step S381 information in the memory area "Defwork" is updated by the displayed setup, and at step S382 the window is erased. Program control thereafter returns to step S372. When an operator depresses the button "cancel", program control goes to step S382, whereat the window is erased, and returns to step S372. When an operator preforms the other process, program control moves to step S383, whereat a process corresponding to the other entry is performed, and returns to step S378, whereat the window is again displayed. When "important" is selected as a response content by using a mouse, for example, the white circle is changed to a black circle to indicate that the portion has been selected, and the previously designated portion is changed from a black circle to a white circle.
+
+[0148]
+The window that is altered by the above described operation by an operator is shown in Fig. 38C. In this example, the response content and an addressee are changed and are designated as "important" and "user". When with this setup button "OK" in the response method corresponding definition designation window is depressed and the button "OK" in the printer status-response method corresponding definition window is also depressed, the response method definition information is changed. As a result, the definition is altered as is shown in the hatching highlighted portion 9g in the printer status-response method correspondence table in Fig. 39. Then, since before alteration the response status "toner remaining 10%" is directed to another assistant at the ordinary importance level, the response after the alteration is directed to a user at a high importance level.
+
+[Modification of third embodiment]
+
+[0149]
+In the third embodiment, the selection articles in the second embodiment may be designated. In other words, the type of language, a detailed explanation, the conditions for a response; a re-response method, and the number of re-responses may be designated.
+
+[0150]
+In the above described embodiment, since individual users can freely designate a response method, the focus of a user's attention is increased for an important response, and since a response is transmitted only to an appropriate user, the transmission of an unwanted response can be avoided as much as possible.
+
+[Fourth Embodiment]
+
+[0151]
+Operating features of a fourth embodiment are that whether or not as the result of a response a malfunction has been resolved is evaluated, and that a response is retransmitted using another method when a user does not notice a response or when a user is not prepared to handle the response.
+
+<Example arrangement of system>
+
+[0152]
+Fig. 40 is a block diagram illustrating an example hardware arrangement for an information processing system according to the fourth embodiment. Since the arrangement in Fig. 40 is substantially the same as that in Fig. 6, 21 or 34, and as only one part of the contents stored in a memory unit 4 and an external memory unit 5 is different, an explanation will be given only for the portions that are not shown in Figs. 6, 21 and 34.
+
+[0153]
+In the memory unit 4, a re-response method definition information memory area 4k is employed to store definitions of a limitation method for a re-response method when a response fails, and a response result evaluation information area 41 is employed to store a definition for status information at the normal time relative to acquired status information.
+
+[0154]
+In the external memory unit 5, a response result evaluation module 5k is a program for implementing the function of a response result evaluation unit 77, which will be described later. A re-response method definition information memory area 5i is employed to store a definition for a limitation method of a re-response method when a response fails, and a response result evaluation information memory area 5j is employed to store a definition of status information at the normal time relative to acquired status information.
+
+<Processing configuration>
+
+[0155]
+Fig. 41 is a diagram showing an example processing configuration according to the fourth embodiment. The difference from the diagram in Fig. 22 will be described below. The response result evaluation unit 76 evaluates whether or not a problem is resolved as the result of a response. When it is ascertained that the response has succeeded, a process sequence is terminated. When it is ascertained that the response has failed, a response method selection unit 75 selects a re-response method again in accordance with the definition in the re-response method definition information 4k. Then, response content is prepared, output and evaluated in the same manner as for the previous response.
+
+[0156]
+The individual units in Fig. 41 will now be described in detail.
+
+[0157]
+Fig. 42 is a flowchart of the overall processing performed by the fourth embodiment.
+
+[0158]
+When a system according to the fourth embodiment is activated, at steps S421 to 5425 the same processes are performed as are performed at steps S231 to S235 in Fig. 23. At step S426 the re-response count is initialized at 0, and at steps S427 to S432 the same processes are performed as are performed at steps S236 to S241 in Fig. 23.
+
+[0159]
+At step S434 whether or not a problem is resolved as the result of the response is evaluated. When, at step S434, the response was successful, no process is performed and program control returns to step S423.
+
+[0160]
+At step S435 the re-response count is incremented by one, and program control then returns to step S427. The re-response method is acquired by referring to the re-response method definition information in Figs. 47 and 48, and is stored in the response method selection information memory area 4h. The processing at step S427 and the following steps is thereafter repeated.
+
+<Status acquisition unit 71>
+
+[0161]
+Since a status acquisition unit 71 in this embodiment is the same as that in the second embodiment, no explanation for it will be given.
+
+<Response method selection unit 72>
+
+[0162]
+Fig. 43 is a flowchart showing the processing performed by a response method selection unit 72 in the fourth embodiment.
+
+[0163]
+In the fourth embodiment, when the response method selection unit 72 is activated, at step S4301 the re-response count is checked. When the re-response count is other than 0, the re-response method selection process at step S4302 is performed, and a re-response method is selected. The processing is thereafter terminated.
+
+[0164]
+When the re-response count is 0, program control moves to step S4303 and the re-response method definition information 4k is initialized as is shown in Fig. 47.
+
+[0165]
+Since the following steps S4304 to S4309 are the same as the steps S251 to S256 in Fig. 25, no explanation for them will be given.
+
+<Response information preparation unit 73, response information output unit 74>
+
+[0166]
+Since a response information preparation unit 73 and a response information output unit 74 are the same as those in the second embodiment, no explanation for them will be given.
+
+<Response result evaluation unit 76>
+
+[0167]
+Fig. 44 is a flowchart showing the processing performed by the response result evaluation unit 76 in the fourth embodiment.
+
+[0168]
+Fig. 45 is a diagram for a response result evaluation information table, which is referred to by the response result evaluation unit 76 in the fourth embodiment and in which are stored definitions for normal time status information corresponding to acquired status information.
+
+[0169]
+When the response result evaluation unit 76 is activated, at step S441 the current time is stored in the variable "BeforeTime". At step S442 the response result evaluation information in Fig. 22 is referred to and the normal time status information corresponding to the acquired status information is stored in the variable "NormalState".
+
+[0170]
+At step S443 a printer status indicating the status of the printer is acquired, and is stored in the status information. At step S444 the status information variable "state" is compared with the variable "NormalState". When both variables differ, program control moves to step S445. When the variables match, "reply success" is ascertained, and the processing is terminated.
+
+[0171]
+At step S445 the time stored in the variable "BeforeTime" is compared with the current time to determine whether or not a predetermined time has elapsed following a response. When a predetermined time has elapsed, "reply failure" is ascertained and the processing is terminated. When a predetermined time has not yet elapsed, program control returns to step S443 to repeat the check.
+
+[0172]
+An explanation will now be given for a case where the status returned at step S433 is the status "upper cartridge copy paper out" = 11. Assuming that the time at which the response information output unit 74 outputs a response corresponding to that status is 17:45:15, at step S441 that time is stored in the variable "BeforeTime". At step S442 the response result evaluation information in Fig. 22 is referred to, and status information 1 ("printing standby stage") at the normal time is stored in the variable "NormalState", relative to the acquired status information BeforeState = 11 ("upper cartridge copy paper out") that is the origin of a response.
+
+[0173]
+After, at step S443, the status is acquired and there is no change in status because, for example, a user who received a response has performed no action, the acquired status information is not changed from value 11 ("upper cartridge copy paper out") when the response is output. Therefore, when as a comparison at step S444, variable "state" = 11 and variable "NormalState" = 1 differ, program control goes to step S445 to determine how much time has elapsed since the response. Whether or not a predetermined time, e.g., five minutes in this embodiment, has elapsed is determined, and when five minutes have not elapsed, program control returns to step S443 to determine whether the status has changed. When five minutes or longer have passed, it is assumed that a user has not noticed a response or is not prepared to handle the response. The processing is thus terminated as "replay failure".
+
+[0174]
+When within a predetermined time a user who received a response, or another user, resolves a problem indicated in the status information, or when a problem is naturally resolved for some reason, at step S444 the variable "state" and the variable "NormalState" are equal. The processing is therefore terminated as "reply success". When a user who received a response or another user adds paper in an upper cartridge, the status information acquired by the status acquisition unit 71 is status "printing standby stage" = 1. Then, at step S444 variable "state" = 1 and variable "NormalState" = 1 are equal, so that the processing is terminated as "reply success".
+
+[0175]
+In the response result evaluation information used in this example, the normal value is status "printing standby stage" = 1, relative to all the acquired status information. However, different values may be provided for status information. For example, the same thing can be applied in a case where the normal value for the above status information "upper cartridge copy paper out" is either a value for "upper cartridge copy paper remaining 5%" or a value for "upper cartridge copy paper remaining 10%".
+
+<Re-response method selection process>
+
+[0176]
+Fig. 46 is a flowchart for the re-response method selection process according to the fourth embodiment.
+
+[0177]
+Fig. 47 is a diagram showing example definitions for the initial state of re-response method definition information that is referred to and is updated by the re-response method selection process in the fourth embodiment.
+
+[0178]
+Fig. 48 is a diagram showing example updated re-response method definition information, which is to be referred to and updated by the re-response selection process in the fourth embodiment.
+
+[0179]
+After the re-response definition selection process is initiated at step S4302, first, at step S461 articles for re-response method definition information 4k, which correspond to the variables "contents", "media" and "direct" for response method selection information of the current response, are invalidated (Fig. 48).
+
+[0180]
+As a result, at step 5462 a check is performed to determine whether or not a preferential response addressee corresponding to the variable "direct" is valid. When the response addressee is valid, program control goes to step S465. When the response addressee is invalid, program control moves to step S463.
+
+[0181]
+At step S463, the preferential response addressee, which is the head of the re-response method definition information 4k, is stored in the variable "direct". At step S464 a check is performed to determine whether or not the variable "direct" is valid. When the variable "direct" is valid, program control goes to step S465. When the variable "direct" is invalid, the processing is terminated as "no reply". That is, when all the response methods defined in the re-response definition information 4k are attempted, and when all the response methods fail, no further response attempt is made, and it is assumed that a re-response is impossible.
+
+[0182]
+At step S465, the head of a valid, available medium, which corresponds to the variable "direct" in the re-response definition information 4k, is stored in the variable "medium", and the processing is terminated as "reply".
+
+[0183]
+An explanation will now be given for the re-response selection process when a response with an addressee = "assistant" and employed medium = "mail" fails. The response method definition information 4g, obtained immediately after the re-response method selection process is initiated, is initialized as a valid value, as is shown in Fig. 24. When the process at step S461 is performed, of the re-response method definition information items 4k, an addressee for the current response and the employed medium are invalidated (Fig. 48). Since the definition for the preferential addressee = "assistant" in the re-response method definition information 4k is still valid, the variable "direct" is not changed and retains "assistant", and "pager", the valid and available medium, which is the head and corresponds to the preferential addressee = "assistant" in the re-response method definition information 4k, is stored in the variable "medium". The processing is thereafter terminated as "reply".
+
+[0184]
+Further, when the re-response and its failure are repeated and all the usable media for the preferential addressee = "assistant" are invalidated, the preferential addressee = "assistant" is also invalidated. Thus, "user", the valid preferential addressee, which is the head of the re-response method definition information, is stored in the variable "medium", and "mail", which is a corresponding usable medium, is stored in the variable "medium", and the processing is terminated as "reply".
+
+[0185]
+In addition, when the re-response and its failure are repeated and all the combinations of the most preferential addressees and usable media are invalidated, no more combinations for a re-response are found. The processing is then terminated as "no reply".
+
+[0186]
+Since, in this example, no definition for the variable "contents" is provided in the re-response method definition information 4k, the value at the time of activation is returned unchanged.
+
+[0187]
+According to the above described embodiment, whether or not a problem can be resolved as the result of a response is evaluated. Therefore, even if a user does not notice the response or can not take action to cope with the response, a response is retransmitted by another method, so that the problem can be resolved.
+
+[Fifth Embodiment]
+
+[0188]
+Operating features of the fifth embodiment are that, after the transmission of a response, a status to the effect that a user has or has not confirmed the response is acquired, and that even when a user does not notice the response or can take no action to cope with the response, the response is retransmitted using another method.
+
+<Example arrangement of system>
+
+[0189]
+Fig. 49 is a block diagram illustrating an example hardware arrangement for an information processing apparatus according to a fifth embodiment. The arrangement in Fig. 49 is substantially the same as that in Fig. 6, 21, 34 or 40, and only one part of the contents of a memory unit 4 and an external memory unit 5 are different. Since there are no new portions in Fig. 49 that are not shown in Fig. 40, no explanation for the individual sections will be given. Specifically, the procedures for a response result evaluation module 5k in the external memory unit 5 differs from that in Fig. 40, and will be described later.
+
+<Processing configuration>
+
+[0190]
+Fig. 50 is a diagram showing an example processing configuration according to the fifth embodiment. The difference from the configuration in Fig. 41 is that a response addressee status acquisition unit 78 acquires a status and determines whether or not a user has confirmed a response, and employs the result to determine whether or not a re-response should be transmitted. That is, when the response is confirmed, a processing sequence is terminated. When the response is not confirmed, a re-response is transmitted.
+
+[0191]
+The processing in the fifth embodiment, mainly the processing performed by the response addressee status acquisition unit 78, will now be described in detail.
+
+[0192]
+First, since the overall processing for the fifth embodiment is substantially the same as that for the fourth embodiment, the flowchart in Fig. 42 is referred to for the explanation. The processing performed at step S433 for the fifth embodiment differs from that for the fourth embodiment. At step S433 a status indicating whether or not an addressee user has confirmed the response is acquired in order to determine whether the user did not notice the response or could not take any actions to cope with the response. When the user does not notice the response or can not cope with the response, it is assumed that the response fails, and program control moves to step S435. Since in all the other cases the processing is performed in the same manner as for the fourth embodiment, no further explanation will be given.
+
+[0193]
+In Fig. 50, since the processes, including the re-response method selection process, performed by a status acquisition unit 71, a response information preparation unit 73, a response information output unit 74 and a response method selection unit 75 are the same as those in the fourth embodiment, no explanation for them will be given.
+
+<Response addressee status acquisition unit 78>
+
+[0194]
+Fig. 51 is a flowchart of the processing for the response addressee status acquisition unit 78 according to the fifth embodiment.
+
+[0195]
+Fig. 52 is a diagram illustrating an example of received mail that is to be evaluated by the response addressee status acquisition unit 78.
+
+[0196]
+When the response addressee status acquisition unit 78 is activated, first, at step S511 the current time is stored in the variable "BeforeTime". At step S512 a check is performed to determine whether mail has been transmitted by a user. When mail is received from a user, program control advances to step S513. When no mail is received, program control goes to step S514.
+
+[0197]
+At step S513 whether or not the received mail is an evaluation object for the response addressee status acquisition unit 78 is determined by referring to Subject 30a of the received mail. In this flowchart, a check is performed merely to determine whether a character string following Subject: is the same as "Re:Printer Status". When the character string matches, the received mail is determined to be an evaluation object, and program control moves to step S515. When the character strings do not match, the received mail is determined to be mail other than an evaluation object, and program control goes to step S514.
+
+[0198]
+At step S514 the time stored in variable "BeforeTime" is compared with the current time to determine whether or not a predetermined period of time has elapsed following a response. When a predetermined time has elapsed, "continuation of response" is determined, and the processing is terminated. When a predetermined time has not yet elapsed, program control returns to step S512 to repeat the check.
+
+[0199]
+At step S515 the received mail is examined for a Keyword ("will attend"). If the Keyword is found, at step S516 "end of response" is determined, and the processing is terminated. When no Keyword is found, "continuation of response" is determined, and the processing is terminated.
+
+[0200]
+An explanation will now be given for a case where mail shown in Fig. 25 is transmitted in response to mail shown in Fig. 33 that is output by the response information output unit 74. Assuming that the time the response information output unit 74 output mail is 17:45:15, at step S511 the time is stored in the variable "BeforeTime". Since at step S512 there is a response, program control moves to step S513 whereat the portion "Subject" is referred to. As a result, since "Subject" is equal to Re:Printer Status", program control advances to step S515. As a result of the extraction of a Keyword at step S515, it is present in a portion 30d in Fig. 52. At step S516, therefore, it is ascertained that a Keyword exists, and the processing is terminated as "end of response".
+
+[0201]
+In addition, an explanation will be given for a case where mail is not transmitted from a user relative to the above described response. At step S512, it is ascertained that no reply has been received. Program control moves to step S514, whereat how much time has elapsed since the response was output is determined. That is, whether or not a predetermined time, e.g., five minutes in this embodiment, has elapsed is determined. When five minutes have elapsed, program control returns to step S512, whereat whether or not mail has been received is determined. When five minutes or longer has elapsed, it is assumed that a user did not notice a response or was not prepared to handle the response, and the processing is terminated as "continuation of response".
+
+[0202]
+For a case where mail "Will not attend", which differs from mail in Fig. 52, is transmitted, since no Keyword is present, the processing is also terminated as "continuation of response".
+
+[Modification of Fifth Embodiment]
+
+[0203]
+In the fifth embodiment, a status indicating whether an addressee user has confirmed a response is examined. Before a response is transmitted, a status indicating whether or not an addressee user can confirm a response and handle it may be acquired in order to avoid wasteful response transmission and to take an effective countermeasure.
+
+[0204]
+According to the above described embodiment, whether or not a problem is resolved as a result of a response is determined. Therefore, even when a user did not notice a response or can not take an action to cope with the response, the response is retransmitted by another method, so that a problem can be resolved.
+
+[0205]
+In the above embodiment, a reply from an addressee user is confirmed before the retransmission of a response, and a status as to whether or not the user can handle the response is acquired. Therefore, the wasteful transmission of a response can be avoided and an effective countermeasure can be taken.
+
+[0206]
+The present invention can be applied either for a system that is constructed by a plurality of apparatuses (e.g., a host computer, an interface device, a reader and a printer) or for an apparatus including a single device.
+
+[0207]
+The following is also included within the scope of the present invention: in order to operate various devices to implement functions in the above embodiments, software program code for implementing the functions in the previous embodiments are supplied to a computer in an apparatus or in a system that is connected to various devices, and in consonance with the program, the computer in the system or the apparatus operates the devices to accomplish the functions in the above embodiments. In this case, the program code read from a memory medium accomplishes the functions of the above described embodiments. And the program code and means for supplying the program code to the computer, e.g., a memory medium on which such program code is recorded, constitute the present invention.
+
+[0208]
+A memory medium for supplying such program code can be, for example, a floppy disk, a hard disk, an optical disk, a magneto optical disk, a CD-ROM, a CD-R, a magnetic tape, a nonvolatile memory card, or a ROM.
+
+[0209]
+In addition, not only for a case where the functions in the previous embodiments can be performed when program code is read and executed by the computer, but also for a case where, according to an instruction in the program code, an OS (Operating System) running on the computer, or another application software program, interacts with the program code to accomplish the functions in the above embodiments, this program code can be included in the embodiments of the present invention.
+
+[0210]
+Furthermore, the present invention includes a case where program code, read from a memory medium, is written in a memory that is mounted on a function expansion board inserted into a computer, or in a function expansion unit connected to a computer, and in consonance with a program code instruction, a CPU mounted on the function expansion board or the function expansion unit performs one part, or all of the actual processing in order to implement the functions in the above described embodiments.
+
+[0211]
+When the present invention is applied for the above memory medium, program code corresponding to the previously described flowcharts is stored in the memory medium. In short, the individual modules in the system arrangement diagram in, for example, Fig. 6, is stored in a memory medium. That is, program code for a status acquisition module, a response content selection module, a response information preparation module, a response information output module and an input/output control module need to be stored in a memory medium.
+
+[0212]
+Although the present invention has been described in its preferred form with a certain degree of particularity, many apparently widely different embodiments of the invention can be devised without departing from the scope thereof. It is to be understood that the invention is not limited to the specific embodiments thereof except as defined in the appended claims.
+
+Claims
+
+1. A response apparatus comprising:
+response procedure determination means (75) for determining a response procedure, including response addressee determination means for determining a response addressee;
+
+response information preparation means (73) for preparing response information; and
+
+response information output means (74) for outputting the prepared response information to the determined response addressee in accordance with the determined response procedure, characterised in that
+
+said apparatus further comprises status acquisition means (71) for acquiring a status of a machine to be checked,
+
+said response procedure determination means is arranged to determine the response procedure in accordance with the acquired status of the machine,
+
+said response addressee determination means is arranged to determine the response addressee depending upon the acquired status of the machine, and
+
+said response information preparation means for preparing response information being arranged to indicate the acquired status of the machine in accordance with the determined response procedure.
+
+2. A response apparatus according to claim 1, wherein said response procedure determination means (75) is arranged to select a response procedure from a plurality of available response procedures.
+3. A response apparatus according to claim 1 or claim 2, wherein said response procedure determination means (75) is arranged to determine a response procedure in consonance with the degree of importance of said status.
+4. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to determine whether or not a response is to be transmitted.
+5. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to determine a response content.
+6. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to designate a response medium.
+7. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to designate a response addressee.
+8. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to designate a response timing.
+9. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to designate a language type.
+10. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to determine the degree of detail in an explanation.
+11. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to determine a condition for transmission of a response.
+12. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to determine a re-response procedure.
+13. A response apparatus according to any preceding claim, wherein said response procedure determination means (75) is arranged to determine the number of re-responses.
+14. A response apparatus according to any preceding claim, further comprising: definition information storage means (4g,5f)for storing definition information that defines a response procedure for a status, wherein said response procedure determination means (75) is arranged to determine a response procedure by referring to said definition information storage means.
+15. A response apparatus according to claim 14, wherein status data in said definition information indicate a single status.
+16. A response apparatus according to claim 14, wherein status data in said definition information also include a combination composed of a plurality of statuses.
+17. A response apparatus according to any one of claims 14-16, wherein status data in said definition information also include a status that changes as time elapses.
+18. A response apparatus according to claim 16, wherein statuses in said definition information also include a plurality of statuses that occur at the same time.
+19. A response apparatus according to any preceding claim, further comprising response procedure designation means (76) for designating a response procedure for each status, wherein said response procedure determination means (75) is arranged to select, in consonance with said acquired status, a response procedure designated by said response procedure designation means.
+20. A response apparatus according to claim 1, further comprising    response content determination means (72) for determining a response content in accordance with the acquired status of the machine, wherein    said response information preparation means (73) is arranged to prepare the response information in accordance with the response content.
+21. A response apparatus according to claim 20, wherein said response information preparation means is arranged to prepare said response information in a form corresponding to a medium at a response addressee.
+22. A response apparatus according to claim 20 or claim 21, further comprising: definition information storage means (4i) for storing definition information that defines a response content for a status, wherein said response content determination means is arranged to determine a response content by referring to said definition information storage means.
+23. A response apparatus according to any one of claims 20-22, wherein said status acquired by said status acquisition means indicates there are a plurality of statuses that occur at the same time.
+24. A response apparatus according to any one of claims 20-23, further comprising response content preparation means which includes response content information preparation data storage means for storing fixed information for each portion of a content that is prepared, wherein said response content preparation means is arranged to employ said fixed information to prepare a response content.
+25. A response apparatus according to claim 24, wherein said response content preparation means includes response content preparation rule storage means for storing a response content preparation rule, and is arranged to employ said response content preparation rule to prepare a response content.
+26. A response apparatus according to claim 24 or claim 25, wherein said response content preparation means includes:
+text preparation means for preparing text of said response information; and
+
+additional sentence preparation means for preparing an opening sentence or a closing sentence.
+
+27. A response apparatus according to any one of claims 20-26, wherein said response information output means (74) is arranged to transmit said response information using electronic mail.
+28. A response apparatus according to any one of claims 20-27 wherein said response information output means (74) includes addition means for adding an electronic mail header or an electronic mail footer to response information prepared by said response information preparation means.
+29. A response apparatus according to any one of claims 20-25 wherein said response information output means (24) is arranged to output response information to a telephone.
+30. A response apparatus according to claim 29, wherein said telephone is a portable telephone.
+31. A response apparatus according to claim 29, wherein said response information output means is arranged to transmit response information to a management system.
+32. A response apparatus according to claim 31, wherein said management system is a database management system.
+33. A response apparatus according to claim 31, wherein said management system is a file management system.
+34. A response apparatus according to any one of claims 20-25, wherein said response information output means (74) is arranged to transmit response information using a home page.
+35. A response apparatus according to any one of claims 20-25, wherein said response information output means (74) is arranged to output response information using sound.
+36. A response apparatus according to any one of claims 20-25, wherein said response information output means (74) is arranged to output response information to a pocket bell.
+37. A response apparatus according to any one of claims 20-25, wherein said response information output means (74) is arranged to output response information to a facsimile machine.
+38. A response apparatus according to claim 1, further comprising:
+response result determination means (77) for determining whether or not a response has failed as a result of outputting the response information; and
+
+re-response control means for, when said response result determination means ascertains that said response has failed, permitting said response procedure determination means (75) to determine re-response procedures, permitting said response information preparation means to prepare re-response information in accordance with the re-response procedures, and for permitting said response information output means to output the re-response information.
+
+39. A response apparatus according to claim 38, wherein said response procedure determination means (75) isarranged to select a response procedure from a plurality of available response procedures.
+40. A response apparatus according to claim 38 or claim 39, wherein said response result determination means (75) is arranged to employ a status after said response information has been output to determine whether or not a response has failed.
+41. A response apparatus according to any one of claims 38-40, wherein said status after said response information has been output is a status obtained when a predetermined time has elapsed following output of said response information.
+42. A response apparatus according to any one of claims 38-41, wherein said response procedure determination means (75) is arranged to determine as said re-response procedure a response procedure other than said response procedure that has failed.
+43. A response apparatus according to claim 1, further comprising:
+response addressee status acquisition means (78) for acquiring a status for a response addressee;
+
+determination means (75) for employing the status of the response addressee that is acquired by said response addressee status acquisition means to determine whether or not the response addressee can manage the response; and
+
+re-response control means (75) for, when said determination means determines that said addressee cannot manage the response, permitting said response procedure determination means to determine re-response procedures, for permitting said response information preparation means to prepare re-response information in accordance with the re-response procedures, and for permitting said response information output means to output the re-response information.
+
+44. A response apparatus according to claim 43, wherein said response procedure determination means (75) is arranged to select a response procedure from a plurality of available response procedures.
+45. A response apparatus according to claim 43 or claim 44, wherein said determination means (75) is arranged to employ, after said response information has been output, a reply from said response addressee to determine whether or not said response addressee is capable of handling a response.
+46. A response apparatus according to any one of claims 43-45, wherein said determination means (75) is arranged to determine, in consonance with whether said reply is transmitted within a predetermined period of time after said response information has been output, whether or not said response addressee is capable of handling a response.
+47. A response apparatus according to any one of claims 43-46, wherein said determination means (75) is arranged to determine, in consonance with whether or not the effect ability to cope with a response is described in said reply, whether or not said response addressee is capable of handling a response.
+48. A response apparatus according to any one of claims 43-47, wherein said response procedure determination means is arranged to determine as said re-response procedure a response procedure other than said response procedure that has failed.
+49. A response apparatus according to any one of claims 43-48, wherein said determination means is arranged to perform a determination before transmission of a response to a response addressee that is an object for said determination.
+50. A response method comprising the steps of:
+acquiring a status (S233) of a machine to be checked;
+
+determining the response procedure (S236) in accordance with the acquired status of the machine;
+
+determining the response addressee depending upon the acquired status of the machine;
+
+preparing response information (240) indicating the acquired status of the machine in accordance with the determined response procedure; and
+
+outputting the prepared response information (S241) to the determined response addressee in accordance with the determined response procedure.
+
+51. A response method according to claim 50, wherein at said response procedure determination step (S236) a response procedure is selected from a plurality of available response procedures.
+52. A response method according to claim 50 or claim 51, wherein at said response procedure determination step (S236) a response procedure is determined in consonance with the degree of importance of said status.
+53. A response method according to any one of claims 50-52, wherein at said response procedure determination step (S236) whether or not a response is to be transmitted is determined.
+54. A response method according to any one of claims 50-53, wherein at said response procedure determination step (S236) a response content is designated.
+55. A response method according to any one of claims 50-54, wherein at said response procedure determination step (S236) a response medium is designated.
+56. A response method according to any one of claims 50-55, wherein at said response procedure determination step (S236) a response addressee is designated.
+57. A response method according to any one of claims 50-56, wherein at said response procedure determination step (S236) a response timing is designated.
+58. A response method according to any one of claims 50-57, wherein at said response procedure determination step (S236) a language type is designated.
+59. A response method according to any one of claims 50-58, wherein at said response procedure determination step (S236) the degree of detail in an explanation is determined.
+60. A response method according to any one of claims 50-59, wherein at said response procedure determination step (S236) a condition for transmission of a response is determined.
+61. A response method according to any one of claims 50-60, wherein at said response procedure determination step (S236) a re-response procedure is determined.
+62. A response method according to claim 61, wherein at said response procedure determination step the number of re-responses is determined.
+63. A response method according to claim 50, further comprising: a definition information storage step (S231)of storing definition information that defines a response procedure for a status, wherein at said response procedure determination step a response procedure is determined by referring to said definition information storage step.
+64. A response method according to claim 63, wherein status data in said definition information indicate a single status.
+65. A response method according to claim 63, wherein status data in said definition information also include a combination composed of a plurality of statuses.
+66. A response method according to any one of claims 63-65, wherein status data in said definition information also include a status that changes as time elapses.
+67. A response method according to claim 65, wherein statuses in said definition information also include a plurality of statuses that occur at the same time.
+68. A response method according to claim 50, further comprising a response procedure designation step of designating a response procedure for each status, wherein, in consonance with said acquired status, at said response procedure determination step (S236) a response procedure is selected that has been designated at said response procedure designation step.
+69. A response method according to claim 50, further comprising the steps of:
+determining a response content in accordance with the acquired status of the machine; and
+
+preparing the response information in accordance with the response content.
+
+70. A response method according to claim 69, wherein at said response information preparation step said response information is prepared in a form corresponding to a medium at a response addressee.
+71. A response method according to claim 69 or claim 70, further comprising the step of storing definition information that defines a response content for a status, wherein at said response content determination step a response content is determined by referring to said definition information.
+72. A response method according to any one of claims 69-71, wherein said status acquired at said status acquisition step indicates there are a plurality of statuses that occur at the same time.
+73. A response method according to'any one of claims 69-72, wherein at response content preparation step, response content information preparation data storage means is referred to in which is stored fixed information for each portion of a content that is prepared, and said fixed information is employed to prepare a response content.
+74. A response method according to any one of claims 69-73, wherein at said response content preparation step, response content preparation rule storage means is referred to in which is stored a response content preparation rule, and said response content preparation rule is employed to prepare a response content.
+75. A response method according to claim 69, wherein said response information preparation step includes:
+a text preparation step (S143) of preparing text of said response information; and
+
+an additional sentence preparation step (S142,S144) of preparing an opening sentence or a closing sentence.
+
+76. A response method according to claim 69 or 75, wherein at said response information output step said response information is transmitted using electronic mail.
+77. A response method according to claim 76, wherein said response information output step includes an addition step of adding an electronic mail header (S182,S312) or an electronic mail footer (S184,S318) to response information prepared at said response information preparation step.
+78. A response method according to any one of claims 69-74, wherein at said response information output step response information is output to a telephone.
+79. A response method according to claim 78, wherein said telephone is a portable telephone.
+80. A response method according to any one of claims 69-74, wherein at said response information output step response information is transmitted to a management system.
+81. A response method according to claim 80, wherein said management system is a database management system.
+82. A response method according to claim 80, wherein said management system is a file management system.
+83. A response method according to any one of claims 69-74, wherein at said response information output step response information is transmitted using a home page.
+84. A response method according to any one of claims 69-74 wherein at said response information output step response information is output using sound.
+85. A response method according to any one of claims 69-74, wherein at said response information output step response information is output to a pocket bell.
+86. A response method any one of claims 69-74, wherein at said response information output step response information is output to a facsimile machine.
+87. A response method according to claim 50, further comprising the steps of:
+determining whether or not a response has failed as a result of outputting the response information; and
+
+when it is ascertained that said response has failed, permitting determination of re-response procedures, permitting preparation of re-response information in accordance with the re-response procedures, and permitting outputting of the re-response information.
+
+88. A response method according to claim 87, wherein at said response procedure determination step a response procedure is selected from a plurality of available response procedures.
+89. A response method according to claim 87 or claim 88, wherein at said response result determination step a status after said response information has been output is employed to determine whether or not a response has failed.
+90. A response method according to an one of claims 87-89, wherein said status after said response information has been output is a status obtained when a predetermined time has elapsed following output of said response information.
+91. A response method according to any one of claims 87-90, wherein at said response procedure determination step a response procedure other than said response procedure that has failed is determined as said re-response procedure.
+92. A response method according to claim 50, further comprising the steps of:
+acquiring a status for a response addressee (S512);
+
+employing the acquired status of the response addressee to determine whether or not the response addressee can manage the response; and
+
+when it is determined that said addressee cannot manage the response, permitting determination of re-response procedures, permitting preparation of re-response information in accordance with the re-response procedures, and permitting outputting of the re-response information.
+
+93. A response method according to claim 92, wherein at said response procedure determination step a response procedure is selected from a plurality of available response procedures.
+94. A response method according to claim 92 or claim 93, wherein, at said determination step, after said response information has been output, a reply from said response addressee is employed to determine whether or not said response addressee is capable of handling a response.
+95. A response method according to claim 94, wherein, at said determination step, whether or not said response addressee is capable of handling a response is determined in consonance with whether said reply is transmitted within a predetermined period of time after said response information has been output.
+96. A response method according to claim 94, wherein, at said determination step, whether or not said response addressee is capable of handling a response is determined in consonance with whether or not the effect ability to cope with a response is described in said reply.
+97. A response method according to any one of claims 87-94, wherein, at said response procedure determination step, a response procedure other than said response procedure that has failed is determined as said re-response procedure.
+98. A response method according to claim 92, wherein said determination of whether the response addressee can manage the response is performed before transmission of a response to a response addressee that is an object for said determination.
+99. A computer readable storage medium in which is stored a program for controlling a computer to perform all the steps of a response method according to any of claims 50 to 98.
+100. Apparatus including the response apparatus of any one of claims 1 to 49, wherein said status acquisition means is adapted to acquire an operation status of an external apparatus or an operation status of the apparatus.
+101. Apparatus according to claim 100 wherein the apparatus is a computer.
+
+Ansprüche
+
+1. Antwortgerät, umfassend:
+eine Antwortprozedur-Bestimmungseinrichtung (75) zum Bestimmen einer Antwortprozedur, einschließlich einer Antwortadressat-Bestimmungseinrichtung zum Bestimmen eines Antwortadressaten;
+
+eine Antwortinformationen-Vorbereitungseinrichtung (73) zum Vorbereiten von Antwortinformationen;
+
+eine Antwortinformationen-Ausgabeeinrichtung (74) zum Ausgeben der vorbereiteten Antwortinformationen an den bestimmten Antwortadressaten in Übereinstimmung mit der bestimmten Antwortprozedur,dadurch gekennzeichnet, daß
+
+das Gerät ferner eine Zustandsbeschaffungseinrichtung (71) umfaßt zum Beschaffen eines Zustands einer zu prüfenden Maschine,
+
+die Antwortprozedur-Bestimmngseinrichtung dazu angeordnet ist, die Antwortprozedur in Übereinstimmung mit dem beschafften Zustand der Maschine zu bestimmen,
+
+die Antwortadressat-Bestimmungseinrichtung dazu angeordnet ist, den Antwortadressaten in Abhängigkeit von dem beschafften Zustand der Maschine zu bestimmen, und
+
+die Antwortinformationen-Vorbereitungseinrichtung zum Vorbereiten von Antwortinformationen dazu angeordnet ist, den beschafften Zustand der Maschine in Übereinstimmung mit der bestimmten Antwortprozedur vorzubereiten.
+
+2. Antwortgerät nach Anspruch 1, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Antwortprozedur aus einer Vielzahl von verfügbaren Antwortprozeduren auszuwählen.
+3. Antwortgerät nach Anspruch 1 oder Anspruch 2, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Antwortprozedur in Übereinstimmung mit dem Grad der Wichtigkeit des Zustands zu bestimmen.
+4. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, zu bestimmen, ob eine Antwort zu übertragen ist oder nicht.
+5. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, einen Antwortinhalt zu bestimmen.
+6. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, ein Antwortmedium anzugeben.
+7. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, einen Antwortadressaten anzugeben.
+8. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, einen Antwortzeitpunkt anzugeben.
+9. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, einen Sprachtyp anzugeben.
+10. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, den Detailgrad in einer Erklärung anzugeben.
+11. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Bedingung für die Übertragung einer Antwort zu bestimmen.
+12. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Rückantwortprozedur zu bestimmen.
+13. Antwortgerät nach einem der vorangehenden Ansprüche, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, die Anzahl von Rückantworten zu bestimmen.
+14. Antwortgerät nach einem der vorangehenden Ansprüche, ferner umfassend: eine Definitionsinformationen-Speichereinrichtung (4g, 5f) zum Speichern von Definitionsinformationen, die eine Antwortprozedur für einen Zustand definieren, wobei die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Antwortprozedur durch Bezugnehmen auf die Definitionsinformationen-Speichereinrichtung zu bestimmen.
+15. Antwortgerät nach Anspruch 14, bei dem Zustandsdaten in den Definitionsinformationen einen einzelnen Zustand anzeigen.
+16. Antwortgerät nach Anspruch 14, bei dem Zustandsdaten in den Definitionsinformationen auch eine Kombination beinhalten, die aus einer Vielzahl von Zuständen besteht.
+17. Antwortgerät nach einem der Ansprüche 14 bis 16, bei dem Zustandsdaten in den Definitionsinformationen auch einen Zustand beinhalten, der sich mit verstreichender Zeit ändert.
+18. Antwortgerät nach Anspruch 16, bei dem Zustände in den Definitionsinformationen auch eine Vielzahl von Zuständen beinhalten, die zur gleichen Zeit auftreten.
+19. Antwortgerät nach einem der vorangehenden Ansprüche, ferner umfassend eine Antwortprozedur-Angabeeinrichtung (76) zum Angeben einer Antwortprozedur für jeden Zustand, wobei die Antwortprozedur-Bestimmungseinrichtung (76) dazu angeordnet ist, in Übereinstimmung mit dem beschafften Zustand eine durch die Antwortprozedur-Angabeeinrichtung angegebene Antwortprozedur auszuwählen.
+20. Antwortgerät nach Anspruch 1, ferner umfassend:
+eine Antwortinhalt-Bestimmungseinrichtung (72) zum Bestimmen eines Antwortinhalts in Übereinstimmung mit dem beschafften Zustand der Maschine, wobei
+
+die Antwortinformationen-Vorbereitungseinrichtung (73) dazu angeordnet ist, die Antwortinformationen in Übereinstimmung mit dem Antwortinhalt vorzubereiten.
+
+21. Antwortgerät nach Anspruch 20, bei dem die Antwortinformationen-Vorbereitungseinrichtung dazu angeordnet ist, die Antwortinformationen in einer Form entsprechend einem Medium bei einem Antwortadressaten vorzubereiten.
+22. Antwortgerät nach Anspruch 20 oder 21, ferner umfassend:
+eine Definitionsinformationen-Speichereinrichtung (4i) zum Speichern von Definitionsinformationen, die einen Antwortinhalt für einen Zustand definieren, wobei
+
+die Antwortinhalt-Bestimmungseinrichtung dazu angeordnet ist, einen Antwortinhalt durch Bezugnehmen auf die Definitionsinformationen-Speichereinrichtung zu bestimmen.
+
+23. Antwortgerät nach einem der Ansprüche 20 bis 22, bei dem der durch die Zustandsbeschaffungseinrichtung beschaffte Zustand anzeigt, daß es eine Vielzahl von Zuständen gibt, die zur gleichen Zeit auftreten.
+24. Antwortgerät nach einem der Ansprüche 20 bis 23, ferner umfassend:
+eine Antwortinhalt-Vorbereitungseinrichtung, welche eine Antwortinhaltinformationenvorbereitungsdaten-Speichereinrichtung beinhaltet zum Speichern fester Informationen für jeden Abschnitt eines Inhalts, der vorbereitet wird, wobei
+
+die Antwortinhalt-Vorbereitungseinrichtung dazu angeordnet ist, die festen Informationen zum Vorbereiten eines Antwortinhalts zu verwenden.
+
+25. Antwortgerät nach Anspruch 24, bei dem die Antwortinhalt-Vorbereitungseinrichtung eine Antwortinhaltvorbereitungsregel-Speichereinrichtung beinhaltet zum Speichern einer Antwortinhaltvorbereitungsregel, und dazu angeordnet ist die Antwortinhaltvorbereitungsregel zum Vorbereiten eines Antwortinhalts zu verwenden.
+26. Antwortgerät nach Anspruch 24 oder Anspruch 25, bei dem die Antwortinhalt-Vorbereitungseinrichtung beinhaltet:
+eine Textvorbereitungseinrichtung zum Vorbereiten eines Texts der Antwortinformationen; und
+
+eine Zusatzsatz-Vorbereitungseinrichtung zum Vorbereiten eines Anfangssatzes oder eines Schlußsatzes.
+
+27. Antwortgerät nach einem der Ansprüche 20 bis 26, bei dem die Antwortinformationen-Ausgabeeinrichtung (74) dazu angeordnet ist, die Antwortinformationen unter Verwendung von elektronischer Post zu übertragen.
+28. Antwortgerät nach einem der Ansprüche 20 bis 27, bei dem die Antwortinformationen-Ausgabeeinrichtung (74) eine Hinzufügeeinrichtung beinhaltet zum Hinzufügen einer Kopfzeile elektronischer Post oder einer Fußzeile elektronischer Post zu Antwortinformationen, die durch die Antwortinformationen-Vorbereitungseinrichtung vorbereitet wurden.
+29. Antwortgerät nach einem der Ansprüche 20 bis 25, bei dem die Antwortinformationen-Ausgabeeinrichtung (24) dazu angeordnet ist, Antwortinformationen an ein Telefon auszugeben.
+30. Antwortgerät nach Anspruch 29, bei dem das Telefon ein tragbares Telefon ist.
+31. Antwortgerät nach Anspruch 29, bei dem die Antwortinformationen-Ausgabeeinrichtung dazu angeordnet ist, Antwortinformationen an ein Verwaltungssystem zu übertragen.
+32. Antwortgerät nach Anspruch 31, bei dem das Verwaltungssystem ein Datenbankverwaltungssystem ist.
+33. Antwortgerät nach Anspruch 31, bei dem das Verwaltungssystem ein Dateiverwaltungssystem ist.
+34. Antwortgerät nach einem der Ansprüche 20 bis 25, bei dem die Antwortinformationen-Ausgabeeinrichtung (74) dazu angeordnet ist, Antwortinformationen unter Verwendung einer Homepage zu übertragen.
+35. Antwortgerät nach einem der Ansprüche 20 bis 25, bei dem die Antwortinformationen-Ausgabeeinrichtung (74) dazu angeordnet ist, Antwortinformationen unter Verwendung von Ton auszugeben.
+36. Antwortgerät nach einem der Ansprüche 20 bis 25, bei dem die Antwortinformationen-Ausgabeeinrichtung (74) dazu angeordnet ist, Antwortinformationen an eine Taschenklingel auszugeben.
+37. Antwortgerät nach einem der Ansprüche 20 bis 25, bei dem die Antwortinformationen-Ausgabeeinrichtung (74) dazu angeordnet ist, Antwortinformationen an ein Telefaxgerät auszugeben.
+38. Antwortgerät nach Anspruch 1, ferner umfassend:
+eine Antwortergebnis-Bestimmungseinrichtung (77) zum Bestimmen, ob eine Antwort fehlgeschlagen ist oder nicht, als ein Ergebnis des Ausgebens der Antwortinformationen; und
+
+eine Rückantwort-Steuereinrichtung zum dann, wenn die Antwortergebnis-Bestimmungseinrichtung feststellt, daß die Antwort fehlgeschlagen ist, es der Antwortprozedur-Bestimmungseinrichtung (75) zu erlauben, Rückantwortprozeduren zu bestimmen, es der Antwortinformationen-Vorbereitungseinrichtung zu erlauben, Rückantwortinformationen in Übereinstimmung mit den Rückantwortprozeduren vorzubereiten, und es der Antwortinformationen-Ausgabeeinrichtung zu erlauben, die Rückantwortinformationen auszugeben.
+
+39. Antwortgerät nach Anspruch 38, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Antwortprozedur aus einer Vielzahl von verfügbaren Antwortprozeduren auszuwählen.
+40. Antwortgerät nach Anspruch 38 oder Anspruch 39, bei dem die Antwortergebnis-Bestimmungseinrichtung (75) dazu angeordnet ist, nachdem die Antwortinformationen ausgegeben wurden, einen Zustand zu verwenden, um zu bestimmen, ob eine Antwort fehlgeschlagen ist oder nicht.
+41. Antwortgerät nach einem der Ansprüche 38 bis 40, bei dem der Zustand, nachdem die Antwortinformationen ausgegeben wurden, ein Zustand ist, der erhalten wird, wenn eine vorbestimmte Zeit auf die Ausgabe der Antwortinformationen folgend verstrichen ist.
+42. Antwortgerät nach einem der Ansprüche 38 bis 41, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine andere Antwortprozedur als die Antwortprozedur, die fehlgeschlagen war, als die Rückantwortprozedur zu bestimmen.
+43. Antwortgerät nach Anspruch 1, ferner umfassend:
+eine Antwortadressatzustand-Beschaffungseinrichtung (78) zum Beschaffen eines Zustands für einen Antwortadressaten;
+
+eine Bestimmungseinrichtung (75) zum Verwenden des Zustands des Antwortadressaten, der durch die Antwortadressatzustand-Beschaffungseinrichtung beschafft wird, um zu bestimmen, ob der Antwortadressat die Antwort handhaben kann oder nicht; und
+
+eine Rückantwort-Steuereinrichtung (75) zum dann, wenn die Bestimmungseinrichtung bestimmt, daß der Adressat die Antwort nicht handhaben kann, es der Antwortprozedur-Bestimmungseinrichtung zu erlauben, Rückantwortprozeduren zu bestimmen, es der Antwortinformationen-Vorbereitungseinrichtung zu erlauben, Rückantwortinformationen in Übereinstimmung mit den Rückantwortprozeduren vorzubereiten, und es der Antwortinformationen-Ausgabeeinrichtung zu erlauben, die Rückantwortinformationen auszugeben.
+
+44. Antwortgerät nach Anspruch 43, bei dem die Antwortprozedur-Bestimmungseinrichtung (75) dazu angeordnet ist, eine Antwortprozedur aus einer Vielzahl von verfügbaren Antwortprozeduren auszuwählen.
+45. Antwortgerät nach Anspruch 43 oder Anspruch 44, bei dem die Bestimmungseinrichtung (75) dazu angeordnet ist, nachdem die Antwortinformationen ausgegeben wurden, eine Antwort von dem Antwortadressaten zu verwenden, um zu bestimmen, ob der Antwortadressat in der Lage ist, eine Antwort zu handhaben, oder nicht.
+46. Antwortgerät nach einem der Ansprüche 43 bis 45, bei dem die Bestimmungseinrichtung (75) dazu angeordnet ist, in Übereinstimmung damit, ob die Antwort innerhalb einer vorbestimmten Zeitspanne, nachdem die Antwortinformationen ausgegeben wurden, übertragen wird, zu bestimmen, ob der Antwortadressat in der Lage ist, eine Antwort zu handhaben, oder nicht.
+47. Antwortgerät nach einem der Ansprüche 43 bis 46, bei dem die Bestimmungseinrichtung (75) dazu angeordnet ist, in Übereinstimmung damit, ob die Bewerkstellungsfähigkeit, mit einer Antwort umzugehen, in der Antwort beschrieben ist oder nicht, zu bestimmen, ob der Antwortadressat in der Lage ist, eine Antwort zu handhaben, oder nicht.
+48. Antwortgerät nach einem der Ansprüche 43 bis 47, bei dem die Antwortprozedur-Bestimmungseinrichtung dazu angeordnet ist, eine andere Antwortprozedur als die Antwortprozedur, die fehlgeschlagen war, als die Rückantwortprozedur zu bestimmen.
+49. Antwortgerät nach einem der Ansprüche 43 bis 48, bei dem die Bestimmungseinrichtung dazu angeordnet ist, eine Bestimmung durchzuführen, bevor eine Antwort an einen Antwortadressaten übertragen wird, der ein Ziel für die Bestimmung ist.
+50. Antwortverfahren, umfassend die Schritte des:
+Beschaffens eines Zustands (S233) einer zu prüfenden Maschine;
+
+Bestimmens der Antwortprozedur (S236) in Übereinstimmung mit dem beschafften Zustand der Maschine;
+
+Bestimmens des Antwortadressaten in Abhängigkeit von dem beschafften Zustand der Maschine;
+
+Vorbereitens von Antwortinformationen (240), die den beschafften Zustand der Maschine anzeigen, in Übereinstimmung mit der bestimmten Antwortprozedur; und
+
+Ausgebens der vorbereiteten Antwortinformationen (S241) an den bestimmten Antwortadressaten in Übereinstimmung mit der bestimmten Antwortprozedur.
+
+51. Antwortverfahren nach Anspruch 50, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) eine Antwortprozedur aus einer Vielzahl von verfügbaren Antwortprozeduren ausgewählt wird.
+52. Antwortverfahren nach Anspruch 50 oder 51, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) eine Antwortprozedur in Übereinstimmung mit dem Grad der Wichtigkeit des Zustands bestimmt wird.
+53. Antwortverfahren nach einem der Ansprüche 50 bis 52, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) bestimmt wird, ob eine Antwort zu übertragen ist oder nicht.
+54. Antwortverfahren nach einem der Ansprüche 50 bis 53, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) ein Antwortinhalt angegeben wird.
+55. Antwortverfahren nach einem der Ansprüche 50 bis 54, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) ein Antwortmedium angegeben wird.
+56. Antwortverfahren nach einem der Ansprüche 50 bis 55, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) ein Antwortadressat angegeben wird.
+57. Antwortverfahren nach einem der Ansprüche 50 bis 56, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) ein Antwortzeitpunkt angegeben wird.
+58. Antwortverfahren nach einem der Ansprüche 50 bis 57, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) ein Sprachtyp angegeben wird.
+59. Antwortverfahren nach einem der Ansprüche 50 bis 58, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) der Detailgrad in einer Erklärung bestimmt wird.
+60. Antwortverfahren nach einem der Ansprüche 50 bis 59, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) eine Bedingung für die Übertragung einer Antwort bestimmt wird.
+61. Antwortverfahren nach einem der Ansprüche 50 bis 60, bei dem in dem Antwortprozedur-Bestimmungsschritt (S236) eine Rückantwortprozedur bestimmt wird.
+62. Antwortverfahren nach Anspruch 61, bei dem in dem Antwortprozedur-Bestimmungsschritt die Anzahl von Rückantwortprozeduren bestimmt wird.
+63. Antwortverfahren nach Anspruch 50, ferner umfassend:
+einen Definitionsinformationen-Speicherschritt (S231) des Speicherns von Definitionsinformationen, die eine Antwortprozedur für einen Zustand definieren, wobei
+
+in dem Antwortprozedur-Bestimmungsschritt eine Antwortprozedur durch Bezugnehmen auf den Definitionsinformationen-Speicherschritt bestimmt wird.
+
+64. Antwortverfahren nach Anspruch 63, bei dem Zustandsdaten in den Definitionsinformationen einen einzelnen Zustand anzeigen.
+65. Antwortverfahren nach Anspruch 63, bei dem Zustandsdaten in den Definitionsinformationen auch eine Kombination beinhalten, die aus einer Vielzahl von Zuständen besteht.
+66. Antwortverfahren nach einem der Ansprüche 63 bis 65, bei dem Zustandsdaten in den Definitionsinformationen auch einen Zustand beinhalten, der sich mit verstreichender Zeit ändert.
+67. Antwortverfahren nach Anspruch 65, bei dem Zustände in den Definitionsinformationen auch eine Vielzahl von Zuständen beinhalten, die zur gleichen Zeit auftreten.
+68. Antwortverfahren nach Anspruch 50, ferner umfassend:
+einen Antwortprozedur-Angabeschritt des Angebens einer Antwortprozedur für jeden Zustand, wobei
+
+in Übereinstimmung mit dem beschafften Zustand in dem Antwortprozedur-Bestimmungsschritt (S236) eine Antwortprozedur ausgewählt wird, die in dem Antwortprozedur-Angabeschritt angegeben wurde.
+
+69. Antwortverfahren nach Anspruch 50, ferner umfassend die Schritte des:
+Bestimmens eines Antwortinhalts in Übereinstimmung mit dem beschafften Zustand der Maschine; und
+
+Vorbereitens der Antwortinformationen in Übereinstimmung mit dem Antwortinhalt.
+
+70. Antwortverfahren nach Anspruch 69, bei dem in dem Antwortinformationen-Vorbereitungsschritt die Antwortinformationen in einer Form entsprechend einem Medium bei einem Antwortadressaten vorbereitet werden.
+71. Antwortverfahren nach Anspruch 69 oder 70, ferner umfassend den Schritt des Speicherns von Definitionsinformationen, die einen Antwortinhalt für einen Zustand definieren, wobei in dem Antwortinhalt-Bestimmungsschritt ein Antwortinhalt durch Bezugnehmen auf die Definitionsinformationen bestimmt wird.
+72. Antwortverfahren nach einem der Ansprüche 69 bis 71, bei dem der in dem Zustandsbeschaffungsschritt beschaffte Zustand anzeigt, daß es eine Vielzahl von Zuständen gibt, die zur gleichen Zeit auftreten.
+73. Antwortverfahren nach einem der Ansprüche 69 bis 72, bei dem in dem Antwortinhalt-Vorbereitungsschritt auf eine Antwortinhaltinformationsvorbereitungsdaten-Speichereinrichtung Bezug genommen wird, in welcher feste Informationen für jeden Abschnitt eines Inhalts, der vorbereitet wird, gespeichert sind, und die festen Informationen dazu verwendet werden, einen Antwortinhalt vorzubereiten.
+74. Antwortverfahren nach einem der Ansprüche 69 bis 73, bei dem in dem Antwortinhalt-Vorbereitungsschritt auf eine Antwortinhaltvorbereitungsregel-Speichereinrichtung Bezug genommen wird, in welcher eine Antwortinhaltvorbereitungsregel gespeichert ist, und die Antwortinhaltvorbereitungsregel dazu verwendet wird, einen Antwortinhalt vorzubereiten.
+75. Antwortverfahren nach Anspruch 69, bei dem der Antwortinhalt-Vorbereitungsschritt beinhaltet:
+einen Textvorbereitungsschritt (S143) des Vorbereitens eines Texts der Antwortinformationen; und
+
+einen Zusatzsatz-Vorbereitungsschritt (S142, S144) des Vorbereitens eines Anfangssatzes und eines Schlußsatzes.
+
+76. Antwortverfahren nach Anspruch 69 oder Anspruch 75, bei dem in dem Antwortinformationen-Ausgabeschritt die Antwortinformationen unter Verwendung von elektronischer Post übertragen werden.
+77. Antwortverfahren nach Anspruch 76, bei dem der Antwortinformationen-Ausgabeschritt einen Hinzufügeschritt beinhaltet zum Hinzufügen einer Kopfzeile elektronischer Post (S182, S312) oder einer Fußzeile elektronischer Post (S184, S318) zu Antwortinformationen, die in dem Antwortinformationen-Vorbereitungsschritt vorbereitet wurden.
+78. Antwortverfahren nach einem der Ansprüche 69 bis 74, bei dem in dem Antwortinformationen-Ausgabeschritt Antwortinformationen an ein Telefon ausgegeben werden.
+79. Antwortverfahren nach Anspruch 78, bei dem das Telefon ein tragbares Telefon ist.
+80. Antwortverfahren nach einem der Ansprüche 69 bis 74, bei dem in dem Antwortinformationen-Ausgabeschritt Antwortinformationen an ein Verwaltungssystem übertragen werden.
+81. Antwortverfahren nach Anspruch 80, bei dem das Verwaltungssystem ein Datenbankverwaltungssystem ist.
+82. Antwortverfahren nach Anspruch 80, bei dem das Verwaltungssystem ein Dateiverwaltungssystem ist.
+83. Antwortverfahren nach einem der Ansprüche 69 bis 74, bei dem in dem Antwortinformationen-Ausgabeschritt Antwortinformationen unter Verwendung einer Homepage übertragen werden.
+84. Antwortverfahren nach einem der Ansprüche 69 bis 74, bei dem in dem Antwortinformationen-Ausgabeschritt Antwortinformationen unter Verwendung von Ton ausgegeben werden.
+85. Antwortverfahren nach einem der Ansprüche 69 bis 74, bei dem in dem Antwortinformationen-Ausgabeschritt Antwortinformationen an eine Taschenklingel ausgegeben werden.
+86. Antwortverfahren nach einem der Ansprüche 69 bis 74, bei dem in dem Antwortinformationen-Ausgabeschritt Antwortinformationen an ein Telefaxgerät ausgegeben werden.
+87. Antwortverfahren nach Anspruch 50, ferner umfassend die Schritte des:
+Bestimmens, ob eine Antwort fehlgeschlagen ist oder nicht, als ein Ergebnis des Ausgebens der Antwortinformationen; und
+
+wenn festgestellt wird, daß die Antwort fehlgeschlagen ist, Erlaubens der Bestimmung von Rückantwortprozeduren, Erlaubens der Vorbereitung von Rückantwortinformationen in Übereinstimmung mit den Rückantwortprozeduren, und Erlaubens der Ausgabe der Rückantwortinformationen.
+
+88. Antwortverfahren nach Anspruch 87, bei dem in dem Antwortprozedur-Bestimmungsschritt eine Antwortprozedur aus einer Vielzahl von verfügbaren Antwortprozeduren ausgewählt wird.
+89. Antwortverfahren nach Anspruch 87 oder Anspruch 88, bei dem in dem Antwortergebnis-Bestimmungsschritt, nachdem die Antwortinformationen ausgegeben wurden ein Zustand verwendet wird, um zu bestimmen, ob eine Antwort fehlgeschlagen ist oder nicht.
+90. Antwortverfahren nach einem der Ansprüche 87 bis 89, bei dem der Zustand, nachdem die Antwortinformationen ausgegeben wurden, ein Zustand ist, der erhalten wird, wenn eine vorbestimmte Zeit auf die Ausgabe der Antwortinformationen folgend verstrichen ist.
+91. Antwortverfahren nach einem der Ansprüche 87 bis 90, bei dem in dem Antwortprozedur-Bestimmungsschritt eine andere Antwortprozedur als die Antwortprozedur, die fehlgeschlagen war, als die Rückantwortprozedur bestimmt wird.
+92. Antwortverfahren nach Anspruch 50, ferner umfassend die Schritte des:
+Beschaffens eines Zustands für einen Antwortadressaten (S512);
+
+Verwendens des beschafften Zustands des Antwortadressaten zum Bestimmen, ob der Antwortadressat die Antwort handhaben kann oder nicht; und
+
+wenn bestimmt wird, daß der Adressat die Antwort nicht handhaben kann, Erlaubens der Bestimmung von Rückantwortprozeduren, Erlaubens der Vorbereitung von Rückantwortinformationen in Übereinstimmung mit den Rückantwortprozeduren, und Erlaubens der Ausgabe der Rückantwortinformationen.
+
+93. Antwortverfahren nach Anspruch 92, bei dem in dem Antwortprozedur-Bestimmungsschritt eine Antwortprozedur aus einer Vielzahl von verfügbaren Antwortprozeduren ausgewählt wird.
+94. Antwortverfahren nach Anspruch 92 oder Anspruch 93, bei dem in dem Bestimmungsschritt, nachdem die Antwortinformationen ausgegeben wurden, eine Antwort von dem Antwortadressaten verwendet wird, um zu bestimmen, ob der Antwortadressat in der Lage ist, eine Antwort zu handhaben, oder nicht.
+95. Antwortverfahren nach Anspruch 94, bei dem in dem Bestimmungsschritt in Übereinstimmung damit, ob die Antwort innerhalb einer vorbestimmten Zeitspanne, nachdem die Antwortinformationen ausgegeben wurden, übertragen wird, bestimmt wird, ob der Antwortadressat in der Lage ist, eine Antwort zu handhaben, oder nicht.
+96. Antwortverfahren nach Anspruch 94, bei in dem Bestimmungsschritt in Übereinstimmung damit, ob die Bewerkstellungsfähigkeit, mit einer Antwort umzugehen, in der Antwort beschrieben ist oder nicht, bestimmt wird, ob der Antwortadressat in der Lage ist, eine Antwort zu handhaben, oder nicht.
+97. Antwortverfahren nach einem der Ansprüche 87 bis 94, bei dem in dem Antwortprozedur-Bestimmungsschritt eine andere Antwortprozedur als die Antwortprozedur, die fehlgeschlagen war, als die Rückantwortprozedur bestimmt wird.
+98. Antwortverfahren nach Anspruch 92, bei dem die Bestimmung, ob der Antwortadressat die Antwort handhaben kann, vor der Übertragung einer Antwort an einen Antwortadressaten, der ein Ziel für die Bestimmung ist, durchgeführt wird.
+99. Von einem Computer lesbares Speichermedium, in welchem ein Programm zum Steuern eines Computers derart, daß dieser alle Schritte eines Antwortverfahrens nach einem der Ansprüche 50 bis 98 durchführen kann, gespeichert ist.
+100. Vorrichtung einschließlich des Antwortgeräts nach einem der Ansprüche 1 bis 49, bei der die Zustandbeschaffungseinrichtung dazu ausgelegt ist, einen Betriebszustand einer externen Vorrichtung oder einen Betriebszustand der Vorrichtung zu beschaffen.
+101. Vorrichtung nach Anspruch 100, bei der die Vorrichtung ein Computer ist.
+
+Revendications
+
+1. Dispositif de réponse, comportant :
+des moyens de détermination de procédure de réponse (75) pour déterminer une procédure de réponse, incluant des moyens de détermination de destinataire de réponse pour déterminer un destinataire de réponse,
+
+un moyen de préparation d'informations de réponse (73) pour préparer des informations de réponse, et
+
+un moyen d'émission d'informations de réponse (74) pour émettre les informations de réponse préparées vers le destinataire de réponse déterminé selon la procédure de réponse déterminée, caractérisé en ce que
+
+ledit dispositif comporte de plus un moyen d'acquisition d'état (71) pour acquérir un état d'une machine devant être vérifiée,
+
+lesdits moyens de détermination de procédure de réponse sont conçus pour déterminer la procédure de réponse selon l'état acquis de la machine,
+
+lesdits moyens de détermination de destinataire de réponse sont conçus pour déterminer le destinataire de réponse selon l'état acquis de la machine, et
+
+ledit moyen de préparation d'informations de réponse destiné à préparer les informations de réponse est conçu pour indiquer l'état acquis de la machine selon la procédure de réponse déterminée.
+
+2. Dispositif de réponse selon la revendication 1, dans lequel    lesdits moyens de détermination de procédure de réponse (75) sont conçus pour sélectionner une procédure de réponse à partir d'une pluralité de procédures de réponse disponibles.
+3. Dispositif de réponse selon la revendication 1 ou 2, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer une procédure de réponse selon le degré d'importance dudit état.
+4. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer si oui ou non une réponse doit être transmise.
+5. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer un contenu de réponse.
+6. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour désigner un support de réponse.
+7. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour indiquer un destinataire de réponse.
+8. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour indiquer un cadencement de réponse.
+9. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour indiquer un type de langage.
+10. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer le degré de détail d'explication.
+11. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer une condition de transmission d'une réponse.
+12. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer une procédure de nouvelle réponse.
+13. Dispositif de réponse selon l'une quelconque des revendications précédentes, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer le nombre de nouvelles réponses.
+14. Dispositif de réponse selon l'une quelconque des revendications précédentes, comportant de plus : des moyens de mémorisation d'informations de définition (4g, 5f) pour mémoriser des informations de définition qui définissent une procédure de réponse pour un état, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer une procédure de réponse en se reportant auxdits moyens de mémorisation d'informations de définition.
+15. Dispositif de réponse selon la revendication 14, dans lequel des données d'état dans lesdites informations de définition indiquent un état unique.
+16. Dispositif de réponse selon la revendication 14, dans lequel des données d'état dans lesdites informations de définition comportent également une combinaison constituée d'une pluralité d'états.
+17. Dispositif de réponse selon l'une quelconque des revendications 14 à 16, dans lequel des données d'état dans lesdites informations de définition comportent également un état qui change lorsque le temps s'écoule.
+18. Dispositif de réponse selon la revendication 16, dans lequel des états dans lesdites informations de définition comportent également une pluralité d'états qui surviennent en même temps.
+19. Dispositif de réponse selon l'une quelconque des revendications précédentes, comportant de plus des moyens de désignation de procédure de réponse (76) pour désigner une procédure de réponse pour chaque état, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour sélectionner, selon ledit état acquis, une procédure de réponse désignée par lesdits moyens de désignation de procédure de réponse.
+20. Dispositif de réponse selon la revendication 1, comportant de plus    des moyens de détermination de contenu de réponse (72) pour déterminer un contenu de réponse selon l'état acquis de la machine, dans lequel    lesdits moyens de préparation d'informations de réponse (73) sont conçus pour préparer les informations de réponse selon le contenu de réponse.
+21. Dispositif de réponse selon la revendication 20, dans lequel lesdits moyens de préparation d'informations de réponse sont conçus pour préparer lesdites informations de réponse selon une forme correspondant à un support au niveau d'un destinataire de réponse.
+22. Dispositif de réponse selon la revendication 20 ou 21, comportant de plus : des moyens de mémorisation d'informations de définition (4i) pour mémoriser des informations de définition qui définissent un contenu de réponse pour un état, dans lequel lesdits moyens de détermination de contenu de réponse sont conçus pour déterminer un contenu de réponse en se reportant auxdits moyens de mémorisation d'informations de définition.
+23. Dispositif de réponse selon l'une quelconque des revendications 20 à 22, dans lequel ledit état acquis par lesdits moyens d'acquisition d'état indique qu'il y a une pluralité d'états qui surviennent en même temps.
+24. Dispositif de réponse selon l'une quelconque des revendications 20 à 23, comportant de plus des moyens de préparation de contenu de réponse qui comportent des moyens de mémorisation de données de préparation d'informations de contenu de réponse pour mémoriser des informations établies pour chaque partie d'un contenu qui est préparé, dans lequel lesdits moyens de préparation de contenu de réponse sont conçus pour utiliser lesdites informations établies afin de préparer un contenu de réponse.
+25. Dispositif de réponse selon la revendication 24, dans lequel lesdits moyens de préparation de contenu de réponse comportent des moyens de mémorisation de règle de préparation de contenu de réponse pour mémoriser une règle de préparation de contenu de réponse, et sont conçus pour utiliser ladite règle de préparation de contenu de réponse afin de préparer un contenu de réponse.
+26. Dispositif de réponse selon la revendication 24 ou 25, dans lequel lesdits moyens de préparation de contenu de réponse comportent :
+des moyens de préparation de texte pour préparer un texte desdites informations de réponse, et
+
+des moyens de préparation de phrase supplémentaire pour préparer une phrase d'ouverture ou une phrase de fermeture.
+
+27. Dispositif de réponse selon l'une quelconque des revendications 20 à 26, dans lequel lesdits moyens d'émission d'informations de réponse (74) sont conçus pour transmettre lesdites informations de réponse en utilisant un courrier électronique.
+28. Dispositif de réponse selon l'une quelconque des revendications 20 à 27, dans lequel lesdits moyens d'émission d'informations de réponse (74) comportent des moyens d'ajout pour ajouter un en-tête de courrier électronique ou un pied de page de courrier électronique aux informations de réponse préparées par lesdits moyens de préparation d'informations de réponse.
+29. Dispositif de réponse selon l'une quelconque des revendications 20 à 25, dans lequel lesdits moyens d'émission d'informations de réponse (24) sont conçus pour émettre des informations de réponse vers un téléphone.
+30. Dispositif de réponse selon la revendication 29, dans lequel ledit téléphone est un téléphone portable.
+31. Dispositif de réponse selon la revendication 29, dans lequel lesdits moyens d'émission d'informations de réponse sont conçus pour transmettre des informations de réponse à un système de gestion.
+32. Dispositif de réponse selon la revendication 31, dans lequel ledit système de gestion est un système de gestion de base de données.
+33. Dispositif de réponse selon la revendication 31, dans lequel ledit système de gestion est un système de gestion de fichiers.
+34. Dispositif de réponse selon l'une quelconque des revendications 20 à 25, dans lequel lesdits moyens d'émission d'informations de réponse (74) sont conçus pour transmettre des informations de réponse en utilisant un page d'accueil.
+35. Dispositif de réponse selon l'une quelconque des revendications 20 à 25, dans lequel lesdits moyens d'émission d'informations de réponse (74) sont conçus pour émettre des informations de réponse en utilisant un son.
+36. Dispositif de réponse selon l'une quelconque des revendications 20 à 25, dans lequel lesdits moyens d'émission d'informations de réponse (74) sont conçus pour émettre des informations de réponse vers un dispositif d'appel de poche.
+37. Dispositif de réponse selon l'une quelconque des revendications 20 à 25, dans lequel lesdits moyens d'émission d'informations de réponse (74) sont conçus pour émettre des informations de réponse vers un télécopieur.
+38. Dispositif de réponse selon la revendication 1, comportant de plus :
+des moyens de détermination de résultat de réponse (77) pour déterminer si oui ou non une réponse a été défaillante en résultat de l'émission des informations de réponse, et
+
+des moyens de commande de nouvelle réponse pour, lorsque lesdits moyens de détermination de résultat de réponse garantissent que ladite réponse a été défaillante, permettre auxdits moyens de détermination de procédure de réponse (75) de déterminer des procédures de nouvelle réponse, permettre auxdits moyens de préparation d'informations de réponse de préparer des informations de nouvelle réponse selon les procédures de nouvelle réponse, et permettre auxdits moyens d'émission d'informations de réponse d'émettre les informations de nouvelle réponse.
+
+39. Dispositif de réponse selon la revendication 38, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour sélectionner une procédure de réponse à partir d'une pluralité de procédures de réponse disponibles.
+40. Dispositif de réponse selon la revendication 38 ou 39, dans lequel lesdits moyens de détermination de résultat de réponse (75) sont conçus pour utiliser un état, après que lesdites informations de réponse aient été émises, pour déterminer si oui ou non une réponse a été défaillante.
+41. Dispositif de réponse selon l'une quelconque des revendications 38 à 40, dans lequel ledit état, après que lesdites informations de réponse aient été émises, est un état obtenu lorsqu'un temps prédéterminé s'est écoulé à la suite de l'émission desdites informations de réponse.
+42. Dispositif de réponse selon l'une quelconque des revendications 38 à 41, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour déterminer en tant que ladite procédure de nouvelle réponse une procédure de réponse autre que ladite procédure de réponse qui a été défaillante.
+43. Dispositif de réponse selon la revendication 1, comportant de plus :
+des moyens d'acquisition d'état de destinataire (78) pour acquérir un état d'un destinataire de réponse,
+
+des moyens de détermination (75) pour utiliser l'état du destinataire de réponse qui est acquis par lesdits moyens d'acquisition d'état de destinataire de réponse afin de déterminer si oui ou non le destinataire de réponse peut gérer la réponse, et
+
+des moyens de commande de nouvelle réponse (75) pour, lorsque lesdits moyens de détermination' déterminent que ledit destinataire ne peut pas gérer la réponse, permettre auxdits moyens de détermination de procédure de réponse de déterminer des procédures de nouvelle réponse, permettre auxdits moyens de préparation d'informations de réponse de préparer des informations de nouvelle réponse selon les procédures de nouvelle réponse, et permettre auxdits moyens d'émission d'informations de réponse d'émettre les informations de nouvelle réponse.
+
+44. Dispositif de réponse selon la revendication 43, dans lequel lesdits moyens de détermination de procédure de réponse (75) sont conçus pour sélectionner une procédure de réponse à partir d'une pluralité de procédures de réponse disponibles.
+45. Dispositif de réponse selon la revendication 43 ou 44, dans lequel lesdits moyens de détermination (75) sont conçus pour utiliser, après que lesdites informations de réponse ont été émises, une réplique à partir dudit destinataire de réponse pour déterminer si oui ou non ledit destinataire de réponse est capable de traiter une réponse.
+46. Dispositif de réponse selon l'une quelconque des revendications 43 à 45, dans lequel lesdits moyens de détermination (75) sont conçus pour déterminer, selon que ladite réplique est transmise ou pas dans une période de temps prédéterminée après que lesdites informations de réponse ont été émises, si oui ou non ledit destinataire de réponse est capable de traiter une réponse.
+47. Dispositif de réponse selon l'une quelconque des revendications 43 à 46, dans lequel lesdits moyens de détermination (75) sont conçus pour déterminer, selon si oui ou non l'aptitude effective à s'occuper d'une réponse est décrite dans ladite réplique, si oui ou non ledit destinataire de réponse est capable de traiter une réponse.
+48. Dispositif de réponse selon l'une quelconque des revendications 43 à 47, dans lequel lesdits moyens de détermination de procédure de réponse sont conçus pour déterminer en tant que ladite procédure de nouvelle réponse une procédure de réponse autre que ladite procédure de réponse qui a été défaillante.
+49. Dispositif de réponse selon l'une quelconque des revendications 43 à 48, dans lequel lesdits moyens de détermination sont conçus pour effectuer une détermination avant une transmission d'une réponse vers un destinataire de réponse qui est un objet de ladite détermination.
+50. Procédé de réponse, comportant les étapes consistant à :
+acquérir un état (S233) d'une machine devant être vérifiée,
+
+déterminer la procédure de réponse (S236) selon l'état acquis de la machine,
+
+déterminer le destinataire de réponse selon l'état acquis de la machine,
+
+préparer des informations de réponse (240) indiquant l'état acquis de la machine selon la procédure de réponse déterminée, et
+
+émettre les informations de réponse préparées (S241) vers le destinataire de réponse déterminé selon la procédure de réponse déterminée.
+
+51. Procédé de réponse selon la revendication 50, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), une procédure de réponse est sélectionnée parmi une pluralité de procédures de réponse disponibles.
+52. Procédé de réponse selon la revendication 50 ou 51, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), une procédure de réponse est déterminée selon le degré d'importance dudit état.
+53. Procédé de réponse selon l'une quelconque des revendications 50 à 52, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), on détermine si oui ou non une réponse doit être transmise.
+54. Procédé de réponse selon l'une quelconque des revendications 50 à 53, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), un contenu de réponse est désigné.
+55. Procédé de réponse selon l'une quelconque des revendications 50 à 54, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), un support de réponse est désigné.
+56. Procédé de réponse selon l'une quelconque des revendications 50 à 55, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), un destinataire de réponse est désigné.
+57. Procédé de réponse selon l'une quelconque des revendications 50 à 56, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), un cadencement de réponse est désigné.
+58. Procédé de réponse selon l'une quelconque des revendications 50 à 57, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), un type de langage est désigné.
+59. Procédé de réponse selon l'une quelconque des revendications 50 à 58, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), le degré de détail d'explication est déterminé.
+60. Procédé de réponse selon l'une quelconque des revendications 50 à 59, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), une condition de transmission d'une réponse est déterminée.
+61. Procédé de réponse selon l'une quelconque des revendications 50 à 60, dans lequel, au niveau de ladite étape de détermination de procédure de réponse (S236), une procédure de nouvelle réponse est déterminée.
+62. Procédé de réponse selon la revendication 61, dans lequel, au niveau de ladite étape de détermination de procédure de réponse, le nombre de nouvelles réponses est déterminé.
+63. Procédé de réponse selon la revendication 50, comportant de plus : une étape de mémorisation d'informations de définition (S231) consistant à mémoriser des informations de définition qui définissent une procédure de réponse pour un état, dans lequel, au niveau de ladite étape de détermination de procédure de réponse, une procédure de réponse est déterminée en se reportant à ladite étape de mémorisation d'informations de définition.
+64. Procédé de réponse selon la revendication 63, dans lequel des données d'état dans lesdites informations de définition indiquent un état unique.
+65. Procédé de réponse selon la revendication 63, dans lequel des données d'état dans lesdites informations de définition comportent également une combinaison composée d'une pluralité d'états.
+66. Procédé de réponse selon l'une quelconque des revendications 63 à 65, dans lequel des données d'état dans lesdites informations de définition comportent également un état qui change lorsque le temps s'écoule.
+67. Procédé de réponse selon la revendication 65, dans lequel des états dans lesdites informations de définition comportent également une pluralité d'états qui surviennent en même temps.
+68. Procédé de réponse selon la revendication 50, comportant de plus une étape de désignation de procédure de réponse consistant à désigner une procédure de réponse pour chaque état, dans lequel, selon ledit état acquis, au niveau de ladite étape de détermination de procédure de réponse (S236), une procédure de réponse est sélectionnée, qui a été désignée au niveau de ladite étape de désignation de procédure de réponse.
+69. Procédé de réponse selon la revendication 50, comportant de plus les étapes consistant à :
+déterminer un contenu de réponse selon l'état acquis de la machine, et
+
+préparer les informations de réponse selon le contenu de réponse.
+
+70. Procédé de réponse selon la revendication 69, dans lequel, au niveau de ladite étape de préparation d'informations de réponse, lesdites informations de réponse sont préparées sous une forme qui correspond à un support au niveau d'un destinataire de réponse.
+71. Procédé de réponse selon la revendication 69 ou 70, comportant de plus l'étape consistant à mémoriser des informations de définition qui définissent un contenu de réponse pour un état, dans lequel, au niveau de ladite étape de détermination de contenu de réponse, un contenu de réponse est déterminé en se reportant auxdites informations de définition.
+72. Procédé de réponse selon l'une quelconque des revendications 69 à 71, dans lequel ledit état acquis au niveau de ladite étape d'acquisition d'état indique qu'il y a une pluralité d'états qui surviennent en même temps.
+73. Procédé de réponse selon l'une quelconque des revendications 69 à 72, dans lequel, au niveau de ladite étape de préparation de contenu de réponse, on se reporte aux moyens de mémorisation de données de préparation d'informations de contenu de réponse dans lesquels sont mémorisées des informations établies pour chaque partie d'un contenu qui est préparé, et lesdites informations établies sont utilisées pour préparer un contenu de réponse.
+74. Procédé de réponse selon l'une quelconque des revendications 69 à 73, dans lequel, au niveau de ladite étape de préparation de contenu de réponse, on se reporte à des moyens de mémorisation de règle de préparation de contenu de réponse dans lesquels est mémorisée une règle de préparation de contenu de réponse, et ladite règle de préparation de contenu de réponse est utilisée pour préparer un contenu de réponse.
+75. Procédé de réponse selon la revendication 69, dans lequel ladite étape de préparation d'informations de réponse comporte :
+une étape de préparation de texte (S143) pour préparer un texte desdites informations de réponse, et
+
+une étape de préparation de phrase supplémentaire (S142, S144) pour préparer une phrase d'ouverture ou une phrase de fermeture.
+
+76. Procédé de réponse selon la revendication 69 ou 75, dans lequel, au niveau de ladite étape d'émission d'informations de réponse, lesdites informations de réponse sont transmises en utilisant un courrier électronique.
+77. Procédé de réponse selon la revendication 76, dans lequel ladite étape d'émission d'informations de réponse comporte une étape d'ajout consistant à ajouter un en-tête de courrier électronique (S182, S312) ou un pied de page de courrier électronique (S184, S318) à des informations de réponse préparées au niveau de ladite étape de préparation d'informations de réponse.
+78. Procédé de réponse selon l'une quelconque des revendications 69 à 74, dans lequel, au niveau de ladite étape de sortie d'informations de réponse, des informations de réponse sont émises vers un téléphone.
+79. Procédé de réponse selon la revendication 78, dans lequel ledit téléphone est un téléphone portable.
+80. Procédé de réponse selon l'une quelconque des revendications 69 à 74, dans lequel, au niveau de ladite étape d'émission d'informations de réponse, des informations de réponse sont transmises à un système de gestion.
+81. Procédé de réponse selon la revendication 80, dans lequel ledit système de gestion est un système de gestion de base de données.
+82. Procédé de réponse selon la revendication 80, dans ledit système de gestion est un système de gestion de fichiers.
+83. Procédé de réponse selon l'une quelconque des revendications 69 à 74, dans lequel, au niveau de ladite étape de sortie d'informations de réponse, des informations de réponse sont transmises en utilisant une page d'accueil.
+84. Procédé de réponse selon l'une quelconque des revendications 69 à 74, dans lequel, au niveau de ladite étape d'émission d'informations de réponse, des informations de réponse sont émises en utilisant un son.
+85. Procédé de réponse selon l'une quelconque des revendications 69 à 74, dans lequel, au niveau de ladite étape d'émission d'informations de réponse, des informations de réponse sont émises vers un dispositif d'appel de poche.
+86. Procédé de réponse selon l'une quelconque des revendications 69 à 74, dans lequel, au niveau de ladite étape d'émission d'informations de réponse, des informations de réponse sont émises vers un télécopieur.
+87. Procédé de réponse selon la revendication 50, comportant de plus les étapes consistant à :
+déterminer si oui ou non une réponse a été défaillante en résultat de l'émission d'informations de réponse, et
+
+lorsqu'on est certain que ladite réponse a été défaillante, permettre une détermination de procédures de nouvelle réponse, permettre une préparation d'informations de nouvelle réponse selon les procédures de nouvelle réponse, et permettre l'émission d'informations de nouvelle réponse.
+
+88. Procédé de réponse selon la revendication 87, dans lequel, au niveau de ladite étape de détermination de procédure de réponse, une procédure de réponse est sélectionnée parmi une pluralité de procédures de réponse disponibles.
+89. Procédé de réponse selon la revendication 87 ou 88, dans lequel, au niveau de ladite étape de détermination de résultat de réponse, un état après que lesdites informations de réponse ont été émises est utilisé pour déterminer si oui ou non une réponse a été défaillante.
+90. Procédé de réponse selon l'une quelconque des revendications 87 à 89, dans lequel ledit état, après que lesdites informations de réponse ont été émises, est un état obtenu lorsqu'un temps prédéterminé s'est écoulé à la suite de l'émission desdites informations de réponse.
+91. Procédé de réponse selon l'une quelconque des revendications 87 à 90, dans lequel, au niveau de ladite étape de détermination de procédure de réponse, une procédure de réponse autre que ladite procédure de réponse qui a été défaillante est déterminée en tant que procédure de nouvelle réponse.
+92. Procédé de réponse selon la revendication 50, comportant de plus les étapes consistant à :
+acquérir un état pour un destinataire de réponse (S512),
+
+utiliser l'état acquis du destinataire de réponse pour déterminer si oui ou non le destinataire de réponse peut gérer la réponse, et
+
+lorsqu'on détermine que ledit destinataire ne peut pas gérer la réponse, permettre une détermination de procédures de nouvelle réponse, permettre une préparation d'informations de nouvelle réponse selon les procédures de nouvelle réponse, et permettre l'émission des informations de nouvelle réponse.
+
+93. Procédé de réponse selon la revendication 92, dans lequel, au niveau de ladite étape de détermination de procédure de réponse, une procédure de réponse est sélectionnée parmi une pluralité de procédures de réponse disponibles.
+94. Procédé de réponse selon la revendication 92 ou 93, dans lequel, au niveau de ladite étape de détermination, après que lesdites informations de réponse ont été émises, une réplique provenant dudit destinataire de réponse est utilisée pour déterminer si oui ou non ledit destinataire de réponse est capable de traiter une réponse.
+95. Procédé de réponse selon la revendication 94, dans lequel, au niveau de ladite étape de détermination, on détermine si oui ou non ledit destinataire de réponse est capable de traiter une réponse selon si ladite réplique est transmise ou non dans une période de temps prédéterminée après que lesdites informations de réponse ont été émises.
+96. Procédé de réponse selon la revendication 94, dans lequel, au niveau de ladite étape de détermination, on détermine si oui ou non ledit destinataire de réponse est capable de traiter une réponse selon si oui ou non l'aptitude effective à s'occuper d'une réponse est décrite dans ladite réplique.
+97. Procédé de réponse selon l'une quelconque des revendications 87 à 94, dans lequel, au niveau de ladite étape de détermination de procédure de réponse, une procédure de réponse autre que ladite procédure de réponse qui a été défaillante est déterminée comme ladite procédure de nouvelle réponse.
+98. Procédé de réponse selon la revendication 92, dans lequel ladite détermination pour savoir si oui ou non le destinataire de réponse peut gérer la réponse est effectuée avant transmission d'une réponse vers un destinataire de réponse qui est un objet de ladite détermination.
+99. Support de mémorisation pouvant être relu par un ordinateur dans lequel est mémorisé un programme pour commander un ordinateur afin d'effectuer toutes les étapes d'un procédé de réponse selon l'une quelconque des revendications 50 à 98.
+100. Dispositif incluant le dispositif de réponse de l'une quelconque des revendications 1 à 49, dans lequel lesdits moyens d'acquisition d'état sont adaptés pour acquérir un état de fonctionnement d'un dispositif extérieur, ou un état de fonctionnement du dispositif.
+101. Dispositif selon la revendication 100, dans lequel le dispositif est un ordinateur.
+
+Drawing

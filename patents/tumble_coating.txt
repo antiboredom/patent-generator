@@ -1,0 +1,378 @@
+Tumble Coating
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+0
+923
+883
+B1
+
+(12) EUROPEAN PATENT SPECIFICATION
+
+(45) Mention of the grant of the patent:
+24.09.2003
+Bulletin
+2003/39
+
+(21) Application number: 98308468.2
+
+(22) Date of filing:
+16.10.1998
+
+(51) Int. Cl.7: A23P 1/8, A23L 1/31, A23L 3/37, A23L 3/375, A23G 3/26, A23G 9/24
+
+(54)
+Tumble coating
+
+Beschichtungstrommel
+
+enrobage au tambour
+
+(84) Designated Contracting States:
+DE
+FR
+GB
+IE
+NL
+
+(30) Priority:  30.10.1997 GB 9722986
+
+(43) Date of publication of application:
+23.06.1999
+Bulletin
+1999/25
+
+(73) Proprietor: The BOC Group plc
+Windlesham Surrey GU20 6HJ (GB)
+
+(72) Inventors:
+
+* Grace, Mark
+Bridgewater, New Jersey 08807 (US)
+* Wardle, David Grant
+Bridgewater, New Jersey 08807 (US)
+* Taylor, Robert
+1300 Wavre (BE)
+
+(74) Representative: MacLean, Martin David
+et al
+The BOC Group plc, Chertsey Road
+Windlesham, Surrey GU20 6HJ
+Windlesham, Surrey GU20 6HJ (GB)
+
+(56) References cited:
+:
+WO-A-95/20324
+FR-A- 2 559 244
+FR-A- 2 763 673
+US-A- 2 385 140
+BE-A- 898 131
+FR-A- 2 726 353
+GB-A- 2 075 326
+US-A- 3 607 313
+
+Note: Within nine months from the publication of the mention of the grant of the European patent, any person may give notice to the European Patent Office of opposition to the European patent granted. Notice of opposition shall be filed in a written reasoned statement. It shall not be deemed to have been filed until the opposition fee has been paid. (Art. 99(1) European Patent Convention).
+
+Description
+
+[0001]
+This invention relates to methods and apparatus for coating a product, particularly but not exclusively a food product, in a cooling chamber. In particular, the invention relates to the controlled application of a coating material to a food product within a tumble cooling apparatus.
+
+[0002]
+Tumble coolers, or tumblers, are widely used and well known in the art of processing food products of the type comprising a plurality of discrete pieces or portions, such as raw meat pieces (eg ham or chicken nuggets), or fish (eg prawns, scampi, codpieces). The product is agitated by being "churned" in a drum which rotates about a substantially horizontal axis, whilst being sprayed with a coolant, either a liquid cryogen, such as nitrogen, or a gas at low temperature, such as carbon dioxide. The liquid cryogen mixes thoroughly with the particulate product, aided by the churning, or tumbling, effect of the rotating drum, and produces a marked reduction in the temperature of the product, to chill, freeze or "deep freeze" the product as required. Tumblers may be used to chill in batches, food being loaded in batches into the tumbler, chilled and then discharged from the tumbler, or they may be arranged as continuous cooling devices in which the food is fed into one end of the cylindrical drum, travels along the drum in an axial direction whilst being chilled and then is discharged from the other end of the drum. These two types of tumble coolers will hereafter be referred to as "batch tumblers" and "continuous tumblers", respectively (the present invention being applicable to both).
+
+[0003]
+Such tumblers are now beginning to be used to apply coating materials to food products, for example coating materials such as flavoured oils, sauces, batters and so on. This is accomplished by cooling the food product to a temperature substantially below the freezing point of the coating material and then spraying the coating material into the still-rotating tumbler and onto the churning food product so that the coating material freezes and adheres to the food product. Again, the continuous agitation of the food product helps to ensure that an even coating is applied, and also to prevent agglomeration of the product. A typical application would be to cool vegetable pieces to about -50°C for a sauce with a freezing point of -3°C; the sauce is then applied to the vegetables during tumbling (but usually whilst spraying with liquid cryogen has ceased) until a fairly even coating is produced.
+
+[0004]
+When using a tumbler for coating a product, the cooling of the product has to be to the correct temperature, uniform and homogeneous, so as to ensure that each product piece is coated evenly and that all product pieces are coated to the same extent. If the product is too warm, the coating material does not freeze quickly enough to adhere firmly to the product. If the product is too cold, the coating material tends to freeze too fast, so that larger droplets of coating material than are desirable for an even coating accumulate on the surface of the product. If the product is much too cold, the coating material can freeze to but subsequently de-bond from the product due to the thermal contraction of the coating. If the core is very much too cold, the coating and/or the product may become embrittled and break up due to the mechanical stresses produced by the churning of the tumbler, or simply as a result of the thermal stresses produced in the coating and/or the product.
+
+[0005]
+The conventional methods used to control cooling in processes in which the tumbler is used for chilling/freezing only, such as timed application of liquid cryogen, controlled spray pressure and temperature feedback (ie adjusting liquid cryogen input in accordance with the temperature of the cryogen vapour leaving the tumbler) are unsuitable for tumble coating applications, since they are too coarse, and cannot produce a consistently uniform and properly adherent coating.
+
+[0006]
+International publication number W095/20324 discloses an apparatus for coating a food product with a liquid, for example, water which comprises a tumbler cooler having means for spraying product in the cooler with a liquid cryogen and further means for spraying the product with water. Reference is made to preferred feed rates for the water, the liquid cryogen and the product entering the cooler.
+
+[0007]
+It is an aim of the present invention to provide an effective method of tumble coating which is something of an improvement over the prior art.
+
+[0008]
+Consequently, the present invention provides a method of coating a food product with a liquid or liquefied coating material in a cooling chamber comprising the steps of: a) measuring the mass of product in the cooling chamber, b) calculating the mass of a liquid cryogen which will suffice, when introduced into the cooling chamber and into contact with the product, to reduce the temperature of the mass of product to a first predetermined temperature below the melting point temperature of the coating material; c) controlling the introduction of the calculated mass of liquid cryogen into the cooling chamber and into contact with the product thereby to cool the product to the first predetermined temperature, d) applying a predetermined mass of coating material onto the cooled product to provide a coating thereon which is characterised by the iteration of steps a), b), c) and d) in order to coat the product with successive layers of coating material.
+
+[0009]
+The product is preferably a food product, and preferably comprises a plurality of individual pieces (ideally of about the same size).
+
+[0010]
+The method is repeated, or iterated, so as to build up layers of coating material until a desired thickness of coating, of precise specification, (and successive layers may be of a different type of coating material) is reached.
+
+[0011]
+The cycling of the product between minimum and maximum coating temperatures (the first and second predetermined temperatures), using the liquid cryogen to lower the product temperature to the minimum and adding coating material such that the mean temperature of the coated product rises no further than the maximum temperature, enables the reliable and repeatable control of the coating process, to provide uniform, well-adhered coating layers, each of accurate thickness. Not only does the present invention make it possible to minimise wastage of coating material, it is also possible to take into account the increasing mass of coated product after each coating step thereby to minimise both the number of coating steps and the overall time required to produce a given coating thickness.
+
+[0012]
+The product mass may conveniently be measured in the chamber, or alternatively by measuring the mass of product loaded into the chamber - the mass(es) of the coating material(s) similarly being measured or known at the point of introduction into the chamber.
+
+[0013]
+Preferably, the step of controlling the introduction of the calculated mass of liquid cryogen comprises introducing the calculated mass of liquid cryogen into an intermediate dosing tank, and discharging the liquid cryogen from the dosing tank into the cooling chamber, the rate of liquid cryogen discharge being controlled by valve means.
+
+[0014]
+Using a relatively small dosing, or buffer, tank for the liquid cryogen which includes a means for measuring its contents (eg by mounting the tank on load cells, or a capacitance gauge, differential pressure gauge or even a float-based device), any desired mass/thermal balance control strategy can be achieved by a suitable programme of filling and discharging the tank.
+
+[0015]
+Alternatively, the step of controlling the introduction of the calculated mass of liquid cryogen comprises measuring the mass flow rate of liquid cryogen and actuating valve means in response to the measured mass flow rate in order to vary the rate at which liquid cryogen is introduced into the cooling chamber
+
+[0016]
+As is known the measurement of flow of liquid cryogens is problematic due to the fact that it is difficult to maintain single phase flow. Liquid nitrogen, for example, boils at -196°C and hence, unless very complex and expensive refrigeration means are employed, the liquid tends to boil off when being passed along a transportation pipe thus creating a two phase flow of liquid and vapour. When both liquid and vapour are present, standard flow measurement methods such as measuring the pressure drop across a calibrated orifice are inaccurate. However, by separating the two phases the flow of each phase can be measured accurately using relatively standard techniques, to give an accurate overall flow measurement of the recombined phases and thus very accurate control of the cooling of the product in the tumbler.
+
+[0017]
+The predetermined mass of coating material to be added to the pre-cooled product is preferably that mass which, when added to product at the first predetermined temperature, will raise the mean temperature of the product and the coating material to a second predetermined temperature below the melting point temperature of the coating material (and above the first predetermined temperature).
+
+[0018]
+Although this may not produce the desired thickness of coating in one, it ensures that the mean temperature does not rise over that which might lead to spoilage of either the food product or the coating, or to detachment of the coating from the product. Since the second predetermined temperature is lower than the melting point temperature this also prevents adhesion between and agglomeration of the coated products.
+
+[0019]
+For rapid, even cooling, the liquid cryogen should be sprayed onto the product where the product is moving most rapidly. In most tumblers there is a zone where the tumbler produces a wall of falling product. If liquid cryogen is sprayed onto this surface, high rates of liquid cryogen injection can be safely used as the rate of refreshment of product surface is high so that over freezing does not occur. The gas evolved from the liquid cryogen as it evaporates on contact with the product surface flows through the falling product providing some cooling to the product that is not directly contacted by the liquid cryogen spray. With a good product mixing action in the tumbler very high rates of heat transfer and even cooling can be achieved without damaging the product due to excessive rotations of the tumbler. A typical liquid cryogen injector would consist of one or more spray nozzles mounted near the centreline of the tumbler targeting the wall of falling product, many spray patterns can be used including a simple open ended pipe through to flat, hollow cone, square, full cone and spiral nozzles.
+
+[0020]
+To ensure rapid and even coating, the coating material is generally sprayed at the same product target area as is the liquid cryogen for cooling the product. The coating material is usually liquid at ambient temperatures, and may consist of a single component but will generally comprise two or more components, being in the form of an emulsion, dispersion, slurry or solution. Solid coating materials, such as fats, may be applied at an elevated temperature (above melting point) for ease of application. For coatings that contain solid materials, such as spices or pieces of vegetables, spray nozzle(s) must be used which provide a reliable spray performance. The viscosity of the coating material may be such that pumping is difficult at ambient temperatures, in which case the coating material may be heated to a temperature at which its viscosity is sufficiently low to enable it to be pumped to the spray dispensing nozzle(s).
+
+[0021]
+For very thick coatings, air atomisation nozzles may greatly improve the coating quality, by producing droplets of coating much smaller than is possible using hydraulic atomising nozzles at low to medium pressures. The small droplets possible with air atomisation enable thin, uniform coatings to be produced when the viscosity of the coating material is high.
+
+[0022]
+In order to provide the optimum thickness and uniformity of coatings, which might be critical in some applications, the introduction rate for the coating material and the product surface ratio replacement rate (a factor of the tumbler design and operating speed) must not be too high.
+
+[0023]
+As stated above, the method is repeated, or iterated, in order to provide a desired coating thickness in several layers. Alternatively, different coating materials may be applied, so as to provide successive layers of accurate and uniform thickness and of different coating materials on the product, which might be highly desirable for some food products. A final process might be the injection of water or other materials to improve the surface appearance of the coated product. The injection of steam, for example, can provide an attractive glazing to a product without requiring the addition of large amounts of water.
+
+[0024]
+After the coating of the product is complete, the coated product will normally be at the second predetermined temperature. Although this temperature is below the melting point temperature of the coating material, it may not be the optimum temperature for subsequent processing of the product (eg packaging). If this is the case, it is a relatively simple process to apply a further calculated amount of liquid cryogen to reduce the temperature of the coated product to that required for subsequent processing.
+
+[0025]
+In view of the foregoing description of the invention it will be appreciated that, in another aspect, the invention also provides apparatus for coating a food product with a liquid or liquefied coating material comprising a tumble cooler including means for spraying product in the cooler with a liquid cryogen, means for spraying product in the cooler with the coating material, means for controlling the introduction into the cooler and into contact with the product of a mass of liquid cryogen calculated to reduce the temperature of the product to a first predetermined temperature below the melting point temperature of the coating material, means for applying a predetermined mass of coating material onto the cooled product to provide a coating thereon, means being provided to measure the mass of the product in the cooler, and characterised by separate means for spraying at least two different coating materials on to the product in the cooler.
+
+[0026]
+For the avoidance of doubt, the term "liquid cryogen" means any highly volatile fluid that by and large exists as a vapour at atmospheric temperatures and pressures, but which, in the practice of the invention, is cooled and/or pressurised such that it is in large part in the liquid phase. Preferably the liquid cryogen is an atmospheric gas, such as nitrogen, however the liquid cryogen could equally be carbon dioxide or the respirable gas mixture sold under the Applicants' own trade mark SLA. Also for the avoidance of doubt, the term "liquid or liquefied coating material" as used herein - particularly in the claims - includes any coating material which, when dispensed for coating, is in large part liquid. Thus the term embraces, for example, emulsions, liquids containing solid particles and/or dissolved gases (such as might be introduced to enhance the aroma and/or flavour of the coated product) and mixtures of these.
+
+[0027]
+The invention will now be described by way of example and with reference to the accompanying schematic drawing of an apparatus for carrying out the method in accordance with the invention, and to the worked Example.
+
+[0028]
+The drawing shows a cylindrical tumbler 1 adapted to rotate about an axis 3-3. As is known in the art, axis 3-3 can be slightly inclined from the horizontal so that product loaded into the tumbler 1 at inlet 5 gradually moves along the tumbler to a product outlet 7, thus forming a continuous tumbler. Alternatively, in a batch tumbler the axis 3-3 is horizontal so that the tumbler is loaded and unloaded via a single opening (not shown). The rotation of the tumbler 1 continually agitates and mixes the product, aided by paddles and the like within the tumbler (not shown) as is known in the art, as it moves through the tumbler 1 and towards outlet 7.
+
+[0029]
+To cool the product in the tumbler 1, liquid nitrogen from a source 9 thereof is discharged into the tumbler 1 and directly onto the product, through spray nozzles 11. To coat the cooled product in the tumbler 1, coating material from a source 13 thereof is discharged into the tumbler 1 and directly onto the product through spray nozzles 15. The rate of spray discharge through nozzles 11 and 15 is controlled by controller 17 (for clarity, the control lines for only two nozzles are shown), which also receives signals from a sensor 19 for measuring the mass of the product in the tumbler 1, a flow meter 21 for measuring the mass flow rate of coating material from the source 13 and into the tumbler 1 and from a device 23 in the supply line between the liquid cryogen source 9 and the spray nozzles 11. Device 23 is either a dosing tank or a liquid cryogen mass flow meter. Sensor 19 may be a load cell and located as illustrated, or it may be a mass measuring device (not shown) located on the inlet 5 so as to measure the amount of product loaded into the tumbler 1, the mass of the coated product being easily calculable from the original mass of product loaded into the tumbler and the known mass(es) of coating material(s) supplied.
+
+[0030]
+Operation of the illustrated apparatus is as follows. Data such as the nature of the product (eg its temperature at the inlet 5 and its specific heat capacity) the nature of the coating material (eg its temperature as it arrives at the spray nozzles 15, its freezing point temperature, its specific heat capacity above and below freezing and its latent heat of freezing) and coating characteristics (eg the lowest temperature to which the product may be reduced (which is the first predetermined temperature referred to above), the optimum maximum frozen temperature (OMFT - the maximum temperature which the coated product may be allowed to reach, which is the second predetermined temperature referred to above), the required output temperature of the coated product and the weight of coating required (a function of the average size of the product, the desired coating thickness and the coating material density) are entered into the controller 17 via a console 25.
+
+[0031]
+Controller 17 then takes the measured weight of product in the tumbler (measured by sensor 19), calculates the mass of liquid cryogen necessary to cool it to the first predetermined temperature and then controls the operation of spray nozzles 11 to control the rate of introduction of liquid cryogen into the tumbler 1. This control is effected through device 23, either by filling and discharging the dosing tank in a programmed way to provide relatively coarse mass flow rate control, or utilising the measurements from a liquid cryogen mass flow meter, such as that disclosed in our European patent application number 0667510 A1 to provide particularly accurate control of the mass flow rate.
+
+[0032]
+Once the calculated mass of liquid cryogen has been discharged onto the product, and the product is at the first predetermined temperature, the controller 17 actuates the spray nozzles 15 to allow coating material to spray onto the cooled product and provide a layer of coating thereon. The flow of coating material into the tumbler 1 is measured by flow meter 21, and controller 17 stops spraying from the nozzles 15 when the predetermined mass of coating material has been applied to the product.
+
+[0033]
+The process effected by controller 17 will be more readily understood with reference to the following example, in which cooked beef strips are coated with a cream based sauce in a batch tumbler.
+
+COLD COATING EXAMPLE
+
+[0034]
+
+Core Product PropertiesCooked Beef
+
+Mass of Initial Product
+70 kg
+
+Temperature of Initial Product
+-21 °C
+
+Product Size
+30 x 10 x 5 mm strips
+
+Specific Heat (Below Freezing)
+1.67 kj/kg
+
+Coating Material PropertiesCream Sauce
+
+Input Temperature
+11 °C
+
+Specific Heat Above Freezing
+3.6 kj/kg
+
+Freezing Point
+-6 °C
+
+Latent Heat of Freezing
+225 kj/kg
+
+Specific Heat Below Freezing
+1.88 kj/kg
+
+Air Atomisation Required Y/N?
+N
+
+Optimum Maximum Frozen Temperature (OMFT)
+-15 °C
+
+Heat Load From Input to OMFT
+303 kj/kg
+
+Minimum Adhesion Temperature
+-45 °C
+
+Process Requirements
+
+Coating Pick Up
+100 % *
+
+Controlled LN** Flow Rate
+10 kg/min
+
+Tumbler Speed
+6 rpm
+
+Average Coating Flow Rate
+5 kg/min
+
+Final Temperature
+-25 °C
+* ie. Final coated product weight to be 140 kg
+** LN = Liquid Nitrogen
+
+Thermal Balance Calculation
+
+Total Cooling Required for Core
+467.6 kj
+
+Total Cooling Required for Coating
+22,534 kj
+
+TOTAL
+23,002 kj
+
+Factors
+
+Overall LN Efficiency Factor
+225 kj/kg*
+
+Coating Heat Balance Efficiency
+85 %*
+
+Theoretical Minimum Process Time.
+26 min
+* Based on Trial Experience
+
+Estimated LN Consumption120 kgLN Ratio for Final Product0.86 kgLN/kg product
+
+MINIMUM PROCESSING CYCLE CALCULATION
+
+[0035]
+The mass balance calculations for cycles of maximum coating depth achievable between the minimum adhesion temperature and the OMFT are as follows:Cycle 1Cooling of core product2,806 kjCold sink availability from core product3,507 kjMaximum LN injection for cycle 112 kgMaximum Coating injection for cycle 110 kgMaximum Coating Pick Up14 %Specific heat of cycle 1 product1.70 kj/kgMass of cycle 1 product80.0 kgCycle 2Cooling of cycle 1 product4,062 kjCold sink availability from core product4,062 kjMaximum LN injection for cycle 218 kgMaximum Coating injection for cycle 213 kgMaximum Coating Pick Up33 %Specific heat of cycle 2 product1.72 kj/kgMass of cycle 2 product93.2 kgCycle 3Cooling of cycle 2 product4,817 kjCold sink availability from core product4,817 kjMaximum LN injection for cycle 321 kgMaximum Coating injection for cycle 316 kgMaximum Coating Pick Up56 %Specific heat of cycle 3 product1.75 kj/kgMass of cycle 3 product109.1 kgCycle 4Cooling of cycle 3 product5,714 kjCold sink availability from core product5,714 kjMaximum LN injection for cycle 425 kgMaximum Coating injection for cycle 419 kgMaximum Coating Pick Up for cycle 483 %Specific heat of cycle 4 product1.77 kj/kgMass of cycle 4 product128.0 kgCycle 5Cooling of cycle 4 product6,777 kjCold sink availability from core product6,777 kjMaximum LN injection for cycle 530 kgMaximum Coating injection for cycle 512 kgMaximum Coating Pick Up for cycle 5100 %Specific heat of cycle 5 product1.78 kj/kgMass of cycle 5 product140.0 kgLN to cool to final Temperature (-25°C)13 kg
+
+[0036]
+As can be appreciated therefore, in order to attain the desired 100% (70 kg) coating, six cooling cycles and five coating cycles were required. In practice, this took about 34 minutes, due to the delays between cycles (in a later test, improvements to the basic injection and other techniques have enabled a 150% coating to be applied in as little as 16.5 minutes). Alternatively, a larger number of smaller coating steps can be used (ie applying less than the maximum amount of coating material each cycle) but this increases the overall processing time.
+
+[0037]
+Of course, the invention has very many applications in the food field, for example the coating of meat (cooked or raw), fish, vegetable and pasta products with all manner of coating materials, such as flavoured oils, sauces, batters and breadcrumbs, can all be carried out following the principles of this invention. In fact, provided the mean size (ie the product piece diameter, or at least the mean maximum dimension of the product pieces) of the product pieces lies between about 1mm and 200mm, and preferably between about 1mm and 75mm, then almost any such product can be coated with one or more layers; of course, within this size range the preferred size is wholly dependent on the nature of the product to be coated. For example, peas have a particular shape and finite size range, whereas other products such as pasta or meat chunks, chicken breasts or spare ribs have completely different shapes and a huge variety of sizes, and therefore the preferred size of food products to be coated in accordance with the invention should be understood to be the usual maximum size of that particular food product (provided its maximum dimension falls within the range of about 1mm to about 200mm. The method of the invention has already proved effective when performed on such food products as cooked beef strips, chicken breasts, spare ribs and peas, which, respectively, have a maximum dimension in the region of 30mm (see Example), 150mm, 200mm and 5mm.
+
+[0038]
+In addition to the above-mentioned food products, it will be appreciated that a very wide range of products can be coated with the method of this invention. Food products particularly suited to such coating include vegetables, such as peas, sprouts or cauliflower pieces (coated in gravy or cheese or white sauce, for example), fruit, such as strawberries, apple chunks or cherries (coated in eg. layers of yoghurt or cream), confectionery, such as sweets or ice cream pieces (coated in eg. layers of chocolate or yoghurt), or food ingredients such as granular salt or sugar (coated with a protective material, for example). Products other than food with which the present coating method may beneficially be used include chemicals and pharmaceuticals, coated with a protective and/or pleasant-tasting layer(s), for example. Numerous other specific examples will occur to those in the art seeking to provide a layer of coating material to a product, whether the coating be for aesthetic, gastronomic and/or protective purposes. Similarly, it will be realised that a very broad range of coating materials can be applied.
+
+[0039]
+Having described an embodiment of tumble cooling apparatus suitable for performing one example of applying a coating material in accordance with the invention, numerous modifications will be apparent to those skilled in the art. For example, several sets of nozzles may be provided, so as to spray different coating materials to provide successive layers of different coating materials on the product, and cryogens other than liquid nitrogen may be used, as described above. Further, an apparatus may comprise a single rotary tumbler, with regions for spray coating with one or more coating materials, or there may be a series of two or more linked tumblers, the product being chilled and coated with one layer of coating material in each. The latter arrangement would be preferred, as it is more capable of preventing 'spent' cryogen leaking into an adjacent processing region and adversely affecting that process; instead, cryogen is easily exhausted from each chilling region. Furthermore, although the invention has been described in connection with a tumble cooling apparatus, it is equally applicable to other types of apparatus. For example, the method of coating in accordance with the invention can be used with mixing machines, such as those described in EP-A-219471 or EP-A-560509, which run at high speed and form an almost fluidised zone of material which can be coated in exactly analogous manner as the tumbling "curtain" of material in a tumbler apparatus; those skilled in the art will understand that, in such mixing machines, cooling of the product may not be necessary or required.
+
+Claims
+
+1. A method of coating a product with a liquid or liquefied coating material in a cooling chamber comprising the steps of:
+a) measuring the mass of product in the cooling chamber;
+
+b) calculating the mass of a liquid cryogen which will suffice, when introduced into the cooling chamber and into contact with the product, to reduce the temperature of the mass of product to a first predetermined temperature below the melting point temperature of the coating material;
+
+c) controlling the introduction of the calculated mass of liquid cryogen into the cooling chamber and into contact with the product thereby to cool the product to the first predetermined temperature, and
+
+d) applying a predetermined mass of coating material onto the cooled product to provide a coating thereon;
+
+and characterised by the iteration of steps a), b), c) and d) in order to coat the product with successive layers of coating material.
+2. A method according to Claim 1 wherein the product is a food.
+3. A method according to Claim 1 or Claim 2 wherein the product comprises a plurality of separate product pieces.
+4. A method according to Claim 3 wherein the pieces have a maximum dimension of between about 1 mm and 200 mm, and preferably between about 1 mm and 75mm.
+5. A method according to any preceding Claim wherein the step of controlling the introduction of the calculated mass of liquid cryogen comprises introducing the calculated mass of liquid cryogen into an intermediate dosing tank, and discharging the liquid cryogen from the dosing tank into the cooling chamber, the rate of liquid cryogen discharge being controlled by valve means.
+6. A method according to any of Claims 1 to 4 wherein the step of controlling the introduction of the calculated mass of liquid cryogen comprises measuring the mass flow rate of liquid cryogen and actuating valve means in response to the measured mass flow rate in order to vary the rate at which liquid cryogen is introduced into the cooling chamber.
+7. A method according to Claim 6 wherein measuring the mass flow of the liquid cryogen comprises separating the flow of liquid cryogen, prior to its introduction into the cooling chamber, into a liquid phase stream and a vapour phase stream, measuring the flow rate of at least the liquid phase stream, and recombining the liquid and vapour phase streams.
+8. A method according to any preceding Claim wherein the predetermined mass of coating material is that mass which, when added to product at the first predetermined temperature, will raise the mean temperature of the product and the coating material to a second predetermined temperature below the melting point temperature of the coating material.
+9. A method according to any preceding Claim wherein the coating material is sprayed into the cooling chamber onto the cooled product therein.
+10. A method according to any preceding Claim comprising agitating the product in the cooling chamber throughout the cooling and coating steps.
+11. A method according to any preceding Claim wherein the liquid cryogen is nitrogen, carbon dioxide, a respirable life-supporting gas or a mixture thereof.
+12. A method according to any preceding Claim comprising introducing further liquid cryogen into the cooling chamber so as to further lower the temperature of the coated product.
+13. A method according to any preceding Claim wherein the mass of product in the cooling chamber is measured prior to its introduction thereinto.
+14. Apparatus for coating a food product with a liquid or liquefied coating material comprising a tumble cooler (1) including means (11) for spraying product in the cooler with a liquid cryogen, means (15) for spraying product in the cooler with the coating material, means (17, 23) for controlling the introduction into the cooler and into contact with the product of a mass of liquid cryogen calculated to reduce the temperature of the product to a first predetermined temperature below the melting point temperature of the coating material, means (17, 21) for applying a predetermined mass of coating material onto the cooled product to provide a coating thereon, means (19) being provided to measure the mass of the product in the cooler, and characterised by separate means (15) for spraying at least two different coating materials on to the product in the cooler.
+15. Apparatus according to Claim 14 comprising means (28) for measuring the mass flow rate of liquid cryogen and valve means, actuable in response to the measured mass flow rate of liquid cryogen in order to vary the rate at which liquid cryogen is sprayed onto the product in the cooler (1).
+16. Apparatus according to Claim 15 wherein the mass flow rate measuring means (23) comprises separation means for separating the liquid cryogen into its liquid and gaseous phases, means for measuring the flow rate of at least the liquid phase and means for recombining the liquid and gaseous phases prior to its introduction into the cooler (1).
+17. Apparatus according to any of Claims 14, 15 or 16 comprising means for calculating the said mass of liquid cryogen and adapted to control the introduction of the liquid cryogen into the cooler (1).
+18. Apparatus according to Claim 17 wherein the calculating means (17) is adapted to calculate said predetermined mass of coating material as being that mass which, when added to product at the first predetermined temperature, will raise the mean temperature of the product and the coating material in the cooler to a second predetermined temperature below the melting point temperature of the coating material, the calculating means (17) being adapted to control the rate of introduction of the coating material into the cooler (1) for application onto the product.
+
+Ansprüche
+
+1. Verfahren zum Beschichten eines Produkts mit einem flüssigen oder verflüssigten Beschichtungsmaterial in einer Kühlkammer, mit folgenden Schritten:
+a) Messen der Produktmasse in der Kühlkammer,
+
+b) Berechnen der Masse eines flüssigen Kryogens, das bei Einleiten in die Kühlkammer und in Berührung mit dem Produkt ausreicht, die Temperatur der Produktmasse auf eine erste vorgegebene Temperatur unterhalb der Schmelzetemperatur des Beschichtungsmaterials abzusenken,
+
+c) Steuern des Einleitens der berechneten Masse flüssigen Kryogens in die Kühlkammer und in Berührung mit dem Produkt, wodurch das Produkt auf die erste vorgegebene Temperatur heruntergekühlt wird, und
+
+d) Aufbringen einer vorgegebenen Masse Beschichtungsmaterial auf das abgekühlte Produkt zur Bildung eines Überzugs darauf,
+
+und gekennzeichnet durch die Wiederholung der Schritte a), b), c) und d) in ihrer Reihenfolge zum Beschichten des Produkts mit aufeinanderfolgenden Schichten von Beschichtungsmaterial.
+2. Verfahren nach Anspruch 1, wobei das Produkt ein Nahrungsmittel ist.
+3. Verfahren nach Anspruch 1 oder 2, wobei das Produkt eine Mehrzahl getrennter Produktstücke umfasst.
+4. Verfahren nach Anspruch 3, wobei die Stücke eine maximale Abmessung von zwischen etwa 1 Millimeter und 200 Millimeter und vorzugsweise zwischen etwa 1 Millimeter und 75 Millimeter haben.
+5. Verfahren nach einem der vorhergehenden Ansprüche, wobei die Schritte des Steuerns des Einleitens der berechneten Masse flüssigen Kryogens das Einleiten der berechneten Masse flüssigen Kryogens in einen Zwischendosiertank und das Austragen des flüssigen Kryogens aus dem Dosiertank in die Kühlkammer umfasst, wobei die Rate des Flüssigkryogenaustrags durch Ventilmittel gesteuert wird.
+6. Verfahren nach einem der Ansprüche 1 bis 4, wobei der Schritt des Steuems des Einleitens der berechneten Masse flüssigen Kryogens das Messen des Massenströmungsdurchsatzes von flüssigem Kryogen und das Betätigen von Ventilmitteln in Abhängigkeit von dem gemessenen Massenströmungsdurchsatz umfasst, um die Rate zu verändern, mit welcher flüssiger Kryogen in die Kühlkammer eingeleitet wird.
+7. Verfahren nach Anspruch 6, wobei das Messen der Massenströmung des flüssigen Kryogens das Trennen der Strömung flüssigen Kryogens vor dessen Einleiten in die Kühlkammer in einen Flüssigphasenstrom und einen Dampfphasenstrom, das Messen des Strömungsdurchsatzes mindestens des Flüssigphasenstroms, und das Rekombinieren des Flüssigphasen- und des Dampfphasenstroms umfasst.
+8. Verfahren nach einem der vorhergehenden Ansprüche, wobei die vorgegebene Masse von Beschichtungsmaterial diejenige Masse ist, die bei Hinzufügen zum Produkt bei der ersten vorgegebenen Temperatur die mittlere Temperatur des Produkts und des Beschichtungsmaterials auf eine zweite vorgegebene Temperatur unterhalb des Schmelzpunkts des Beschichtungsmaterials anhebt.
+9. Verfahren nach einem der vorhergehenden Ansprüche, wobei das Beschichtungsmaterial in die Kühlkammer auf das darin befindliche gekühlte Produkt aufgesprüht wird.
+10. Verfahren nach einem der vorhergehenden Ansprüche, welches das Bewegen des Produkts in der Kühlkammer während der Kühl- und Beschichtungsschritte umfasst.
+11. Verfahren nach einem der vorhergehenden Ansprüche, wobei der flüssige Kryogen Stickstoff, Kohlendioxid, ein atembares lebensunterstützendes Gas oder ein Gemisch hiervon ist.
+12. Verfahren nach einem der vorhergehenden Ansprüche, welches das Einleiten weiteren flüssigen Kryogens in die Kühlkammer umfasst, um die Temperatur des beschichteten Produkts weiter abzusenken.
+13. Verfahren nach einem der vorhergehenden Ansprüche, wobei die Masse des Produkts in der Kühlkammer vor dessen Einleitung in diese gemessen wird.
+14. Einrichtung zum Beschichten eines Nahrungsmittelprodukts mit einem flüssigen oder verflüssigten Beschichtungsmaterial, mit einem Trommelkühler (1) mit Mitteln (11) zum Besprühen von Produkt in dem Kühler mit einem flüssigen Kryogen, Mitteln (15) zum Besprühen von Produkt in dem Kühler mit dem Beschichtungsmaterial, Mitteln (17, 23) zum Steuern des Einleitens einer Masse flüssigen Kryogens, die zur Verringerung der Temperatur des Produkts auf eine erste vorgegebenen Temperatur unter der Schmelztemperatur des Beschichtungsmaterials berechnet ist, in den Kühler und in Berührung mit dem Produkt, Mitteln (17, 21) zum Aufbringen einer vorgegebenen Masse von Beschichtungsmaterial auf das abgekühlte Produkt zum Erzeugen eines Überzugs darauf, wobei Mittel (19) zum Messen der Produktmasse in dem Kühler vorgesehen sind, und gekennzeichnet durch separate Mittel (15) zum Sprühen mindestens zwei verschiedener Beschichtungsmaterialien auf das Produkt in dem Kühler.
+15. Einrichtung nach Anspruch 14, mit Mitteln (28) zum Messen des Massenströmungsdurchsatzes von flüssigem Kryogen und Ventilmitteln, die in Abhängigkeit von dem gemessenen Massenströmungsdurchsatz flüssigen Kryogens betätigbar sind, um die Rate zu verändern, mit welcher flüssiger Kryogen auf das Produkt in dem Kühler 1 aufgesprüht wird.
+16. Einrichtung nach Anspruch 15, wobei die Massenströmungsdurchsatz-Messmittel (23) Trennmittel zum Trennen des flüssigen Kryogens in seine flüssige Phase und seine gasförmige Phase, Mittel zum Messen des Strömungsdurchsatzes mindestens der flüssigen Phase, und Mittel zum Rekombinieren der flüssigen und der gasförmigen Phase vor dem Einleiten in den Kühler (1) aufweisen.
+17. Einrichtung nach einem der Ansprüche 14, 15 oder 16, mit Mitteln zum Berechnen der genannten Masse flüssigen Kryogens, die zum Steuern des Einleitens des flüssigen Kryogens in den Kühler (1) ausgelegt sind.
+18. Einrichtung nach Anspruch 17, wobei die Berechnungsmittel (17) so ausgelegt sind, daß sie die vorgegebene Masse von Beschichtungsmaterial als diejenige Masse berechnen, die, wenn sie zum Produkt bei der ersten vorgegebenen Temperatur zugegeben wird, die mittlere Temperatur des Produkts und des Beschichtungsmaterials in dem Kühler auf eine zweite vorgegebene Temperatur unter der Schmelztemperatur des Beschichtungsmaterials anheben, wobei die Berechnungsmittel (17) dafür ausgelegt sind, die Einleitungsrate des Beschichtungsmaterials in den Kühler (1) zum Aufbringen auf das Produkt zu steuern.
+
+Revendications
+
+1. Procédé d'enrobage d'un produit avec un matériau d'enrobage liquide ou liquéfié dans une chambre de refroidissement, comprenant les étapes consistant à
+(a) mesurer la masse du produit dans la chambre de refroidissement ;
+
+(b) calculer la masse d'un cryogène liquide qui sera suffisante, lorsqu'elle sera introduite dans la chambre de refroidissement et mise en contact avec le produit, pour réduire la température de la masse du produit jusqu'à une première température prédéterminée inférieure à la température du point de fusion du matériau d'enrobage ;
+
+(c) contrôler l'introduction de la masse calculée de cryogène liquide à l'intérieur de la chambre de refroidissement et en contact avec le produit pour ainsi refroidir le produit à la première température prédéterminée, et
+
+(d) appliquer une masse prédéterminée d'un matériau d'enrobage sur le produit refroidi pour créer un enrobage sur celui-ci ;
+
+et caractérisé par la répétition des étapes (a), (b), (c) et (d) de manière à enrober le produit avec des couches successives de matériau d'enrobage.
+2. Procédé selon la Revendication 1, dans lequel le produit est un aliment.
+3. Procédé selon la Revendication 1 ou la Revendication 2, dans lequel le produit comprend une pluralité d'éléments distincts du produit
+4. Procédé selon la Revendication 3, dans lequel les éléments ont une dimension maximale comprise entre environ 1 mm et 200 mm, et de manière préférée entre environ 1 mm et 75 mm.
+5. Procédé selon l'une quelconque des Revendications précédentes, dans lequel l'étape de contrôle de l'introduction de la masse calculée de cryogène liquide comprend l'introduction de la masse calculée de cryogène liquide dans un réservoir de dosage intermédiaire, et le déversement du cryogène liquide du réservoir de dosage dans la chambre de refroidissement, le débit de déversement du cryogène liquide étant contrôlé par des moyens de vanne.
+6. Procédé selon l'une quelconque des Revendications 1 à 4, dans lequel l'étape de contrôle de l'introduction de la masse calculée de cryogène liquide comprend la mesure du débit massique du cryogène liquide et l'actionnement des moyens de vanne en réponse au débit massique mesuré de manière à modifier le débit auquel le cryogène liquide est introduit dans la chambre de refroidissement.
+7. Procédé selon la Revendication 6, dans lequel la mesure du débit massique du cryogène liquide comprend la séparation du courant de cryogène liquide, avant son introduction dans la chambre de refroidissement, en un flux en phase liquide et un flux en phase vapeur, la mesure du débit d'au moins le flux en phase liquide, et la recombinaison des flux en phase liquide et en phase vapeur.
+8. Procédé selon l'une quelconque des Revendications précédentes, dans lequel la masse prédéterminée de matériau d'enrobage est la masse qui, lorsqu'elle est ajoutée au produit à la première température prédéterminée, fera monter la température moyenne du produit et du matériau d'enrobage jusqu'à une seconde température prédéterminée inférieure à la température du point de fusion du matériau d'enrobage.
+9. Procédé selon l'une quelconque des Revendications précédentes, dans lequel le matériau d'enrobage est pulvérisé à l'intérieur de la chambre de refroidissement sur le produit refroidi qui s'y trouve.
+10. Procédé selon l'une quelconque des Revendications précédentes, comprenant l'agitation du produit dans la chambre de refroidissement pendant toute la durée des étapes de refroidissement et d'enrobage.
+11. Procédé selon l'une quelconque des Revendications précédentes, dans lequel le cryogène liquide est l'azote, le dioxyde de carbone, un gaz respirable permettant les fonctions vitales ou un mélange de ceux-ci.
+12. Procédé selon l'une quelconque des Revendications précédentes, comprenant l'introduction de cryogène liquide supplémentaire dans la chambre de refroidissement de manière à abaisser davantage la température du produit enrobé.
+13. Procédé selon l'une quelconque des Revendications précédentes, dans lequel la masse de produit dans la chambre de refroidissement est mesurée avant son introduction dans celle-ci.
+14. Dispositif d'enrobage d'un produit alimentaire avec un matériau d'enrobage liquide ou liquéfié, comprenant un refroidisseur (1) à tambour comprenant des moyens (11 ) pour pulvériser le produit dans le refroidisseur avec un cryogène liquide, des moyens (15) pour pulvériser le produit dans le refroidisseur avec le matériau d'enrobage, des moyens (17, 23) pour contrôler l'introduction dans le refroidisseur et la mise en contact avec le produit d'une masse de cryogène liquide calculée pour réduire la température du produit à une première température prédéterminée inférieure à la température du point de fusion du matériau d'enrobage, des moyens (17,21) pour appliquer une masse prédéterminée du matériau d'enrobage sur le produit refroidi pour créer un enrobage sur celui-ci, des moyens (19) étant prévus pour mesurer la masse du produit dans le refroidisseur, etcaractérisé par des moyens séparés (15) pour pulvériser au moins deux matériaux d'enrobage différents sur le produit dans le refroidisseur,
+15. Dispositif selon la Revendication 14, comprenant des moyens (28) pour mesurer le débit massique du cryogène liquide et des moyens de vannes, actionnables en réponse au débit massique mesuré du cryogène liquide de manière à modifier le débit auquel le cryogène liquide est pulvérisé sur le produit dans le refroidisseur (1).
+16. Dispositif selon la Revendication 15, dans lequel les moyens (23) de mesure du débit massique comprennent des moyens de séparation pour séparer le cryogène liquide en sa phase liquide et sa phase gazeuse, des moyens pour mesurer le débit d'au moins la phase liquide et des moyens pour recombiner la phase liquide et la phase gazeuse avant introduction dans le refroidisseur (1).
+17. Dispositif selon l'une quelconque des Revendications 14, 15 ou 16, comprenant des moyens pour calculer ladite masse de cryogène liquide et adaptés pour contrôler l'introduction du cryogène liquide dans le refroidisseur (1).
+18. Dispositif selon la Revendication 17, dans lequel les moyens de calcul (17) sont adaptés pour calculer ladite masse prédéterminée de matériau d'enrobage comme étant la masse qui, lorsqu'elle est ajoutée au produit à la première température prédéterminée, fera monter la température moyenne du produit et du matériau d'enrobage dans le refroidisseur jusqu'à une seconde température prédéterminée inférieure à la température du point de fusion du matériau d'enrobage, les moyens de calcul (17) étant adaptés pour contrôler le débit d'introduction du matériau d'enrobage dans le refroidisseur (1) pour application sur le produit.
+
+Drawing

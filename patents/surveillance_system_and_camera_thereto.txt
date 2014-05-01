@@ -1,0 +1,474 @@
+Surveillance System And Camera Thereto
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+1
+643
+471
+B1
+
+(12) EUROPÄISCHE PATENTSCHRIFT
+
+(45) Hinweis auf die Patenterteilung:
+14.05.2008
+Patentblatt
+2008/20
+
+(21) Anmeldenummer: 04023209.2
+
+(22) Anmeldetag:
+29.09.2004
+
+(51) Int. Kl.
+:
+G08B 13/196 (2006.01)
+
+(54)
+Überwachungssystem und Kamera hierfür
+
+Surveillance system and camera thereto
+
+Système de surveillance et caméra
+
+(84) Benannte Vertragsstaaten:
+AT
+BE
+BG
+CH
+CY
+CZ
+DE
+DK
+EE
+ES
+FI
+FR
+GB
+GR
+HU
+IE
+IT
+LI
+LU
+MC
+NL
+PL
+PT
+RO
+SE
+SI
+SK
+TR
+
+(43) Veröffentlichungstag der Anmeldung:
+05.04.2006
+Patentblatt
+2006/14
+
+(73) Patentinhaber: Grellner, Thomas
+95445 Bayreuth (DE)
+
+(72) Erfinder:
+
+* Grellner, Thomas
+95445 Bayreuth (DE)
+
+(74) Vertreter: Körber, Martin Hans
+et al
+Mitscherlich & Partner
+Patent- und Rechtsanwälte
+Postfach 33 06 09
+80066 München
+80066 München (DE)
+
+(56) Entgegenhaltungen:
+:
+WO-A-02/39404
+DE-A1- 19 829 888
+US-A1- 2002 030 740
+DE-A1- 19 749 182
+GB-A- 2 389 978
+US-A1- 2003 062 997
+
+Anmerkung: Innerhalb von neun Monaten nach der Bekanntmachung des Hinweises auf die Erteilung des europäischen Patents kann jedermann beim Europäischen Patentamt gegen das erteilte europäischen Patent Einspruch einlegen. Der Einspruch ist schriftlich einzureichen und zu begründen. Er gilt erst als eingelegt, wenn die Einspruchsgebühr entrichtet worden ist. (Art. 99(1) Europäisches Patentübereinkommen).
+
+Beschreibung
+
+[0001]
+Die vorliegende Erfindung betrifft ein Überwachungssystem zum Überwachen eines vorgegebenen Bereichs. Ferner betrifft die vorliegende Erfindung eine Kamera, welche zur Realisierung eines derartigen Überwachungssystems ausgestaltet ist.
+
+[0002] Überwachungssysteme, mit denen bestimmte Bereiche oder Einrichtungen überwacht werden sollen, beruhen in der Regel auf dem Einsatz eines oder mehrerer Sensoren, welche zusammengeschaltet eine Alarmanlage bilden, die wiederum mit einer zentralen Einrichtung, beispielsweise der Leitstelle eines Sicherheitsdiensts verbunden ist. Die Sensoren, bei denen es sich z.B. um Bewegungsmelder oder Glasbruchsensoren handeln kann, erfassen dabei das Vorliegen einer Alarmsituation, beispielsweise die unerlaubte Anwesenheit einer Person in dem zu überwachenden Bereich oder das Zerstören eines Fensters, und erzeugen daraufhin ein Alarmsignal, welches an die zentrale Einrichtung übermittelt wird. In der Regel wird auf den Erhalt dieser Alarmnachricht hin ein Mitglied des Sicherheitsdiensts den zu überwachenden Bereich persönlich aufsuchen, um festzustellen, ob tatsächlich eine Alarmsituation vorliegt und ob gegebenenfalls bestimmte Maßnahmen einzuleiten sind.
+
+[0003]
+Neben diesen klassischen Überwachungssystemen, die auf Alarmanlagen mit Sensoren basieren, kommen oftmals auch Videoüberwachungssysteme zum Einsatz. Bei derartigen Systemen sind eine Vielzahl von Videokameras vorgesehen, welche Bilder der ihnen zugeordneten Bereiche erstellen und fortwährend an eine Überwachungszentrale weiterleiten. In dieser Überwachungszentrale, die in der Regel an einer bestimmten Stelle innerhalb des zu überwachenden Gebäudes oder Bereichs angeordnet ist, werden dann diese Bilder von einem entsprechend ausgebildeten Personal überwacht und analysiert, wobei bei Erkennen einer ungewöhnlichen Situation in den von den Kameras übermittelten Bildern geeignete Maßnahmen eingeleitet werden. Beispielsweise wird in solchen Fällen das Wachpersonal darüber informiert, dass ein bestimmter Bereich näher untersucht werden sollte.
+
+[0004]
+Charakteristisch für diese klassischen Videoüberwachungssysteme ist, dass die Zentrale, in der die Bilder der verschiedenen Überwachungskameras ausgewertet werden, in der Regel unmittelbar in dem zu überwachenden Bereich bzw. Gebäude selbst angeordnet ist. Ferner erfolgt die Ansteuerung der Kameras von der Zentrale aus, d.h., das Ein- und Ausschalten sowie das Abrufen von Bildern erfolgt durch Steuerbefehle, die von der Zentrale aus zu den Kameras übermittelt werden.
+
+[0005]
+Schließlich ist es auch bekannt, selbstständig arbeitende Videokameras zur Überwachung von bestimmten Bereichen einzusetzen. Diese Kameras können zwar nicht unmittelbar dazu genutzt werden, einen aktuell vorliegenden Alarmzustand zu erkennen, allerdings zeichnen sie das Bild des zu überwachenden Bereichs für einen längeren Zeitraum auf. Wurde nun festgestellt, dass in dem Bereich eine Alarmsituation vorlag, dass also beispielsweise eingebrochen wurde, so kann nachträglich der von der Kamera aufgezeichnete Film ausgewertet werden, um eventuelle Ursachen für den Alarmzustand festzustellen.
+
+[0006]
+Dokument GB 2 389 978 offenbart ein Überwachungssystem nach dem Oberbegriff des Anspruchs 1.
+
+[0007]
+Der vorliegenden Erfindung liegt die Aufgabe zugrunde, eine neuartige Möglichkeit anzugeben, vorgegebene Bereiche zu überwachen. Dabei soll zum einen das Überwachungssystem möglichst unempfindlich gegenüber äußeren Störeinflüssen sein, zum anderen soll für einen Benutzer des Überwachungssystems die Möglichkeit bestehen, flexibel auf das Auftreten einer Alarmsituation hin reagieren zu können. Voraussetzung hierfür ist, dass der Benutzer des Überwachungssystems bereits bei der Benachrichtigung über den Alarmzustand möglichst umfangreich über die aktuelle Situation in dem überwachten Bereich informiert wird.
+
+[0008]
+Die Aufgabe wird durch ein Überwachungssystem gemäß dem unabhängigen Anspruch 1 bzw. durch ein Verfahren zum Überwachen eines vorgegebenen Bereichs gemäß Anspruch 15 gelöst.
+
+[0009]
+Die erfindungsgemäße Lösung basiert auf einer sog. ereignisorientierten Videoüberwachung. Das Überwachungssystem gemäß der vorliegenden Erfindung weist hierzu zumindest eine auf einen zu überwachenden Bereich gerichtete Kamera, einen Sensor zum Erfassen einer Alarmsituation in dem zu überwachenden Bereich sowie eine mit der Kamera verbundene Zentrale auf, wobei die Kamera dazu ausgebildet ist, nach Feststellen einer Alarmsituation durch den Sensor von sich aus zumindest ein Bild des zu überwachenden Bereichs an die Zentrale zu übermitteln, und wobei ferner die Zentrale eine Kommunikationseinheit aufweist, welche auf den Empfang des Bildes von der Kamera hin eine Alarmnachricht an einen Empfänger übermittelt. Dabei ist der Begriff "verbunden" dahingehend zu verstehen, dass ein Datenaustausch, evtl. auch auf drahtlose Weise, zwischen Kamera und Zentrale möglich ist.
+
+[0010]
+Zentraler Gedanke der vorliegenden Erfindung ist also, dass eine Videokamera vorgesehen ist, in deren Blickfeld der zu überwachende Bereich liegt, und dass die Kamera im Bedarfsfall von sich aus, also selbständig und ohne die entsprechende Aufforderung durch ein externes Steuersignal zumindest ein Bild des zu überwachenden Bereichs an die Zentrale übermittelt. Die Funktion der Kamera ist dabei derart, dass während einer normalen Überwachungsphase kein Bild von dem zu überwachenden Bereich an die Zentrale übermittelt wird. Die Kamera befindet sich somit in einem Standby-Zustand, in dem sie zwar gemäß einem bevorzugten Ausführungsbeispiel regelmäßig Bilder von dem zu überwachenden Bereich aufzeichnet, jedoch nicht an die Zentrale weiterleitet. Wird nun allerdings mit Hilfe des Sensors festgestellt, dass eine Alarmsituation in dem zu überwachenden Bereich vorliegt, wird die Kamera augenblicklich aktiv und erstellt zumindest ein Bild des zu überwachenden Bereichs bzw. greift auf das aktuellste der aufgezeichneten Bilder zurück, welches dann als entsprechendes Alarmsignal an die Zentrale übermittelt wird. Das von der Kamera übermittelte Bild des zu überwachenden Bereichs ersetzt somit das herkömmliche Alarmsignal klassischer Alarmanlagen, die ausschließlich auf dem Einsatz von Sensoren beruhen.
+
+[0011]
+Gegenüber klassischen Videoüberwachungssystemen unterscheidet sich das System gemäß der vorliegenden Erfindung darin, dass die Kamera und der Sensor in Kombination eine selbstständige Einheit bilden, welche in der Lage ist, selbständig eine Alarmsituation zu erkennen und in diesem Fall dann ein entsprechendes Bildinformationen enthaltendes Signal an die Zentrale zu übermitteln. Eine permanente Auswertung der von verschiedenen Kameras dauerhaft übermittelten Videobildern ist somit nicht erforderlich.
+
+[0012]
+Der Einsatz der Kommunikationseinheit in der Zentrale schließlich eröffnet einem Nutzer des Überwachungssystems die Möglichkeit, flexibel festzulegen, inwiefern auf das Auftreten einer Alarmsituation hin reagiert werden soll. Insbesondere kann ein Nutzer des Systems selbst bestimmen, in welcher Weise dann anschließend eine Alarmnachricht und an welchen Empfänger übermittelt werden soll.
+
+[0013]
+Weiterbildungen der vorliegenden Erfindung sind Gegenstand der Unteransprüche. Diese betreffen insbesondere die Ausgestaltung und Funktionsweise der Kamera sowie die Datenübermittlung zwischen der Kamera und der Zentrale.
+
+[0014]
+So ist vorzugsweise vorgesehen, dass die Kamera mit der Zentrale über ein Kommunikationsnetzwerk, insbesondere über das Internet verbunden ist. Die Kamera, die beispielsweise auch Bestandteil eines lokalen Netzwerks sein kann, weist hierzu entsprechende Anschluss- und Datenübertragungsmittel zur Anbindung an das lokale Netzwerk bzw. an einen DSL- oder Kabel-Router auf. Eine besondere Eigenschaft des erfindungsgemäßen Überwachungssystems besteht dabei darin, dass die Überwachung der Kamera ohne eine Kommunikation vom Internet in das lokale Netzwerk durchgeführt wird. Eine gegebenenfalls vorhandene Firewall, die den Zugriff auf Internet-Webseiten gestattet, stellt dementsprechend insofern kein Hindernis dar, als die Kommunikation zwischen der Kamera und einem in der Zentrale angeordneten Server auf dem gleichen Wege erfolgt, wie das klassische Abrufen von Webseiten. Wesentlich hierbei ist, dass ein Kommunikationsaufbau zwischen Kamera und Zentrale grundsätzlichen von der Kamera aus erfolgt.
+
+[0015]
+Die Kommunikation zwischen der Kamera und der Zentrale findet damit unmittelbar zwischen beiden Komponenten statt, ohne eine Einwirkung durch das lokale Netzwerk zu erwirken. Hierdurch wird vermieden, dass im lokalen Netz Manipulationen vorgenommen werden könnten, welche möglicherweise die Funktionalität des Überwachungssystems beeinträchtigen. Die Konfiguration des Überwachungssystems, beispielsweise die Änderung von Informationen, auf welche Weise von der Kommunikationseinheit der Zentrale im Bedarfsfall Alarmnachrichten übermittelt werden sollen, wird in diesem Fall ausschließlich über die Zentrale selbst vorgenommen. Auch Änderungen der Funktionsparameter der Kamera bzw. die Durchführung von Updates und dergleichen erfolgen ausschließlich über die Zentrale, wodurch das gesamte System sehr unempfindlich gegenüber äußeren Störungen oder Manipulationen ist.
+
+[0016]
+Unabhängig von der Möglichkeit, die Konfiguration der Kamera über die Zentrale zu beeinflussen, kann allerdings auch vorgesehen sein, dass eine Aktivierung bzw. Deaktivierung der Kamera lokal vorgenommen wird. Hierzu kann die Kamera beispielsweise zusätzliche Empfangsmittel aufweisen, mit deren Hilfe externe Aktivierungsinformationen empfangen werden können. Vorzugsweise ist vorgesehen, das Ein- und Ausschalten der Kamera, also das Scharf- bzw. Unscharfstellen des Überwachungssystems in Form von Funksignalen zu ermöglichen.
+
+[0017]
+Ein anderer Aspekt der vorliegenden Erfindung betrifft das Verhalten dar Kamera, nachdem von dem Sensor, der vorzugsweise integraler Bestandteil der Kamera ist, ein Alarmzustand erkannt wurde. Um die Zentrale möglichst umfassend über die Situation in dem zu überwachenden Bereich informieren zu können, ist gemäß einem bevorzugten Ausführungsbeispiel der vorliegenden Erfindung vorgesehen, dass die Kamera eine Sequenz mehrerer Bilder aufzeichnet, die nacheinander an die Zentrale übermittelt werden. Damit zumindest ein erstes Bild möglichst sofort an die Zentrale weitergeleitet werden kann, ist vorgesehen, dass das erste Bild für eine schnelle Übertragung hoch komprimiert und unmittelbar an die Zentrale gesendet wird. Der Zeitaufwand hierfür liegt unterhalb von 3 Sekunden, so dass selbst im Falle eines Einbruchs mit Zerstörungsfolge der Kamera zumindest ein Bild an die Zentrale übermittelt werden kann. Die weiteren in der Sequenz übertragenen Bilder an die Zentrale weisen dann allerdings vorzugsweise eine niedrigere Komprimierung auf, um die Möglichkeit zu eröffnen, nähere Details in den Bildern zu erkennen. Gemäß einer ersten Variante kann vorgesehen sein, dass die Bildersequenz von der Kamera erst im Falle der Detektion eines Alarmzustands aufgezeichnet wird, bei der bereits oben erwähnten bevorzugten Alternativ-Variante ist allerdings vorgesehen, dass die Kamera kontinuierlich Bilder aufzeichnet und diese in einem Ringspeicher ablegt. Für den Fall der Erkennung eines Alarmzustands kann dann unmittelbar auf die in dem Speicher abgelegten Bilder zurückgegriffen werden. In beiden Varianten werden die aufgezeichneten Bilder vorzugsweise mit einem Datums- und Zeitstempel versehen.
+
+[0018]
+Das Gesamtsystem wird ferner noch mit einer Funktionalitätsüberwachung ausgestaltet, wozu vorgesehen ist, dass die Kamera in regelmäßigen Zeitabständen ein Kontrollsignal an die Zentrale übermittelt. Sollte die Übermittlung eines vorgesehenen Kontrollsignals hingegen ausbleiben, wird dies von der Zentrale dahingehend interpretiert, dass ein Fehlzustand in dem Überwachungssystem vorliegt. Auch für diesen Fall kann die Generierung einer Alarmnachricht vorgesehen sein.
+
+[0019]
+Die von der Zentrale auf den Empfang der Bilder von der Kamera hin ausgegebenen Alarmnachrichten können auf verschiedene Weise übermittelt werden. So besteht u. a. die Möglichkeit, SMS- oder MMS-Nachrichten zu übermitteln. Auch die Übermittlung von Email- oder Sprachnachrichten sowie das Informieren eines CallCenters oder der Zentrale einer Überwachungsleitstelle wäre denkbar, wobei hier der Nutzer des Systems frei wählen kann, an wen und in welcher Weise entsprechende Informationen übermittelt werden.
+
+[0020]
+Das erfindungsgemäße System zeichnet sich somit durch seine hohe Zuverlässigkeit und gleichzeitige Flexibilität aus. Ein zentrales Element des Überwachungssystems ist dabei die Kamera, die einen Sensor zum Erfassen einer Alarmsituation in dem zu überwachenden Bereich aufweist oder mit einem derartigen Sensor verbindbar ist, wobei die Kamera ferner Mittel zum Übermitteln zumindest eines Bilds des zu überwachenden Bereichs an eine Zentrale nach Feststellung einer Alarmsituation durch den Sensor aufweist. Ein weiterer unabhängiger Anspruch bezieht sich dementsprechend auch eine derartige erfindungsgemäß ausgestaltete Kamera.
+
+[0021]
+Im Folgenden soll die Erfindung anhand der beiliegenden Zeichnung näher erläutert werden. Es zeigen:
+Figur 1schematisch den Aufbau eines erfindungsgemäßen Überwachungsystems;Figur 2die wesentlichen Komponenten einer erfindungsgemäß ausgestalteten Überwachungskamera;Figur 3die Struktur eines in der Zentrale vorgesehenen Servers;Figur 4ein Schema zur Verdeutlichung des Informations-Austauschs zwischen Kamera und Server undFigur 5eine vereinfachte Darstellung zur Funktionsweise des erfindungsgemäßen Überwachungssystems.
+
+[0022]
+Figur 1 zeigt zunächst schematisch den Aufbau des allgemein mit dem Bezugszeichen 1 versehenen Überwachungssystems, welches zur Überwachung eines Bereichs 100 - bei dem es sich beispielsweise um einen Büro- oder Geschäftsraum handelt - vorgesehen ist. Wesentliche Komponenten des Überwachungssystems 1 sind zum einem eine Kamera 10 zur bedarfsweisen Aufzeichnung von Bildinformationen über den zu überwachenden Bereich 100 sowie zum anderen eine Zentrale 30, welche von der Kamera 10 übermittelte Informationen empfängt und im Bedarfsfall Alarmnachrichten an einen Benutzer des Systems bzw. an eine von dem Benutzer ausgewählte Person oder Einrichtung, beispielsweise auch an die Leitstelle 40 eines Sicherheitsdienstes übermittelt.
+
+[0023]
+Das erfindungsgemäße Überwachungsverfahren geht von der Nutzung einer oder mehrerer Videokameras 10 aus, die Bestandteil eines lokalen Netzwerks sind und über ein Kommunikationsnetzwerk an einen in der Zentrale befindlichen Dienst bzw. Server 31 angebunden sein können. Insbesondere erfolgt die Anbindung der Kamera 10 an den Server 31 über das Internet 50, wozu die Kamera 10 - wie später noch erläutert wird - entsprechende Mittel zur Datenkommunikation aufweist. Das erfindungsgemäße Verfahren ist für mehrere Hunderttausend derartiger lokaler Netzwerke skalierbar. Ein Kernpunkt des erfindungsgemäßen Verfahrens ist dabei die Überwachung sowohl der Kamera 10 als auch des von der Kamera 10 überwachten Bereichs 100 ohne eine Kommunikation vom Internet 50 in das lokale Netzwerk zu initiieren. Eine gegebenenfalls vorhandene Firewall, die den Zugriff auf Intemet-Webseiten gestattet, stellt dementsprechend insofern kein Hindernis dar, als die Kommunikation zwischen Kamera 10 und Server 31 von der Kamera 10 aus initiiert wird und auf dem gleichen Wege erfolgt, wie der Aufruf von normalen Webseiten.
+
+[0024]
+Bevor die Vorgehensweise zur Überwachung des Raums 100 näher erläutert wird, sollen zunächst die einzelnen Komponenten des erfindungsgemäßen Überwachungssystems 1 näher beschrieben werden.
+
+[0025]
+Figur 2 zeigt hierbei schematisch den Aufbau der Kamera 10. Wesentliches Element dieser Kamera 10 ist zunächst eine optische Einheit 11 zur optischen Überwachung des Bereichs 100. Die optische Einheit 11 kann beispielsweise mittels CCD- (chargecoupled device) oder CMOS- (complementary metal oxide semi-conductor) Technologie einzelne Bilder oder einen Videodatenstrom erstellen, der an eine Verarbeitungseinheit 15 weitergereicht wird. Innerhalb dieser Verarbeitungseinheit 15 ist eine entsprechende Elektronik 16 zur Bearbeitung der von der optischen Einheit 11 empfangenen Bildinformationen vorgesehen, welche eine einstellbare Anzahl von Einzelbildern oder einen zeitlich begrenzten Videodatenstrom in einem Ringspeicher 19a ablegt.
+
+[0026]
+Ein weiteres wesentliches Element der Kamera 10 ist ferner ein Überwachungssensor 12, mit dessen Hilfe ein Alarmzustand in dem zu überwachenden Raum 100 festgestellt wird. Insbesondere kann es sich bei diesem Sensor 12 um einen PIR (pyroelectric infrared) -Bewegungssensor handeln, der die Bewegung wärmestrahlungemittierenderr Quellen innerhalb des zu überwachenden Bereichs 100 erkennt. Entsprechende Signale des Sensors 12 werden ebenfalls an eine Elektronik 17 innerhalb der Verarbeitungseinheit 15 weitergeleitet, welche bei Feststellen einer Alaramsituation durch den Sensor 12 das später noch näher beschriebene Alarmszenario startet.
+
+[0027]
+Schließlich ist an der Kamera noch ein RF-(radio-frequency) Funkempfänger 13 vorgesehen, der ebenfalls mit einer Steuereinheit 18 innerhalb der Verarbeitungseinheit 15 verbunden ist und der das Ein- bzw. Ausschalten der Überwachungsaktivität der Kamera 10 über einen Funksender erlaubt. Signale des Sensors 12 oder des Empfängers 13 werden von den entsprechenden Einheiten 17 und 18 innerhalb der Verarbeitungseinheit 15 überwacht und zur Steuerung des Verhaltens der Kamera 10 ausgewertet. Neben dem Speicher 19a zur Ringspeicherung der Bildinformationen kann darüber hinaus noch ein weiterer Speicher 19b vorgesehen sein, der zum Ablegen von Konfigurationsdaten, welche das Verhalten der Kamera 10 betreffen, genutzt werden kann. Ferner kann die Kamera 10 auch digitale Ein- und Ausgänge zum Anschließen weiterer Zusatzgeräte, z.B. zusätzlicher Sensoren aufweisen. Auch die Anordnung von LEDs an der Außenseite der Kamera 10, welche den Zustand des Überwachungssystem signalisieren, kann vorgesehen sein.
+
+[0028]
+Anzumerken ist, dass gemäß dem dargestellten bevorzugten Ausgangsbeispiel der Sensor 12 integraler Bestandteil der Kamera 10 ist. Alternativ dazu könnte allerdings vorgesehen sein, dass der Sensor 12 ein separates Bauteil bildet und - über Leitungen oder drahtlos - mit der Kamera 10 verbunden ist. Auch wäre denkbar, mehrere Sensoren an die Kamera 10 anzuschließen, wobei es sich nicht ausschließlich um Bewegungsdetektoren handeln muß. So wäre z.B. auch der Einsatz von Glasbruchsensoren oder ähnlichen Detektoren denkbar.
+
+[0029]
+Die die zentrale Einheit der Kamera 10 bildende Verarbeitungseinheit 15 ist in der Lage, Daten mit der Zentrale, genauer genommen mit dem in der Zentrale angeordneten Server, auszutauschen. Dies erfolgt vorzugsweise mittels IP (Internet Protocol) aus einem LAN oder WLAN über eine Schnittstelle gemäß dem IEEE Standard 802.3, 802.11 (a/b/g/i). Die hierzu vorgesehene Schnittstelleneinheit 20 ist dabei derart ausgestaltet, dass die Datenverbindung mittels HTTPS verschlüsselt erfolgt. Vorzugsweise ist die Schnittstelle mit einem 10/100 Mbit/s Ethernet Port ausgestattet.
+
+[0030]
+Ist die Kamera 10 Bestandteil eines lokalen Netzwerks, so ist für den Übergang zwischen dem lokalen Netzwerk und dem vorzugsweise verwendeten Breitbandanschluss an das Internet ein entsprechend konfigurierter Router vorgesehen. Als Breitbandanschluss können dabei insbesondere DSL- und Kabelmodem-Anschlüsse eingesetzt werden, welche mindestens eine Datentransferrate von 128 Kbit pro Sekunde vom lokalen Netzwerk zum Internet ermöglichen und permanent mit dem Internet verbunden sind. Der Router stellt in diesem Fall regelmäßig auch ein DHCP (Dynamic Host Configuration Protocol) zur dynamischen Zuweisung einer IP-Adresse und weiterer Konfigurierungsparameter bereit. Alternativ dazu könnte allerdings auch vorgesehen sein, die Kamera 10 manuell mit einer IP-Adresse und den übrigen Konfigurationsparametern zu versehen.
+
+[0031]
+Der Aufbau des Servers 31, dessen Primäraufgabe die Weiterleitung empfangener Alarmsignale von der Kamera ist, ist schematisch in Figur 3 dargestellt. Vorzugsweise wird der Server 31 in einem hoch verfügbaren Rechenzentrum betrieben, welches aus Sicherheitsgründen über mehrere unabhängig voneinander arbeitende Internetverbindungen verfügt. Hierdurch ist gewährleistet, dass das Überwachungssystem dem Nutzer jederzeit zur Verfügung steht.
+
+[0032]
+Der Server 31 selbst stellt ein Anbindungssystem dar, welches auf mehrere Rechner 33 bis 35 verteilt ist. Durch entsprechende Trennungen dieser Rechner 33 bis 35 mittels mehrerer Firewalls 36 und 37 kann sichergestellt werden, dass die abrechnungsrelevanten Teile des Systems, welche beispielsweise Kundendaten beinhalten, von den anderen Komponenten des Systems, insbesondere von der Internetplattform, welche für die Kunden zugänglich ist, getrennt werden.
+
+[0033]
+Die Anwendungen des Servers 31 gliedern sich dementsprechend in drei verschiedene Bereiche auf, welche von den drei verschiedenen Rechnern 33 bis 35 verarbeitet werden. Es handelt sich hierbei um die Bereiche Endgerätezugang, Kundenzugang und Vertriebszugang. Der Endgerätezugang nimmt dabei die Signale und Videodaten der Kameras entgegen und verarbeitet diese gemäß der von den Kunden gewählten Konfigurationen. Der Kundenzugang hingegen ermöglicht über einen Webbrowser Anpassungen der Konfigurationen, Modifikationen des Vertrags zwischen dem Kunden und dem Betreiber des Überwachungssystems sowie Einsicht und Download eines für den Kunden zugänglichen Video- und Alarmarchivs.
+
+[0034]
+Mit Abschluss eines Vertrags und dem damit verbundenen Erwerb zumindest einer Kamera erhält der Kunde ein Konto auf dem Server 31. Alle Eingaben werden dann über von dem Server 31 zur Verfügung gestellte Webseiten vorgenommen, wobei der Zugang gesichert auf der Basis von SSL erfolgt. Die Konfiguration von Dienstparametern, beispielsweise die Angabe von Rufnummern eines Empfängers, der im Alarmfall zu benachrichtigen ist, wird ausschließlich über den Server 31 vorgenommen. Eine direkte Konfiguration der Kamera hingegen im lokalen Netzwerk wird vorzugsweise nicht unterstützt, da hierdurch Manipulationen ausgeschlossen werden. Zur Ermöglichung einer exakten Verrechnung der von dem Kunden genutzten Dienste werden sämtliche Veränderungen zeitgenau erfasst.
+
+[0035]
+Eine weitere Eigenschaft des Servers 31 ist ferner, dass der Kundenzugang das Aktivieren bzw. Deaktivieren der Überwachungsfunktion der Kamera 10 ermöglicht. Dieser Vorgang, der später noch näher beschrieben wird, wird auch als Scharf- oder Unscharfschalten des Systems bezeichnet. Das Aktivieren oder. Deaktivieren der Kamera kann allerdings nicht nur mittels des Webbrowsers über die Zwischenschaltung des Servers 31 erfolgen, sondern auch - wie bereits im Zusammenhang mit Figur 2 erläutert wurde - mit Hilfe einer Fernbedienung. Ferner wäre es auch denkbar, das Scharf- und Unscharfstellen über ein Mobiltelefon per SMS oder dgl. vorzunehmen. In diesem Fall wird vorzugsweise das Aktivierungs-/Deaktivierungssignal mittels eines PIN-Codes bestätigt.
+
+[0036]
+Eine Besonderheit des erfindungsgemäßen Überwachungssystems besteht ferner auch in der Art und Weise der Übertragung von Daten zwischen der Kamera 10 und dem Server 31. Hierbei ist vorgesehen, dass jeglicher Datentransfer unter Verwendung des Hypertext-Transfer-Protocols (http) über SSL (Secure Socket Layer) bzw. https erfolgt. Eine Beeinflussung der Kommunikation oder eine Veränderung der Daten während ihrer Weiterleitung durch das Internet 50 ist hierdurch nahezu unmöglich. Die Kommunikation zwischen beiden Elementen (Kamera 10 und Server 31) wird sozusagen getunnelt.
+
+[0037]
+Ein besonderes Merkmal der Datenübermittlung ist ferner, dass eine Datenübertragung, insbesondere auch die Übermittlung der Alarminformationen - stets von der Kamera 10 aus initiiert wird. Wie in Figur 4 dargestellt ist, stellt grundsätzlich gesehen zunächst die Kamera 10 jeweils eine Anfrage an den Server 31 bzw. übermittelt Informationen an diesen, und dieser antwortet genau auf diese eine Datenübertragung. Ein Verbindungsaufbau durch einen Netzwerkteilnehmer zur Kamera 10 hin ist in diesem Fall nicht erforderlich und wird aus Sicherheitsgründen auch nicht unterstützt. Sofern der Nutzer des Überwachungssystems allerdings eine Live-Übermittlung der von der Kamera 10 erstellten Bilder wünscht, muß er zunächst eine separate Internet-Adresse angeben, an welche die Kamera die Bilder unabhängig von dem Vorliegen eines Alarmzustands übermittelt.
+
+[0038]
+Durch die oben beschriebenen Maßnahmen kann vermieden werden, dass durch externe Einflussnahme die Funktionalität des Überwachungssystems beeinträchtigt wird. Auch eine Rekonfiguration der Kamera 10 oder eine Manipulation durch die direkte Einwirkung eines Dritten wird hierdurch vermieden. Einzig der Server 31 ist hierzu in der Lage, allerdings erst, nachdem ein Verbindungsaufbau durch die Kamera 10 erfolgt ist. Das erfindungsgemäße Verfahren bedingt daher auch keine Öffnung des lokalen Netzwerks, in welchem die Kamera 10 installiert ist, so dass eine sehr hohe Sicherheit hinsichtlich der Funktionalität des Überwachungssystems besteht.
+
+[0039]
+Abschließend sollten nunmehr die Funktionsweise des erfindungsgemäßen Überwachungssystems erläutert werden, wobei in Figur 5 nochmals eine vereinfachte Version des Systems 1 dargestellt ist, welches aus der Kamera 10, dem Server 31 sowie dem beide Elemente verbindenden Internet 50 besteht. Dargestellt sind ferner auch die für die Kommunikation erforderlichen Router 10a und 31a sowie eine Firewall zur Überwachung des Datentransfers.
+
+[0040]
+Wie bereits im Zusammenhang mit Figur 4 erläutert wurde, ist einzig aktiver Initiator einer jeden Kommunikation zwischen dem Server 31 und der Kamera 10 die Kamera 10 selbst. Diese kennt nun vier verschiedene Szenarien der Kommunikation, nämlich Initialisierung, Lebenszeichenübermittlung, Ein- bzw. Ausschalten des Überwachungsmodus (bzw. Scharf-/Unscharfschalten) und Alarm.
+
+[0041]
+Das Initialisierungsszenario wird unmittelbar während der ersten Inbetriebnahme der Kamera 10 durchlaufen. Hierbei kontaktiert die Kamera 10 den Server 31 unter Verwendung einer gesicherten Datenübertragung (SSL bzw. https) und wird von diesem automatisch erkannt. Sofern ein Vertrag für den Betrieb der Kamera 10 an dem Server 31 vorliegt, erhält die Kamera 10 einen sogenannten Token (also eine Bitsequenz, die ein elektronisches OK darstellt), um dieses Szenario abzuschließen. Hierdurch wird gleichzeitig auch die Durchführung der weiteren drei Szenarien in dem jeweiligen Anwendungsfall zugelassen. Das Initialisierungszenario hingegen wird ein weiteres Mal ausschließlich nach einem Reset der Kamera 10 oder einem Stromlossetzen durchlaufen.
+
+[0042]
+Zu bemerken ist, dass zur Initialisierung des Überwachungssystems von Seiten des Nutzers also lediglich die Herstellung der Verbindung zwischen Kamera und Internet sowie der Anschluß an die Stromversorgung erforderlich ist. Alle anderen Maßnahmen werden in einer automatischen Installationsprozedur durch die Kamera bzw. den Server durchgeführt, so dass das System auch besonders anwenderfreundlich ist.
+
+[0043]
+Das Szenario Lebenszeichenübermittlung dient der Überwachung der Funktionalität der Kamera 10 durch den Server 31. Hierzu überwacht der Server 31 die Kamera 10 passiv, d.h. es ist in einem Normalzustand vorgesehen, dass die Kamera 10 in regelmäßigen Zeitabständen ein Kontrollsignal an den Server 31 übermittelt. Sollte der Server 31 nunmehr in einem mit der Kamera 10 vereinbarten Zeitinterval kein Kontrollsignal, das sog. Lebenszeichentelegramm erhalten, so geht der Server 31 davon aus, dass die Übermittlung von Alarmen durch die Kamera 10 nicht mehr ordnungsgemäß gewährleistet ist und führt dementsprechend eine Alarmierung oder Benachrichtigung des Nutzers der Kamera 10 oder einer von dem Nutzer bestimmten Person durch.
+
+[0044]
+Die zuvor beschriebene Lebenszeichenübermittlung findet permanent statt, d.h. in Zeitabständen von vorzugsweise weniger als einer Minute. Dieses Szenario dient darüber hinaus noch einem weiteren Zweck, der berücksichtigt, dass die Kommunikation bidirektional erfolgt, allerdings nur von der Kamera 10 aus initiiert werden kann. Da es nicht möglich ist, ausgehend von dem Server 31 eine Konfigurierung der Kamera 10 vorzunehmen, ist vorgesehen, dass die Kamera 10 grundsätzlich als Bestätigung des Lebenszeichensignals vom Server 31 ein entsprechendes Antwortsignal erhält. Ist nun eine Konfigurierung der Kamera 10 erforderlich, so können diese Konfigurierungsdaten, welche beispielsweise Steuerbefehle oder auch Software-Updates beinhalten, gemeinsam mit dem Antwortsignal an die Kamera 10 übermittelt werden. Auf diese Weise wird trotz des hohen Sicherheitsstandards die Möglichkeit eröffnet, die Kamera 10 bei Bedarf neu zu konfigurieren.
+
+[0045]
+Dass dritte Szenario Ein- bzw. Ausschalten dient dazu, an den Server 31 den Zustand der Kamera 10 hinsichtlich der Überwachungstätigkeit zu übermitteln. Bei herkömmlichen Alarmanlagen wird dies auch als Scharf- bzw. Unscharfstellen bezeichnet. Solange sich die Kamera im Zustand "Unscharf" befindet, sendet sie keinen Alarm bzw. keine Alarmbilder an den Server, selbst wenn durch den Sensor ein Alarmzustand erkannte wurde bzw. der Sensor ist selbst inaktiv. Erst für den Fall, dass die Kamera scharfgestellt, bzw. aktiviert wurde, kann durch den Sensor das nachfolgend beschriebene Alarmszenario ausgelöst werden. Das Scharf- bzw. Unscharfschalten erfolgt - wie bereits erwähnt wurde - durch den Benutzer des Überwachungssystems selbst, indem er im Rahmen der oben beschriebenen Frage-Antwort-Kommunikation einen entsprechenden Befehl von dem Server 31 aus an die Kamera 10 übermittelt oder indem er diese unmittelbar mittels eines RF-Signals oder über eine SMS-Nachricht aktiviert. Alternativ zu der SMS-Nachricht wäre selbstverständlich auch ein Scharf- bzw. Unscharfschalten der Kamera mittels anderer von Mobiltelefonen genutzten Übertragungsstandards (z.B. mittels WAP oder dgl.) möglich.
+
+[0046]
+Das Alarmszenario schließlich wird für den Fall initiiert, dass im scharfgestellten Zustand der Kamera 10 der Sensor eine Alarmsituation innerhalb des zu überwachenden Raums erkennt. In diesem Fall zeichnet die Kamera 10 mehrere Bilder bzw. eine Bildsequenz auf und übermittelt diese Bilder an den Server 31. Alternativ dazu kann vorgesehen sein, dass die Kamera 10 in diesem Fall auf die bereits in dem Ringspeicher abgelegten zyklisch erstellten Bilddaten zurückgreift.
+
+[0047]
+Grundsätzlich wird eine einstellbare Anzahl von Alarmbildern an den Server 31 gesendet, welcher dann die Bilder speichert und gemäß der aktuellen Konfiguration des Systems gleichzeitig mit dem ersten Alarmbild die Weiterleitung einer Alarmnachricht an den Nutzer der Kamera 10 oder an eine von dem Nutzer bestimmte Person, z.B. auch an eine bemannte Leitstelle 40 (dargestellt in Figur 1) eines Sicherheitsdiensts zur weiteren Bearbeitung signalisiert. In dieser Leitstelle 40 können die von der Kamera übermittelten Bilder näher ausgewertet werden, um beispielsweise festzustellen, ob es sich um einen Fehlalarm handelt oder nicht. Ferner kann die Ursache für den Alarm ermittelt und festgelegt werden, welche Maßnahmen zu treffen sind und wer zu benachrichtigen ist.
+
+[0048]
+Wesentlich hierbei ist, dass der Benutzer durch die Konfigurierungsmöglichkeiten frei einstellen kann, auf welche Weise und an welchen Empfänger eine entsprechende Alarmnachricht übermittelt werden soll. Möglichkeiten bestehen insbesondere in der Übermittlung von SMS-, MMS- oder 3G-Nachrichten, die beispielsweise auf einer UMTS-Übermittlung beruhen. Auch die Übermittlung von Emails oder Sprachnachrichten an eine von dem Nutzer vorgegebene Adresse bzw. Telefonnummer kann vorgesehen sein. Schließlich kann auch - wie bereits angesprochen - ein CallCenter oder die Leitstelle eines Sicherheitsdiensts benachrichtigt werden.
+
+[0049]
+Insgesamt bleibt damit festzuhalten, dass durch die vorliegende Erfindung ein Überwachungssystem geschaffen wird, welches die Möglichkeit eröffnet, den Nutzer des Systems in kürzester Zeit und insbesondere unter Übermittlung von Bildinformationen über Alarmzustände in einem zu überwachenden Bereich in Kenntnis zu versetzen. Das erfindungsgemäße System zeichnet sich dabei zum einem durch seine hohe Sicherheit und andererseits durch seine hohe Flexibilität aus. Insbesondere besteht für einen Nutzer des Systems die Möglichkeit, frei zu wählen, in welcher Weise erkannte Alarmsituationen verarbeitet werden sollen.
+
+Ansprüche
+
+1. Überwachungssystem (1) mit
+- einer auf einen zu überwachenden Bereich (100) gerichteten Kamera (10),
+
+- einen Sensor (12) zum Erfassen einer Alarmsituation in dem zu überwachenden Bereich (100) sowie
+
+- einer mit der Kamera (10) verbundenen Zentrale (30),
+
+wobei die Kamera (10) dazu ausgebildet ist, nach Feststellen einer Alarmsituation durch den Sensor (12) von sich aus zumindest ein Bild des zu überwachenden Bereichs (100) an die Zentrale (30) zu übermitteln, und
+wobei die Zentrale (30) eine Kommunikationseinheit (32) aufweist, welche auf den Empfang des Bildes von der Kamera (10) hin eine Alarmnachricht an einen Empfänger übermittelt,
+dadurch gekennzeichnet,
+dass die Kamera (10) dazu ausgebildet ist, in vorgegebenen Zeitabständen ein Kontrollsignal an die Zentrale (30) zu übermitteln und dass die Zentrale (30) nach Empfang des Kontrollsignals ein Antwortsignal an die Kamera (10) übermittelt, wobei das Antwortsignal bei Bedarf Konfigurationsdaten für die Kamera (10) beinhaltet.
+2. Überwachungssystem nach Anspruch 1,
+dadurch gekennzeichnet,
+dass die Kamera (10) mit der Zentrale (30) über ein Kommunikationsnetzwerk (50) verbunden ist.
+3. Überwachungssystem nach Anspruch 2,
+dadurch gekennzeichnet,
+dass es sich bei dem Kommunikationsnetzwerk um ein IP-Netzwerk, insbesondere um das Internet (50) handelt.
+4. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass es sich bei dem Sensor um einen Bewegungsmelder (12) handelt.
+5. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass der Sensor (12) in die Kamera (10) integriert ist.
+6. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass die Kamera (10) in regelmäßigen Abständen Bilder des zu überwachenden Bereichs (100) aufzeichnet, wobei bei Feststellen einer Alarmsituation das zuletzt aufgezeichnete Bild an die Zentrale (30) übermittelt wird.
+7. Überwachungssystem nach Anspruch 6,
+dadurch gekennzeichnet,
+dass die Kamera (10) einen Ringspeicher (19a) zum zyklischen Zwischenspeichern der Bilder des zu überwachenden Bereichs (100) aufweist.
+8. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass die Kamera (10) dazu ausgebildet ist, nach Feststellen einer Alarmsituation durch den Sensor (12) mehrere Bilder an die Zentrale (30) zu übermitteln.
+9. Überwachungssystem nach Anspruch 8,
+dadurch gekennzeichnet,
+dass die von der Kamera (10) übermittelten Bilder sich hinsichtlich ihrer Komprimierung unterscheiden.
+10. Überwachungssystem nach Anspruch 9,
+dadurch gekennzeichnet,
+dass das erste von der Kamera (10) übermittelte Bild stärker komprimiert ist als die nachfolgend übermittelten Bilder.
+11. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass die Zentrale (30) automatisch eine Alarmnachricht übermittelt, falls kein Kontrollsignal von der Kamera (10) erhalten wurde.
+12. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass die von der Zentrale (30) übermittelte Alarmnachricht auch das/die von der Kamera (10) empfangene(n) Bild(er) beinhaltet.
+13. Überwachungssystem nach einem der vorherigen Ansprüche,
+dadurch gekennzeichnet,
+dass die Kamera (10) Empfangsmittel (13) zum Empfangen externer Steuer- und/oder Aktivierungsinformationen aufweist.
+14. Überwachungssystem nach Anspruch 13,
+dadurch gekennzeichnet,
+dass die Empfangsmittel (13) zum drahtlosen Empfangen der Steuer- und/oder Aktivierungsinformationen ausgebildet sind.
+15. Verfahren zur Überwachung eines vorgegebenen Bereichs (100) mit folgenden Schritten:
+a) Überwachen des Bereichs (100) und Feststellen, ob eine Alarmsituation vorliegt, sowie Übermittlung eines Kontrollsignals in vorgegebenen Zeitabständen von einer Kamera (10) zu einer Zentrale (30) und Übermittlung eines Antwortsignals von der Zentrale (30) zu der Kamera (10) nach Empfang des Kontrollsignals, wobei das Antwortsignal bei Bedarf Konfigurationsdaten für die Kamera (10) beinhaltet,
+
+b) Erstellen eines Bildes von dem zu überwachenden Bereich (100) auf das Erkennen einer Alarmsituation hin,
+
+c) Übermittlung des Bildes an eine von dem zu überwachenden Bereich (100) getrennte Zentrale (30) und
+
+d) Übermittlung einer Alarmnachricht durch die Zentrale (30) an einen Empfänger, wobei ein Kommunikationsaufbau zu der Zentrale (30) zum Übermitteln das Bildes von dem zu überwachenden Bereich (100) aus erfolgt.
+
+16. Verfahren nach Anspruch 15,
+dadurch gekennzeichnet,
+dass nach Feststellen einer Alarmsituation mehrere Bilder an die Zentrale (30) übermittelt werden.
+17. Verfahren nach Anspruch 16,
+dadurch gekennzeichnet,
+dass die übermittelten Bilder sich hinsichtlich ihrer Komprimierung unterscheiden.
+18. Verfahren nach Anspruch 17,
+dadurch gekennzeichnet,
+dass das erste übermittelte Bild stärker komprimiert ist als die nachfolgend übermittelten Bilder.
+
+Claims
+
+1. Surveillance system (1) having
+- a camera (10) directed at a region (100) to be surveilled,
+
+- a sensor (12) for detecting an alarm situation in the region (100) to be surveilled, and
+
+- a main station (30) connected with the camera (10),
+
+wherein the camera (10) is constituted, after determination of an alarm situation by the sensor (12), to automatically transmit at least one image of the region (100) to be surveilled to the main station (30), and
+wherein the main station (30) has a communications unit (32) which upon reception of the image from the camera (10) transmits an alarm message to a receiver,
+characterised in that,
+the camera (10) is constituted to transmit, at predetermined intervals, a check signal to the main station (30) and in that after reception of the check signal the main station (30) transmits a response signal to the camera (10), wherein in case of need the response signal contains configuration information for the camera (10) .
+2. Surveillance system according to claim 1,
+characterised in that,
+the camera (10) is connected with the main station (30) via a communications network (50) .
+3. Surveillance system according to claim 2,
+characterised in that,
+the communications network is an IP network, in particular is the Internet (50).
+4. Surveillance system according to any preceding claim,
+characterised in that,
+the sensor is a movement detector (12).
+5. Surveillance system according to any preceding claim,
+characterised in that,
+the sensor (12) is integrated in the camera (10).
+6. Surveillance system according to any preceding claim,
+characterised in that,
+the camera (10) records images of the region to be surveilled (100) at regular intervals, wherein upon determination of an alarm situation the image recorded last is transmitted to the main station (30).
+7. Surveillance system according to claim 6,
+characterised in that,
+the camera (10) has a ring memory (19a) for cyclical intermediate storage of the images of the region (100) to be surveilled.
+8. Surveillance system according to any preceding claim,
+characterised in that,
+the camera (10) is constituted to transmit, after determination of an alarm situation by the sensor (12), a plurality of images to the main station (30).
+9. Surveillance system according to claim 8,
+characterised in that,
+the images transmitted by the camera (10) are different with regard to their compression.
+10. Surveillance system according to claim 9,
+characterised in that,
+the first image transmitted by the camera (10) is compressed more strongly than the images transmitted subsequently.
+11. Surveillance system according to any preceding claim,
+characterised in that,
+the main station (30) transmits an alarm message automatically if no check signal is received from the camera (10).
+12. Surveillance system according to any preceding claim,
+characterised in that,
+the alarm message transmitted from the main station (30) also contains the image(s) received from the camera (10).
+13. Surveillance system according to any preceding claim,
+characterised in that,
+the camera (10) has reception means (13) for receiving external control and/or activation information.
+14. Surveillance system according to claim 13,
+characterised in that,
+the reception means (13) are constituted for wireless reception of the control and/or activation information.
+15. Method of surveillance of a predetermined region (100) having the following steps:
+a) surveilling the region (100) and determining whether an alarm situation is present, and transmitting at predetermined intervals a check signal from a camera (10) to a main station (30) and transmitting a response signal from the main station (30) to the camera (10) after reception of the check signal, wherein in case of need the response signal contains configuration information for the camera (10),
+
+b) upon recognition an alarm situation, production of an image of the region (100) to be surveilled,
+
+c) transmission of the image to a main station (30) separated from the region (100) to be surveilled and
+
+d) transmission of an alarm message by the main station (30) to a receiver, wherein establishment of communication to the main station (30) for transmitting the image is effected from the region (100) to be surveilled.
+
+16. Method according to claim 15,
+characterised in that,
+after determination of an alarm situation a plurality of images are transmitted to the main station (30).
+17. Method according to claim 16,
+characterised in that,
+the transmitted images are different with regard to their compression.
+18. Method according to claim 17,
+characterised in that,
+the first transmitted image is compressed more strongly than the images transmitted subsequently.
+
+Revendications
+
+1. Système de surveillance (1), comprenant
+- une caméra (10) dirigée vers la zone à surveiller (100),
+
+- un capteur (12) pour la saisie d'une situation d'alarme dans la zone à surveiller (100), ainsi
+
+- qu'une centrale (30) reliée à la caméra (10),
+
+la caméra (10) étant conçue de manière à transmettre spontanément à la centrale (30) au moins une image de la zone à surveiller (100) après constatation d'une situation d'alarme par le capteur (12), et
+la centrale (30) comportant une unité de communication (32) transmettant un message d'alarme à un récepteur après réception d'une image de la caméra (10),
+caractérisé
+en ce que la caméra (10) est conçue de manière à transmettre un signal de contrôle à la centrale (30) à intervalles temporels définis, et en ce que la centrale (30) transmet un signal de réponse à la caméra (10) après réception du signal de contrôle, ledit signal de réponse contenant si nécessaire des données de configuration pour la caméra (10).
+2. Système de surveillance selon la revendication 1,
+caractérisé
+en ce que la caméra (10) est reliée par un réseau de communication (50) à la centrale (30).
+3. Système de surveillance selon la revendication 2,
+caractérisé
+en ce que le réseau de communication est un réseau IP, en particulier l'Internet (50).
+4. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que le capteur est un détecteur de présence d'intrus (12).
+5. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que le capteur (12) est intégré à la caméra (10).
+6. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que la caméra (10) enregistre à intervalles réguliers des images de la zone à surveiller (100), la dernière image enregistrée étant transmise à la centrale (30) après constatation d'une situation d'alarme.
+7. Système de surveillance selon la revendication 6,
+caractérisé
+en ce que la caméra (10) comprend une mémoire tampon circulaire (19a) pour la mémorisation temporaire cyclique des images de la zone à surveiller (100).
+8. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que la caméra (10) est conçue pour transmettre plusieurs images à la centrale (30) après constatation d'une situation d'alarme par le capteur (12).
+9. Système de surveillance selon la revendication 8,
+caractérisé
+en ce que les images transmises par la caméra (10) se distinguent par leur taux de compression.
+10. Système de surveillance selon la revendication 9,
+caractérisé
+en ce que le taux de compression de la première image transmise par la caméra (10) est supérieur à celui des images consécutivement transmises.
+11. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que la centrale (30) transmet automatiquement un message d'alarme, si aucun signal de contrôle n'a été reçu de la caméra (10).
+12. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que le message d'alarme transmis par la centrale (30) contient aussi l'image ou les images reçues de la caméra (10).
+13. Système de surveillance selon l'une des revendications précédentes,
+caractérisé
+en ce que la caméra (10) comprend des moyens de réception (13) pour la réception d'informations de commande et/ou d'activation externes.
+14. Système de surveillance selon la revendication 13,
+caractérisé
+en ce que les moyens de réception (13) sont conçus pour une réception sans fil des informations de commande et/ou d'activation.
+15. Procédé de surveillance d'une zone définie (100), comprenant les étapes suivantes :
+a) surveillance de la zone (100) et constatation si une situation d'alarme est présentée, ainsi que transmission d'un signal de contrôle d'une caméra (10) à une centrale (30) à intervalles temporels définis et transmission d'un signal de réponse de la centrale (30) à la caméra (10) après réception du signal de contrôle, ledit signal de réponse contenant si nécessaire des données de configuration pour la caméra (10),
+
+b) formation d'une image de la zone à surveiller (100) après reconnaissance d'une situation d'alarme,
+
+c) transmission de l'image à une centrale (30) séparée de la zone à surveiller (100), et
+
+d) transmission d'un message d'alarme à un récepteur par la centrale (30), une communication étant établie avec la centrale (30) pour la transmission de l'image depuis la zone à surveiller (100).
+
+16. Procédé selon la revendication 15,
+caractérisé
+en ce que plusieurs images sont transmises à la centrale (30) après constatation d'une situation d'alarme.
+17. Procédé selon la revendication 16,
+caractérisé
+en ce que les images transmises se distinguent par leur taux de compression.
+18. Procédé selon la revendication 17,
+caractérisé
+en ce que le taux de compression de la première image transmise est supérieur à celui des images consécutivement transmises.
+
+Zeichnung
+
+[IMAGE]
+
+[IMAGE]
+
+[IMAGE]
+
+IN DER BESCHREIBUNG AUFGEFÜHRTE DOKUMENTE
+
+Diese Liste der vom Anmelder aufgeführten Dokumente wurde ausschließlich zur Information des Lesers aufgenommen und ist nicht Bestandteil des europäischen Patentdokumentes. Sie wurde mit größter Sorgfalt zusammengestellt; das EPA übernimmt jedoch keinerlei Haftung für etwaige Fehler oder Auslassungen.
+
+In der Beschreibung aufgeführte Patentdokumente
+
+* GB2389978A [0006]

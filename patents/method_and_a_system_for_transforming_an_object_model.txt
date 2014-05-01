@@ -1,0 +1,281 @@
+Method And A System For Transforming An Object Model
+
+*US20110047526A1*
+US20110047526A1
+(19) United States
+
+(12) Patent Application Publication (10) Pub. No.:  US 2011/0047526 A1
+Olkhovich et al. (43) Pub. Date: Feb. 24, 2011
+
+(54) METHOD AND A SYSTEM FOR TRANSFORMING AN OBJECT MODEL
+
+(76) Inventors:  Lev Olkhovich, Neuried (DE);
+Rainer Wasgint, Munchen (DE)
+
+Correspondence Address:
+King & Spalding LLP
+401 Congress Avenue, Suite 3200
+Austin, TX 78701 (US)
+
+(21) Appl. No.:  12/921,342
+(22) PCT Filed: Mar. 11, 2009
+(86) PCT No.:  PCT/EP2009/052854
+
+(30) Foreign Application Priority Data
+Apr. 14, 2008 (EP) 08007294.5
+
+Publication Classification
+
+(51) Int. Cl.   G06F 009/44 (20060101)
+
+(52) U.S. Cl.   717/104
+
+(57)
+Abstract
+
+In a method and a system for transforming an object model by executing a transformation workflow consisting of transformation step instances (TSI), the transformation workflow is automatically generated on the basis of transformation artifacts (TA) produced or used as inputs by transformation step instances (TSI) derived from pre-defined transformation step templates (TST).
+
+Claim(s), Drawing Sheet(s), and Figure(s)
+
+CROSS-REFERENCE TO RELATED APPLICATIONS
+
+[0001] This application is a U.S. National Stage Application of International Application No. PCT/EP2009/052854 filed Mar. 11, 2009, which designates the United States of America, and claims priority to EP Application No. 08007294.5 filed Apr. 14, 2008. The contents of which are hereby incorporated by reference in their entirety.
+
+TECHNICAL FIELD
+
+[0002] The invention relates to a method and a system for transforming an object model, in particular an object model comprising an attributed graph having model elements formed by nodes and edges.
+
+BACKGROUND
+
+[0003] There are different kinds of models such as UML-models, SDL-models, BPEL-Models, ERD-models or domain specific models for describing complex software products or complex heterogeneous software systems. These software products or software systems typically comprise different modules, i.e. software modules or hardware modules. These modules can be implemented in different technologies. For example, software models can be written in different programming languages or running under different operating systems using different data base systems. When developing or implementing a complex software product or software system, the architecture of the product or system can be shown in a graphical model, i.e. an object model of the software product or software system comprising an attributed graph.
+
+[0004] The object model comprises model elements such as nodes and edges. These edges connect nodes of the graph showing an interaction between the nodes. For example, an architecture of a software product or a software system can be described as an UML-model (unified model language). The same software product or software system can be described in different object models showing different architectures to implement the system or product. This MDA (model driven architecture) tools for each object model prototype can be generated, i.e. an executable software code to compare the performance of the different models with each other. In a model driven architecture (MDA), the model based artifacts are generated such that the object model is continuously refined until final artifacts are available. These final artifacts normally comprise source code which after transformation into object code can be executed. Such model driven refinance is difficult to implement for real software models, because an actual software system is usually highly heterogeneous. A heterogeneous software system comprises numerous different technologies and platforms at the same time. Moreover, as new platforms and technologies emerge on a regular basis, the transformation of an object model into a target object model of a more refined level is not always possible. In model driven architectures (MDA) refining of an object model, i.e. the transformation of an object model into a target object model, specifies such refinance with semi-declarative QVT (query view transformation) scripts. Since there is no complete QVT implementation until now, there are a number of partial implementations along with alternative approaches which do not conform to the QVT standard. Furthermore, the QVT (query view transformation) scripts are monolithic in nature, not supporting any extensibility. Because of these limitations, a model based generation of either code (such as source code) or models is usually implemented using pluggable cartridges such as in AndroMDA, one of the typical open source MDA tool kits. Each cartridge supports only a specific platform combined with a template based generation mechanism. Further, this conventional approach has the limitation that the cartridges themselves are not extensible and that cross- and multi-platform generations are difficult to implement. Furthermore, a round trip support is limited due to template based text generation.
+
+SUMMARY
+
+[0005] According to various embodiments, a method and a system allowing a flexible platform independent transformation of an object model can be provided.
+
+[0006] According to an embodiment, in a method for transforming an object model by executing a transformation workflow consisting of transformation step instances, the transformation workflow is automatically generated on the basis of transformation artifacts produced or used as inputs by transformation step instances derived from pre-defined transformation step templates.
+
+[0007] In an embodiment of the method, the transformation workflow is generated by connecting each transformation step instance using transformation artifacts as inputs with the transformation step instance producing said transformation artifacts (TA).
+
+[0008] In an embodiment of the method, said object model comprises a UML-model, a SDL-model, a BPEL-model, an ERD-model or a domain specific model.
+
+[0009] In an embodiment of the method, the object model is transformed into a target object model.
+
+[0010] In an embodiment of the method, the object model is transformed into heterogeneous software product artifacts.
+
+[0011] In an embodiment of the method, both the object model and the target object model comprises an attributed graph having model elements formed by nodes and edges.
+
+[0012] In an embodiment of the method, said transformation artifacts are elements of an object model.
+
+[0013] In an embodiment of the method, the transformation artifacts are elements of a target object model.
+
+[0014] In an embodiment of the method, the transformation step templates of the transformation step instances are loaded from a library.
+
+[0015] In an embodiment of the method, each transformation step template comprises an executable transformation step compatibility checker and an executable transformation step code.
+
+[0016] In an embodiment of the method, each transformation step compatibility checker of a transformation step template is executed [for each original model node] to check whether said transformation step template is compatible with a node of said object model.
+
+[0017] In an embodiment of the method, if the transformation step template is compatible with the node of said object model, a transformation step instance of said transformation step template is generated and transformation artifact identifiers of transformation artifacts produced or used as input by said transformation step instance are registered within a transformation registry as produced or used as inputs by the transformation step instance.
+
+[0018] In an embodiment of the method, the transformation workflow is generated by merging identical transformation artifact identifiers within the transformation registry.
+
+[0019] In an embodiment of the method, transformation step instances not located on transformation workflow paths connecting a model element of the object model with a model element of the target object model are deleted.
+
+[0020] In an embodiment of the method, the transformation step compatibility checker of a transformation step template registers transformation artifact identifiers of transformation artifacts within said transformation registry as used as inputs by different transformation step instances.
+
+[0021] In an embodiment of the method, a transformation step sequence list is generated for the transformation workflow indicating a sequence to execute the transformation step instances of said transformation workflow.
+
+[0022] In an embodiment of the method, the transformation step sequence list is generated by means of a Dijkstra-algorithm.
+
+[0023] In an embodiment of the method, the deletion of said transformation steps is performed by means of a reversed Dijkstra-algorithm.
+
+[0024] In an embodiment of the method, the transformation step instances are executed by executing transformation step code from transformation step templates correspondent to said transformation step instances.
+
+[0025] In an embodiment of the method, the transformation step code invokes an external application program.
+
+[0026] In an embodiment of the method, the transformation workflow is executed by a computer program.
+
+[0027] According to yet another embodiment, a MDA (model driven architecture)-tool program module may comprise instructions for performing a method for transforming an object model by executing a transformation workflow consisting of transformation step instances, wherein said transformation workflow is automatically generated on the basis of transformation artifacts produced or used as inputs by transformation step instances derived from pre-defined transformation step templates.
+
+[0028] According to yet another embodiment, a data carrier may store such a computer program.
+
+[0029] According to yet another embodiment, a transformation system may transform an object model into a target object model or into heterogeneous software product artifacts by executing a transformation workflow automatically generated on the basis of transformation artifacts produced or used as inputs by transformation step instances derived from pre-defined transformation step templates, which are stored in a library of said transformation system.
+
+[0030] In an embodiment of the transformation system, the transformation step template comprises an executable transformation step compatibility checker and an executable transformation step code.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+[0031] In the following, various embodiments of the method and the system for transforming an object model are described with reference to the enclosed figures.
+
+[0032] FIG. 1 shows a flow-chart of a possible embodiment of the method for transforming an object model;
+
+[0033] FIG. 2 shows a diagram for illustrating a method for transforming an object model;
+
+[0034] FIG. 3 shows an example for a dependency graph for illustrating an embodiment of the method for transforming an object model;
+
+[0035] FIG. 4 shows a diagram of an object model for illustrating the method for transforming such an object model;
+
+[0036] FIG. 5 shows a diagram for illustrating a possible additional step for deleting target object model elements according to an embodiment of the method;
+
+[0037] FIG. 6 shows instantiated transformation steps and transformation artifacts for a sample model with two modules for illustrating the method for transforming an object model;
+
+DETAILED DESCRIPTION
+
+[0038] The method for transforming an object model according to various embodiments comprises several steps as shown in FIG. 1. The method transforms an object model by executing the transformation workflow consisting of transformation step instances TSI. The method transforms an object model into a target object model. This object model can for example comprise an UML-model, a SDL-model, a BPEL-model, a ERD-model or domain specific models. Both the object model and the target object model can comprise an attributed graph having model elements formed by nodes and edges. The original object model can be transformed into a target object model or into heterogeneous software product artifacts such as source code artifacts.
+
+[0039] The transformation workflow is generated automatically on the basis of transformation artifacts produced or used as inputs by transformation step instances TST derived from predefined transformation step templates TST.
+
+[0040] The method for transforming an object model according to various embodiments comprises several steps as shown in FIG. 1. After a start step SO transformation step templates TST are loaded in a first step S1 from library of the transformation system. Each transformation step template TST comprises an executable transformation step compatibility checker TSCC and an executable transformation step code TSC.
+
+[0041] Further steps S2-S9 form a loop over all nodes of the object model, where step S2 selects a new unprocessed node of the object model.
+
+[0042] Steps S3-S8 form a loop over all the loaded transformation templates (TSTs). This loop is repeated for each node of the object model. Step S4 selects a new unprocessed TST.
+
+[0043] In step S4, the transformation step compatibility checker TSCC of the selected TST is executed to check whether the transformation step template TST is compatible with the selected node.
+
+[0044] In step S5, based on the results of the step S4, it is decided whether the transformation step template is compatible with the node of the object model.
+
+[0045] If the selected transformation step template TST is compatible with the selected node of the object model, a transformation step instance TSI of the transformation step template TST is generated in step S6. Further, the transformation artifact identifiers TA-ID of transformation artifacts TA produced or used as input by the generated transformation step instance TSI are registered within a transformation registry in step S7.
+
+[0046] In step S8, if all the TSTs were processed, the method proceeds to step S9. Otherwise, it returns to step S3 to form a loop.
+
+[0047] In step S8, if all the nodes of the object model to be transformed were processed, the method proceeds to step S10. Otherwise, it returns to step S2 to form a loop.
+
+[0048] After the steps S3-S9 have been completed for each node of the object model to be transformed for each transformation step template loaded during the step S1. The transformation workflow is generated in the step S10 by merging identical transformation artifact identifiers (TA-ID) within the transformation registry.
+
+[0049] In a further step S11, a transformation step sequence list TSSL is generated for the transformation work flow indicating a sequence to execute the transformation step instances TSI of said transformation work flow. In a possible embodiment, the transformation step sequence list TSSL is generated by means of a Dijkstra-algorithm.
+
+[0050] In a further step S12, the transformation work flow is executed. In a possible embodiment, the transformation work flow is executed by a computer program loaded from a data carrier or from a program memory. Executing the transformation work flow, the transformation instances TSI as indicated in the generated transformation step sequence list TSSL are executed. This is done by executing the transformation step code TSC in transformation step templates TST corresponding to said transformation step instances TSI. In a possible embodiment, the transformation step code TSC invokes an external application program. The process stops in step S13.
+
+[0051] FIG. 2 shows a diagram for illustrating the method for transforming an object model according to various embodiments. In the given example, there are two nodes A, B of an object model such as an UML-object model. This object model is to be transformed into a refined target object model of a lower level, i. e. in the given example, the object model of a given level n is transformed into a target object model of a lower level n+1. As can be seen from FIG. 2 both, the object model and the target object model, comprise this an attributed graph having model elements formed by nodes and edges. An edge indicates an interaction between nodes such as a node invoking another node. Each node has different attributes such as the technology or the platform. For example, attribute a1 of node A can indicate that the technology of this mode is Java [EJB] whereas attribute b1 of node B indicates that the technology of that node is plain Java. Further examples for attributes are data bases for storing node A or a network address for executing of node B.
+
+[0052] A transformation step for transforming node A into a corresponding submodel comprising nodes A′, A1′, A2′ produces different transformation artifacts TA corresponding to the different attributes a1, a2 of node A. These transformation artifacts TA can be consumed by an transformation step S2 transforming node B comprising attributes b1, b2 to a sub-module comprising nodes B′, B1′ and B2′.
+
+[0053] FIG. 3 shows a further diagram for illustrating the method for transforming an object model according to various embodiments. A transformation step instance 1 produces a transformation artifact TA1 being consumed by transformation step instances 2, 4 which in turn generate transformation artifacts TA. There can be multiple transformation step instances for the same node of the model as well as multiple node-associated dependencies and transformation artifacts TA.
+
+[0054] Extra flexibility can be achieved by allowing additional dependencies to already registered transformation step instances. This makes it possible to extend already implemented transformations even when those were not designed to be extendable. As can be seen from FIG. 3, workflow is created using the transformation step instances, transformation artifacts they produce or use as input This workflow can then be analyzed to produce a necessary transformation step instance execution order, i. e. a information step instance sequence list TSSL. The resulting or transformation step instances are then executed one by one. In a possible embodiment, the transformation step templates can be independent plug-ins. The transformation framework needs not to be aware of any specific plug-ins in advance.
+
+[0055] FIG. 4 shows a simple example of an object model to be transformed. A node such as node A can also be a transformation artifact TA with a transformation artifact ID TA-ID. For example, the transformation artifact TA-ID of the node A forming a transformation artifact “TA X”, can comprise for example the following code:
+
+[0056] IF Node.a1=Z THEN COMPATIBLE:
+
+[0057] 1. CREATE Transformation Step Instance (TSI) “TSI 1”
+
+[0058] 2. REGISTER INPUT TA-ID “TA X” for TSI “TSI 1”
+
+[0059] 3. REGISTER OUTPUT TA-ID “TA X1” for TSI “TSI 1”
+
+[0060] ELSE INCOMPATIBLE
+
+[0061] “TA X1” can also be an element of the target object model.
+
+[0062] An example for a transformation step code TSC of a transformation step template TST for the exemplary object model of FIG. 4 is:
+
+[0063] INPUTS: “TA X”=Transformation Artifact (TA) with TA-ID “TA X”
+
+[0064] OUTPUTS: “TA X1”=Transformation Artifact (TA) with TA-ID “TA X1”
+
+[0065] EXECUTABLE CODE:
+
+[0066] 1. CREATE NEW Transformation Artifact “TA X1”
+
+[0067] 2. SET attribute “TA X1.a1” to the value of “TA X.a1”
+
+[0068] In a possible embodiment, after the generation of a transformation work flow in step S1 as shown in FIG. 1 the transformation step instances TSI which are not located on transformation work flow paths connecting a model element of the object model with a model element of the target object model are deleted. FIG. 5 illustrates by way of example for deletion of transformation step instance “TSI2” because the transformation artifact “TA X2” is not a target object model element. In a possible embodiment, the deletion of the transformation step is performed by means of a reversed Dijkstra-algorithm.
+
+[0069] FIG. 6 shows an example of instantiated transformation steps and transformation artifacts TA for a sample model having two models. In the given example, the model consists of two types of nodes. The first type of nodes is a model root representing a root element containing the second type of nodes. The second type of nodes is formed by modules resembling a number of nested module elements. The generator produces in the given example eclipse-specific Java project files and a Java source file for each module element. Additionally, compilation/packaging is performed after the Java files have been generated. When producing the Java sources, the already generated eclipse project is used to determine the placement of the source files. Accordingly, a code generation step depends on the Eclipsed project files. The code is provided for each module in order to perform the packaging. Consequently, the packaging step depends on module code products for all modules. A web service proxy generator uses pre-generated Java sources to produce Java sources for proxy classes. Accordingly, a WS proxy generation step depends on the module code product of the Java generator. There is a dependency injected for the packaging step. As additional sources are being produced, it is necessary to delay the packaging. The resulting instantiated transformation steps and transformation artifacts for the sample module are shown in FIG. 3.
+
+(57)
+Claim
+
+1. A method for transforming an object model by executing a transformation workflow consisting of transformation step instances, the method comprising:
+automatically generating said transformation workflow on the basis of transformation artifacts produced or used as inputs by transformation step instances derived from pre-defined transformation step templates.
+
+2. The method according to claim 1,
+wherein said transformation workflow is generated by connecting each transformation step instance using transformation artifacts as inputs with the transformation step instance producing said transformation artifacts.
+
+3. The method according to claim 1,
+wherein said object model comprises one of the models selected from the group consisting of:
+
+a UML-model,
+
+a SDL-model,
+
+a BPEL-model,
+
+a ERD-model and
+
+domain specific models.
+
+4. The method according to claim 1,
+wherein said object model is transformed into a target object model.
+
+5. The method according to claim 1,
+wherein said object model is transformed into heterogeneous software product artifacts.
+
+6. The method according to claim 4,
+wherein both the object model and the target object model comprises an attributed graph having model elements formed by nodes and edges.
+
+7. The method according to claim 6,
+wherein said transformation artifacts are elements of an object model.
+
+8. The method according to claim 6,
+wherein said transformation artifacts are elements of target object model.
+
+9. The method according to claim 1,
+wherein transformation step templates of the transformation step instances are loaded from a library.
+
+10. The method according to claim 9,
+wherein each transformation step template comprises
+
+an executable transformation step compatibility checker and
+
+an executable transformation step code.
+
+11. The method according to claim 10,
+wherein for each node of said object model, each transformation step compatibility checker of a transformation step template is executed to check whether said transformation step template is compatible with said node of said object model.
+
+12. The method according to claim 11,
+wherein if the transformation step template is compatible with the node of said object model a transformation step instance of said transformation step template is generated and
+
+transformation artifact identifiers of transformation artifacts produced or used as input by said transformation step instance are registered within a transformation registry as produced or used as inputs by the said transformation step instance.
+
+13. The method according to claim 12,
+wherein said transformation workflow is generated by merging identical transformation artifacts identifiers within the transformation registry.
+
+14. The method according to claim 13,
+wherein transformation step instances not located on transformation workflow paths connecting a model element of the object model with a model element of the target object model are deleted.
+
+15. The method according to claim 12,
+wherein the transformation step compatibility checker of a transformation step template registers transformation artifact identifiers of transformation artifacts within said transformation registry as used as inputs by different transformation step instances.
+
+16. The method according to claim 14,
+wherein a transformation step sequence list is generated for the transformation workflow indicating a sequence to execute the transformation step instances of said transformation workflow.
+
+17. The method according to claim 16,
+wherein said transformation step instance sequence list is generated by means of a Dijkstra-algorithm.
+
+18. The method according to claim 14,
+wherein the deletion of said transformation step instance TSI is performed by means of a reversed Dijkstra-algorithm.
+
+19. The method according to claim 10,
+wherein transformation step instances are executed by executing transformation step code from transformation step templates correspondent to said transformation step instances.
+
+20. The method according to claim 19,
+wherein the transformation step code invokes an external application program.
+
+21. The method according to claim 1,
+wherein the transformation workflow is executed by a computer program.
+
+22. An MDA-tool program module comprising instructions for performing the method according to claim 1.
+
+23. A transformation system which transforms an object model into a target object model or into heterogeneous software product artifacts by executing a transformation workflow automatically generated on the basis of transformation artifacts produced or used as inputs by transformation step instances derived from pre-defined transformation step templates stored in a library of said transformation system.
+
+24. The transformation system according to claim 23,
+wherein the transformation step template comprises
+
+an executable transformation step compatibility checker and an executable transformation step code.
+
+* * * * *

@@ -1,0 +1,247 @@
+Digger-loader
+
+(19) Europäisches Patentamt
+European Patent Office
+Office européen des brevets
+
+(11) EP
+0
+750
+702
+B1
+
+(12) FASCICULE DE BREVET EUROPEEN
+
+(45) Mention of the grant of the patent:
+05.01.2000
+Bulletin
+2000/01
+
+(21) Application number: 95912312.6
+
+(22) Date of filing:
+14.03.1995
+
+(51) Int. Cl.7: E02F 3/96
+
+(86) International application number:
+PCT/FR9500/301
+
+(87) International publication number:
+WO
+9525/
+202 (
+21.09.1995
+Gazette
+1995/
+40)
+
+(54)
+DIGGER-LOADER
+
+BAGGERLADER
+
+TRACTOPELLE
+
+(84) Designated Contracting States:
+BE
+CH
+DE
+ES
+GB
+IT
+LI
+
+(30) Priority:  16.03.1994 FR 9403307
+
+(43) Date of publication of application:
+02.01.1997
+Bulletin
+1997/01
+
+(73) Proprietor: Blondiaux, Claude
+69440 Saint-Maurice-sur-Dargoire (FR)
+
+(72) Inventor:
+
+* Blondiaux, Claude
+69440 Saint-Maurice-sur-Dargoire (FR)
+
+(74) Representative: Vuillermoz, Bruno
+et al
+Cabinet Laurent & Charras B.P. 32 20, rue Louis Chirpaz
+69131 Ecully Cédex
+69131 Ecully Cédex (FR)
+
+(56) References cited:
+:
+EP-A- 0 151 101
+DE-A- 3 932 555
+US-A- 3 807 586
+WO-A-93/06306
+FR-A- 2 595 107
+
+Note: Within nine months from the publication of the mention of the grant of the European patent, any person may give notice to the European Patent Office of opposition to the European patent granted. Notice of opposition shall be filed in a written reasoned statement. It shall not be deemed to have been filed until the opposition fee has been paid. (Art. 99(1) European Patent Convention).
+
+Description
+
+[0001]
+L'invention concerne un tractopelle perfectionné selon la préambule de la revendication 1.
+
+[0002]
+Un tel tractopelle est connu de DE-A-3 932 555.
+
+[0003]
+De manière connue, un tractopelle est un engin motorisé, comportant d'une part, un godet mu par voie hydraulique et susceptible de charger une quantité plus ou moins importante de matériaux, notamment de matériau meuble, tel que de la terre, et d'autre part une pelle, positionnée à l'extrémité d'un bras articulé, également mu hydrauliquement, et destinée à creuser notamment des tranchées.
+
+[0004]
+De manière générale, le godet se trouve à l'avant de ce type d'engin et la pelle à l'arrière.
+
+[0005]
+Afin de permettre l'utilisation de la pelle et du godet, le siège et les commandes de l'engin sont susceptibles de subir une rotation de 180 °, selon que l'on désire procéder au chargement de terre ou de matériaux meubles ou au creusement, notamment de tranchées. En outre, il est souvent requis de faire procéder à l'engin lui-même une telle rotation de 180°, impliquant de nombreuses manoeuvres, notamment lorsqu'il évolue dans des zones de surface réduite, et tout particulièrement dans les rues.
+
+[0006]
+Si lorsque ces deux types de travaux sont bien différenciés, notamment dans le temps, ce genre de tractopelle donne entière satisfaction, il n'en est pas de même dès lors que, comme cela peut être requis pour certains travaux, on souhaite procéder au creusement et à l'enlèvement simultanés de la terre, ou lorsque l'engin doit évoluer dans un espace réduit, insuffisant pour manoeuvrer, et entrainant de fait des pertes de temps conséquentes.
+
+[0007]
+L'objet de l'invention permet de s'affranchir de ces inconvénients.
+
+[0008]
+L'objet de l'invention est solutionée par les charactéristiques de la revendication 1.
+
+[0009]
+Elle propose un tractopelle comportant un godet et une pelle, ladite pelle étant montée à l'extrémité d'un bras articulé, et le godet et la pelle étant mus notamment par voie hydraulique, caractérisé en ce que le godet et la pelle sont implantés et articulés au niveau de la même extrémité du tractopelle.
+
+[0010]
+En d'autres termes, l'invention consiste à positionner le godet et la pelle soit au niveau de l'avant du tractopelle, soit à l'arrière, de telle sorte à pouvoir assurer quasiment simultanément l'opération de chargement et de creusement, sans changer la position du conducteur, ni l'orientation de l'engin, ce que les tractopelles connus à ce jour ne permettaient pas d'obtenir.
+
+[0011]
+Selon une caractéristique avantageuse de l'invention, la pelle peut vider directement le matériau dans le godet, qui peut alors s'élever à une hauteur suffisante pour vider son contenu, évitant de la sorte une reprise dudit matériau, et partant engendrant un gain de temps appréciable.
+
+[0012]
+Selon une autre caractéristique avantageuse de l'invention, et dans le but d'augmenter l'amplitude du débattement du godet, le bras d'actionnement de la pelle est monté sur une couronne dentée ou équivalent, d'axe de rotation vertical solidaire du chassis, et sur la périphérie de laquelle engrène un pignon actionné par un moto-réducteur. De la sorte, la pelle peut pivoter d'environ 250°, de telle sorte à laisser le champ libre à l'actionnement du godet.
+
+[0013]
+Selon une autre caractéristique de l'invention, la base du bras de la pelle est articulée sur le chassis de l'engin selon un axe d'articulation orienté horizontalement et perpendiculairement à l'axe longitudinal de l'engin, de telle sorte à permettre un accroissement du basculement dudit bras en direction du centre de l'engin par l'effet accru de son relevage, et à ainsi permettre, après avoir replié la pelle au maximum contre son bras d'actionnement, de conférer au godet un débattement optimum.
+
+[0014]
+Avantageusement, le moteur thermique assurant la progression du tractopelle et le moteur hydraulique associé au moteur thermique, destiné à permettre l'activation hydraulique du godet et de la pelle, sont positionnés sous ou au niveau du siège du conducteur, ou plus généralement en arrière du poste de commande, de telle sorte à libérer l'emplacement traditionnel du moteur, c'est à dire au niveau de l'avant de l'engin pour permettre le positionnement des pistons, verins et axes d'articulation respectivement du godet et du bras articulé à l'extrémité duquel est montée la pelle.
+
+[0015]
+Pour la même raison, l'axe de direction des roues avants directrices est décentré latéralement.
+
+[0016]
+Avantageusement, un timon peut être fixé réversiblement au tractopelle afin de permettre son déplacement en mode tracté, le dit timon comprenant en outre une bielle articulée, dont l'autre extrémité est destinée à venir se fixer également réversiblement au voisinage du point d'attache supérieur du vérin de relevage du bras d'actionnement de la pelle, de telle sorte à induire le soulèvement des roues avants de l'engin lorsque ledit vérin est activé.
+
+[0017]
+Selon une autre caractéristique de l'invention, l'élévation des roues avants de l'engin résulte de l'appui exercé par le godet sur ledit timon, une bielle étant en outre solidarisée reversiblement sur les bras du godet et sur le chassis de l'engin, afin de garantir le maintien fixe de l'attelage selon cette position.
+
+[0018]
+La manière dont l'invention peut être réalisée et les avantages qui en découlent ressortiront mieux de l'exemple de réalisation qui suit donné à titre indicatif et non limitatif à l'appui des figures annexées.
+
+[0019]
+La figure 1 est une représentation schématique d'une vue latérale du tractopelle conforme à l'invention.
+
+[0020]
+La figure 2 est une vue de trois quarts avant du tractopelle de la figure 1.
+
+[0021]
+La figure 3 est une représentation schématique en perspective d'une autre forme de réalisation de l'invention.
+
+[0022]
+La figure 4 est une vue schématique en plan, représentative du fonctionnement de l'engin selon la figure 3.
+
+[0023]
+La figure 5 est une vue schématique en perspective d'une autre forme de réalisation de l'invention.
+
+[0024]
+La figure 6 est une représentation schématique en perspective d'une possibilité d'attelage de l'engin conforme à l'invention.
+
+[0025]
+Le tractopelle conforme à l'invention est mû traditionnellement par deux roues arrière motrices (1) (mais il peut tout aussi bien l'être par les quatre roues (1, 2), voire au moyen de chenilles), et est dirigé par deux roues avants directionnelles (2), dont l'orientation est assurée par l'intermédiaire d'un volant (3) agissant au niveau d'un axe directionnel (4), lui-même intervenant au niveau de l'arbre de direction reliant les deux roues avant (2).
+
+[0026]
+Selon l'invention, le moteur thermique (5) est situé sous le siège (6) du conducteur, et assure d'une part, la progression en translation du tractopelle, et d'autre part, le fonctionnement d'un moteur hydraulique destiné à permettre le fonctionnement des différents outils montés sur le tractopelle.
+
+[0027]
+Avantageusement, le tractopelle comprend en position arrière un attelage trois points, representé par la référence (7), au niveau duquel peuvent être montés tous outils traditionnels comportant un tel système d'attelage.
+
+[0028]
+Selon l'invention, la partie avant du tractopelle comporte un godet chargeur (9), articulé à l'extrémité de deux bras (10), eux-mêmes articulés à leurs autres extrémités au niveau d'un axe d'articulation (11) solidaire du chassis (8). Ce godet (9) est mû en trajectoire ascendante et descendante au moyen d'un ensemble piston-vérin (15) également solidaire du chassis (8), et agissant au niveau d'un organe de liaison (23), solidarisé aux deux bras (10) à proximité immédiate de l'axe d'articulation (11) desdits bras.
+
+[0029]
+Parallèlement, le tractopelle comporte, également en partie avant, une pelle (12), elle-même articulée à l'extrémité d'un bras repliable (13), se décomposant en trois parties, à savoir :un pilier (30) relié au chassis (8) ;une flèche (31) fixée à l'extrémité supérieure du pilier (30) ;et un balancier (32), articulée à l'autre extrémité de la flèche (31), et portant la pelle (12).
+
+[0030]
+Le bras (13) comporte également trois vérins (16, 17, 18), destinés à assurer respectivement, le relevage du pilier (30), du balancier (32) par rapport à la flèche (31), et de la pelle (12) par rapport au balancier (32).
+
+[0031]
+Par ailleurs, le bras (13) est susceptible d'un débattement entre les deux bras articulés (10) du godet (9).
+
+[0032]
+Dans une première forme de réalisation de l'invention, par exemple représentée sur les figures 1 et 2, le pilier (30) du bras articulé (13) supportant la pelle (12) est articulé sur le chassis (8) par rapport à un axe d'articulation (14) horizontale et s'étendant perpendiculairement par rapport à l'axe longitudinal (26) de l'engin. Cet axe (14) est en outre positionné en amont de l'axe d'articulation (11) des bras (10) du godet (9), et du lieu d'implantation du vérin (15), de telle sorte à permettre à la pelle (12) de vider directement son contenu dans le godet (9) le cas échéant. De la sorte, le déplacement relatif du godet (9) et de la pelle (12) peut s'effectuer sans entrave ni gêne, permettant ainsi un travail simultané de ces deux outils, et partant, pour certaines applications, générer un gain de temps conséquent, dans la mesure où le conducteur n'a pas à effectuer toute une série de manoeuvres pour alternativement utiliser le godet, puis la pelle.
+
+[0033]
+Dans un souci d'optimisation du débattement du godet dans le plan vertical, on accroit la possibilité de basculement du pilier (30) du bras articulé (13) en direction du centre de l'engin, ce basculement extrême étant obtenu par relevage maximum du vérin (16) correspondant. On aboutit de la sorte à replier la pelle (12) au maximum contre le bras (13), et ainsi libérer l'accès pour le godet à un débattement vertical optimum (figure 5).
+
+[0034]
+Selon une autre forme de réalisation de l'invention, et toujours dans le but d'optimiser le débattement vertical du godet (12), le pilier (30) et le vérin (16) qui l'actionne sont solidarisés à leur base à une couronne dentée (33) à axe de rotation vertical solidarisé au chassis (figure 3), sur la périphérie de laquelle vient engrèner le pignon (34) d'un motoréducteur (35), avantageusement actionné par voie hydraulique. Ainsi, et comme on peut le voir sur la figure 4, le bras (13) est susceptible d'une rotation, par exemple voisine de 250°, propre à amener vers l'arrière, c'est à dire vers le poste de commande, la pelle (12), et ainsi libérer l'avant de l'engin pour permettre le travail selon une amplitude maximum du godet (9).
+
+[0035]
+Afin en outre de libérer l'espace nécessaire au débattement, d'une part des bras d'articulation et de fonctionnement (10) du godet (9) et (13) de la pelle (12), l'arbre de direction (19), relié mécaniquement ou hydrauliquement au moyen de bielles traditionnelles aux cardans de l'axe de direction (20) des roues avants directionnelles (2), et actionné par le volant (3) est décalé latéralement, ainsi que l'on peut l'observer sur la figure 2.
+
+[0036]
+Selon une caractéristique avantageuse de l'invention, un timon (21) peut être fixé réversiblement à l'avant du tractopelle, par exemple par boulonnage, ou au moyen d'ensembles axes - goupilles. De manière connue, un tel timon comporte à son extrémité libre un crochet (22), susceptible de venir se fixer sur une boule de remorquage, bien connue pour cette application. En outre, ce timon comporte une bielle articulée (24), susceptible de se fixer, également réversiblement au voisinage du point d'attache supérieur du vérin (16) du bras (13).
+
+[0037]
+De la sorte, une fois le timon (21) en place sur le tractopelle, avec la bielle (24) également fixée comme précisé précédemment, et attelé à une boule de remorquage, le conducteur du tractopelle fait porter l'extrémité de la pelle (12) sur le timon (21), puis en agissant au niveau du vérin (16), provoque le soulèvement des roues avant directrices (2) par réaction. Ainsi, seules les roues arrières portent, et le tractopelle peut être très aisément transporté sur son lieu de travail.
+
+[0038]
+Selon une autre forme de réalisation de l'invention, plus particulièrement décrite en liaison avec la figure 6, l'élévation des roues avants de l'engin lors de son transpor résulte de l'appui exercé par le godet (9) sur ledit timon (21), une bielle (25) étant en outre solidarisée reversiblement sur les bras (10) du godet (9) et sur le chassis (8) de l'engin, afin de garantir le maintien fixe de l'attelage selon cette position.
+
+[0039]
+Ainsi, le tractopelle de l'invention procure-t-il une plus grande facilité d'utilisation, de par sa structure, notamment dans le cadre de travaux où l'on souhaite mener simultanément les opérations de chargement et de creusement, mais également en des lieux dans lesquels les possibilités d'évolution sont réduites.
+
+Revendications
+
+1. Tractopelle comportant un godet chargeur (9) et une pelle (12), le godet et la pelle étant montés à l'extrémité de bras (10, 13), et le godet et la pelle étant mûs notamment par voie hydraulique, caractérisé :en ce que le godet chargeur (9) et la pelle (12) sont implantés et articulés au niveau de la même extrémité du tractopelle ;en ce que les bras (10) à l'extrémité desquels est monté le godet chargeur (9) sont coudés;et en ce que l'extrémité des bras (10) opposée à l'extrémité portant le godet chargeur (9) est articulé à l'extrémité supérieure d'un chevalement.
+2. Tractopelle selon la revendication 1, caractérisé en ce que le godet (9) et la pelle (12) sont implantés et articulés au voisinage de l'extrémité antérieure du châssis (8) du tractopelle.
+3. Tractopelle selon l'une des revendications 1 et 2, caractérisé en ce que le bras (13) d'actionnement de la pelle (12) est monté sur une couronne dentée ou équivalent (33), d'axe de rotation vertical solidaire du châssis (8), et sur la périphérie de laquelle engrène un pignon (34) actionné par un moto-réducteur (35), de telle sorte à permettre le pivotement de la pelle (12).
+4. Tractopelle selon l'une des revendications 1 et 2, caractérisé en ce que le pilier (30) du bras (13) d'actionnement de la pelle (12) est articulé sur le châssis (8) de l'engin, selon un axe d'articulation (14) orienté horizontalement et perpendiculairement à l'axe longitudinal (26) de l'engin, de telle sorte à permettre un accroissement du basculement dudit bras en direction du centre de l'engin par l'effet accru de son relevage, et à ainsi permettre, après avoir replié la pelle (12) au maximum contre son bras d'actionnement (13), de conférer au godet (9) un débattement optimum.
+5. Tractopelle selon l'une des revendications 1 à 4 caractérisé en ce que la pelle (12) peut vider son contenu directement dans le godet (9).
+6. Tractopelle selon l'une des revendications 1 à 5, caractérisé en ce que le moteur thermique (5) assurant la progression du tractopelle et le moteur hydraulique associé au moteur thermique, destiné à permettre l'activation hydraulique des bras d'articulation (10, 13) du godet (9) et de la pelle (12), sont positionnés sous ou au niveau du siège (6) du conducteur, ou en arrière par rapport à celui-ci.
+7. Tractopelle selon l'une des revendications 1 à 6, caractérisé en ce que l'arbre de direction (4) actionnant l'axe de direction (20) des roues avants directrices (2) est décentré latéralement.
+8. Tractopelle selon l'une des revendications 1 à 7, caractérisé en ce qu'un timon (21) est fixable réversiblement au tractopelle, ledit timon (21) comprenant en outre une bielle articulée (24), dont l'autre extrémité est destinée à venir se fixer également réversiblement au voisinage du point d'attache supérieur du vérin (16) du pilier (50) du bras (13) d'actionnement de la pelle (12), de telle sorte à induire le soulèvement des roues avants (2) lorsque ledit vérin est activé.
+9. Tractopelle selon l'une des revendications 1 à 8, caractérisé en ce qu'un timon (21) est fixable réversiblement au tractopelle, ledit timon (21) comprenant en outre une bielle (25) solidarisée réversiblement sur les bras (10) du godet (9) et sur le châssis (8) de l'engin, afin de garantir le maintien fixe de l'attelage selon cette position, ledit godet étant appliqué sur le timon (21) afin d'induire le soulèvement des roues avants (2).
+
+Ansprüche
+
+1. Baggerlader, der eine Laderschaufel (9) und einen Baggerlöffel (12) aufweist, wobei die Schaufel und der Löffel an dem Ende von Armen (10, 13) angebracht sind und die Schaufel und der Löffel insbesondere mittels einer Hydraulik angetrieben werden,    dadurch gekennzeichnet,
+daß die Laderschaufel (9) und der Baggerlöffel (12) im Bereich desselben Endes des Baggerladers angelenkt sind;
+
+daß die Arme (10), an deren Enden die Laderschaufel angebracht ist, gekrümmt sind und
+
+daß dasjenige Ende der Arme (10), welches dem die Laderschaufel (9) tragenden Ende gegenüberliegt, am oberen Ende eines Stützrahmens angelenkt ist.
+
+2. Baggerlader gemäß Anspruch 1, dadurch gekennzeichnet, daß die Laderschaufel (9) und der Baggerlöffel (12) in der Nähe des vorderen Endes des Fahrgestells (8) des Baggerladers angelenkt sind.
+3. Baggerlader gemäß einem der Anspniche 1 oder 2, dadurch gekennzeichnet, daß der Arbeitsarm (13) des Baggerlöffels (12) auf einem Drehkranz (33) oder dergleichen mit einer fahrgestellfesten vertikalen Drechachse angebracht ist, wobei ein Ritzel (34) mit dessen Umfang in Eingriff steht, welches von einem Getriebemotor (35) zur Ermöglichung der Schwenkbewegung des Baggerlöffels (12) angetrieben wird.
+4. Baggerlader gemäß einem der Anspniche 1 oder 2, dadurch gekennzeichnet, daß die Stütze (30) des Arbeitsarms (13) des Baggerlöffels (12) an dem Fahrgestell (8) der Maschine mit einer horizontal und rechtwinklig zu der Längsachse (26) der Maschine verlaufenden Schwenkachse (14) angelenkt ist, derart, daß ein verstärktes Einschwenken des Arms in Richtung auf die Mitte der Maschine durch anhaltende Einwirkung der Hochhebebewegung ermöglicht ist, und so, nachdem der Baggerlöffel (12) auf ein Maximum gegen seinem Arbeitsarm (13) zurückgeklappt worden ist, ermöglicht ist, daß der Laderschaufel (9) ein optimaler Hubbereich zur Verfügung steht.
+5. Baggerlader gemäß einem der Anspniche 1 bis 4, dadurch gekennzeichnet, daß der Inhalt des Baggerlöffels (12) direkt in die Laderschaufel (9) entleerbar ist.
+6. Baggerlader gemäß einem der Ansprüche 1 bis 5, dadurch gekennzeichnet, daß der den Fahrantrieb bildende Verbrennungsmotor (5) und der dem Verbrennungsmotor zugeordnete Hydraulikmotor zur hydraulische Betätigung der Arbeitsarme (10, 13) der Laderschaufel (9) und des Baggerlöffels (12) unter oder auf Höhe des Fahrersitzes (6), oder hinter diesem angeordnet sind.
+7. Baggerlader gemäß einem der Ansprüche 1 bis 6, dadurch gekennzeichnet, daß die Lenkwelle (4), die die Lenkachse (20) der vorderen Lenkräder (2) antreibt, seitlich versetzt angeordnet ist.
+8. Baggerlader gemäß einem der Anspniche 1 bis 7, dadurch gekennzeichnet, daß eine Zugstange (21) an dem Baggerlader reversibel befestigbar ist, wobei die Zugstange (21) außerdem einen Lenkerhebel (24) aufweist, dessen anderes Ende auf gleiche Weise reversibel in der Nachbarschaft des oberen Anschlußpunktes des Zylinders (16) der Stütze (50) des Arbeitsarms (13) des Baggerlöffels (12) befestigbar ist, so daß bei Betätigung des Zylinders ein Anheben der Vorderräder (2) erfolgt.
+9. Baggerlader gemäß einem der Ansprüche 1 bis 8, dadurch gekennzeichnet, daß eine Zugstange (21) an dem Baggerlader reversibel befestigbar ist, wobei die Zugstange (21) außerdem eine Stange (25) aufweist, die reversibel an den Armen (10) der Laderschaufel (9) und an dem Fahrgestell (8) der Maschine befestigt ist, um die Stellung der Anhängung zu fixieren, wobei die Laderschaufel zum Anheben der Vorderräder (2) an der Zugstange (21) angreift.
+
+Claims
+
+1. Digger-loader comprising a bucket (9) and a shovel (12), the bucket and the shovel being mounted at the end of articulated arms (10, 13), and the bucket and the shovel being driven especially by hydraulic means, characterized :in that the bucket (9) and the shovel (12) are fitted and articulated at the same end of the digger-loader ;in that the arms (10) at the end of which is mounted the bucket (9) are bent;and in that the ends of the arms (10) opposite to the end carrying the bucket (9) are articulated at the top end of a head-frame.
+2. Digger-loader according to Claim 1, characterized in that the bucket (9) and the shovel (12) are fitted and articulated in the vicinity of the front end of the chassis (8) of the digger-loader.
+3. Digger-loader according to either of Claims 1 and 2, characterized in that the arm (13) operating the shovel (12) is mounted on a ring gear or equivalent (33) which has a vertical axle of rotation integral with the chassis (8), and on the periphery of which there meshes a pinion (34) operated by a geared motor (35), in such a way as to permit the pivoting of the shovel (12).
+4. Digger-loader according to either of Claims 1 and 2, characterized in that the pillar (30) of the arm (13) operating the shovel (12) is articulated on the chassis (8) of the machine, with an axle of articulation (14) which is oriented horizontally and perpendicular to the longitudinal axis (26) of the machine, in such a way as to permit an increase in the tilting of said arm in the direction of the center of the machine via the increased effect of its elevation, and thus, after the shovel (12) has been folded back to the maximum extent against its operating arm (13), in order to provide the bucket (9) with an optimum clearance.
+5. Digger-loader according to one of Claims 1 to 4, characterized in that the shovel (12) can empty its contents directly into the bucket (9).
+6. Digger-loader according to one of Claims 1 to 5, characterized in that the thermal engine (5) providing for the advance movement of the digger-loader, and the hydraulic motor which is associated with the thermal engine and which is intended to permit hydraulic actuation of the articulation arms (10, 13) of the bucket (9) and of the shovel (12), are positioned under or at the level of the seat (6) for the operator, or to the rear of this seat.
+7. Digger-loader according to one of Claims 1 to 6, characterized in that the steering shaft (4) operating the steering spindle (20) of the directional front wheels (2) is off-centered laterally.
+8. Digger-loader according to one of Claims 1 to 7, characterized in that a drawbar (21) can be fixed reversibly to the digger-loader, said drawbar (21) comprising in addition an articulated connection rod (24) whose other end is intended to be fixed, again reversibly, in the vicinity of the upper attachment point of the jack (16) of the pillar (50) of the arm (13) operating the shovel (12), in such a way as to induce the raising of the front wheels (2) when said jack is actuated.
+9. Digger-loader according to one of Claims 1 to 8, characterized in that a drawbar (21) can be fixed reversibly to the digger-loader, said drawbar (21) comprising in addition a connection rod (25) which is fitted reversibly on the arms (10) of the bucket (9) and on the chassis (8) of the machine, in order to guarantee that the linkage system is held fixed in this position, said bucket being applied on the drawbar (21) in order to induce the raising of the front wheels (2).
+
+Drawing

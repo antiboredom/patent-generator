@@ -1,0 +1,525 @@
+Process For The Detection Of Cancer Using Nuclear Magnetic Resonance
+
+*US5213101A*
+
+(12) United States Utility Patent (10) Patent No:  US 5,213,101 A
+
+Fossel
+
+(45) Date of Patent: May 25, 1993
+
+(54)  Process for the detection of cancer using nuclear magnetic resonance
+
+(75) Inventor:  Eric T. Fossel, Chestnut Hill, Massachusetts  (US)
+(73) Assignee:  The Beth Israel Hospital Association, Boston, Massachusetts
+Type: U.S.
+( * ) Notice:  Subject to any disclaimer, the term of this patent is extended or adjusted under 35 U.S.C. 154(b) by
+0 days.
+(21) Appl. No.:  07/517,400
+(22) Filed:  Apr. 27, 1990
+
+(51) Int. Cl.5 A61B 5/055
+(52) U.S. Cl. 286/532;
+436/64;
+436/71;
+436/173;
+324/312
+(58) Field of Search  128/653.1;
+436/173;
+436/64;
+436/71;
+324/307-309;
+324/312;
+324/318
+
+(56) References Cited
+
+U.S. PATENT DOCUMENTS
+
+3,420,634   1/1969
+Godsey
+
+436/173
+3,789,832   2/1974
+Damadian
+
+128/653
+OTHER PUBLICATIONS
+
+Science News, vol. 137, p. 236, Apr. 14, 1990, "NMR Test Fails to Identify Cancer".
+
+Shulman, "NMR-Another Cancer Test Disappointment", New England Journal of Medicine vol. 322, No. 14, Apr. 5, 1990, pp. 1002-1003.
+
+(74) Primary Examiner —
+Kyle L.
+
+Howell
+
+Assistant Examiner —
+
+Attorney, Agent, or Firm —
+Lorusso & Loud
+Exemplary claim number —
+1
+Art Unit —
+335
+
+(57)
+Abstract
+
+[00001]
+
+A technique is disclosed for the detection of cancer using nuclear magnetic resonance (NMR). Specifically, NMR parameters for protons of lipid methyl and/or methylene groups are determined and compared against a corresponding value for healthy patients. In the preferred embodiments, an NMR spectrometer is employed in conjunction with a Fourier transformer to provide a spectrum for non-water components of blood, blood serum or blood plasma and the width of the methyl and/or methylene groups is measured at half-height as a determination of spin-spin relaxation time (T.sub.2) which is the parameter used for purposes of comparison with healthy controls. Suppression of the water proton signal is employed where necessary in order to obtain a suitable spectrum for the non-water component protons.
+
+15 Claims, 4 Drawing Sheets,
+
+and
+5
+Figures
+
+[00002]
+
+This application is a continuation of copending U.S. Ser. No. 07/325,773 filed on Mar. 20, 1989, now abandoned, which is a continuation of U.S. Ser. No. 07/262,073 filed on Oct. 24, 1988, now abandoned, which is a continuation of U.S. Ser. No. 07/188,752 filed on Apr. 29, 1988, now abandoned, which is a continuation of U.S. Ser. No. 07/036,943 filed on Apr. 10, 1987, now abandoned, which is a divisional of U.S. Ser. No. 07/833,840 filed Feb. 26, 1986, now abandoned.
+
+BACKGROUND OF THE INVENTION
+
+[00003]
+
+1. Field of the Invention
+
+[00004]
+
+The present invention relates to a diagnostic method and apparatus for the detection of cancer in a living patient.
+
+[00005]
+
+2. Prior Art
+
+[00006]
+
+Attempts utilize the technique of nuclear magnetic resonance (NMR) to aid in arriving at a clinical diagnosis of cancer are well known in the prior art.
+
+[00007]
+
+Damadian was the first to propose any medical use for nuclear magnetic resonance (NMR) and that was for the detection of malignancy. See R. Damadian, "Tumor Detection by Nuclear Magnetic Resonance," Science 171:1151-1153 (1971). U.S. Pat. No. 3,789,832 issued to Damadian covering an apparatus and method for application of nuclear magnetic resonance to surgically removed specimens to measure T.sub.1 and T.sub.2 for proton relaxation times, which values compared against values for healthy tissue were taken as an indication of cancer. U.S. Pat. Nos. 4,411,270 and 4,354,499 issued to Damadian cover apparatus and method for cancer detection with NMR imaging and scanning of whole-body specimens.
+
+[00008]
+
+A number of other investigators also reported that nuclear magnetic resonance relaxation times (T.sub.1) for water protons in organs of tumor-bearing animals have higher values than the corresponding T.sub.1 for water structure in organs of healthy animals. See Frey et al, J. Natl. Cancer Inst. 49, 903 (1972); Inch et al, J. Nat. Cancer Inst. 52, 353 (1974); Iijima et al, Physiol. Chem. and Physics 5, 431 (1973); and Hazlewood et al, J. Natl. Cancer Inst. 52, 1849 (1974).
+
+[00009]
+
+Today, despite uncertainty regarding mechanistic details, it is well known that biophysical changes which occur in malignant cells often result in alterations of the proton NMR signal. See D. G. Taylor et al, "A Review of the Magnetic Resonance Response of Biological Tissue and Its Applicability to the Diagnosis of Cancer by NMR Radiology," Computed Tomography, 5:122-133 (1981). Such changes form the physical basis for detection of tumors by proton NMR imaging. See R. Zimmerman et al, "Cerebral NMR: Diagnostic Evaluation of Brain Tumors by Partial Saturation Technique with Resistive NMR," Nueroradiology 27:9-15 (1985) and K. Ohtomo, "Hepatic Tumors: Differentiation by Transverse Relaxation Time (T.sub.2) of Magnetic Resonance Imaging," Radiology 155:421-423 (1985). However, NMR imaging is not likely to be widely applied as a screening test for malignancy because of accessibility and economic factors.
+
+[00010]
+
+Proton NMR studies on excised tumors, as well as on plasma and serum, from experimental animals and patients have often shown differences in the relaxation parameters T.sub.1, T.sub.2 and T.sub.2 * as a function of malignancy. Such findings have been reported by the following:
+
+[00011]
+
+L. McLachlan, "Cancer-induced Decreases in Human Plasma Proton NMR Relaxation Rates," Phys. Med. Biol. 25:309-315 (1980);
+
+[00012]
+
+F. Smith et al, "Nuclear Magnetic Resonance Imaging of the Pancreas," Radiology 142:677-680 (1982);
+
+[00013]
+
+P. Beall et al, "The Systemic Effect of Elevated Tissue and Serum Relaxation Times for Water in Animals and Humans with Cancers," NMR Basic Principles and Progress, P. Diehl et al, Eds., 19:39-57 (1981);
+
+[00014]
+
+R. Floyd, "Time Course of Tissue Water Proton Spin-lattice Relaxation in Mice Developing Ascites Tumor," Cancer Res. 34:89-91 (1974);
+
+[00015]
+
+C. Hazelwood et al, "Relationship Between Hydration and Proton Nuclear Magnetic Resonance Relaxation Times in Tissues of Tumor Bearing and Nontumor Bearing Mice: Implications for Cancer Detection," J. Natl. Cancer Inst. 52:1849-1853 (1974); and
+
+[00016]
+
+R. Klimek et al, "A Discussion of Nuclear Magnetic Resonance (NMR) Relaxation Time of Tumors in Terms of Their Interpretation as Self-organizing Dissipative Structures, and of Their Study by NMR Zeugmatographic Imaging," Ginekol Pol. 52:493-502 (1981).
+
+[00017]
+
+However, due to extensive overlap of groups and small differences between the means of groups, these methodologies are not clinically useful.
+
+[00018]
+
+While most of the prior art mentioned above describes applications of NMR to analysis of tissue, it is also known to subject body fluids to such analysis. This is described, for example, by Beall et al., supra.
+
+[00019]
+
+The foregoing prior art studies and methods, as well as all other prior art NMR methods for the detection of malignancy, rely on the observation of the composite NMR signal arising from all protons in the tissue or blood derived samples. This composite signal is dominated by the protons of water, obscuring the NMR signal from other proton-containing constituents of the sample. Indeed, the prior art believed that the apparent correlation between malignancy and observed changes in NMR parameters was due to "changes in water structure," quoting Frey et al., supra.
+
+[00020]
+
+In other applications of proton NMR spectroscopy, it was known to suppress the signal from the solvent (such as water) in sample.
+
+[00021]
+
+At present, a reliable and statistically unequivocal NMR method of diagnosing the presence of cancer in a living patient has not been developed.
+
+SUMMARY OF THE INVENTION
+
+[00022]
+
+Accordingly, one object of the invention is to provide an apparatus for diagnosing the presence of cancer in a living patient.
+
+[00023]
+
+Yet another object is to provide such an apparatus which can arrive at such a diagnosis based on a sample of a bodily fluid drawn from a patient.
+
+[00024]
+
+These and other objects and features of the present invention will become apparent to those skilled in the art from a reading of the description of the invention which follows.
+
+[00025]
+
+The invention proceeds from the realization that the components of the NMR spectrum which have significant predictive value may be masked by other materials in the sample. By eliminating the masking, as by eliminating the water signal, the previously masked spectrum of these components is revealed.
+
+[00026]
+
+In accordance with the invention, a sample of a patient's bodily fluid is subjected to nuclear magnetic resonance spectroscopy to generate a nuclear magnetic resonance spectrum. A resonance line generated by a non-water component of the sample is selected, and the full width of this resonance line, e.g., at half its height, is measured. The full width so measured has proved to be a statistically reliable measure of the presence or absense of cancer in the patient.
+
+[00027]
+
+In a preferred embodiment, there is provided a means for storing a predetermined value or range of values which are associated with individuals in which cancer is absent. There is also provided a means for comparing the measured linewidth with the value or range of values so stored.
+
+[00028]
+
+In preferred embodiments, the bodily fluid is blood, spinal fluid, or bone marrow plasma; blood is especially advantageous. The component of interest is lipidic, and is preferably from the methyl and methylene groups of the lipoprotein lipids; and the water signal is suppressed to make the resonance lines of the components of interest more pronounced.
+
+BRIEF DESCRIPTION OF THE DRAWINGS
+
+[00029]
+
+In the drawings:
+
+[00030]
+
+FIG. 1 is a typical NMR spectrum for the non-water components of a plasma sample from a healthy control centered on 360 MHz, obtained in accordance with the present invention;
+
+[00031]
+
+FIG. 2 is an NMR spectrum for the same plasma sample from which the spectrum of FIG. 1 was obtained, using the same equipment and pulse frequency, except without water suppression;
+
+[00032]
+
+FIG. 3 is an expanded view of the methyl and methylene region of FIG. 1;
+
+[00033]
+
+FIG. 4 is similar to FIG. 3 but for a patient with an untreated malignancy; and
+
+[00034]
+
+FIG. 5 schematically illustrates apparatus in accordance with the invention.
+
+DESCRIPTION OF THE PREFERRED EMBODIMENTS
+
+[00035]
+
+The water suppressed proton NMR spectrum obtained on human blood plasma is dominated by the resonances of the plasma lipoprotein lipids. Without water suppression, these non-water resonances are virtually overwhelmed by the water. Signal averaging allows observation of resonances of some moieties associated with non-water bodily fluid components, at high magnetic fields, even in the presence of the water resonance. However, the capability of modern NMR spectrometers to suppress nearly completely the water proton resonance facilitates practice of the present invention. The water suppressed proton NMR spectrum of plasma is essentially that of plasma lipoproteins and a few low molecular weight molecules. The protons of the proteins of plasma are obscured because they comprise a broad smear of unresolved resonances. The sharper resonances of the more mobile lipoprotein protons are superimposed on this broad background.
+
+[00036]
+
+FIG. 1 shows a water suppressed proton spectrum of a healthy control, and FIG. 2 shows a proton spectrum of the same sample without water suppression. The truncated resonance line of water is denoted A in FIG. 2. The resonance lines between 2 and 3 ppm (parts per million of resonance frequency) arise from the methyl and methylene groups of the lipoprotein lipids. An expanded view of this region of the proton spectrum is shown in FIG. 3 for a normal control and in FIG. 4 for a patient with untreated malignancy. Accordingly, in its preferred embodiments the present invention uses one of a number of conventional water suppression techniques, i.e., techniques for suppression of the water proton NMR signal. Numerous techniques have been devised to suppress the water proton NMR signal in other contexts. These may be broadly divided into two categories: (1) those that aim not to excite the water proton signal, e.g., rapid scan correlation spectroscopy and the selective excitation technique, and (2) those that arrange for the water proton magnetization to be extremely small at the time the observe radiofrequency (rf) pulse is applied, e.g., the inversion recovery technique and saturation. These and other solvent suppression techniques are described by P. J. Hore in "Solvent Suppression in Fourier Transform Nuclear Magnetic Resonance," Journal of Magnetic Resonance 55,283-300 (1983) and the references footnoted therein. The preference for use of a water suppression technique in the present invention is dictated by limitations of the apparatus in distinguishing between the signal of the solvent protons and those of the moiety or species of interest. Accordingly, a sufficiently sensitive apparatus would eliminate the need for water suppression.
+
+[00037]
+
+In a preferred embodiment of the present invention the linewidth at half-height of the resonances of moieties, e.g., methyl and methylene groups, associated with the lipids of plasma lipoproteins are treated as the variable of interest. Full width at half-height W1/2 (linewidth) of an NMR resonance line is inversely proportional to the apparent spin-spin relaxation time (T.sub.2 *), i.e. ##EQU1##
+
+[00038]
+
+The process of the present invention operates on any lipid-containing bodily fluid, e.g., blood, spinal fluid or bone marrow plasma. Whole blood, serum or plasma may be used. While the test may be performed on any such lipid-containing body fluid, work to date has focused on whole blood, blood serum and blood plasma. In blood the lipids, inclusive of cholesterol, triglycerides and phospholipids, are present in the form of lipoproteins. The test for cancer will typically be performed in vitro, preferably on serum or plasma.
+
+[00039]
+
+The selected fluid of a suspect patient or other person to be screened for cancer is exposed to a magnetic field and radio-frequency energy to generate a nuclear magnetic resonance signal which is then processed to obtain a value for the selected parameter, e.g., W.sub.1/2, for lipid methyl and/or methylene protons. A relatively broad range of proton frequencies may be employed, e.g., 60 MHz and higher, preferably 200-400 MHz.
+
+[00040]
+
+The detected value for the selected parameter is then compared with the corresponding parameter for the healthy controls. In a preferred embodiment, values for methyl and methylene are averaged and an average value of 33 Hz or less (at a proton frequency of 360 MHz (8.45 T) or 400 MHz (9.40 T)) is taken as an indication of malignancy.
+
+[00041]
+
+Any conventional modern NMR spectrometer may be used in the practice of the present invention. In the preferred embodiments, an NMR spectrometer with a magnet at constant field strength is used and the NMR signal is Fourier transformed, with the full linewidth at half-height for proton resonances of methyl and methylene groups being the NMR parameter of interest.
+
+[00042]
+
+The present invention provides statistically and clinically significant differences in plasma lipoprotein lipid linewidth measurements as between patients with untreated malignancies, patients undergoing treatment for malignancies, patients with benign tumors, pregnant women and control groups.
+
+[00043]
+
+The example which follows serves to further illustrate a preferred embodiment of the present invention.
+
+EXAMPLE
+
+[00044]
+
+Blood samples were obtained from 215 individuals. Six patients were deleted because sufficient records were unobtainable. Data are reported for the remaining 209. In addition to plasma NMR measurements, HDL cholesterol levels were measured for most of the samples. Normal control samples were obtained from apparently healthy hospital personnel. Patients were selected from both the inpatient and outpatient populations. Patients with untreated malignancies, benign tumors, and surgically correctable conditions were selected blindly on several occasions by retrieving the blood samples of all preoperative patients for a given day. Patients with non-malignant illnesses were also studied in order to determine effects of certain disorders on the NMR measurements. Patients were particularly sought who had conditions with high cell turnover (ulcerative colitis, psoriasis, pregnancy), metabolic derangements (renal failure, hepatic failure, hyperthryroidism, diabetes) or cachexia and overwhelming illness. The patients were classified into six groups as shown in Table 1 on the basis of a detailed review of each patient's chart with respect to clinical and pathological diagnosis, extent of disease as evidenced by clinical, radiological, and laboratory measurements, and therapetutic interventions.
+
+[00045]
+
+Blood was collected into Vacutainer tubes containing EDTA. In some cases citrated samples were also obtained for comparison with EDTA samples. Heparin or any other anticoagulent could likewise have been used to stop the blood from coagulating to a non-liquid form. Each sample was then centrifuged to separate out the red cells and the supernatant plasma was removed and used for NMR analysis.
+
+[00046]
+
+Proton NMR spectra were obtained at radiofrequency pulses at either 360 MHz or 400 MHz using Bruker AM Pulsed Fourier transform spectrometers and a 5 mM OD proton probe. All samples were prepared in 5 mm OD tubes with, in most cases, a minimum of 0.4 ml plasma. Water suppression was accomplished by presaturation, applying discrete radiofrequency power at the position of the water resonance for six seconds prior to the 90° observation pulse. Sixteen free-induction decays were signal averaged and the resulting free induction decay was Fourier transformed resulting in a spectrum such as that shown in FIG. 1. An expanded version of the aliphatic region (0-2 ppm) was plotted and the full width at half-height W.sub.1/2 of the methyl (line C) and methylene (line B) resonances was measured. The average of these two values W.sub.1/2 (B) and W.sub.1/2 (C), in Hertz, was used as the indicative parameter. No perceptable difference was noted between 8.45 T (360 MHz) and 9.40 T (400 MHz). In order to analyze these results in comparison with previous methods, T.sub.1 values of samples with sufficent plasma volume (0.8 ml) were determined in an IBM mini-spec model PC-20 NMR spectrometer using the standard inversion recovery pulse sequence. The composite proton signal is observed at 20 MHz. The data thus obtained for each of the six groups of patients is summarized in Table 1 on the next page:
+
+TABLE 1
+__________________________________________________________________________
+IV - Benign Tumor VI
+II III Breast/ Malignant
+I Malignant
+Non-tumor
+Ovary/ V Tumor
+Designation
+Control
+Tumor Disease
+Uterus
+Endocrine
+Prostate
+Pregnancy
+Treated
+__________________________________________________________________________
+Number 40 .sup. 64.sup.a
+46 8 5 10 12 .sup. 29.sup.b
+Male 15 29 28 0 2 10 0 14
+Female 25 30 18 8 3 0 12 14
+Age Range
+22-58 24-90 20-91 32-46 23-85 58-80 20-37 16-86
+Linewidth
+40.1 .+-. 1.4
+29.0 .+-. 2.7
+36.9 .+-. 2.2
+38.9 .+-. 1.6
+33.4 .+-. 3.5
+32.2 .+-. 3.2
+31.0 .+-. 3.4
+33.2 .+-. 3.9.sup.c
+T.sub.1 1.91 .+-. 0.18
+1.98 .+-. 0.21
+1.94 .+-. 0.14
+HDL Cholesterol
+50 .+-. 14
+38 .+-. 18
+43 .+-. 28
+__________________________________________________________________________
+.sup.a One patient was tested before treatment and with progressive
+disease after treatment.
+.sup.b Four patients were also tested before treated.
+.sup.c See text for further evaluation.
+NOTE:
+There were a total of 214 patients ranging in age from 20 to 91 years.
+
+[00047]
+
+In experiments, linewidth measurements would detect changes as small as one Hertz. The reproductibility of the measurement expressed as differences in multiple determinations on the same sample was also one Hertz.
+
+[00048]
+
+The tumor type or disease type, together with the linewidth range, for each type are given in tables 2-5 below.
+
+TABLE 2
+______________________________________
+Tumor distribution and linewidth range for patients in Group II.
+Primary Tumor Number Linewidth Range
+______________________________________
+Breast 12 28.0-32.5
+Gastrointestinal 8 23.0-33.5
+(colon, gastric,
+pancreatic ca)
+Lymphomas 6 27.5-32.5
+(diffuse histiocytic,
+nodular poorly differ-
+entiated)
+Leukemias 9 25.5-31.0
+(CLL, AMMOL, AML, CML)
+Genitourinary 12 22.0-33.0
+(prostate, bladder,
+testicular, renal cell,
+ovarian, endometrial,
+teratocarcinoma)
+Lung 6 24.5-31.5
+(adenocarcinoma,
+squamous cell ca, oat
+cell)
+Central Nervous System
+5 27.5-33.0
+(neural sarcoma,
+meningioma, glioblastoma)
+Head & Neck 2 31.0, 31.5
+Miscellaneous 4 23.0-31.5
+(melanoma, thymoma,
+mesothelioma, Ewing
+sarcoma)
+______________________________________
+
+TABLE 3
+______________________________________
+Tumor burden and linewidth range for patients in Group II.
+Tumor Burden Number Linewidth Range
+______________________________________
+Localized 21 23.0-33.0
+Locally invasive
+14 22.0-31.5
+Metastatic 20 24.0-33.5
+Systemic (leukmias)
+9 25.5-31.0
+______________________________________
+
+TABLE 4
+______________________________________
+Disease distribution and linewidth range for patients in Group IV.
+Disease Number Linewidth Range
+______________________________________
+Cardiovascular 6 35.5-38.5
+Pulmonary 2 39.0, 41.5
+Orthopedic 4 36.5-41.5
+Gastrointestinal
+7 34.5-40.0
+Sepsis 4 34.5-37.0
+Endocrine 3 35.0-37.5
+Renal 3 34.5-37.0
+CNS 3 34.0-39.5
+Hematological 4 36.0-40.5
+Genitourinary 5 34.0-43.0
+Miscellaneous 5 33.0-40.0
+______________________________________
+
+TABLE 5
+______________________________________
+Tumor distribution and linewidth range for patients in Group VI.
+Primary Tumor Number Linewidth Range
+______________________________________
+Breast 7 28.5-38.5
+Gastrointestinal
+1 30
+Lymphomas 1 29.2
+Leukemias 9 25-39
+Genitourinary 4 28-41
+Lung 2 31, 33
+CNS 1 34.5
+Head & Neck 1 34.5
+Endocrine 1 33.5
+Miscellaneous 1 39.5
+______________________________________
+
+[00049]
+
+The experimental data (Tables 1-5) shows a significant difference between Group I and Group II (p<0.0001). This data demonstrates that lipoprotei lipid linewidth discriminates between patients with uncontrolled proliferative disease and normal controls. This result is in contrast to various measurements which have been reported in the prior art in connection with attempts to differentiate patients with malignancies. Two of such prior art methods are plasma high density lipoprotein (HDL) cholesterol levels and the NMR spin-lattice relaxation parameter T.sub.1 for the total proton spectrum of plasma. Table 1 shows that there was a small increase in the mean T.sub.1 for Group II, but there was significant overlap between this group and the control group. T.sub.1 values for 69% of the patients were within 1 standard deviation of the normal mean value, and 96% were within 2 standard deviations. Consequently, measurement of total plasma proton T.sub.1 was not found to be diagnostic of malignancy. Similarly, although mean HDL cholesterol decreased in Group II, the overlap with the control group was sufficiently large so as to be nondiagnostic.
+
+[00050]
+
+There was a small decrease in mean lipoprotein linewidth for patients with benign tumors (Group III) and patients with diseases other than malignancies (Group IV), as compared to Group I (0.05>p>0.02). Group and IV are both clearly different from Group II (p<0.0001). There was, however, marked overlap between pregnant women (Group V) and Group II (p>0.05). Group VI was clinically the most heterogeneous and also had t largest range of linewidth values.
+
+[00051]
+
+Linewidth measurements were found to be diagnostic of malignant disease but not of tumor type or tumor burden (Table 2).
+
+[00052]
+
+Patients in Group III all had benign tumors confirmed by biopsy reports. The mean linewidth of samples from these patients, which were obtained shortly before biopsy was lower than the mean value for normal healthy adults. Comparison of patients in Groups II and III, paired for benign and malignant tumors, indicates that linewidth measurements are discriminative between the two groups (Table 3) (p<0.0001). One elderly patient with benign prostatic hypertrophy was the only exception, which raises the possibility of a small, undetected focus of malignancy in this patient.
+
+[00053]
+
+Group IV patients were selected for non-tumor diseases and included a wide spectrum of disorders (Table 4). This population ranged from moderately to severely ill, with emphasis on the severely ill. This group was specifically designed to include elderly patients and patients with poor nutritional status, acute infection, renal failure, endocrine abnormalities, or proliferative, non-tumor disorders (e.g., polycythemia, ulcerative colitis, psoriasis). The objective in selecting these patients was to determine if severe illness per se, in the absence of clinically or pathologically evident malignancy, would result in linewidth measurements which were the same as those of the patients with malignancies. The results indicate that severe illness or proliferative disease alone does not produce change in lipoprotein linewidth comparable to that of malignancy. However, it was observed that the mean linewidth value for this group was lower than for the control group (0.05>p>0.02). Eight the 46 patients, including some patients with acute myocardial infarction, ulcerative colitis, polycythemia vera, and myelofibrosis, had values within two standard deviations of the normal mean, with the remainder falling slightly below. However, only one patient in this group (linewidth=33 Hz) overlapped with the malignant patients in Group II. This was a male, age 28, with an umbilical hernia.
+
+[00054]
+
+A small cohort of pregnant women was also studied (Group V). The rationale for selecting these patients was that if the change observed in malignancies was reflective of rapid, proliferative growth, then pregnant women should have values intermediate between benign and malignant tumor patients. The results indicated that this hypothesis is correct. Samples were obtained from five women at term, from two at the beginning of the third trimester, from three in the second trimester, and from two in the first trimester. As with the tumor patients, a single sample did not reflect fetal size but did indicate proliferative activity.
+
+[00055]
+
+Group VI constitutes a heterogeneous assortment of tumor patients undergoing or having recently completed treatment (<6 months), for whom was too early to determine their response to therapy. This group also had the greatest range of linewidth measurements, as would be expected (Table 5), although the results suggest that changes in lipoprotein linewidth in an individual tumor patient during therapy reflect the effect of treatment in the patient. Thus, a series of measurements can reflect the response of the patient to therapy.
+
+[00056]
+
+Referring now to FIG. 5, there is illustrated a nuclear magnetic resonance (NMR) spectrometer 2 which in the preferred embodiment is capable of performing proton NMR spectroscopy and which is preferably but not necessarily of the type that suppresses the NMR signal of water. The spectrometer 2 is adapted for examination of a sample 4, which in this example is human blood plasma contained within a test tube 6.
+
+[00057]
+
+In accordance with the invention, the spectrometer 2 contains means 8 for selecting at least one and preferably a plurality such as two NMR resonance lines in the NMR spectrum of the sample 4 and measuring the linewidth of the line or lines so selected. Preferably, the linewidth is measured at half the height of the line, but this is not necessary and linewidth can be measured at any predetermined fraction of the height of the line in question. Measurement at half of line height is preferred because this is a standard measurement carried out in the field of NMR spectroscopy.
+
+[00058]
+
+The spectrometer 2 is of conventional construction and includes in addition to all its other structure means 10 for storing a value or range of values. In the preferred embodiment, a linewidth which is either measured directly or derived from a plurality of such direct measurements is compared with a value or range of values which represents the value or range of values to be expected from normal patients, i.e. patients who are free of cancer. In accordance with the invention, the spectrometer 2 also includes computer means 12 for classifying the measured or derived linewidths as normal (i.e. cancer-free) or abnormal (i.e. cancerous) based upon the stored information. This may be done by comparison, subtraction, or any other appropriate mathematical operation.
+
+[00059]
+
+In the preferred embodiment, the selecting and measuring means 8 is preadjusted to measure the linewidths of the methyl and methylene groups of the lipoprotein lipids. This may be done by suppressing the signal of water from the NMR spectrum of the sample 4, or may alternatively be done directly where the spectrometer 2 is sensitive enough to do so.
+
+[00060]
+
+In the preferred embodiment, the linewidths of the methyl and methylene groups are averaged to produce a composite linewidth which is the mathematical mean of the two. This composite linewidth is preferably then compared with 33 Hz, the value which is preferably stored in the means 10. The actual comparison is carried out by the classifying means 12. Where the comparison indicates that the composite linewidth is less than 33 Hz, this indicates an abnormal (i.e. cancerous) sample 4.
+
+[00061]
+
+The invention may be embodied in other specified forms without departing from the spirit or essential characteristics thereof. The present embodiments are therefore to be considered in all respects as illustrative and not restrictive, the scope of the invention being indicated by the appended claims rather than by the foregoing description, and all changes which come within the meaning and range of equivalency of the claims are therefore intended to be embraced therein.
+
+(57)
+
+I claim:
+
+1. An improved NMR spectrometer for screening patients who do not have cancer from those who might have cancer comprising:
+
+a) means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line;
+
+b) means for measuring the width of said line generated at a predetermined fraction of its height;
+
+c) means for storing the width measured;
+
+d) means for storing a range of values to constitute a standard for screening; and
+
+e) means for comparing and determining whether the width of the sample measured and stored is within said range of values stored to enable samples with no possibility of cancer to be screened from those samples with a possibility of cancer.
+
+2. The apparatus of claim 1, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line includes means for producing at least one resonance line which corresponds to an aliphatic portion of the sample.
+
+3. The apparatus of claim 1, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line includes means for producing the portion of the resonance line corresponding to 0-2 ppm.
+
+4. The apparatus of claim 1, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line includes means for producing a resonance line corresponding to methyl and methylene groups of lipoprotein lipids.
+
+5. The apparatus of claim 1, wherein the means for measuring the width of the resonance line generated at a predetermined fraction of its height includes means to measure the width of the resonance line at one-half (1/2) of its height.
+
+6. An improved NMR spectrometer for screening patients who do not have cancer from those who might have cancer comprising:
+
+a) means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line;
+
+b) means for measuring the width of said line generated at a predetermined fraction of its height;
+
+c) means for storing the width measured;
+
+d) means for storing a value to constitute a standard for screening; and
+
+e) means for comparing and determining whether the width of the sample measured and stored is less than said value stored to enable samples with no possibility of cancer to be screened from those samples with a possibility of cancer.
+
+7. The apparatus of claim 6, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line includes means for producing at least one resonance line corresponding to an aliphatic portion of the sample.
+
+8. The apparatus of claim 6, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line includes means for producing the portion of the resonance line corresponding to 0-2 ppm.
+
+9. The apparatus of claim 6, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a resonance line includes means for producing a resonance line corresponding to methyl and methylene groups of lipoprotein lipids.
+
+10. The apparatus of claim 6, wherein the means for measuring the width of the resonance line generated at a predetermined fraction of its height includes means to measure the width of the resonance line at one-half (1/2) of its height.
+
+11. An improved NMR spectrometer for screening patients who do not have cancer from those who might have cancer comprising:
+
+a) means for generating a water-suppressed NMR spectrum from a sample to produce a plurality of resonance lines;
+
+b) means for measuring the widths of said lines generated at a predetermined fraction of their heights and calculating an average width of said lines;
+
+c) means for storing the average width measured;
+
+d) means for storing a value to constitute a standard for screening; and
+
+e) means for comparing and determining whether the width of the sample measured in and stored is less than said value stored.
+
+12. The apparatus of claim 11, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a plurality of resonance lines includes means for producing at least one resonance line corresponding to an aliphatic portion of the sample.
+
+13. The apparatus of claim 11, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a plurality of resonance lines includes means for producing the portion of the resonance lines corresponding to 0-2 ppm.
+
+14. The apparatus of claim 11, wherein the means for generating a water-suppressed NMR spectrum from a sample to produce a plurality of resonance lines includes means for producing a resonance line corresponding to methyl and methylene groups of lipoprotein lipids.
+
+15. The apparatus of claim 11, wherein the means for measuring the width of the resonance lines generated at a predetermined fraction of their height includes means to measure the width of the resonance lines at one-half (1/2) of their height.
+
+* * * * *

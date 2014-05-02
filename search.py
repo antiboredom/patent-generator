@@ -1,19 +1,23 @@
 import random
-from pattern.search import Pattern
+from pattern.search import Pattern, STRICT, search
 from pattern.en import parsetree, wordnet
 
 #p = Pattern.fromstring('NP * than * NP')
 #p = Pattern.fromstring('RB VB|VBZ|VBP|VBD|VBN|VBG NP')
 
-def re_search(text, search_string):
+def re_search(text, search_string, strict=False):
     tree = parsetree(text, lemmata=True)
-    pat = Pattern.fromstring(search_string)
-    results = pat.search(tree)
+    #pat = Pattern.fromstring(search_string)
+    #results = pat.search(tree, STRICT)
+    if strict:
+        results = search(search_string, tree, STRICT)
+    else:
+        results = search(search_string, tree)
     return results
 
 
-def search(text, search_string):
-    results = re_search(text, search_string)
+def search_out(text, search_string, strict=False):
+    results = re_search(text, search_string, strict)
     output = []
     for match in results:
         sent = []
@@ -22,6 +26,9 @@ def search(text, search_string):
         output.append(" ".join(sent))
     return output
 
+def contains(text, search_string):
+    results = re_search(text, search_string)
+    return len(results) > 0
 
 def hypernym_search(text, search_word):
     output = []
@@ -40,7 +47,7 @@ def hypernym_search(text, search_word):
 
 
 def hypernym_combo(text, category, search_pattern):
-    possibilities = search(text, search_pattern)
+    possibilities = search_out(text, search_pattern)
     #print possibilities
     output = []
     for p in possibilities:
@@ -81,8 +88,8 @@ if __name__ == '__main__':
 
     #results = list_hypernyms(sys.argv[1])
     text = sys.stdin.read()
-    results = search(text, sys.argv[1])
+    #results = search_out(text, sys.argv[1], True)
     #results = hypernym_search(text, sys.argv[1])
-    #results = hypernym_combo(text, sys.argv[1], sys.argv[2])
+    results = hypernym_combo(text, sys.argv[1], sys.argv[2])
     for result in results:
         print result

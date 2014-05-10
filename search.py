@@ -2,13 +2,8 @@ import random
 from pattern.search import Pattern, STRICT, search
 from pattern.en import parsetree, wordnet
 
-#p = Pattern.fromstring('NP * than * NP')
-#p = Pattern.fromstring('RB VB|VBZ|VBP|VBD|VBN|VBG NP')
-
 def re_search(text, search_string, strict=False):
     tree = parsetree(text, lemmata=True)
-    #pat = Pattern.fromstring(search_string)
-    #results = pat.search(tree, STRICT)
     if strict:
         results = search(search_string, tree, STRICT)
     else:
@@ -37,7 +32,6 @@ def hypernym_search(text, search_word):
     possible_words = re_search(text, pos)
     for match in possible_words:
         word = match[0].string
-        #print word
         synsets = wordnet.synsets(word)
         if len(synsets) > 0:
             hypernyms = synsets[0].hypernyms(recursive=True)
@@ -48,7 +42,6 @@ def hypernym_search(text, search_word):
 
 def hypernym_combo(text, category, search_pattern):
     possibilities = search_out(text, search_pattern)
-    #print possibilities
     output = []
     for p in possibilities:
         if len(hypernym_search(p, category)) > 0:
@@ -60,7 +53,6 @@ def list_hypernyms(search_word):
     output = []
     for synset in wordnet.synsets(search_word):
         hypernyms = synset.hypernyms(recursive=True)
-        #output = output + [h.senses[0] for h in hypernyms]
         output.append([h.senses[0] for h in hypernyms])
     return output
 

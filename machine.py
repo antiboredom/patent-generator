@@ -11,8 +11,6 @@ class Invention(object):
         self.create_abstract()
         self.create_illustrations()
         self.create_description()
-        #self.body = self.body()
-        #self.find_lines()
 
     def prefix(self):
         prefixes = ["system", "method", "apparatus", "device"]
@@ -38,7 +36,6 @@ class Invention(object):
         self.possible_titles = []
         for title in gerund_phrases:
             self.possible_titles.append(title)
-            #print self.prefix() + title
         self.partial_title = random.choice(self.possible_titles)
         title = self.prefix() + self.partial_title
         self.set_keywords(self.partial_title)
@@ -49,15 +46,10 @@ class Invention(object):
         self.nouns = [word[0] for word in words if word[1] == 'NN']
         self.verbs = [word[0] for word in words if word[1] in ['VB', 'VBZ']]
         self.adjectives = [word[0] for word in words if word[1] == 'JJ']
-        #print self.nouns
-        #print self.verbs
-        #print words
 
     def create_first_line(self):
         templates = ['{0} is provided.', '{0} is disclosed.', 'The present invention relates to {0}.']
         self.first_line = random.choice(templates).format(self.title).capitalize()
-        #if random.random() < .1 + ' comprising: ':
-            #template = 'The present invention relates generally to the field of {0} and, more specifically, to methods and apparatus to {1} {2}.'
 
     def find_lines(self):
         lines = search.search_out(self.source_text, '|'.join(self.nouns + self.verbs + self.adjectives))
@@ -68,20 +60,10 @@ class Invention(object):
         sents = tokenize(self.source_text)
         pat = re.compile(' ' + '|'.join(words) + ' ')
         sents = [s for s in sents if pat.search(s) != None]
-        #pat = '|'.join(words)
-        #sents = [s for s in sents if search.contains(s, pat)]
 
         pprint(sents)
         pprint(words)
-        #matches = re.findall('(([aA-zA].*' + '|'.join(words) + ').*\.)', self.source_text)
-        #print matches
 
-    def how_it_works(self):
-        # 1. a title comprising of:
-        # a. gerund nounphrase [n times]
-        # b. gerund nounphrase
-        # 2. 
-        pass
 
     def sentence_walk(self):
         output = []
@@ -105,13 +87,6 @@ class Invention(object):
         self.unformatted_illustrations = illustrations
         for i in range(len(illustrations)):
             self.illustrations.append(random.choice(templates).format(i+1, illustrations[i]))
-        #sents = tokenize(self.source_text)
-        #words = []
-        #for s in sents:
-            #tags = tag(s)
-            #for i in range(len(tags)):
-                #word, pos = tags[i]
-                #if pos in ["VB", "VBZ", "VBP", "VBD", "VBN", "VBG"]:
 
     def create_abstract(self):
         artifacts = search.hypernym_combo(self.source_text, 'artifact', "JJ NN|NNS")
@@ -119,10 +94,6 @@ class Invention(object):
         artifacts = set(artifacts)
         self.artifacts = artifacts
         words = []
-        #for w in artifacts:
-            #pre = 'a'
-            #if w[0] in 'aeiou':
-                #pre = 'an'
         words = ["an " + w if w[0] in "aeiou" else "a " + w for w in artifacts]
         self.abstract = self.title + ". "
         self.abstract += "The devices comprises "
@@ -136,7 +107,6 @@ class Invention(object):
                 gloss = gloss[:gloss.find(';')]
             word = word + " (comprising of " + gloss + ") "
         return word
-       #w  + " which is "
 
     def create_description(self):
         pat = 'VB|VBD|VBZ|VBG * NN IN * NN'
@@ -148,8 +118,8 @@ class Invention(object):
             for word, pos in tag(phrase):
                 if pos in ["VBZ", "VBD", "VB", "VBG"]:
                     words.append(conjugate(word, "3sg"))
-                elif pos == "NN" and random.random() < .1:
-                    words.append(self.define_word(word))
+                #elif pos == "NN" and random.random() < .1:
+                    #words.append(self.define_word(word))
                 else:
                     words.append(word)
             conjugated_phrases.append(' '.join(words))
@@ -175,7 +145,6 @@ class Invention(object):
 
     def body_old(self):
         output = []
-        #self.possible_titles.remove(self.partial_title)
         useful_phrases = search.hypernym_combo(text, 'instrumentality', 'JJ? NP')
         random.shuffle(useful_phrases)
         random.shuffle(self.possible_titles)

@@ -1,19 +1,12 @@
 import search
-import sys, random, re
+import random, re
 from pattern.en import tag, tokenize, conjugate, wordnet
 from pprint import pprint
-
-#text = sys.stdin.read()
-
-# a [adjective] [specific noun] [(optional device/invention/machine)] that [something a character does something in the story]
-
-#try lolita
-#melville
 
 class Invention(object):
     def __init__(self, text):
         self.source_text = text
-        self.title = self.create_gerund_title()
+        self.title = self.create_gerund_title(text)
         self.create_first_line()
         self.create_abstract()
         self.create_illustrations()
@@ -35,7 +28,7 @@ class Invention(object):
         return pre + title
 
 
-    def create_gerund_title(self):
+    def create_gerund_title(self, text):
         search_patterns = [
                 'VBG DT NN RB', 'VBG NNP * NP', 'VBG NNP * .',
                 'RB VBG NNP', 'VBG JJ NP', 'VBG * JJ * NP', 'VBG * JJ *',
@@ -100,15 +93,16 @@ class Invention(object):
 
     def create_illustrations(self):
         self.illustrations = []
-        templates = ["Figure {0} illustrates {1}", 
-            "Figure {0} is a schematic drawing of {1}",
-            "Figure {0} is a perspective view of {1}",
-            "Figure {0} is an isometric view of {1}",
-            "Figure {0} schematically illustrates {1}",
-            "Figure {0} is a block diagram of {1}",
-            "Figure {0} is a cross section of {1}",
-            "Figure {0} is a diagrammatical view of {1}"]
+        templates = ["Figure {0} illustrates {1}.",
+            "Figure {0} is a schematic drawing of {1}.",
+            "Figure {0} is a perspective view of {1}.",
+            "Figure {0} is an isometric view of {1}.",
+            "Figure {0} schematically illustrates {1}.",
+            "Figure {0} is a block diagram of {1}.",
+            "Figure {0} is a cross section of {1}.",
+            "Figure {0} is a diagrammatical view of {1}."]
         illustrations = list(set(search.search_out(self.source_text, 'DT JJ NP IN * NN')))
+        self.unformatted_illustrations = illustrations
         for i in range(len(illustrations)):
             self.illustrations.append(random.choice(templates).format(i+1, illustrations[i]))
         #sents = tokenize(self.source_text)
@@ -133,7 +127,7 @@ class Invention(object):
         self.abstract = self.title + ". "
         self.abstract += "The devices comprises "
         self.abstract += ", ".join(words) 
-    
+
     def define_word(self, word):
         synsets = wordnet.synsets(word)
         if len(synsets) > 0:
@@ -162,16 +156,21 @@ class Invention(object):
 
         artifacts = list(self.artifacts)
 
-        templates = ["The present invention", "According to a beneficial embodiment, the invention", "According to another embodiment, the device", "According to a preferred embodiment, the invention", "In accordance with an alternative specific embodiment, the present invention"] 
+        sentence_prefixes = ["The present invention", "The device", "The invention"]
+        paragraph_prefixes = ["The present invention", "According to a beneficial embodiment, the invention", "According to another embodiment, the device", "According to a preferred embodiment, the invention", "In accordance with an alternative specific embodiment, the present invention"] 
         i = 0
         self.description = ''
         for phrase in conjugated_phrases:
-            #if i==0 or random.random() < .1:
-            phrase = random.choice(templates) + " " + phrase
-            self.description += phrase + ". "
-            #i += 1
-            #print random.choice(artifacts) + " " + phrase
-        #print conjugated_phrases
+            line = ""
+            if i == 0:
+                line = paragraph_prefixes[0] + " " + phrase
+            else:
+                if random.random() < .1:
+                    line = "\n\n" + random.choice(paragraph_prefixes) + " " + phrase
+                else:
+                    line = random.choice(sentence_prefixes) + " " + phrase
+            self.description += line + ". "
+            i += 1
 
 
     def body_old(self):
@@ -185,6 +184,7 @@ class Invention(object):
                 output.append(useful_phrases[i] + ' for ' + self.possible_titles[i])
         return output
 
+
     def format(self):
         print self.title
         print "\n\nABSTRACT\n\n"
@@ -192,22 +192,17 @@ class Invention(object):
         print '\n\nBRIEF DESCRIPTION OF THE DRAWINGS\n\n'
         for illustration in self.illustrations:
             print illustration
+            print
 
         print "\n\nDETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS\n\nThe detailed description set forth below in connection with the appended drawings is intended as a description of presently-preferred embodiments of the invention and is not intended to represent the only forms in which the present invention may be constructed or utilized. The description sets forth the functions and the sequence of steps for using the invention in connection with the illustrated embodiments. However, it is to be understood that the same or equivalent functions and sequences may be accomplished by different embodiments that are also intended to be encompassed within the spirit and scope of the invention."
         print "\n"
 
         print self.description
 
-        #print self.first_line + ' comprising: '
-        #for line in self.body:
-            #print line
-
 
     def make_name_one(self):
         title_combos = search.hypernym_combo(text, 'instrumentality', 'JJ NP')
         title_combos = [t for t in title_combos if t.endswith('round') == False]
-        #for t in title_combos:
-            #print t
         title = random.choice(title_combos)
         return title
 
@@ -221,20 +216,11 @@ class Invention(object):
         return ' '.join(words)
 
 
+if __name__ == '__main__':
 
-text = sys.stdin.read()
+    import sys
 
-invention = Invention(text)
-#invention.sentence_walk()
-invention.format()
-#print invention.make_name_one()
-#print invention.title
-#print invention.nouns
-#print invention.first_line
-#print invention.make_name_one()
+    text = sys.stdin.read().decode('ascii', errors='replace')
 
-#'material', 'fastener'
-
-#artifacts are non-person things'
-
-# the person is the invention?
+    invention = Invention(text)
+    invention.format()

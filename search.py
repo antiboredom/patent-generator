@@ -83,5 +83,5 @@ if __name__ == '__main__':
     #results = search_out(text, sys.argv[1], True)
     #results = hypernym_search(text, sys.argv[1])
     results = hypernym_combo(text, sys.argv[1], sys.argv[2])
-    for result in results:
+    for result in set(results):
         print result

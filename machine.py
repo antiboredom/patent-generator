@@ -163,7 +163,8 @@ class Invention(object):
             print illustration
             print
 
-        print "\n\nDETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS\n\nThe detailed description set forth below in connection with the appended drawings is intended as a description of presently-preferred embodiments of the invention and is not intended to represent the only forms in which the present invention may be constructed or utilized. The description sets forth the functions and the sequence of steps for using the invention in connection with the illustrated embodiments. However, it is to be understood that the same or equivalent functions and sequences may be accomplished by different embodiments that are also intended to be encompassed within the spirit and scope of the invention."
+        print "\n\nDETAILED DESCRIPTION OF THE PREFERRED EMBODIMENTS"
+        #print "\n\nThe detailed description set forth below in connection with the appended drawings is intended as a description of presently-preferred embodiments of the invention and is not intended to represent the only forms in which the present invention may be constructed or utilized. The description sets forth the functions and the sequence of steps for using the invention in connection with the illustrated embodiments. However, it is to be understood that the same or equivalent functions and sequences may be accomplished by different embodiments that are also intended to be encompassed within the spirit and scope of the invention."
         print "\n"
 
         print self.description
@@ -192,4 +193,6 @@ if __name__ == '__main__':
     text = sys.stdin.read().decode('ascii', errors='replace')
 
     invention = Invention(text)
+    #for t in invention.possible_titles:
+        #print invention.prefix() + t
     invention.format()

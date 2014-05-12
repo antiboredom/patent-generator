@@ -1,4 +1,5 @@
 .DS_STORE
+*.pyc
 env
 node_modules
 patents_bak

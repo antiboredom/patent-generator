@@ -1,6 +1,6 @@
 import search
 import random, re
-from pattern.en import tag, tokenize, conjugate, wordnet
+from pattern.en import DEFINITE, tag, tokenize, conjugate, singularize, referenced, wordnet
 from pprint import pprint
 
 class Invention(object):
@@ -11,19 +11,15 @@ class Invention(object):
         self.create_abstract()
         self.create_illustrations()
         self.create_description()
+        self.create_claims()
 
     def prefix(self):
         prefixes = ["system", "method", "apparatus", "device"]
-        self.prefixes = [random.choice(prefixes)]
-        prefixes.remove(self.prefixes[0])
-        self.prefixes.append(random.choice(prefixes))
+        self.prefixes = random.sample(prefixes, 2)
         title = self.prefixes[0] + " and " + self.prefixes[1] + " for "
         if random.random() < .2:
             title = "web-based " + title
-        pre = "a "
-        if title[0] in 'aeiou':
-            pre = "an "
-        return pre + title
+        return referenced(title)
 
 
     def create_gerund_title(self, text):
@@ -94,7 +90,7 @@ class Invention(object):
         artifacts = set(artifacts)
         self.artifacts = artifacts
         words = []
-        words = ["an " + w if w[0] in "aeiou" else "a " + w for w in artifacts]
+        words = [referenced(w) for w in artifacts]
         self.abstract = self.title + ". "
         self.abstract += "The devices comprises "
         self.abstract += ", ".join(words) 
@@ -142,6 +138,32 @@ class Invention(object):
             self.description += line + ". "
             i += 1
 
+    def create_claims(self):
+        independent = '{0}. {1} for {2}, comprising:'
+        dependent = '{0}. {1} of claim {2}, wherein said {3} comprises {4}.'
+
+        self.claims = []
+        claim_number = 0
+        for prefix in self.prefixes:
+            claim_number += 1
+            claim = independent.format(
+                claim_number, referenced(prefix).capitalize(), self.partial_title)
+            terms = random.sample(list(self.artifacts),
+                                  random.randint(2, min(len(self.artifacts), 5)))
+            for term in terms[:-1]:
+                claim += '\n\t' + referenced(term) + '; '
+            claim += 'and \n\t' + referenced(terms[-1]) + '.'
+            self.claims.append(claim)
+            independent_claim_number = claim_number
+
+            for term in terms:
+                claim_number += 1
+                claim = dependent.format(
+                    claim_number,
+                    referenced(prefix, article=DEFINITE).capitalize(),
+                    independent_claim_number, term,
+                    random.choice(self.unformatted_illustrations))
+                self.claims.append(claim)
 
     def body_old(self):
         output = []
@@ -168,6 +190,10 @@ class Invention(object):
         print "\n"
 
         print self.description
+
+        print "\n\nWhat is claimed is:"
+        for claim in self.claims:
+            print "\n%s" % claim
 
 
     def make_name_one(self):

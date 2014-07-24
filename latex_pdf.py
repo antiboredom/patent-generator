@@ -1,13 +1,14 @@
 import os
 import sys
 import subprocess
-import shlex
 from machine import *
 
 class pdfCreator():
 
     # declare and define all variables in the constructor
     def __init__(self,dn,fn,inv):
+        self.dir_name = dn
+        self.file_name = fn
         self.invention = inv
         self.file = self.create_TeX_file(dn,fn)
         self.title = self.create_title()
@@ -28,9 +29,9 @@ class pdfCreator():
     # assemble the full LaTeX text
     def create_LaTeX(self):
         text = "\\documentclass[english]{uspatent}\n\\begin{document}"
-        
+
         text += self.title
-        
+
         text += self.abstract
 
         text += self.illustrations
@@ -78,7 +79,7 @@ class pdfCreator():
     # assemble the claims together
     def create_claims(self):
         cla = "\n\\patentClaimsStart"
-        
+
         for i,claim in enumerate(self.invention.claims):
             cla += "\n\\beginClaim{Claim" + str(i) + "}" + claim[2:]
 
@@ -88,27 +89,30 @@ class pdfCreator():
 
     # write the entire text to the file
     def write_LaTeX_to_file(self):
+
                                             # to fix paragraph formatting
         self.file.write(self.file_contents.replace("\n\n","\n\\patentParagraph "))
+        self.file.close()
 
-    # function to compile the LaTeX formatting, not working yet
-    #def compile_LaTeX(self):
-        #process = subprocess.call("pdflatex test/test.tex", shell=True)
+    # function to compile the LaTeX formatting
+    def compile_LaTeX(self, fname):
+        os.chdir(self.dir_name)
+
+        proc=subprocess.Popen(['pdflatex', '-r', '-interaction=batchmode',fname + '.tex'])
+        proc.communicate()    # not actually needed it seems, but without it could cause problems with large stderr output
 
 
 if __name__ == '__main__':
 
-    import sys
-
     text = open(sys.argv[1],"r").read().decode('ascii', errors='replace')
     dir_name = sys.argv[2]
-    file_name = sys.argv[3]
+    file_name = sys.argv[2]
 
     invention = Invention(text)
 
     pdf = pdfCreator(dir_name,file_name,invention)
     pdf.write_LaTeX_to_file()
-    #pdf.compile_LaTeX()
+    pdf.compile_LaTeX(file_name)
 
 
 
